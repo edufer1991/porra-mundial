@@ -244,17 +244,6 @@ a      { color: inherit; text-decoration: none; }
   opacity: .9;
 }
 
-/* Countdown toggle (top-bar button, shown when strip is dismissed) */
-.countdown-toggle {
-  font-size: .85rem;
-  color: var(--text3);
-  padding: 5px 7px;
-  border-radius: var(--r);
-  flex-shrink: 0;
-  transition: color .15s;
-}
-.countdown-toggle:hover { color: var(--accent); }
-
 /* Salir button */
 .salir-btn {
   font-size: .8rem;
@@ -270,64 +259,98 @@ a      { color: inherit; text-decoration: none; }
   background: rgba(255,255,255,.05);
 }
 
-/* ── Countdown strip (in-app) ────────────────────────────────────────────── */
-.countdown-bar {
-  display: flex;
+/* ── Countdown gate ──────────────────────────────────────────────────────── */
+#countdown-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--bg);
+  display: none;
+  flex-direction: column;
   align-items: center;
-  gap: 8px;
-  background: var(--accent-dim);
-  border-bottom: 1px solid var(--accent-border);
-  padding: 7px 16px;
-  font-size: .8rem;
-  font-weight: 500;
-  color: var(--text2);
-  overflow: hidden;
-}
-.countdown-icon { font-size: .9rem; flex-shrink: 0; }
-.countdown-label { color: var(--text3); flex-shrink: 0; }
-.countdown-value {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.05rem;
-  font-weight: 800;
-  color: var(--accent);
-  letter-spacing: .04em;
-  flex: 1;
-}
-.countdown-close {
-  font-size: 1rem;
-  color: var(--text3);
-  padding: 2px 5px;
-  border-radius: 3px;
-  flex-shrink: 0;
-  transition: color .15s;
-}
-.countdown-close:hover { color: var(--text2); }
-
-/* ── Countdown (password screen) ─────────────────────────────────────────── */
-.pw-countdown-wrap {
-  margin-top: 24px;
+  justify-content: center;
   text-align: center;
+  padding: 24px;
+  gap: 0;
 }
-.pw-countdown-label {
-  font-size: .72rem;
+#countdown-gate.active { display: flex; }
+.gate-ball {
+  font-size: 2.8rem;
+  margin-bottom: 18px;
+  animation: gateSpin 5s linear infinite;
+  display: inline-block;
+}
+@keyframes gateSpin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+.gate-title {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.1rem;
   font-weight: 700;
-  letter-spacing: .1em;
+  letter-spacing: .25em;
   text-transform: uppercase;
   color: var(--text3);
-  margin-bottom: 6px;
 }
-.pw-countdown-digits {
+.gate-year {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 2.2rem;
+  font-size: clamp(5rem, 22vw, 9rem);
   font-weight: 900;
+  line-height: .85;
   color: var(--accent);
-  letter-spacing: .04em;
-  line-height: 1;
+  letter-spacing: -.02em;
+  margin-bottom: 4px;
 }
-.pw-countdown-date {
-  font-size: .72rem;
+.gate-date {
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--text3);
+  margin-bottom: 44px;
+}
+.gate-timer {
+  display: flex;
+  align-items: flex-start;
+  gap: 4px;
+}
+.gate-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: clamp(56px, 16vw, 80px);
+}
+.gate-num {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(3rem, 11vw, 5rem);
+  font-weight: 900;
+  color: var(--text);
+  line-height: 1;
+  letter-spacing: .01em;
+}
+.gate-lbl {
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
   color: var(--text3);
   margin-top: 5px;
+}
+.gate-sep {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: clamp(2.5rem, 9vw, 4rem);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  padding-top: .05em;
+  opacity: .7;
+}
+.gate-hint {
+  margin-top: 44px;
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--text3);
+  letter-spacing: .06em;
 }
 
 /* ── Tab Bar ─────────────────────────────────────────────────────────────── */

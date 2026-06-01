@@ -12,8 +12,9 @@ const DATA_BASE = 'data/';
 const REFRESH_MS = 45_000;
 const LIVE_CHECK_MS = 20_000;
 
-const SESSION_KEY = 'porra_session';
-const WC_START    = new Date('2026-06-11T19:00:00Z'); // 11 jun 21:00 CEST
+const SESSION_KEY    = 'porra_session';
+const WC_START       = new Date('2026-06-11T19:00:00Z'); // 11 jun 21:00 CEST
+const PREVIEW_TOKEN  = 'preview2026';                    // ?preview=preview2026 bypasses gate
 
 // ── State ────────────────────────────────────────────────────────────────────
 let state = {
@@ -677,49 +678,51 @@ function escHtml(s) {
     .replace(/'/g,'&#39;');
 }
 
-// ── Cuenta atrás ──────────────────────────────────────────────────────────────
-function updateCountdown() {
-  const diff = WC_START - Date.now();
-  const pwEl  = $('pw-countdown');
-  const appEl = $('countdown-value');
-  const wrap  = $('pw-countdown-wrap');
-  const bar   = $('countdown-bar');
-  const tog   = $('countdown-toggle');
+// ── Puerta de cuenta atrás (bloquea el acceso antes del Mundial) ──────────────
+let _gateInterval = null;
 
+function _updateGateTimer() {
+  const diff = WC_START - Date.now();
   if (diff <= 0) {
-    wrap?.classList.add('hidden');
-    if (!bar?.classList.contains('hidden')) bar?.classList.add('hidden');
-    tog?.classList.add('hidden');
+    clearInterval(_gateInterval);
+    _liftGate();
     return;
   }
-
   const d = Math.floor(diff / 86400000);
   const h = Math.floor((diff % 86400000) / 3600000);
   const m = Math.floor((diff % 3600000)  / 60000);
   const s = Math.floor((diff % 60000)    / 1000);
-  const str = `${d}d ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
-
-  if (pwEl)  pwEl.textContent  = str;
-  if (appEl) appEl.textContent = str;
+  $('gate-days').textContent  = String(d).padStart(2, '0');
+  $('gate-hours').textContent = String(h).padStart(2, '0');
+  $('gate-mins').textContent  = String(m).padStart(2, '0');
+  $('gate-secs').textContent  = String(s).padStart(2, '0');
 }
 
-setInterval(updateCountdown, 1000);
-updateCountdown();
+function _liftGate() {
+  const gate = $('countdown-gate');
+  gate.classList.remove('active');
+  gate.style.display = 'none';
+  _restoreOrShowPassword();
+}
 
-// Countdown strip toggle
-$('countdown-close').addEventListener('click', () => {
-  $('countdown-bar').classList.add('hidden');
-  $('countdown-toggle').classList.remove('hidden');
-});
-$('countdown-toggle').addEventListener('click', () => {
-  $('countdown-bar').classList.remove('hidden');
-  $('countdown-toggle').classList.add('hidden');
-});
-
-// ── Restaurar sesión al recargar ──────────────────────────────────────────────
-(function restoreSession() {
+function _restoreOrShowPassword() {
   const saved = sessionStorage.getItem(SESSION_KEY);
   if (saved && PASSWORDS[saved]) {
     enterApp(saved);
+  }
+  // else: password screen stays visible (already shown by default)
+}
+
+(function initGate() {
+  const params = new URLSearchParams(location.search);
+  const bypass = params.get('preview') === PREVIEW_TOKEN;
+  const before = WC_START - Date.now() > 0;
+
+  if (!bypass && before) {
+    $('countdown-gate').classList.add('active');
+    _updateGateTimer();
+    _gateInterval = setInterval(_updateGateTimer, 1000);
+  } else {
+    _restoreOrShowPassword();
   }
 })();

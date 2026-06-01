@@ -27,11 +27,36 @@
     <button class="pw-btn" id="pw-submit">Entrar</button>
     <div class="pw-error" id="pw-error"></div>
   </div>
-  <div class="pw-countdown-wrap" id="pw-countdown-wrap">
-    <div class="pw-countdown-label">Inicio del Mundial</div>
-    <div class="pw-countdown-digits" id="pw-countdown">--d --:--:--</div>
-    <div class="pw-countdown-date">11 jun · 21:00 CEST</div>
+</div>
+
+<!-- ── Countdown gate (blocks access before WC starts) ───────────────────── -->
+<div id="countdown-gate">
+  <div class="gate-ball">⚽</div>
+  <div class="gate-title">Porra Mundial</div>
+  <div class="gate-year">2026</div>
+  <div class="gate-date">11 jun · 21:00 CEST</div>
+  <div class="gate-timer">
+    <div class="gate-block">
+      <span class="gate-num" id="gate-days">--</span>
+      <span class="gate-lbl">días</span>
+    </div>
+    <span class="gate-sep">:</span>
+    <div class="gate-block">
+      <span class="gate-num" id="gate-hours">--</span>
+      <span class="gate-lbl">horas</span>
+    </div>
+    <span class="gate-sep">:</span>
+    <div class="gate-block">
+      <span class="gate-num" id="gate-mins">--</span>
+      <span class="gate-lbl">min</span>
+    </div>
+    <span class="gate-sep">:</span>
+    <div class="gate-block">
+      <span class="gate-num" id="gate-secs">--</span>
+      <span class="gate-lbl">seg</span>
+    </div>
   </div>
+  <div class="gate-hint">Vuelve el 11 de junio</div>
 </div>
 
 <!-- ── App ───────────────────────────────────────────────────────────────── -->
@@ -39,8 +64,7 @@
   <!-- Top Bar -->
   <header class="top-bar">
     <div class="top-bar-title">Porra <span>26</span></div>
-    <img id="trabajo-logo" class="trabajo-logo hidden" src="assets/logo-quadpack.png.jpeg" alt="Quadpack">
-    <button class="countdown-toggle hidden" id="countdown-toggle" title="Ver cuenta atrás">⏱</button>
+    <img id="trabajo-logo" class="trabajo-logo hidden" src="assets/logo-quadpack.png" alt="Quadpack">
     <div class="live-badge" id="live-badge"><div class="live-dot"></div>En directo</div>
     <button class="salir-btn" id="salir-btn" title="Salir">Salir</button>
   </header>
@@ -53,14 +77,6 @@
     <button class="tab-btn" data-tab="proximos">Próximos</button>
     <button class="tab-btn" data-tab="reglas">Reglas</button>
   </nav>
-
-  <!-- ── Countdown strip ────────────────────────────────────────────────── -->
-  <div id="countdown-bar" class="countdown-bar">
-    <span class="countdown-icon">⏱</span>
-    <span class="countdown-label">Mundial en</span>
-    <strong id="countdown-value" class="countdown-value">--d --:--:--</strong>
-    <button class="countdown-close" id="countdown-close" title="Ocultar">×</button>
-  </div>
 
   <!-- ── View: Clasificación ─────────────────────────────────────────────── -->
   <section class="view active" id="view-clasificacion">
