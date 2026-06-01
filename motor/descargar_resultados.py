@@ -71,7 +71,7 @@ RONDAS_2022: dict[str, str] = {
     "Match for third place":    "tercer_puesto",
 }
 
-API_FOOTBALL_BASE = "https://v3.api-football.com"
+API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
 
 
 # ── Utilidades ────────────────────────────────────────────────────────────────
