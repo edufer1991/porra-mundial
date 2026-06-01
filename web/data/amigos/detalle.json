@@ -1,6 +1,6 @@
 {
-  "null": {
-    "nickname": null,
+  "El_Profeta": {
+    "nickname": "El_Profeta",
     "grupos": [
       {
         "match_id": 1,
@@ -8,16 +8,19 @@
         "jornada": "J1",
         "local": "Mexico",
         "visitante": "South Africa",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 2,
@@ -25,16 +28,19 @@
         "jornada": "J1",
         "local": "South Korea",
         "visitante": "Czech Republic",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
         "prediccion": {
           "signo": "2",
-          "goles_local": 2,
-          "goles_visitante": 3
+          "goles_local": 0,
+          "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 3,
@@ -42,12 +48,19 @@
         "jornada": "J1",
         "local": "Canada",
         "visitante": "Bosnia-Herzegovina",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 4,
@@ -55,12 +68,19 @@
         "jornada": "J1",
         "local": "Qatar",
         "visitante": "Switzerland",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 5,
@@ -68,12 +88,19 @@
         "jornada": "J1",
         "local": "Brazil",
         "visitante": "Morocco",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 6,
@@ -81,12 +108,19 @@
         "jornada": "J1",
         "local": "Haiti",
         "visitante": "Scotland",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 7,
@@ -94,12 +128,19 @@
         "jornada": "J1",
         "local": "USA",
         "visitante": "Paraguay",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 8,
@@ -107,12 +148,19 @@
         "jornada": "J1",
         "local": "Australia",
         "visitante": "Turkey",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 9,
@@ -120,12 +168,19 @@
         "jornada": "J1",
         "local": "Germany",
         "visitante": "Curacao",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 10,
@@ -133,12 +188,19 @@
         "jornada": "J1",
         "local": "Ivory Coast",
         "visitante": "Ecuador",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 11,
@@ -146,12 +208,19 @@
         "jornada": "J1",
         "local": "Netherlands",
         "visitante": "Japan",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 12,
@@ -159,12 +228,19 @@
         "jornada": "J1",
         "local": "Sweden",
         "visitante": "Tunisia",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 13,
@@ -172,12 +248,19 @@
         "jornada": "J1",
         "local": "Belgium",
         "visitante": "Egypt",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 14,
@@ -185,12 +268,19 @@
         "jornada": "J1",
         "local": "Iran",
         "visitante": "New Zealand",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 4
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 15,
@@ -198,12 +288,19 @@
         "jornada": "J1",
         "local": "Spain",
         "visitante": "Cape Verde",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 16,
@@ -211,12 +308,19 @@
         "jornada": "J1",
         "local": "Saudi Arabia",
         "visitante": "Uruguay",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 17,
@@ -224,12 +328,19 @@
         "jornada": "J1",
         "local": "France",
         "visitante": "Senegal",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 18,
@@ -237,12 +348,19 @@
         "jornada": "J1",
         "local": "Iraq",
         "visitante": "Norway",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 19,
@@ -250,12 +368,19 @@
         "jornada": "J1",
         "local": "Argentina",
         "visitante": "Algeria",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 10,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 20,
@@ -263,12 +388,19 @@
         "jornada": "J1",
         "local": "Austria",
         "visitante": "Jordan",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 21,
@@ -276,12 +408,19 @@
         "jornada": "J1",
         "local": "Portugal",
         "visitante": "DR Congo",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 22,
@@ -289,12 +428,19 @@
         "jornada": "J1",
         "local": "Uzbekistan",
         "visitante": "Colombia",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 23,
@@ -302,12 +448,19 @@
         "jornada": "J1",
         "local": "England",
         "visitante": "Croatia",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 24,
@@ -315,12 +468,19 @@
         "jornada": "J1",
         "local": "Ghana",
         "visitante": "Panama",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 25,
@@ -328,16 +488,19 @@
         "jornada": "J2",
         "local": "Czech Republic",
         "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 26,
@@ -345,16 +508,19 @@
         "jornada": "J2",
         "local": "Mexico",
         "visitante": "South Korea",
-        "prediccion": {
-          "signo": "2",
+        "resultado": {
           "goles_local": 2,
-          "goles_visitante": 4
+          "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 27,
@@ -362,12 +528,19 @@
         "jornada": "J2",
         "local": "Switzerland",
         "visitante": "Bosnia-Herzegovina",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 28,
@@ -375,12 +548,19 @@
         "jornada": "J2",
         "local": "Canada",
         "visitante": "Qatar",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 29,
@@ -388,12 +568,19 @@
         "jornada": "J2",
         "local": "Scotland",
         "visitante": "Morocco",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 30,
@@ -401,12 +588,19 @@
         "jornada": "J2",
         "local": "Brazil",
         "visitante": "Haiti",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 31,
@@ -414,12 +608,19 @@
         "jornada": "J2",
         "local": "USA",
         "visitante": "Australia",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 10,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 32,
@@ -427,12 +628,19 @@
         "jornada": "J2",
         "local": "Turkey",
         "visitante": "Paraguay",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 33,
@@ -440,12 +648,19 @@
         "jornada": "J2",
         "local": "Germany",
         "visitante": "Ivory Coast",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 34,
@@ -453,12 +668,19 @@
         "jornada": "J2",
         "local": "Ecuador",
         "visitante": "Curacao",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 35,
@@ -466,12 +688,19 @@
         "jornada": "J2",
         "local": "Netherlands",
         "visitante": "Sweden",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 36,
@@ -479,12 +708,19 @@
         "jornada": "J2",
         "local": "Tunisia",
         "visitante": "Japan",
-        "prediccion": null,
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 37,
@@ -492,8 +728,12 @@
         "jornada": "J2",
         "local": "Belgium",
         "visitante": "Iran",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -505,8 +745,12 @@
         "jornada": "J2",
         "local": "New Zealand",
         "visitante": "Egypt",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -518,8 +762,12 @@
         "jornada": "J2",
         "local": "Spain",
         "visitante": "Saudi Arabia",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -531,8 +779,12 @@
         "jornada": "J2",
         "local": "Uruguay",
         "visitante": "Cape Verde",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -544,8 +796,12 @@
         "jornada": "J2",
         "local": "France",
         "visitante": "Iraq",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -557,8 +813,12 @@
         "jornada": "J2",
         "local": "Norway",
         "visitante": "Senegal",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -570,8 +830,12 @@
         "jornada": "J2",
         "local": "Argentina",
         "visitante": "Austria",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -583,8 +847,12 @@
         "jornada": "J2",
         "local": "Jordan",
         "visitante": "Algeria",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -596,8 +864,12 @@
         "jornada": "J2",
         "local": "Portugal",
         "visitante": "Uzbekistan",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -609,8 +881,12 @@
         "jornada": "J2",
         "local": "Colombia",
         "visitante": "DR Congo",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -622,8 +898,12 @@
         "jornada": "J2",
         "local": "England",
         "visitante": "Ghana",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -635,8 +915,12 @@
         "jornada": "J2",
         "local": "Panama",
         "visitante": "Croatia",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -648,12 +932,12 @@
         "jornada": "J3",
         "local": "Czech Republic",
         "visitante": "Mexico",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 2,
-          "goles_visitante": 2
-        },
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -665,12 +949,12 @@
         "jornada": "J3",
         "local": "South Africa",
         "visitante": "South Korea",
+        "resultado": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
           "goles_visitante": 0
         },
-        "resultado": null,
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -682,8 +966,12 @@
         "jornada": "J3",
         "local": "Switzerland",
         "visitante": "Canada",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -695,8 +983,12 @@
         "jornada": "J3",
         "local": "Bosnia-Herzegovina",
         "visitante": "Qatar",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -708,8 +1000,12 @@
         "jornada": "J3",
         "local": "Scotland",
         "visitante": "Brazil",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -721,8 +1017,12 @@
         "jornada": "J3",
         "local": "Morocco",
         "visitante": "Haiti",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -734,8 +1034,12 @@
         "jornada": "J3",
         "local": "Turkey",
         "visitante": "USA",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -747,8 +1051,12 @@
         "jornada": "J3",
         "local": "Paraguay",
         "visitante": "Australia",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -760,8 +1068,12 @@
         "jornada": "J3",
         "local": "Curacao",
         "visitante": "Ivory Coast",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -773,8 +1085,12 @@
         "jornada": "J3",
         "local": "Ecuador",
         "visitante": "Germany",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -786,8 +1102,12 @@
         "jornada": "J3",
         "local": "Japan",
         "visitante": "Sweden",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -799,8 +1119,12 @@
         "jornada": "J3",
         "local": "Tunisia",
         "visitante": "Netherlands",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -812,8 +1136,12 @@
         "jornada": "J3",
         "local": "Egypt",
         "visitante": "Iran",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -825,8 +1153,12 @@
         "jornada": "J3",
         "local": "New Zealand",
         "visitante": "Belgium",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -838,8 +1170,12 @@
         "jornada": "J3",
         "local": "Cape Verde",
         "visitante": "Saudi Arabia",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -851,8 +1187,12 @@
         "jornada": "J3",
         "local": "Uruguay",
         "visitante": "Spain",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -864,8 +1204,12 @@
         "jornada": "J3",
         "local": "Norway",
         "visitante": "France",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -877,8 +1221,12 @@
         "jornada": "J3",
         "local": "Senegal",
         "visitante": "Iraq",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -890,8 +1238,12 @@
         "jornada": "J3",
         "local": "Algeria",
         "visitante": "Austria",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -903,8 +1255,12 @@
         "jornada": "J3",
         "local": "Jordan",
         "visitante": "Argentina",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -916,8 +1272,12 @@
         "jornada": "J3",
         "local": "Colombia",
         "visitante": "Portugal",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -929,8 +1289,12 @@
         "jornada": "J3",
         "local": "DR Congo",
         "visitante": "Uzbekistan",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -942,8 +1306,12 @@
         "jornada": "J3",
         "local": "Panama",
         "visitante": "England",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -955,8 +1323,12 @@
         "jornada": "J3",
         "local": "Croatia",
         "visitante": "Ghana",
-        "prediccion": null,
         "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
         "puntos": null,
         "acierto_signo": null,
         "acierto_local": null,
@@ -965,87 +1337,5759 @@
     ],
     "clasificados": {
       "1/16": [
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
         "South Africa",
-        null,
-        null,
-        null,
-        null,
-        null,
-        "Czech Republic",
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "Ivory Coast",
+        "Senegal",
+        "Norway",
+        "Sweden",
+        "Canada",
+        "Turkey",
+        "South Korea",
+        "Ecuador",
+        "Algeria",
+        "Qatar",
+        "Saudi Arabia",
+        "Switzerland",
+        "Uruguay",
+        "Paraguay",
+        "Uzbekistan",
+        "Austria"
       ],
       "1/8": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
+        "South Africa"
       ],
       "1/4": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal"
       ],
       "semis": [
-        null,
-        null,
-        null,
-        null
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Brazil"
       ],
       "final": [
-        null,
-        null
+        "Argentina",
+        "Spain"
       ]
     },
     "honor": {
-      "campeon": null,
-      "subcampeon": null,
-      "tercero": null,
-      "cuarto": null
+      "campeon": "Argentina",
+      "subcampeon": "Spain",
+      "tercero": "Germany",
+      "cuarto": "Brazil"
     },
     "premios": {
-      "goleador": null,
+      "goleador": "Lautaro Martinez",
+      "mvp": "Lamine Yamal",
+      "portero": "Emiliano Martinez"
+    }
+  },
+  "LaQuiniela": {
+    "nickname": "LaQuiniela",
+    "grupos": [
+      {
+        "match_id": 1,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "Mexico",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 2,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "South Korea",
+        "visitante": "Czech Republic",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 3,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Canada",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 4,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Qatar",
+        "visitante": "Switzerland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 5,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Brazil",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 6,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Haiti",
+        "visitante": "Scotland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 7,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "USA",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 8,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "Australia",
+        "visitante": "Turkey",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 9,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Germany",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 10,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Ivory Coast",
+        "visitante": "Ecuador",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 11,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Netherlands",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 12,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Sweden",
+        "visitante": "Tunisia",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 13,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Belgium",
+        "visitante": "Egypt",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 14,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Iran",
+        "visitante": "New Zealand",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 15,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Spain",
+        "visitante": "Cape Verde",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 16,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Saudi Arabia",
+        "visitante": "Uruguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 17,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "France",
+        "visitante": "Senegal",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 18,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "Iraq",
+        "visitante": "Norway",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 19,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Argentina",
+        "visitante": "Algeria",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 10,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 20,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Austria",
+        "visitante": "Jordan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 21,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Portugal",
+        "visitante": "DR Congo",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 22,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Uzbekistan",
+        "visitante": "Colombia",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 23,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "England",
+        "visitante": "Croatia",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 24,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "Ghana",
+        "visitante": "Panama",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 25,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Czech Republic",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 26,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Mexico",
+        "visitante": "South Korea",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 27,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Switzerland",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 28,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Canada",
+        "visitante": "Qatar",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 4
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 29,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Scotland",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 30,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Brazil",
+        "visitante": "Haiti",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 31,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "USA",
+        "visitante": "Australia",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 10,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 32,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "Turkey",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 33,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Germany",
+        "visitante": "Ivory Coast",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 34,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Ecuador",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 35,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Netherlands",
+        "visitante": "Sweden",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 36,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Tunisia",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 37,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "Belgium",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 38,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "New Zealand",
+        "visitante": "Egypt",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 39,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Spain",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 40,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Uruguay",
+        "visitante": "Cape Verde",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 41,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "France",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 42,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "Norway",
+        "visitante": "Senegal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 43,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Argentina",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 44,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Jordan",
+        "visitante": "Algeria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 45,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Portugal",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 46,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Colombia",
+        "visitante": "DR Congo",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 47,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "England",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 48,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "Panama",
+        "visitante": "Croatia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 49,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "Czech Republic",
+        "visitante": "Mexico",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 50,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "South Africa",
+        "visitante": "South Korea",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 51,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Switzerland",
+        "visitante": "Canada",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 52,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "Qatar",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 53,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Scotland",
+        "visitante": "Brazil",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 54,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Morocco",
+        "visitante": "Haiti",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 55,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Turkey",
+        "visitante": "USA",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 56,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Paraguay",
+        "visitante": "Australia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 57,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Curacao",
+        "visitante": "Ivory Coast",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 58,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Ecuador",
+        "visitante": "Germany",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 59,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Japan",
+        "visitante": "Sweden",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 60,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Tunisia",
+        "visitante": "Netherlands",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 61,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "Egypt",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 62,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "New Zealand",
+        "visitante": "Belgium",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 63,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Cape Verde",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 64,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Uruguay",
+        "visitante": "Spain",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 65,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Norway",
+        "visitante": "France",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 66,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Senegal",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 67,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Algeria",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 68,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Jordan",
+        "visitante": "Argentina",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 69,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "Colombia",
+        "visitante": "Portugal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 70,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "DR Congo",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 71,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Panama",
+        "visitante": "England",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 72,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Croatia",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      }
+    ],
+    "clasificados": {
+      "1/16": [
+        "Argentina",
+        "Spain",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
+        "South Africa",
+        "Ivory Coast",
+        "Senegal",
+        "Norway",
+        "Sweden",
+        "Canada",
+        "Turkey",
+        "South Korea",
+        "Ecuador",
+        "Algeria",
+        "Qatar",
+        "Saudi Arabia",
+        "Switzerland",
+        "Uruguay",
+        "Paraguay",
+        "Uzbekistan",
+        "Austria"
+      ],
+      "1/8": [
+        "Argentina",
+        "France",
+        "Germany",
+        "Brazil",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Spain",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Japan",
+        "Morocco",
+        "South Africa",
+        "Ivory Coast",
+        "Mexico"
+      ],
+      "1/4": [
+        "Argentina",
+        "France",
+        "Germany",
+        "Brazil",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Spain"
+      ],
+      "semis": [
+        "Argentina",
+        "Germany",
+        "France",
+        "Brazil"
+      ],
+      "final": [
+        "Argentina",
+        "France"
+      ]
+    },
+    "honor": {
+      "campeon": "Argentina",
+      "subcampeon": "France",
+      "tercero": "Spain",
+      "cuarto": "Germany"
+    },
+    "premios": {
+      "goleador": "Lautaro Martinez",
+      "mvp": "Mbappe",
+      "portero": "Unai Simon"
+    }
+  },
+  "Kante08": {
+    "nickname": "Kante08",
+    "grupos": [
+      {
+        "match_id": 1,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "Mexico",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 2,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "South Korea",
+        "visitante": "Czech Republic",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 3,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Canada",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 4,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Qatar",
+        "visitante": "Switzerland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 5,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Brazil",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 6,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Haiti",
+        "visitante": "Scotland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 7,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "USA",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 8,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "Australia",
+        "visitante": "Turkey",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 9,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Germany",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 10,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Ivory Coast",
+        "visitante": "Ecuador",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 11,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Netherlands",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 12,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Sweden",
+        "visitante": "Tunisia",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 13,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Belgium",
+        "visitante": "Egypt",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 14,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Iran",
+        "visitante": "New Zealand",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 9,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 15,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Spain",
+        "visitante": "Cape Verde",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 16,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Saudi Arabia",
+        "visitante": "Uruguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 17,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "France",
+        "visitante": "Senegal",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 18,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "Iraq",
+        "visitante": "Norway",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 19,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Argentina",
+        "visitante": "Algeria",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 20,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Austria",
+        "visitante": "Jordan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 21,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Portugal",
+        "visitante": "DR Congo",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 22,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Uzbekistan",
+        "visitante": "Colombia",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 23,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "England",
+        "visitante": "Croatia",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 24,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "Ghana",
+        "visitante": "Panama",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 25,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Czech Republic",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 26,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Mexico",
+        "visitante": "South Korea",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 27,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Switzerland",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 28,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Canada",
+        "visitante": "Qatar",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 29,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Scotland",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 30,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Brazil",
+        "visitante": "Haiti",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 31,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "USA",
+        "visitante": "Australia",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 32,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "Turkey",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 33,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Germany",
+        "visitante": "Ivory Coast",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 34,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Ecuador",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 35,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Netherlands",
+        "visitante": "Sweden",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 36,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Tunisia",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 37,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "Belgium",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 38,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "New Zealand",
+        "visitante": "Egypt",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 39,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Spain",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 40,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Uruguay",
+        "visitante": "Cape Verde",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 41,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "France",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 42,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "Norway",
+        "visitante": "Senegal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 43,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Argentina",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 44,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Jordan",
+        "visitante": "Algeria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 45,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Portugal",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 46,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Colombia",
+        "visitante": "DR Congo",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 47,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "England",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 48,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "Panama",
+        "visitante": "Croatia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 49,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "Czech Republic",
+        "visitante": "Mexico",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 50,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "South Africa",
+        "visitante": "South Korea",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 51,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Switzerland",
+        "visitante": "Canada",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 52,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "Qatar",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 53,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Scotland",
+        "visitante": "Brazil",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 54,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Morocco",
+        "visitante": "Haiti",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 55,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Turkey",
+        "visitante": "USA",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 56,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Paraguay",
+        "visitante": "Australia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 57,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Curacao",
+        "visitante": "Ivory Coast",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 58,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Ecuador",
+        "visitante": "Germany",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 59,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Japan",
+        "visitante": "Sweden",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 60,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Tunisia",
+        "visitante": "Netherlands",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 61,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "Egypt",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 62,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "New Zealand",
+        "visitante": "Belgium",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 63,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Cape Verde",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 64,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Uruguay",
+        "visitante": "Spain",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 65,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Norway",
+        "visitante": "France",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 66,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Senegal",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 67,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Algeria",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 68,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Jordan",
+        "visitante": "Argentina",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 69,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "Colombia",
+        "visitante": "Portugal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 70,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "DR Congo",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 71,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Panama",
+        "visitante": "England",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 72,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Croatia",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      }
+    ],
+    "clasificados": {
+      "1/16": [
+        "Spain",
+        "Argentina",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
+        "South Africa",
+        "Ivory Coast",
+        "Senegal",
+        "Norway",
+        "Sweden",
+        "Canada",
+        "Turkey",
+        "South Korea",
+        "Ecuador",
+        "Algeria",
+        "Qatar",
+        "Saudi Arabia",
+        "Switzerland",
+        "Uruguay",
+        "Paraguay",
+        "Uzbekistan",
+        "Austria"
+      ],
+      "1/8": [
+        "Spain",
+        "Argentina",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium"
+      ],
+      "1/4": [
+        "Spain",
+        "Argentina",
+        "Germany",
+        "Brazil",
+        "France",
+        "Netherlands",
+        "England",
+        "Portugal"
+      ],
+      "semis": [
+        "Spain",
+        "Argentina",
+        "Germany",
+        "Brazil"
+      ],
+      "final": [
+        "Spain",
+        "Argentina"
+      ]
+    },
+    "honor": {
+      "campeon": "Spain",
+      "subcampeon": "Argentina",
+      "tercero": "Brazil",
+      "cuarto": "Germany"
+    },
+    "premios": {
+      "goleador": "Vinicius Jr",
+      "mvp": "Lamine Yamal",
+      "portero": "Emiliano Martinez"
+    }
+  },
+  "TodoAEspana": {
+    "nickname": "TodoAEspana",
+    "grupos": [
+      {
+        "match_id": 1,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "Mexico",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 2,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "South Korea",
+        "visitante": "Czech Republic",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 3,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Canada",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 4,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Qatar",
+        "visitante": "Switzerland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 5,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Brazil",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 6,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Haiti",
+        "visitante": "Scotland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 7,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "USA",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 8,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "Australia",
+        "visitante": "Turkey",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 9,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Germany",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 10,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Ivory Coast",
+        "visitante": "Ecuador",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 11,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Netherlands",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 12,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Sweden",
+        "visitante": "Tunisia",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 13,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Belgium",
+        "visitante": "Egypt",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 14,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Iran",
+        "visitante": "New Zealand",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 4
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 15,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Spain",
+        "visitante": "Cape Verde",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 16,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Saudi Arabia",
+        "visitante": "Uruguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 17,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "France",
+        "visitante": "Senegal",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 18,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "Iraq",
+        "visitante": "Norway",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 19,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Argentina",
+        "visitante": "Algeria",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 20,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Austria",
+        "visitante": "Jordan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 21,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Portugal",
+        "visitante": "DR Congo",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 22,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Uzbekistan",
+        "visitante": "Colombia",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 23,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "England",
+        "visitante": "Croatia",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 24,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "Ghana",
+        "visitante": "Panama",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 25,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Czech Republic",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 26,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Mexico",
+        "visitante": "South Korea",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 27,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Switzerland",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 28,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Canada",
+        "visitante": "Qatar",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 4
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 29,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Scotland",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 30,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Brazil",
+        "visitante": "Haiti",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 31,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "USA",
+        "visitante": "Australia",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 32,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "Turkey",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 33,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Germany",
+        "visitante": "Ivory Coast",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 34,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Ecuador",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 35,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Netherlands",
+        "visitante": "Sweden",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 36,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Tunisia",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 37,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "Belgium",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 38,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "New Zealand",
+        "visitante": "Egypt",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 39,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Spain",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 40,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Uruguay",
+        "visitante": "Cape Verde",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 41,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "France",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 42,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "Norway",
+        "visitante": "Senegal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 43,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Argentina",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 44,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Jordan",
+        "visitante": "Algeria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 45,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Portugal",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 46,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Colombia",
+        "visitante": "DR Congo",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 47,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "England",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 48,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "Panama",
+        "visitante": "Croatia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 49,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "Czech Republic",
+        "visitante": "Mexico",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 50,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "South Africa",
+        "visitante": "South Korea",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 51,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Switzerland",
+        "visitante": "Canada",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 52,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "Qatar",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 53,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Scotland",
+        "visitante": "Brazil",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 54,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Morocco",
+        "visitante": "Haiti",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 55,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Turkey",
+        "visitante": "USA",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 56,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Paraguay",
+        "visitante": "Australia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 57,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Curacao",
+        "visitante": "Ivory Coast",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 58,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Ecuador",
+        "visitante": "Germany",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 59,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Japan",
+        "visitante": "Sweden",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 60,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Tunisia",
+        "visitante": "Netherlands",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 61,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "Egypt",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 62,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "New Zealand",
+        "visitante": "Belgium",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 63,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Cape Verde",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 64,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Uruguay",
+        "visitante": "Spain",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 65,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Norway",
+        "visitante": "France",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 66,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Senegal",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 67,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Algeria",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 68,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Jordan",
+        "visitante": "Argentina",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 69,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "Colombia",
+        "visitante": "Portugal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 70,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "DR Congo",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 71,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Panama",
+        "visitante": "England",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 72,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Croatia",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      }
+    ],
+    "clasificados": {
+      "1/16": [
+        "Spain",
+        "France",
+        "Germany",
+        "Brazil",
+        "Argentina",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
+        "South Africa",
+        "Ivory Coast",
+        "Senegal",
+        "Norway",
+        "Sweden",
+        "Canada",
+        "Turkey",
+        "South Korea",
+        "Ecuador",
+        "Algeria",
+        "Qatar",
+        "Saudi Arabia",
+        "Switzerland",
+        "Uruguay",
+        "Paraguay",
+        "Uzbekistan",
+        "Austria"
+      ],
+      "1/8": [
+        "Spain",
+        "France",
+        "Germany",
+        "Brazil",
+        "Argentina",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium"
+      ],
+      "1/4": [
+        "Spain",
+        "France",
+        "Germany",
+        "Brazil",
+        "Netherlands",
+        "England"
+      ],
+      "semis": [
+        "Spain",
+        "France",
+        "Germany",
+        "Brazil"
+      ],
+      "final": [
+        "Spain",
+        "France"
+      ]
+    },
+    "honor": {
+      "campeon": "Spain",
+      "subcampeon": "France",
+      "tercero": "Germany",
+      "cuarto": "Brazil"
+    },
+    "premios": {
+      "goleador": "Morata",
       "mvp": null,
+      "portero": null
+    }
+  },
+  "LaMaquina": {
+    "nickname": "LaMaquina",
+    "grupos": [
+      {
+        "match_id": 1,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "Mexico",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 2,
+        "grupo": "A",
+        "jornada": "J1",
+        "local": "South Korea",
+        "visitante": "Czech Republic",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 3,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Canada",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 4,
+        "grupo": "B",
+        "jornada": "J1",
+        "local": "Qatar",
+        "visitante": "Switzerland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 5,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Brazil",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 6,
+        "grupo": "C",
+        "jornada": "J1",
+        "local": "Haiti",
+        "visitante": "Scotland",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 7,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "USA",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 8,
+        "grupo": "D",
+        "jornada": "J1",
+        "local": "Australia",
+        "visitante": "Turkey",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 9,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Germany",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 10,
+        "grupo": "E",
+        "jornada": "J1",
+        "local": "Ivory Coast",
+        "visitante": "Ecuador",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 11,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Netherlands",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 12,
+        "grupo": "F",
+        "jornada": "J1",
+        "local": "Sweden",
+        "visitante": "Tunisia",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 13,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Belgium",
+        "visitante": "Egypt",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 14,
+        "grupo": "G",
+        "jornada": "J1",
+        "local": "Iran",
+        "visitante": "New Zealand",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 4
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 15,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Spain",
+        "visitante": "Cape Verde",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 16,
+        "grupo": "H",
+        "jornada": "J1",
+        "local": "Saudi Arabia",
+        "visitante": "Uruguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 17,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "France",
+        "visitante": "Senegal",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 18,
+        "grupo": "I",
+        "jornada": "J1",
+        "local": "Iraq",
+        "visitante": "Norway",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 19,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Argentina",
+        "visitante": "Algeria",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 20,
+        "grupo": "J",
+        "jornada": "J1",
+        "local": "Austria",
+        "visitante": "Jordan",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 21,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Portugal",
+        "visitante": "DR Congo",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 22,
+        "grupo": "K",
+        "jornada": "J1",
+        "local": "Uzbekistan",
+        "visitante": "Colombia",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 23,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "England",
+        "visitante": "Croatia",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 24,
+        "grupo": "L",
+        "jornada": "J1",
+        "local": "Ghana",
+        "visitante": "Panama",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "puntos": 1,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 25,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Czech Republic",
+        "visitante": "South Africa",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 26,
+        "grupo": "A",
+        "jornada": "J2",
+        "local": "Mexico",
+        "visitante": "South Korea",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 27,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Switzerland",
+        "visitante": "Bosnia-Herzegovina",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 28,
+        "grupo": "B",
+        "jornada": "J2",
+        "local": "Canada",
+        "visitante": "Qatar",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 29,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Scotland",
+        "visitante": "Morocco",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 30,
+        "grupo": "C",
+        "jornada": "J2",
+        "local": "Brazil",
+        "visitante": "Haiti",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 31,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "USA",
+        "visitante": "Australia",
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 32,
+        "grupo": "D",
+        "jornada": "J2",
+        "local": "Turkey",
+        "visitante": "Paraguay",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 33,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Germany",
+        "visitante": "Ivory Coast",
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 2
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 34,
+        "grupo": "E",
+        "jornada": "J2",
+        "local": "Ecuador",
+        "visitante": "Curacao",
+        "resultado": {
+          "goles_local": 1,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
+      },
+      {
+        "match_id": 35,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Netherlands",
+        "visitante": "Sweden",
+        "resultado": {
+          "goles_local": 3,
+          "goles_visitante": 0
+        },
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 36,
+        "grupo": "F",
+        "jornada": "J2",
+        "local": "Tunisia",
+        "visitante": "Japan",
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 1
+        },
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
+      },
+      {
+        "match_id": 37,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "Belgium",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 38,
+        "grupo": "G",
+        "jornada": "J2",
+        "local": "New Zealand",
+        "visitante": "Egypt",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 39,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Spain",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 40,
+        "grupo": "H",
+        "jornada": "J2",
+        "local": "Uruguay",
+        "visitante": "Cape Verde",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 41,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "France",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 42,
+        "grupo": "I",
+        "jornada": "J2",
+        "local": "Norway",
+        "visitante": "Senegal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 43,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Argentina",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 44,
+        "grupo": "J",
+        "jornada": "J2",
+        "local": "Jordan",
+        "visitante": "Algeria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 45,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Portugal",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 46,
+        "grupo": "K",
+        "jornada": "J2",
+        "local": "Colombia",
+        "visitante": "DR Congo",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 47,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "England",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 48,
+        "grupo": "L",
+        "jornada": "J2",
+        "local": "Panama",
+        "visitante": "Croatia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 49,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "Czech Republic",
+        "visitante": "Mexico",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 50,
+        "grupo": "A",
+        "jornada": "J3",
+        "local": "South Africa",
+        "visitante": "South Korea",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 51,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Switzerland",
+        "visitante": "Canada",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 52,
+        "grupo": "B",
+        "jornada": "J3",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "Qatar",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 53,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Scotland",
+        "visitante": "Brazil",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 54,
+        "grupo": "C",
+        "jornada": "J3",
+        "local": "Morocco",
+        "visitante": "Haiti",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 55,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Turkey",
+        "visitante": "USA",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 56,
+        "grupo": "D",
+        "jornada": "J3",
+        "local": "Paraguay",
+        "visitante": "Australia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 57,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Curacao",
+        "visitante": "Ivory Coast",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 58,
+        "grupo": "E",
+        "jornada": "J3",
+        "local": "Ecuador",
+        "visitante": "Germany",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 59,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Japan",
+        "visitante": "Sweden",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 60,
+        "grupo": "F",
+        "jornada": "J3",
+        "local": "Tunisia",
+        "visitante": "Netherlands",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 61,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "Egypt",
+        "visitante": "Iran",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 62,
+        "grupo": "G",
+        "jornada": "J3",
+        "local": "New Zealand",
+        "visitante": "Belgium",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 63,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Cape Verde",
+        "visitante": "Saudi Arabia",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 64,
+        "grupo": "H",
+        "jornada": "J3",
+        "local": "Uruguay",
+        "visitante": "Spain",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 65,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Norway",
+        "visitante": "France",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 66,
+        "grupo": "I",
+        "jornada": "J3",
+        "local": "Senegal",
+        "visitante": "Iraq",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 67,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Algeria",
+        "visitante": "Austria",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 68,
+        "grupo": "J",
+        "jornada": "J3",
+        "local": "Jordan",
+        "visitante": "Argentina",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 69,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "Colombia",
+        "visitante": "Portugal",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 70,
+        "grupo": "K",
+        "jornada": "J3",
+        "local": "DR Congo",
+        "visitante": "Uzbekistan",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 71,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Panama",
+        "visitante": "England",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      },
+      {
+        "match_id": 72,
+        "grupo": "L",
+        "jornada": "J3",
+        "local": "Croatia",
+        "visitante": "Ghana",
+        "resultado": null,
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        },
+        "puntos": null,
+        "acierto_signo": null,
+        "acierto_local": null,
+        "acierto_visitante": null
+      }
+    ],
+    "clasificados": {
+      "1/16": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Spain",
+        "Argentina",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium",
+        "Croatia",
+        "Japan",
+        "Morocco",
+        "South Africa",
+        "Ivory Coast",
+        "Senegal",
+        "Norway",
+        "Sweden",
+        "Canada",
+        "Turkey",
+        "South Korea",
+        "Ecuador",
+        "Algeria",
+        "Qatar",
+        "Saudi Arabia",
+        "Switzerland",
+        "Uruguay",
+        "Paraguay",
+        "Uzbekistan",
+        "Austria"
+      ],
+      "1/8": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Spain",
+        "Argentina",
+        "Netherlands",
+        "England",
+        "Portugal",
+        "Mexico",
+        "Colombia",
+        "USA",
+        "Belgium"
+      ],
+      "1/4": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Spain",
+        "Netherlands",
+        "England"
+      ],
+      "semis": [
+        "Brazil",
+        "France",
+        "Germany",
+        "Spain"
+      ],
+      "final": [
+        "Brazil",
+        "France"
+      ]
+    },
+    "honor": {
+      "campeon": "Brazil",
+      "subcampeon": "France",
+      "tercero": "Germany",
+      "cuarto": "Spain"
+    },
+    "premios": {
+      "goleador": "Vinicius Jr",
+      "mvp": "Mbappe",
       "portero": null
     }
   }

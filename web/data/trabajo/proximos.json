@@ -1,106 +1,474 @@
 [
   {
-    "match_id": 1,
-    "fecha_hora_utc": "2026-06-11T19:00:00Z",
+    "match_id": 37,
+    "fecha_hora_utc": "2026-06-21T19:00:00Z",
     "fase": "grupos",
-    "grupo": "A",
-    "jornada": "J1",
-    "local": "Mexico",
-    "visitante": "South Africa",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "G",
+    "jornada": "J2",
+    "local": "Belgium",
+    "visitante": "Iran",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      }
+    ]
   },
   {
-    "match_id": 2,
-    "fecha_hora_utc": "2026-06-12T02:00:00Z",
+    "match_id": 38,
+    "fecha_hora_utc": "2026-06-22T01:00:00Z",
     "fase": "grupos",
-    "grupo": "A",
-    "jornada": "J1",
-    "local": "South Korea",
-    "visitante": "Czech Republic",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "G",
+    "jornada": "J2",
+    "local": "New Zealand",
+    "visitante": "Egypt",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 3,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      }
+    ]
   },
   {
-    "match_id": 3,
-    "fecha_hora_utc": "2026-06-12T19:00:00Z",
+    "match_id": 39,
+    "fecha_hora_utc": "2026-06-21T16:00:00Z",
     "fase": "grupos",
-    "grupo": "B",
-    "jornada": "J1",
-    "local": "Canada",
-    "visitante": "Bosnia-Herzegovina",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "H",
+    "jornada": "J2",
+    "local": "Spain",
+    "visitante": "Saudi Arabia",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      }
+    ]
   },
   {
-    "match_id": 7,
-    "fecha_hora_utc": "2026-06-13T01:00:00Z",
+    "match_id": 40,
+    "fecha_hora_utc": "2026-06-21T22:00:00Z",
     "fase": "grupos",
-    "grupo": "D",
-    "jornada": "J1",
-    "local": "USA",
-    "visitante": "Paraguay",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "H",
+    "jornada": "J2",
+    "local": "Uruguay",
+    "visitante": "Cape Verde",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 3
+        }
+      }
+    ]
   },
   {
-    "match_id": 4,
-    "fecha_hora_utc": "2026-06-13T19:00:00Z",
+    "match_id": 41,
+    "fecha_hora_utc": "2026-06-22T21:00:00Z",
     "fase": "grupos",
-    "grupo": "B",
-    "jornada": "J1",
-    "local": "Qatar",
-    "visitante": "Switzerland",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "I",
+    "jornada": "J2",
+    "local": "France",
+    "visitante": "Iraq",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      }
+    ]
   },
   {
-    "match_id": 5,
-    "fecha_hora_utc": "2026-06-13T22:00:00Z",
+    "match_id": 42,
+    "fecha_hora_utc": "2026-06-23T00:00:00Z",
     "fase": "grupos",
-    "grupo": "C",
-    "jornada": "J1",
-    "local": "Brazil",
-    "visitante": "Morocco",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "I",
+    "jornada": "J2",
+    "local": "Norway",
+    "visitante": "Senegal",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      }
+    ]
   },
   {
-    "match_id": 6,
-    "fecha_hora_utc": "2026-06-14T01:00:00Z",
+    "match_id": 43,
+    "fecha_hora_utc": "2026-06-22T17:00:00Z",
     "fase": "grupos",
-    "grupo": "C",
-    "jornada": "J1",
-    "local": "Haiti",
-    "visitante": "Scotland",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "J",
+    "jornada": "J2",
+    "local": "Argentina",
+    "visitante": "Austria",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      }
+    ]
   },
   {
-    "match_id": 8,
-    "fecha_hora_utc": "2026-06-14T04:00:00Z",
+    "match_id": 44,
+    "fecha_hora_utc": "2026-06-23T03:00:00Z",
     "fase": "grupos",
-    "grupo": "D",
-    "jornada": "J1",
-    "local": "Australia",
-    "visitante": "Turkey",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
+    "grupo": "J",
+    "jornada": "J2",
+    "local": "Jordan",
+    "visitante": "Algeria",
+    "predicciones": [
+      {
+        "nickname": "Txema_Boss",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "AnalisisProfundo",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Aleatoria99",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Iker_Jr",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "PorriPorri",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      }
+    ]
   }
 ]

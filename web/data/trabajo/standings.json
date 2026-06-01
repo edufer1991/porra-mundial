@@ -1,5 +1,90 @@
 {
   "porra": "trabajo",
-  "ultima_actualizacion": "2026-05-31T08:56:58Z",
-  "clasificacion": []
+  "ultima_actualizacion": "2026-06-28T21:30:00Z",
+  "clasificacion": [
+    {
+      "nickname": "Txema_Boss",
+      "posicion": 1,
+      "empate": false,
+      "posicion_fase_previa": 1,
+      "puntos_grupos": 65,
+      "puntos_eliminatorias": 320,
+      "puntos_honor": 140,
+      "puntos_premios": 45,
+      "puntos_fase_previa": 65,
+      "puntos_fase_eliminatoria": 460,
+      "puntos_total": 570,
+      "advertencias_premios": []
+    },
+    {
+      "nickname": "AnalisisProfundo",
+      "posicion": 2,
+      "empate": false,
+      "posicion_fase_previa": 3,
+      "puntos_grupos": 44,
+      "puntos_eliminatorias": 310,
+      "puntos_honor": 110,
+      "puntos_premios": 25,
+      "puntos_fase_previa": 44,
+      "puntos_fase_eliminatoria": 420,
+      "puntos_total": 489,
+      "advertencias_premios": []
+    },
+    {
+      "nickname": "Proba_Stats",
+      "posicion": 3,
+      "empate": false,
+      "posicion_fase_previa": 2,
+      "puntos_grupos": 55,
+      "puntos_eliminatorias": 220,
+      "puntos_honor": 90,
+      "puntos_premios": 20,
+      "puntos_fase_previa": 55,
+      "puntos_fase_eliminatoria": 310,
+      "puntos_total": 385,
+      "advertencias_premios": []
+    },
+    {
+      "nickname": "Aleatoria99",
+      "posicion": 4,
+      "empate": true,
+      "posicion_fase_previa": 4,
+      "puntos_grupos": 31,
+      "puntos_eliminatorias": 130,
+      "puntos_honor": 50,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 31,
+      "puntos_fase_eliminatoria": 180,
+      "puntos_total": 211,
+      "advertencias_premios": []
+    },
+    {
+      "nickname": "Iker_Jr",
+      "posicion": 4,
+      "empate": true,
+      "posicion_fase_previa": 5,
+      "puntos_grupos": 29,
+      "puntos_eliminatorias": 130,
+      "puntos_honor": 50,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 29,
+      "puntos_fase_eliminatoria": 180,
+      "puntos_total": 211,
+      "advertencias_premios": []
+    },
+    {
+      "nickname": "PorriPorri",
+      "posicion": 6,
+      "empate": false,
+      "posicion_fase_previa": 6,
+      "puntos_grupos": 18,
+      "puntos_eliminatorias": 80,
+      "puntos_honor": 20,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 18,
+      "puntos_fase_eliminatoria": 100,
+      "puntos_total": 118,
+      "advertencias_premios": []
+    }
+  ]
 }

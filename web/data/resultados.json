@@ -1,150 +1,222 @@
 {
-  "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-05-31T08:56:58Z",
+  "ultima_actualizacion": "2026-06-28T21:30:00Z",
+  "en_juego": false,
   "marcadores": [
     {
       "match_id": 1,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1
     },
     {
       "match_id": 2,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 0
     },
     {
       "match_id": 3,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 1
     },
     {
       "match_id": 4,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 2
     },
     {
       "match_id": 5,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0
     },
     {
       "match_id": 6,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1
     },
     {
       "match_id": 7,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 2
     },
     {
       "match_id": 8,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 0
     },
     {
       "match_id": 9,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 4,
+      "goles_visitante": 0
     },
     {
       "match_id": 10,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 2
     },
     {
       "match_id": 11,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 0
     },
     {
       "match_id": 12,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 1
     },
     {
       "match_id": 13,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1
     },
     {
       "match_id": 14,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 3
     },
     {
       "match_id": 15,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 0
     },
     {
       "match_id": 16,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 0
     },
     {
       "match_id": 17,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1
     },
     {
       "match_id": 18,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0
     },
     {
       "match_id": 19,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 2
     },
     {
       "match_id": 20,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 0
     },
     {
       "match_id": 21,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 1
     },
     {
       "match_id": 22,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1
     },
     {
       "match_id": 23,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1
     },
     {
       "match_id": 24,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 0
     },
     {
       "match_id": 25,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 1
     },
     {
       "match_id": 26,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0
     },
     {
       "match_id": 27,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 2
     },
     {
       "match_id": 28,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 3
     },
     {
       "match_id": 29,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1
     },
     {
       "match_id": 30,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 0
     },
     {
       "match_id": 31,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 4,
+      "goles_visitante": 1
     },
     {
       "match_id": 32,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 2
     },
     {
       "match_id": 33,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 2
     },
     {
       "match_id": 34,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1
     },
     {
       "match_id": 35,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 0
     },
     {
       "match_id": 36,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 1
     },
     {
       "match_id": 37,
@@ -289,24 +361,217 @@
     {
       "match_id": 72,
       "estado": "pendiente"
+    },
+    {
+      "match_id": 73,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 74,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 75,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 76,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 77,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 78,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 79,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 80,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 81,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 82,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 83,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 84,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 85,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 86,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 87,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 88,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 89,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 90,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 91,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 92,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 93,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 94,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 95,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 96,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 97,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 98,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 99,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 100,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 101,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 102,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 103,
+      "estado": "pendiente"
+    },
+    {
+      "match_id": 104,
+      "estado": "pendiente"
     }
   ],
   "clasificados": {
-    "final": [],
-    "semis": [],
-    "1/16": [],
-    "1/4": [],
-    "1/8": []
+    "1/16": [
+      "Mexico",
+      "South Africa",
+      "Germany",
+      "South Korea",
+      "Netherlands",
+      "Morocco",
+      "Brazil",
+      "Japan",
+      "France",
+      "Bosnia-Herzegovina",
+      "Ivory Coast",
+      "Senegal",
+      "England",
+      "Sweden",
+      "USA",
+      "Ecuador",
+      "Belgium",
+      "Saudi Arabia",
+      "Colombia",
+      "Croatia",
+      "Spain",
+      "Algeria",
+      "Canada",
+      "Turkey",
+      "Argentina",
+      "Uruguay",
+      "Portugal",
+      "Paraguay",
+      "Norway",
+      "Egypt",
+      "Scotland",
+      "Qatar"
+    ],
+    "1/8": [
+      "Germany",
+      "Netherlands",
+      "Brazil",
+      "France",
+      "Mexico",
+      "England",
+      "Colombia",
+      "Spain",
+      "USA",
+      "Belgium",
+      "Argentina",
+      "Norway",
+      "Canada",
+      "Portugal"
+    ],
+    "1/4": [
+      "Germany",
+      "Netherlands",
+      "Spain",
+      "Belgium",
+      "Brazil",
+      "England",
+      "Argentina",
+      "Portugal"
+    ],
+    "semis": [
+      "Germany",
+      "Spain",
+      "Brazil",
+      "Argentina"
+    ],
+    "final": [
+      "Spain",
+      "Argentina"
+    ]
   },
   "honor": {
-    "campeon": null,
-    "subcampeon": null,
-    "tercero": null,
-    "cuarto": null
+    "campeon": "Argentina",
+    "subcampeon": "Spain",
+    "tercero": "Germany",
+    "cuarto": "Brazil"
   },
   "premios": {
-    "goleador": null,
-    "mvp": null,
-    "portero": null
+    "goleador": "Lautaro Martinez",
+    "mvp": "Lamine Yamal",
+    "portero": "Emiliano Martinez"
   }
 }
