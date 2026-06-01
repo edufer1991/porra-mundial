@@ -259,7 +259,8 @@ for p in partidos[36:44]:
     preds = []
     for part in AMIGOS:
         nick = part["nickname"]
-        pred = {"signo": random.choice(["1","X","2"]), "goles_local": random.randint(0,3), "goles_visitante": random.randint(0,3)}
+        gl = random.randint(0, 3); gv = random.randint(0, 3)
+        pred = {"signo": signo(gl, gv), "goles_local": gl, "goles_visitante": gv}
         preds.append({"nickname": nick, "prediccion": pred})
     proximos_amigos.append({
         "match_id": p["id"],
@@ -385,7 +386,8 @@ for p in partidos[36:44]:
     preds = []
     for part in TRABAJO:
         nick = part["nickname"]
-        pred = {"signo": random.choice(["1","X","2"]), "goles_local": random.randint(0,3), "goles_visitante": random.randint(0,3)}
+        gl = random.randint(0, 3); gv = random.randint(0, 3)
+        pred = {"signo": signo(gl, gv), "goles_local": gl, "goles_visitante": gv}
         preds.append({"nickname": nick, "prediccion": pred})
     proximos_trabajo.append({
         "match_id": p["id"],

@@ -652,11 +652,9 @@ function renderProximos() {
         const cell = el('div', 'pred-cell');
         const p = pr.prediccion;
         const valStr = p ? `${p.goles_local}-${p.goles_visitante}` : '—';
-        const signStr = p?.signo || '';
         cell.innerHTML = `
           <div class="pred-cell-nick">${escHtml(pr.nickname)}</div>
           <div class="pred-cell-val">${valStr}</div>
-          <div class="pred-cell-sign">${signStr}</div>
         `;
         grid.appendChild(cell);
       });
