@@ -2,6 +2,9 @@ name: Actualizar Porra Mundial 2026
 
 # ── Disparadores ──────────────────────────────────────────────────────────────
 on:
+  push:
+    branches: [main]
+
   schedule:
     # Cada 5 minutos durante el Mundial. GitHub Actions puede retrasarlo
     # hasta ~15 min en hora punta; es aceptable para este uso.
