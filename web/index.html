@@ -27,6 +27,11 @@
     <button class="pw-btn" id="pw-submit">Entrar</button>
     <div class="pw-error" id="pw-error"></div>
   </div>
+  <div class="pw-countdown-wrap" id="pw-countdown-wrap">
+    <div class="pw-countdown-label">Inicio del Mundial</div>
+    <div class="pw-countdown-digits" id="pw-countdown">--d --:--:--</div>
+    <div class="pw-countdown-date">11 jun · 21:00 CEST</div>
+  </div>
 </div>
 
 <!-- ── App ───────────────────────────────────────────────────────────────── -->
@@ -34,6 +39,8 @@
   <!-- Top Bar -->
   <header class="top-bar">
     <div class="top-bar-title">Porra <span>26</span></div>
+    <img id="trabajo-logo" class="trabajo-logo hidden" src="assets/logo-quadpack.png.jpeg" alt="Quadpack">
+    <button class="countdown-toggle hidden" id="countdown-toggle" title="Ver cuenta atrás">⏱</button>
     <div class="live-badge" id="live-badge"><div class="live-dot"></div>En directo</div>
     <button class="salir-btn" id="salir-btn" title="Salir">Salir</button>
   </header>
@@ -46,6 +53,14 @@
     <button class="tab-btn" data-tab="proximos">Próximos</button>
     <button class="tab-btn" data-tab="reglas">Reglas</button>
   </nav>
+
+  <!-- ── Countdown strip ────────────────────────────────────────────────── -->
+  <div id="countdown-bar" class="countdown-bar">
+    <span class="countdown-icon">⏱</span>
+    <span class="countdown-label">Mundial en</span>
+    <strong id="countdown-value" class="countdown-value">--d --:--:--</strong>
+    <button class="countdown-close" id="countdown-close" title="Ocultar">×</button>
+  </div>
 
   <!-- ── View: Clasificación ─────────────────────────────────────────────── -->
   <section class="view active" id="view-clasificacion">

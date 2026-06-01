@@ -9,8 +9,11 @@ const PASSWORDS = {
 };
 
 const DATA_BASE = 'data/';
-const REFRESH_MS = 45_000;   // refresco cada 45 s
-const LIVE_CHECK_MS = 20_000; // comprobación de en-directo cada 20 s
+const REFRESH_MS = 45_000;
+const LIVE_CHECK_MS = 20_000;
+
+const SESSION_KEY = 'porra_session';
+const WC_START    = new Date('2026-06-11T19:00:00Z'); // 11 jun 21:00 CEST
 
 // ── State ────────────────────────────────────────────────────────────────────
 let state = {
@@ -22,9 +25,10 @@ let state = {
   resultados: null,
   selectedNick: null,
   activeTab: 'clasificacion',
-  prevStandings: null,  // para animaciones de posición
+  prevStandings: null,
   refreshTimer: null,
   lastUpdate: null,
+  showAllPending: false,
 };
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
@@ -77,9 +81,13 @@ function tryLogin() {
 
 async function enterApp(porra) {
   state.porra = porra;
+  sessionStorage.setItem(SESSION_KEY, porra);
   $('password-screen').style.display = 'none';
   $('app').style.display = 'flex';
   $('salir-btn').title = `Porra: ${porra}`;
+
+  // Logo: solo visible en porra trabajo
+  $('trabajo-logo').classList.toggle('hidden', porra !== 'trabajo');
 
   await loadAll();
   renderActiveTab();
@@ -90,6 +98,8 @@ async function enterApp(porra) {
 $('salir-btn').addEventListener('click', () => {
   clearRefreshLoop();
   state.porra = null;
+  sessionStorage.removeItem(SESSION_KEY);
+  $('trabajo-logo').classList.add('hidden');
   $('app').style.display = 'none';
   $('password-screen').style.display = 'flex';
   $('pw-input').value = '';
@@ -210,7 +220,8 @@ function renderClasificacion() {
     <div class="standings-header">
       <div class="sh-pos">#</div>
       <div class="sh-nick">Jugador</div>
-      <div class="sh-pts">Pts</div>
+      <div class="sh-pts">Total</div>
+      <div class="sh-grp">Grp</div>
       <div class="sh-elim">Elim</div>
     </div>
   `;
@@ -229,6 +240,7 @@ function renderClasificacion() {
         ${p.empate ? '<span class="nick-empate">=</span>' : ''}
       </div>
       <div class="col-pts">${fmtPts(p.puntos_total)}</div>
+      <div class="col-grp">${fmtPts(p.puntos_grupos)}</div>
       <div class="col-elim">${fmtPts(p.puntos_fase_eliminatoria)}</div>
     `;
     heroEl.appendChild(row);
@@ -264,6 +276,7 @@ $('nick-search').addEventListener('input', function() {
 
 function selectNick(nick) {
   state.selectedNick = nick;
+  state.showAllPending = false;
   document.querySelectorAll('.nick-chip').forEach(c => c.classList.toggle('active', c.textContent === nick));
   renderNickDetail(nick);
 }
@@ -352,9 +365,11 @@ function renderNickDetail(nick) {
   }
 
   if (pendientes.length) {
+    const showAll = state.showAllPending;
+    const visible = showAll ? pendientes : pendientes.slice(0, 8);
     html += `<div class="section-title mt16">Partidos pendientes</div>
     <div class="match-table">`;
-    pendientes.slice(0, 8).forEach(g => {
+    visible.forEach(g => {
       const pStr = g.prediccion ? `${g.prediccion.goles_local}-${g.prediccion.goles_visitante} (${g.prediccion.signo})` : '—';
       html += `<div class="match-row pending">
         <div class="match-row-idx">${g.match_id}</div>
@@ -367,7 +382,12 @@ function renderNickDetail(nick) {
       </div>`;
     });
     if (pendientes.length > 8) {
-      html += `<div class="match-row"><div class="match-row-idx">…</div><div class="match-row-teams" style="color:var(--text3)">+${pendientes.length - 8} más pendientes</div><div></div><div></div></div>`;
+      const more = pendientes.length - 8;
+      html += `<div class="match-row pending-toggle-row" id="pending-toggle">
+        <div class="match-row-idx">${showAll ? '▲' : '▼'}</div>
+        <div class="match-row-teams">${showAll ? 'Mostrar menos' : `Ver ${more} pronósticos más`}</div>
+        <div></div><div></div>
+      </div>`;
     }
     html += '</div>';
   }
@@ -410,8 +430,8 @@ function renderNickDetail(nick) {
     honorRows.forEach(({k, label, pts}) => {
       const pred = ph[k]; const real = rh[k];
       const hit = pred && real && pred.toLowerCase() === real.toLowerCase();
-      html += `<div class="match-row ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
-        <div class="match-row-idx" style="font-size:.7rem">${label}</div>
+      html += `<div class="match-row match-row--honor ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+        <div class="match-row-idx">${label}</div>
         <div class="match-row-teams">
           <div class="match-teams-main">
             Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
@@ -438,8 +458,8 @@ function renderNickDetail(nick) {
     premiosRows.forEach(({k, label, pts}) => {
       const pred = pp[k]; const real = rp[k];
       const hit = pred && real && normalize(pred) === normalize(real);
-      html += `<div class="match-row ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
-        <div class="match-row-idx" style="font-size:.7rem">${label}</div>
+      html += `<div class="match-row match-row--honor ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+        <div class="match-row-idx">${label}</div>
         <div class="match-row-teams">
           <div class="match-teams-main">
             Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
@@ -454,6 +474,15 @@ function renderNickDetail(nick) {
 
   detailEl.className = 'mi-porra-detail show';
   detailEl.innerHTML = html;
+
+  // Pending toggle click handler
+  const toggleRow = detailEl.querySelector('#pending-toggle');
+  if (toggleRow) {
+    toggleRow.addEventListener('click', () => {
+      state.showAllPending = !state.showAllPending;
+      renderNickDetail(state.selectedNick);
+    });
+  }
 }
 
 function normalize(s) {
@@ -647,3 +676,50 @@ function escHtml(s) {
     .replace(/"/g,'&quot;')
     .replace(/'/g,'&#39;');
 }
+
+// ── Cuenta atrás ──────────────────────────────────────────────────────────────
+function updateCountdown() {
+  const diff = WC_START - Date.now();
+  const pwEl  = $('pw-countdown');
+  const appEl = $('countdown-value');
+  const wrap  = $('pw-countdown-wrap');
+  const bar   = $('countdown-bar');
+  const tog   = $('countdown-toggle');
+
+  if (diff <= 0) {
+    wrap?.classList.add('hidden');
+    if (!bar?.classList.contains('hidden')) bar?.classList.add('hidden');
+    tog?.classList.add('hidden');
+    return;
+  }
+
+  const d = Math.floor(diff / 86400000);
+  const h = Math.floor((diff % 86400000) / 3600000);
+  const m = Math.floor((diff % 3600000)  / 60000);
+  const s = Math.floor((diff % 60000)    / 1000);
+  const str = `${d}d ${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;
+
+  if (pwEl)  pwEl.textContent  = str;
+  if (appEl) appEl.textContent = str;
+}
+
+setInterval(updateCountdown, 1000);
+updateCountdown();
+
+// Countdown strip toggle
+$('countdown-close').addEventListener('click', () => {
+  $('countdown-bar').classList.add('hidden');
+  $('countdown-toggle').classList.remove('hidden');
+});
+$('countdown-toggle').addEventListener('click', () => {
+  $('countdown-bar').classList.remove('hidden');
+  $('countdown-toggle').classList.add('hidden');
+});
+
+// ── Restaurar sesión al recargar ──────────────────────────────────────────────
+(function restoreSession() {
+  const saved = sessionStorage.getItem(SESSION_KEY);
+  if (saved && PASSWORDS[saved]) {
+    enterApp(saved);
+  }
+})();
