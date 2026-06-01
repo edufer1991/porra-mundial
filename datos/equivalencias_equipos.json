@@ -1,0 +1,64 @@
+{
+  "nota": "Mapa de nombres entre el Excel en español y las fuentes de datos en inglés. nombre_excel = nombre canónico en el Excel del participante; nombre_openfootball = nombre en el JSON de openfootball; nombre_api_football = nombre en API-Football (puede diferir); aliases_es = variantes ortográficas habituales en español.",
+  "selecciones": [
+    {"grupo": "A", "nombre_excel": "México",                           "nombre_openfootball": "Mexico",               "nombre_api_football": "Mexico",                        "aliases_es": ["Mexico", "MX"]},
+    {"grupo": "A", "nombre_excel": "Sudáfrica",                        "nombre_openfootball": "South Africa",         "nombre_api_football": "South Africa",                  "aliases_es": ["Sud Africa", "South Africa", "RSA"]},
+    {"grupo": "A", "nombre_excel": "Corea del Sur",                    "nombre_openfootball": "South Korea",          "nombre_api_football": "South Korea",                   "aliases_es": ["Korea", "Corea", "Korea del Sur", "KOR"]},
+    {"grupo": "A", "nombre_excel": "República Checa",                  "nombre_openfootball": "Czech Republic",       "nombre_api_football": "Czech Republic",                "aliases_es": ["Chequia", "Rep. Checa", "Czech Republic", "CZE"]},
+
+    {"grupo": "B", "nombre_excel": "Canadá",                           "nombre_openfootball": "Canada",               "nombre_api_football": "Canada",                        "aliases_es": ["Canada", "CAN"]},
+    {"grupo": "B", "nombre_excel": "Bosnia y Herzegovina",             "nombre_openfootball": "Bosnia-Herzegovina",   "nombre_api_football": "Bosnia-Herzegovina",            "aliases_es": ["Bosnia & Herzegovina", "Bosnia", "BIH"]},
+    {"grupo": "B", "nombre_excel": "Catar",                            "nombre_openfootball": "Qatar",                "nombre_api_football": "Qatar",                         "aliases_es": ["Qatar", "QAT"]},
+    {"grupo": "B", "nombre_excel": "Suiza",                            "nombre_openfootball": "Switzerland",          "nombre_api_football": "Switzerland",                   "aliases_es": ["Switzerland", "SUI"]},
+
+    {"grupo": "C", "nombre_excel": "Brasil",                           "nombre_openfootball": "Brazil",               "nombre_api_football": "Brazil",                        "aliases_es": ["Brazil", "BRA"]},
+    {"grupo": "C", "nombre_excel": "Marruecos",                        "nombre_openfootball": "Morocco",              "nombre_api_football": "Morocco",                       "aliases_es": ["Morocco", "MAR"]},
+    {"grupo": "C", "nombre_excel": "Haití",                            "nombre_openfootball": "Haiti",                "nombre_api_football": "Haiti",                         "aliases_es": ["Haiti", "HAI"]},
+    {"grupo": "C", "nombre_excel": "Escocia",                          "nombre_openfootball": "Scotland",             "nombre_api_football": "Scotland",                      "aliases_es": ["Scotland", "SCO"]},
+
+    {"grupo": "D", "nombre_excel": "Estados Unidos",                   "nombre_openfootball": "USA",                  "nombre_api_football": "United States",                 "aliases_es": ["EEUU", "EE.UU.", "USA", "US", "United States"]},
+    {"grupo": "D", "nombre_excel": "Paraguay",                         "nombre_openfootball": "Paraguay",             "nombre_api_football": "Paraguay",                      "aliases_es": ["PAR"]},
+    {"grupo": "D", "nombre_excel": "Australia",                        "nombre_openfootball": "Australia",            "nombre_api_football": "Australia",                     "aliases_es": ["AUS"]},
+    {"grupo": "D", "nombre_excel": "Turquía",                          "nombre_openfootball": "Turkey",               "nombre_api_football": "Turkey",                        "aliases_es": ["Turquia", "Turkey", "TUR"]},
+
+    {"grupo": "E", "nombre_excel": "Alemania",                         "nombre_openfootball": "Germany",              "nombre_api_football": "Germany",                       "aliases_es": ["Germany", "GER"]},
+    {"grupo": "E", "nombre_excel": "Curazao",                          "nombre_openfootball": "Curacao",              "nombre_api_football": "Curacao",                       "aliases_es": ["Curaçao", "CUW"]},
+    {"grupo": "E", "nombre_excel": "Costa de Marfil",                  "nombre_openfootball": "Ivory Coast",          "nombre_api_football": "Ivory Coast",                   "aliases_es": ["Côte d'Ivoire", "Cote d'Ivoire", "CIV"]},
+    {"grupo": "E", "nombre_excel": "Ecuador",                          "nombre_openfootball": "Ecuador",              "nombre_api_football": "Ecuador",                       "aliases_es": ["ECU"]},
+
+    {"grupo": "F", "nombre_excel": "Países Bajos",                     "nombre_openfootball": "Netherlands",          "nombre_api_football": "Netherlands",                   "aliases_es": ["Holanda", "Holland", "Netherlands", "NED"]},
+    {"grupo": "F", "nombre_excel": "Japón",                            "nombre_openfootball": "Japan",                "nombre_api_football": "Japan",                         "aliases_es": ["Japan", "JPN"]},
+    {"grupo": "F", "nombre_excel": "Suecia",                           "nombre_openfootball": "Sweden",               "nombre_api_football": "Sweden",                        "aliases_es": ["Sweden", "SWE"]},
+    {"grupo": "F", "nombre_excel": "Túnez",                            "nombre_openfootball": "Tunisia",              "nombre_api_football": "Tunisia",                       "aliases_es": ["Tunez", "Tunisia", "TUN"]},
+
+    {"grupo": "G", "nombre_excel": "Bélgica",                          "nombre_openfootball": "Belgium",              "nombre_api_football": "Belgium",                       "aliases_es": ["Belgica", "Belgium", "BEL"]},
+    {"grupo": "G", "nombre_excel": "Egipto",                           "nombre_openfootball": "Egypt",                "nombre_api_football": "Egypt",                         "aliases_es": ["Egypt", "EGY"]},
+    {"grupo": "G", "nombre_excel": "Irán",                             "nombre_openfootball": "Iran",                 "nombre_api_football": "Iran",                          "aliases_es": ["Iran", "IRI"]},
+    {"grupo": "G", "nombre_excel": "Nueva Zelanda",                    "nombre_openfootball": "New Zealand",          "nombre_api_football": "New Zealand",                   "aliases_es": ["Nueva Zelandia", "New Zealand", "NZL"]},
+
+    {"grupo": "H", "nombre_excel": "España",                           "nombre_openfootball": "Spain",                "nombre_api_football": "Spain",                         "aliases_es": ["Spain", "ESP"]},
+    {"grupo": "H", "nombre_excel": "Cabo Verde",                       "nombre_openfootball": "Cape Verde",           "nombre_api_football": "Cape Verde",                    "aliases_es": ["Cape Verde", "CPV"]},
+    {"grupo": "H", "nombre_excel": "Arabia Saudita",                     "nombre_openfootball": "Saudi Arabia",         "nombre_api_football": "Saudi Arabia",                  "aliases_es": ["Arabia Saudi", "Arabia Saudita", "KSA", "SAU"]},
+    {"grupo": "H", "nombre_excel": "Uruguay",                          "nombre_openfootball": "Uruguay",              "nombre_api_football": "Uruguay",                       "aliases_es": ["URU"]},
+
+    {"grupo": "I", "nombre_excel": "Francia",                          "nombre_openfootball": "France",               "nombre_api_football": "France",                        "aliases_es": ["France", "FRA"]},
+    {"grupo": "I", "nombre_excel": "Senegal",                          "nombre_openfootball": "Senegal",              "nombre_api_football": "Senegal",                       "aliases_es": ["SEN"]},
+    {"grupo": "I", "nombre_excel": "Irak",                             "nombre_openfootball": "Iraq",                 "nombre_api_football": "Iraq",                          "aliases_es": ["Iraq", "IRQ"]},
+    {"grupo": "I", "nombre_excel": "Noruega",                          "nombre_openfootball": "Norway",               "nombre_api_football": "Norway",                        "aliases_es": ["Norway", "NOR"]},
+
+    {"grupo": "J", "nombre_excel": "Argentina",                        "nombre_openfootball": "Argentina",            "nombre_api_football": "Argentina",                     "aliases_es": ["ARG"]},
+    {"grupo": "J", "nombre_excel": "Argelia",                          "nombre_openfootball": "Algeria",              "nombre_api_football": "Algeria",                       "aliases_es": ["Algeria", "ALG"]},
+    {"grupo": "J", "nombre_excel": "Austria",                          "nombre_openfootball": "Austria",              "nombre_api_football": "Austria",                       "aliases_es": ["AUT"]},
+    {"grupo": "J", "nombre_excel": "Jordania",                         "nombre_openfootball": "Jordan",               "nombre_api_football": "Jordan",                        "aliases_es": ["Jordan", "JOR"]},
+
+    {"grupo": "K", "nombre_excel": "Portugal",                         "nombre_openfootball": "Portugal",             "nombre_api_football": "Portugal",                      "aliases_es": ["POR"]},
+    {"grupo": "K", "nombre_excel": "RD Congo",              "nombre_openfootball": "DR Congo",             "nombre_api_football": "Congo DR",                      "aliases_es": ["RD Congo", "DR Congo", "Congo Democrático", "COD"]},
+    {"grupo": "K", "nombre_excel": "Uzbekistán",                       "nombre_openfootball": "Uzbekistan",           "nombre_api_football": "Uzbekistan",                    "aliases_es": ["Uzbekistan", "UZB"]},
+    {"grupo": "K", "nombre_excel": "Colombia",                         "nombre_openfootball": "Colombia",             "nombre_api_football": "Colombia",                      "aliases_es": ["COL"]},
+
+    {"grupo": "L", "nombre_excel": "Inglaterra",                       "nombre_openfootball": "England",              "nombre_api_football": "England",                       "aliases_es": ["England", "ENG"]},
+    {"grupo": "L", "nombre_excel": "Croacia",                          "nombre_openfootball": "Croatia",              "nombre_api_football": "Croatia",                       "aliases_es": ["Croatia", "CRO"]},
+    {"grupo": "L", "nombre_excel": "Ghana",                            "nombre_openfootball": "Ghana",                "nombre_api_football": "Ghana",                         "aliases_es": ["GHA"]},
+    {"grupo": "L", "nombre_excel": "Panamá",                           "nombre_openfootball": "Panama",               "nombre_api_football": "Panama",                        "aliases_es": ["Panama", "PAN"]}
+  ]
+}

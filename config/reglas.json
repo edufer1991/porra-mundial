@@ -1,0 +1,45 @@
+{
+  "version": "1.0",
+  "descripcion": "Reglas de puntuación de la Porra Mundial 2026. Editar este fichero ajusta el motor sin tocar código.",
+
+  "grupos": {
+    "acierto_signo": 3,
+    "bono_goles_local": 1,
+    "bono_goles_visitante": 1,
+    "_doc": "Por partido de grupos: +3 si el signo (1/X/2) coincide; + (goles_local_reales + bono_goles_local) si aciertas los goles del local; + (goles_visitante_reales + bono_goles_visitante) si aciertas los del visitante. Conceptos independientes."
+  },
+
+  "eliminatorias": {
+    "acumulativo": true,
+    "puntos_por_ronda": {
+      "1/16": 5,
+      "1/8":  10,
+      "1/4":  15,
+      "semis": 20,
+      "final": 30
+    },
+    "_doc": "Acumulativo CONFIRMADO. Por cada selección del pronóstico que aparece en la lista real de clasificados a una ronda, se suman los puntos de esa ronda. Una selección que llega a la final puntúa en las 5 rondas: 5+10+15+20+30 = 80 pts."
+  },
+
+  "honor": {
+    "campeon":    50,
+    "subcampeon": 40,
+    "tercero":    30,
+    "cuarto":     20
+  },
+
+  "premios": {
+    "goleador": 25,
+    "mvp":      25,
+    "portero":  20,
+    "_doc": "Comparación con normalización (sin tildes ni mayúsculas) + tabla de alias en alias_jugadores.json (opcional). No-coincidencias se devuelven en advertencias_premios para revisión manual."
+  },
+
+  "desempate_clasificacion": {
+    "criterio": "puntos_fase_eliminatoria",
+    "incluye": ["eliminatorias", "honor"],
+    "excluye": ["grupos", "premios"],
+    "si_persiste": "reparto",
+    "_doc": "A igualdad de puntos_total, gana quien tenga más puntos en la fase eliminatoria (rondas + honor). Si persiste el empate, los empatados comparten posición y reparten el premio proporcionalmente."
+  }
+}

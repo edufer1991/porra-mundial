@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Porra Mundial 2026</title>
+  <meta name="description" content="Panel de clasificación — Porra del Mundial 2026">
+  <meta name="theme-color" content="#0f1218">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── Password Screen ───────────────────────────────────────────────────── -->
+<div id="password-screen">
+  <div class="pw-ball">⚽</div>
+  <div class="pw-logo">Porra <span>Mundial</span></div>
+  <div class="pw-subtitle">2026 · FIFA World Cup</div>
+  <div class="pw-card">
+    <div class="pw-label">Contraseña</div>
+    <div class="pw-input-wrap">
+      <input id="pw-input" class="pw-input" type="password" placeholder="••••••••"
+             autocomplete="current-password" autofocus>
+      <span class="pw-eye" id="pw-toggle">👁</span>
+    </div>
+    <button class="pw-btn" id="pw-submit">Entrar</button>
+    <div class="pw-error" id="pw-error"></div>
+  </div>
+</div>
+
+<!-- ── App ───────────────────────────────────────────────────────────────── -->
+<div id="app">
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <div class="top-bar-title">Porra <span>26</span></div>
+    <div class="live-badge" id="live-badge"><div class="live-dot"></div>En directo</div>
+    <button class="salir-btn" id="salir-btn" title="Salir">Salir</button>
+  </header>
+
+  <!-- Tab Bar -->
+  <nav class="tab-bar" id="tab-bar">
+    <button class="tab-btn active" data-tab="clasificacion">Clasificación</button>
+    <button class="tab-btn" data-tab="mi-porra">Mi Porra</button>
+    <button class="tab-btn" data-tab="evolucion">Evolución</button>
+    <button class="tab-btn" data-tab="proximos">Próximos</button>
+    <button class="tab-btn" data-tab="reglas">Reglas</button>
+  </nav>
+
+  <!-- ── View: Clasificación ─────────────────────────────────────────────── -->
+  <section class="view active" id="view-clasificacion">
+    <div id="standings-container"></div>
+  </section>
+
+  <!-- ── View: Mi Porra ──────────────────────────────────────────────────── -->
+  <section class="view" id="view-mi-porra">
+    <div class="section-title">Busca tu nickname</div>
+    <div class="search-wrap">
+      <input id="nick-search" class="search-input" type="text" placeholder="Escribe tu nickname…">
+      <span class="search-icon">🔍</span>
+    </div>
+    <div id="nick-chips" class="nick-select"></div>
+    <div id="mi-porra-detail" class="mi-porra-detail"></div>
+  </section>
+
+  <!-- ── View: Evolución ─────────────────────────────────────────────────── -->
+  <section class="view" id="view-evolucion">
+    <div class="section-title">Evolución de posiciones</div>
+    <div class="chart-container">
+      <svg id="pos-chart" class="chart-svg" viewBox="0 0 440 240" preserveAspectRatio="xMidYMid meet"></svg>
+      <div id="pos-legend" class="chart-legend"></div>
+    </div>
+    <div class="pts-chart-container mt16">
+      <div class="pts-chart-title">Puntos acumulados</div>
+      <svg id="pts-chart" class="chart-svg" viewBox="0 0 440 200" preserveAspectRatio="xMidYMid meet"></svg>
+    </div>
+  </section>
+
+  <!-- ── View: Próximos ──────────────────────────────────────────────────── -->
+  <section class="view" id="view-proximos">
+    <div class="section-title">Próximos partidos</div>
+    <div id="proximos-container"></div>
+  </section>
+
+  <!-- ── View: Reglas ────────────────────────────────────────────────────── -->
+  <section class="view" id="view-reglas">
+    <div class="section-title">Sistema de puntuación</div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">⚽ Fase de Grupos <small style="font-size:.7rem;font-weight:400;opacity:.6">(72 partidos)</small></div>
+      <table class="reglas-table">
+        <tr><td>Signo correcto (1 / X / 2)</td><td>+3 pts</td></tr>
+        <tr><td>Goles del local exactos</td><td>+goles_local + 1</td></tr>
+        <tr><td>Goles del visitante exactos</td><td>+goles_visit + 1</td></tr>
+      </table>
+      <div class="reglas-note">
+        Los tres conceptos son <strong>independientes</strong>. Ejemplo: pronóstico 1|1-2, resultado 1-2 →
+        signo ✓ (+3) + local ✓ (+1+1=2) + visitante ✓ (+2+1=3) = <strong>8 pts</strong>.
+      </div>
+    </div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">🏆 Eliminatorias <small style="font-size:.7rem;font-weight:400;opacity:.6">(acumulativo)</small></div>
+      <table class="reglas-table">
+        <tr><td>Clasificado a 1/16 (R32)</td><td>+5 pts</td></tr>
+        <tr><td>Clasificado a 1/8 (R16)</td><td>+10 pts</td></tr>
+        <tr><td>Clasificado a 1/4</td><td>+15 pts</td></tr>
+        <tr><td>Clasificado a Semis</td><td>+20 pts</td></tr>
+        <tr><td>Clasificado a Final</td><td>+30 pts</td></tr>
+      </table>
+      <div class="reglas-note">
+        Puntos por cada selección que pronosticaste <strong>en esa ronda</strong> y realmente llegó a ella.
+        Un finalista que acertaste puntúa en <strong>todas</strong> las rondas: 5+10+15+20+30 = <strong>80 pts</strong>.
+      </div>
+    </div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">🥇 Posiciones de Honor</div>
+      <table class="reglas-table">
+        <tr><td>Campeón</td><td>+50 pts</td></tr>
+        <tr><td>Subcampeón</td><td>+40 pts</td></tr>
+        <tr><td>3.º Puesto</td><td>+30 pts</td></tr>
+        <tr><td>4.º Puesto</td><td>+20 pts</td></tr>
+      </table>
+    </div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">🌟 Premios Individuales</div>
+      <table class="reglas-table">
+        <tr><td>Máximo goleador</td><td>+25 pts</td></tr>
+        <tr><td>MVP (Balón de Oro)</td><td>+25 pts</td></tr>
+        <tr><td>Portero menos goleado</td><td>+20 pts</td></tr>
+      </table>
+    </div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">⚖️ Desempate</div>
+      <div class="reglas-note">
+        En caso de empate en puntos totales, se desempata por <strong>puntos de fase eliminatoria</strong>
+        (eliminatorias + honor, sin contar grupos ni premios individuales).
+        Si el empate persiste → <strong>reparto</strong> (misma posición).<br><br>
+        La <strong>sub-clasificación de fase previa</strong> (solo grupos) decide el premio especial al 1.º de grupos.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Refresh bar ──────────────────────────────────────────────────────── -->
+  <div class="refresh-bar" id="refresh-bar">
+    <div class="refresh-status">
+      <div class="refresh-dot" id="refresh-dot"></div>
+      <span id="refresh-label">Actualizado ahora</span>
+    </div>
+    <span id="refresh-time"></span>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

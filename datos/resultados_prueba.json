@@ -1,0 +1,41 @@
+{
+  "_descripcion": "Resultados simulados para los tests y el cálculo de ejemplo de la Fase 2.",
+  "ultima_actualizacion": "2026-07-19T22:00:00Z",
+  "marcadores": [
+    {"match_id":  1, "estado": "finalizado", "goles_local": 1, "goles_visitante": 2},
+    {"match_id":  2, "estado": "finalizado", "goles_local": 0, "goles_visitante": 0},
+    {"match_id": 25, "estado": "finalizado", "goles_local": 3, "goles_visitante": 1},
+    {"match_id": 26, "estado": "finalizado", "goles_local": 2, "goles_visitante": 1},
+    {"match_id": 49, "estado": "pendiente"},
+    {"match_id": 50, "estado": "finalizado", "goles_local": 1, "goles_visitante": 0}
+  ],
+  "clasificados": {
+    "1/16":  ["Mexico", "South Africa", "Czech Republic", "South Korea",
+              "Spain", "France", "Argentina", "Brazil",
+              "Germany", "Netherlands", "England", "Portugal",
+              "USA", "Belgium", "Croatia", "Uruguay",
+              "Switzerland", "Morocco", "Japan", "Senegal",
+              "Norway", "Australia", "Colombia", "Ghana",
+              "Ecuador", "Saudi Arabia", "Iran", "Iraq",
+              "Algeria", "Ivory Coast", "Egypt", "Sweden"],
+    "1/8":   ["Spain", "France", "Argentina", "Brazil",
+              "Germany", "Netherlands", "England", "Portugal",
+              "USA", "Belgium", "Croatia", "Uruguay",
+              "Switzerland", "Morocco", "Japan", "Senegal"],
+    "1/4":   ["Spain", "France", "Argentina", "Brazil",
+              "Germany", "Netherlands", "England", "Portugal"],
+    "semis": ["Spain", "France", "Argentina", "Brazil"],
+    "final": ["Spain", "France"]
+  },
+  "honor": {
+    "campeon":    "Spain",
+    "subcampeon": "France",
+    "tercero":    "Argentina",
+    "cuarto":     "Brazil"
+  },
+  "premios": {
+    "goleador": "Kylian Mbappe",
+    "mvp":      "Lamine Yamal",
+    "portero":  "Unai Simon"
+  }
+}

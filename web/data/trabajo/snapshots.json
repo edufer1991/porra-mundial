@@ -1,0 +1,223 @@
+{
+  "porra": "trabajo",
+  "nicknames": [
+    "Txema_Boss",
+    "AnalisisProfundo",
+    "Proba_Stats",
+    "Aleatoria99",
+    "Iker_Jr",
+    "PorriPorri"
+  ],
+  "snapshots": [
+    {
+      "fecha": "2026-06-14T22:00:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 50
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 2,
+          "puntos_total": 42
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 3,
+          "puntos_total": 35
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 20
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 5,
+          "puntos_total": 18
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 12
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-19T22:00:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 65
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 2,
+          "puntos_total": 55
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 3,
+          "puntos_total": 44
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 31
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 5,
+          "puntos_total": 29
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 18
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-24T22:00:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 195
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 2,
+          "puntos_total": 174
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 3,
+          "puntos_total": 165
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 111
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 5,
+          "puntos_total": 109
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 68
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-29T22:00:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 315
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 2,
+          "puntos_total": 284
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 3,
+          "puntos_total": 265
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 171
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 5,
+          "puntos_total": 169
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 88
+        }
+      ]
+    },
+    {
+      "fecha": "2026-07-05T22:00:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 415
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 2,
+          "puntos_total": 374
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 3,
+          "puntos_total": 305
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 201
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 4,
+          "puntos_total": 201
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 108
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-28T21:30:00Z",
+      "clasificacion": [
+        {
+          "nickname": "Txema_Boss",
+          "posicion": 1,
+          "puntos_total": 570
+        },
+        {
+          "nickname": "AnalisisProfundo",
+          "posicion": 2,
+          "puntos_total": 489
+        },
+        {
+          "nickname": "Proba_Stats",
+          "posicion": 3,
+          "puntos_total": 385
+        },
+        {
+          "nickname": "Aleatoria99",
+          "posicion": 4,
+          "puntos_total": 211
+        },
+        {
+          "nickname": "Iker_Jr",
+          "posicion": 4,
+          "puntos_total": 211
+        },
+        {
+          "nickname": "PorriPorri",
+          "posicion": 6,
+          "puntos_total": 118
+        }
+      ]
+    }
+  ]
+}

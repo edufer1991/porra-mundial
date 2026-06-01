@@ -1,0 +1,649 @@
+/* ── Porra Mundial 2026 — app.js ─────────────────────────────────────────── */
+'use strict';
+
+// ── Config ───────────────────────────────────────────────────────────────────
+// Cambiar estas contraseñas antes de publicar.
+const PASSWORDS = {
+  amigos:  'maristada',
+  trabajo: 'cosmeticallyyours',
+};
+
+const DATA_BASE = 'data/';
+const REFRESH_MS = 45_000;   // refresco cada 45 s
+const LIVE_CHECK_MS = 20_000; // comprobación de en-directo cada 20 s
+
+// ── State ────────────────────────────────────────────────────────────────────
+let state = {
+  porra: null,
+  standings: null,
+  detalle: null,
+  proximos: null,
+  snapshots: null,
+  resultados: null,
+  selectedNick: null,
+  activeTab: 'clasificacion',
+  prevStandings: null,  // para animaciones de posición
+  refreshTimer: null,
+  lastUpdate: null,
+};
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+const el = (tag, cls, html) => {
+  const e = document.createElement(tag);
+  if (cls) e.className = cls;
+  if (html !== undefined) e.innerHTML = html;
+  return e;
+};
+
+function fmtDate(iso) {
+  if (!iso) return '';
+  const d = new Date(iso);
+  return d.toLocaleDateString('es-ES', { weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit', timeZone:'Europe/Madrid' });
+}
+function fmtTime(iso) {
+  if (!iso) return '';
+  return new Date(iso).toLocaleTimeString('es-ES', { hour:'2-digit', minute:'2-digit', timeZone:'Europe/Madrid' });
+}
+function fmtPts(n) { return n === null || n === undefined ? '—' : String(n); }
+
+// Paleta de colores para gráficos (por índice)
+const PALETTE = ['#c9921a','#5b9cf6','#4ade80','#fb923c','#a78bfa','#38bdf8','#f472b6','#facc15'];
+
+function nickColor(idx) { return PALETTE[idx % PALETTE.length]; }
+
+// ── Password Screen ───────────────────────────────────────────────────────────
+$('pw-toggle').addEventListener('click', () => {
+  const inp = $('pw-input');
+  inp.type = inp.type === 'password' ? 'text' : 'password';
+});
+
+$('pw-input').addEventListener('keydown', e => { if (e.key === 'Enter') tryLogin(); });
+$('pw-submit').addEventListener('click', tryLogin);
+
+function tryLogin() {
+  const pw = $('pw-input').value.trim();
+  // Detecta la porra por la contraseña introducida
+  const porra = Object.entries(PASSWORDS).find(([, secret]) => pw === secret)?.[0];
+  if (!porra) {
+    $('pw-error').textContent = 'Contraseña incorrecta';
+    $('pw-input').value = '';
+    $('pw-input').focus();
+    return;
+  }
+  $('pw-error').textContent = '';
+  enterApp(porra);
+}
+
+async function enterApp(porra) {
+  state.porra = porra;
+  $('password-screen').style.display = 'none';
+  $('app').style.display = 'flex';
+  $('salir-btn').title = `Porra: ${porra}`;
+
+  await loadAll();
+  renderActiveTab();
+  startRefreshLoop();
+  startLiveCheck();
+}
+
+$('salir-btn').addEventListener('click', () => {
+  clearRefreshLoop();
+  state.porra = null;
+  $('app').style.display = 'none';
+  $('password-screen').style.display = 'flex';
+  $('pw-input').value = '';
+  $('pw-error').textContent = '';
+  $('pw-input').focus();
+});
+
+// ── Data Loading ─────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  try {
+    const r = await fetch(url + '?_=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch(e) {
+    console.warn('fetch failed:', url, e);
+    return null;
+  }
+}
+
+async function loadAll() {
+  const p = state.porra;
+  const [standings, detalle, proximos, snapshots, resultados] = await Promise.all([
+    fetchJSON(`${DATA_BASE}${p}/standings.json`),
+    fetchJSON(`${DATA_BASE}${p}/detalle.json`),
+    fetchJSON(`${DATA_BASE}${p}/proximos.json`),
+    fetchJSON(`${DATA_BASE}${p}/snapshots.json`),
+    fetchJSON(`${DATA_BASE}resultados.json`),
+  ]);
+  state.prevStandings = state.standings;
+  state.standings  = standings;
+  state.detalle    = detalle;
+  state.proximos   = proximos;
+  state.snapshots  = snapshots;
+  state.resultados = resultados;
+  state.lastUpdate = new Date();
+  updateRefreshBar();
+  checkLive();
+}
+
+// ── Refresh Loop ──────────────────────────────────────────────────────────────
+function startRefreshLoop() {
+  clearRefreshLoop();
+  state.refreshTimer = setInterval(async () => {
+    await loadAll();
+    renderActiveTab();
+  }, REFRESH_MS);
+}
+function clearRefreshLoop() {
+  if (state.refreshTimer) { clearInterval(state.refreshTimer); state.refreshTimer = null; }
+}
+
+// ── Live Check ────────────────────────────────────────────────────────────────
+function startLiveCheck() {
+  setInterval(checkLive, LIVE_CHECK_MS);
+}
+function checkLive() {
+  if (!state.resultados) return;
+  const live = state.resultados.marcadores?.some(m => m.estado === 'en_juego');
+  $('live-badge').classList.toggle('show', !!live);
+}
+
+// ── Refresh Bar ────────────────────────────────────────────────────────────────
+function updateRefreshBar() {
+  if (!state.lastUpdate) return;
+  const d = state.lastUpdate;
+  $('refresh-time').textContent = d.toLocaleTimeString('es-ES', { hour:'2-digit', minute:'2-digit' });
+  $('refresh-label').textContent = 'Actualizado';
+  $('refresh-dot').classList.remove('stale');
+}
+
+// ── Tab Navigation ────────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+    btn.classList.add('active');
+    const tab = btn.dataset.tab;
+    $(`view-${tab}`)?.classList.add('active');
+    state.activeTab = tab;
+    renderActiveTab();
+  });
+});
+
+function renderActiveTab() {
+  switch (state.activeTab) {
+    case 'clasificacion': renderClasificacion(); break;
+    case 'mi-porra':      renderMiPorra();       break;
+    case 'evolucion':     renderEvolucion();     break;
+    case 'proximos':      renderProximos();      break;
+    // 'reglas' is static HTML
+  }
+}
+
+// ── CLASIFICACIÓN ─────────────────────────────────────────────────────────────
+const MEDALS = { 1:'🥇', 2:'🥈', 3:'🥉' };
+
+function posArrow(nick, prev) {
+  if (!prev) return '<span class="pos-arrow same">—</span>';
+  const prevPos = prev.find(p => p.nickname === nick)?.posicion;
+  if (prevPos == null) return '<span class="pos-arrow same">—</span>';
+  const curr = state.standings?.clasificacion?.find(p => p.nickname === nick)?.posicion;
+  if (curr < prevPos) return '<span class="pos-arrow up">▲</span>';
+  if (curr > prevPos) return '<span class="pos-arrow down">▼</span>';
+  return '<span class="pos-arrow same">—</span>';
+}
+
+function renderClasificacion() {
+  const container = $('standings-container');
+  if (!state.standings) {
+    container.innerHTML = '<div class="empty-state"><div class="icon">📊</div>Cargando clasificación…</div>';
+    return;
+  }
+  const clas = state.standings.clasificacion || [];
+  const prev = state.prevStandings?.clasificacion;
+
+  const heroEl = el('div', 'standings-hero');
+  heroEl.innerHTML = `
+    <div class="standings-header">
+      <div class="sh-pos">#</div>
+      <div class="sh-nick">Jugador</div>
+      <div class="sh-pts">Pts</div>
+      <div class="sh-elim">Elim</div>
+    </div>
+  `;
+
+  clas.forEach(p => {
+    const row = el('div', `standings-row${p.posicion === 1 ? ' top-row' : ''}`);
+    const medal = MEDALS[p.posicion] || '';
+    const arrow = posArrow(p.nickname, prev);
+    row.innerHTML = `
+      <div class="col-pos">
+        <span class="pos-num">${medal || p.posicion}</span>
+        ${arrow}
+      </div>
+      <div class="col-nick">
+        ${escHtml(p.nickname)}
+        ${p.empate ? '<span class="nick-empate">=</span>' : ''}
+      </div>
+      <div class="col-pts">${fmtPts(p.puntos_total)}</div>
+      <div class="col-elim">${fmtPts(p.puntos_fase_eliminatoria)}</div>
+    `;
+    heroEl.appendChild(row);
+  });
+  container.innerHTML = '';
+  container.appendChild(heroEl);
+}
+
+// ── MI PORRA ──────────────────────────────────────────────────────────────────
+function renderMiPorra() {
+  if (!state.standings) return;
+  const clas = state.standings.clasificacion || [];
+
+  // Chips
+  const chipsEl = $('nick-chips');
+  chipsEl.innerHTML = '';
+  clas.forEach(p => {
+    const chip = el('button', `nick-chip${state.selectedNick === p.nickname ? ' active' : ''}`);
+    chip.textContent = p.nickname;
+    chip.addEventListener('click', () => selectNick(p.nickname));
+    chipsEl.appendChild(chip);
+  });
+
+  if (state.selectedNick) renderNickDetail(state.selectedNick);
+}
+
+$('nick-search').addEventListener('input', function() {
+  const q = this.value.toLowerCase();
+  document.querySelectorAll('.nick-chip').forEach(c => {
+    c.style.display = c.textContent.toLowerCase().includes(q) ? '' : 'none';
+  });
+});
+
+function selectNick(nick) {
+  state.selectedNick = nick;
+  document.querySelectorAll('.nick-chip').forEach(c => c.classList.toggle('active', c.textContent === nick));
+  renderNickDetail(nick);
+}
+
+function renderNickDetail(nick) {
+  const detailEl = $('mi-porra-detail');
+  const standingP = state.standings?.clasificacion?.find(p => p.nickname === nick);
+  const detalleP  = state.detalle?.[nick];
+
+  if (!standingP) {
+    detailEl.className = 'mi-porra-detail show';
+    detailEl.innerHTML = '<div class="empty-state"><div class="icon">🔍</div>Nickname no encontrado</div>';
+    return;
+  }
+
+  let html = `
+    <!-- Resumen de puntos -->
+    <div class="score-breakdown">
+      <div class="score-card total">
+        <div class="score-card-label">Total</div>
+        <div class="score-card-pts">${fmtPts(standingP.puntos_total)}</div>
+        <div class="score-card-sub">Posición ${standingP.posicion}${standingP.empate ? ' (empate)' : ''}</div>
+      </div>
+      <div class="score-card">
+        <div class="score-card-label">Grupos</div>
+        <div class="score-card-pts">${fmtPts(standingP.puntos_grupos)}</div>
+      </div>
+      <div class="score-card">
+        <div class="score-card-label">Eliminatorias</div>
+        <div class="score-card-pts">${fmtPts(standingP.puntos_eliminatorias)}</div>
+      </div>
+      <div class="score-card">
+        <div class="score-card-label">Honor</div>
+        <div class="score-card-pts">${fmtPts(standingP.puntos_honor)}</div>
+      </div>
+      <div class="score-card">
+        <div class="score-card-label">Premios</div>
+        <div class="score-card-pts">${fmtPts(standingP.puntos_premios)}</div>
+      </div>
+    </div>
+  `;
+
+  // Advertencias de premios
+  if (standingP.advertencias_premios?.length) {
+    html += `<div class="advertencias mb16">
+      <div class="advertencias-title">⚠ Pendiente revisión manual</div>`;
+    standingP.advertencias_premios.forEach(a => {
+      html += `<div class="advertencia-row">
+        <strong>${escHtml(a.premio)}</strong>:
+        predicción "<em>${escHtml(a.prediccion || '?')}</em>" vs
+        real "<em>${escHtml(a.real || '?')}</em>"
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  if (!detalleP) {
+    detailEl.className = 'mi-porra-detail show';
+    detailEl.innerHTML = html;
+    return;
+  }
+
+  // Grupos detallados
+  const completados = (detalleP.grupos || []).filter(g => g.resultado);
+  const pendientes  = (detalleP.grupos || []).filter(g => !g.resultado);
+
+  if (completados.length) {
+    html += `<div class="section-title mt16">Partidos de grupos finalizados</div>
+    <div class="match-table">`;
+    completados.forEach(g => {
+      const pts = g.puntos ?? 0;
+      const cls = pts > 0 ? 'correct' : 'wrong';
+      const pStr = g.prediccion ? `${g.prediccion.goles_local}-${g.prediccion.goles_visitante} (${g.prediccion.signo})` : '—';
+      const rStr = `${g.resultado.goles_local}-${g.resultado.goles_visitante}`;
+      html += `<div class="match-row ${cls}">
+        <div class="match-row-idx">${g.match_id}</div>
+        <div class="match-row-teams">
+          <div class="match-teams-main">${escHtml(g.local)} - ${escHtml(g.visitante)}</div>
+          <div class="match-subtext">Pred: ${pStr} · Real: ${rStr}</div>
+        </div>
+        <div class="match-row-pred">${g.acierto_signo ? '✓' : '✗'}${g.acierto_local ? '✓' : '✗'}${g.acierto_visitante ? '✓' : '✗'}</div>
+        <div class="match-row-pts ${pts > 0 ? 'pos' : 'zero'}">${pts > 0 ? '+'+pts : '0'}</div>
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  if (pendientes.length) {
+    html += `<div class="section-title mt16">Partidos pendientes</div>
+    <div class="match-table">`;
+    pendientes.slice(0, 8).forEach(g => {
+      const pStr = g.prediccion ? `${g.prediccion.goles_local}-${g.prediccion.goles_visitante} (${g.prediccion.signo})` : '—';
+      html += `<div class="match-row pending">
+        <div class="match-row-idx">${g.match_id}</div>
+        <div class="match-row-teams">
+          <div class="match-teams-main">${escHtml(g.local)} - ${escHtml(g.visitante)}</div>
+          <div class="match-subtext">Pred: ${pStr}</div>
+        </div>
+        <div class="match-row-pred">—</div>
+        <div class="match-row-pts zero">—</div>
+      </div>`;
+    });
+    if (pendientes.length > 8) {
+      html += `<div class="match-row"><div class="match-row-idx">…</div><div class="match-row-teams" style="color:var(--text3)">+${pendientes.length - 8} más pendientes</div><div></div><div></div></div>`;
+    }
+    html += '</div>';
+  }
+
+  // Eliminatorias
+  if (detalleP.clasificados && state.resultados) {
+    html += `<div class="section-title mt16">Eliminatorias</div>`;
+    const rondas = ['1/16','1/8','1/4','semis','final'];
+    const ptsMap = {'1/16':5,'1/8':10,'1/4':15,'semis':20,'final':30};
+    rondas.forEach(r => {
+      const pred = new Set((detalleP.clasificados[r] || []).map(t => t.toLowerCase()));
+      const real = new Set((state.resultados.clasificados?.[r] || []).map(t => t.toLowerCase()));
+      let ptsRonda = 0;
+      const teamsHtml = [...pred].map(t => {
+        const hit = real.has(t);
+        if (hit) ptsRonda += ptsMap[r];
+        return `<span class="elim-team ${hit ? 'hit' : 'miss'}">${escHtml(t)}</span>`;
+      }).join('');
+      const empty = pred.size === 0 ? '<span style="color:var(--text3);font-size:.75rem">—</span>' : '';
+      html += `<div class="elim-round">
+        <span class="elim-round-label">${r}</span>
+        <div class="elim-teams">${teamsHtml || empty}</div>
+        <span class="elim-round-pts">+${ptsRonda}</span>
+      </div>`;
+    });
+  }
+
+  // Honor
+  if (detalleP.honor && state.resultados?.honor) {
+    const rh = state.resultados.honor;
+    const ph = detalleP.honor;
+    const honorRows = [
+      {k:'campeon',  label:'Campeón',    pts:50},
+      {k:'subcampeon',label:'Subcampeón',pts:40},
+      {k:'tercero',  label:'3.º',        pts:30},
+      {k:'cuarto',   label:'4.º',        pts:20},
+    ];
+    html += `<div class="section-title mt16">Posiciones de honor</div>
+    <div class="match-table">`;
+    honorRows.forEach(({k, label, pts}) => {
+      const pred = ph[k]; const real = rh[k];
+      const hit = pred && real && pred.toLowerCase() === real.toLowerCase();
+      html += `<div class="match-row ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+        <div class="match-row-idx" style="font-size:.7rem">${label}</div>
+        <div class="match-row-teams">
+          <div class="match-teams-main">
+            Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
+          </div>
+        </div>
+        <div class="match-row-pred">${real ? (hit ? '✓' : '✗') : '—'}</div>
+        <div class="match-row-pts ${hit ? 'pos' : 'zero'}">${hit ? '+'+pts : (real ? '0' : '—')}</div>
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  // Premios
+  if (detalleP.premios && state.resultados?.premios) {
+    const rp = state.resultados.premios;
+    const pp = detalleP.premios;
+    const premiosRows = [
+      {k:'goleador', label:'Goleador',    pts:25},
+      {k:'mvp',      label:'MVP',         pts:25},
+      {k:'portero',  label:'Portero',     pts:20},
+    ];
+    html += `<div class="section-title mt16">Premios individuales</div>
+    <div class="match-table">`;
+    premiosRows.forEach(({k, label, pts}) => {
+      const pred = pp[k]; const real = rp[k];
+      const hit = pred && real && normalize(pred) === normalize(real);
+      html += `<div class="match-row ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+        <div class="match-row-idx" style="font-size:.7rem">${label}</div>
+        <div class="match-row-teams">
+          <div class="match-teams-main">
+            Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
+          </div>
+        </div>
+        <div class="match-row-pred">${real ? (hit ? '✓' : '✗') : '—'}</div>
+        <div class="match-row-pts ${hit ? 'pos' : 'zero'}">${hit ? '+'+pts : (real ? '0' : '—')}</div>
+      </div>`;
+    });
+    html += '</div>';
+  }
+
+  detailEl.className = 'mi-porra-detail show';
+  detailEl.innerHTML = html;
+}
+
+function normalize(s) {
+  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+}
+
+// ── EVOLUCIÓN ─────────────────────────────────────────────────────────────────
+function renderEvolucion() {
+  if (!state.snapshots) return;
+  const snaps = state.snapshots.snapshots || [];
+  const nicknames = state.snapshots.nicknames || [];
+  if (!snaps.length) return;
+
+  const svgPos  = $('pos-chart');
+  const svgPts  = $('pts-chart');
+  const legend  = $('pos-legend');
+
+  const W = 440, PH = 240, PTH = 200;
+  const PAD = { top: 20, right: 20, bottom: 30, left: 30 };
+  const chartW = W - PAD.left - PAD.right;
+  const chartH = PH - PAD.top - PAD.bottom;
+  const ptsH   = PTH - PAD.top - PAD.bottom;
+
+  const dates = snaps.map(s => s.fecha);
+  const nCols = dates.length - 1;
+  const maxPos = nicknames.length;
+
+  function xPos(i) { return PAD.left + (i / Math.max(nCols,1)) * chartW; }
+  function yPos(pos) { return PAD.top + ((pos - 1) / Math.max(maxPos - 1, 1)) * chartH; }
+
+  // Build points series
+  const nickMaxPts = {};
+  nicknames.forEach(nick => {
+    snaps.forEach(s => {
+      const p = s.clasificacion.find(c => c.nickname === nick);
+      if (p) nickMaxPts[nick] = Math.max(nickMaxPts[nick] || 0, p.puntos_total || 0);
+    });
+  });
+  const allMaxPts = Math.max(...Object.values(nickMaxPts), 1);
+  function yPts(pts) { return PAD.top + ptsH - (pts / allMaxPts) * ptsH; }
+
+  // Position chart
+  let posHtml = `<defs>
+    ${nicknames.map((_, i) => `<filter id="glow${i}"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>`).join('')}
+  </defs>`;
+
+  // Grid lines (one per position)
+  for (let pos = 1; pos <= maxPos; pos++) {
+    const y = yPos(pos);
+    posHtml += `<line x1="${PAD.left}" y1="${y}" x2="${PAD.left + chartW}" y2="${y}" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+    <text x="${PAD.left - 4}" y="${y + 4}" font-size="9" fill="rgba(255,255,255,.3)" text-anchor="end">${pos}</text>`;
+  }
+
+  // Date labels
+  dates.forEach((d, i) => {
+    const x = xPos(i);
+    const label = new Date(d).toLocaleDateString('es-ES', { month:'numeric', day:'numeric' });
+    posHtml += `<text x="${x}" y="${PH - 6}" font-size="8" fill="rgba(255,255,255,.35)" text-anchor="middle">${label}</text>`;
+  });
+
+  // Lines and dots per nickname
+  nicknames.forEach((nick, ni) => {
+    const color = nickColor(ni);
+    const points = snaps.map((s, i) => {
+      const p = s.clasificacion.find(c => c.nickname === nick);
+      return p ? { x: xPos(i), y: yPos(p.posicion) } : null;
+    }).filter(Boolean);
+
+    if (points.length < 2) return;
+
+    // Line
+    const d = points.map((p, i) => `${i===0?'M':'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+    posHtml += `<path d="${d}" fill="none" stroke="${color}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>`;
+
+    // Dots
+    points.forEach((p, i) => {
+      posHtml += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="4" fill="${color}" stroke="var(--bg2)" stroke-width="2"/>`;
+    });
+
+    // Last point label
+    const last = points[points.length - 1];
+    const lastSnap = snaps[snaps.length - 1].clasificacion.find(c => c.nickname === nick);
+    if (lastSnap) {
+      posHtml += `<text x="${(last.x + 5).toFixed(1)}" y="${(last.y + 4).toFixed(1)}" font-size="9" fill="${color}" font-weight="600">${escHtml(nick.substring(0,8))}</text>`;
+    }
+  });
+
+  svgPos.innerHTML = posHtml;
+
+  // Points chart
+  let ptsHtml = '';
+
+  // Grid
+  [0, 0.25, 0.5, 0.75, 1].forEach(frac => {
+    const y = PAD.top + ptsH * (1 - frac);
+    const val = Math.round(allMaxPts * frac);
+    ptsHtml += `<line x1="${PAD.left}" y1="${y.toFixed(1)}" x2="${PAD.left + chartW}" y2="${y.toFixed(1)}" stroke="rgba(255,255,255,.04)" stroke-width="1"/>
+    <text x="${PAD.left - 4}" y="${(y + 3).toFixed(1)}" font-size="8" fill="rgba(255,255,255,.3)" text-anchor="end">${val}</text>`;
+  });
+
+  nicknames.forEach((nick, ni) => {
+    const color = nickColor(ni);
+    const points = snaps.map((s, i) => {
+      const p = s.clasificacion.find(c => c.nickname === nick);
+      return p ? { x: xPos(i), y: yPts(p.puntos_total || 0) } : null;
+    }).filter(Boolean);
+
+    if (points.length < 2) return;
+    const d = points.map((p, i) => `${i===0?'M':'L'}${p.x.toFixed(1)},${p.y.toFixed(1)}`).join(' ');
+    ptsHtml += `<path d="${d}" fill="none" stroke="${color}" stroke-width="2" stroke-linecap="round" opacity=".8"/>`;
+    points.forEach(p => {
+      ptsHtml += `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="3" fill="${color}" stroke="var(--bg2)" stroke-width="1.5"/>`;
+    });
+  });
+
+  svgPts.innerHTML = ptsHtml;
+
+  // Legend
+  legend.innerHTML = nicknames.map((nick, ni) => `
+    <div class="legend-item">
+      <div class="legend-dot" style="background:${nickColor(ni)}"></div>
+      <span>${escHtml(nick)}</span>
+    </div>
+  `).join('');
+}
+
+// ── PRÓXIMOS ──────────────────────────────────────────────────────────────────
+function renderProximos() {
+  const container = $('proximos-container');
+  if (!state.proximos?.length) {
+    container.innerHTML = '<div class="empty-state"><div class="icon">📅</div>No hay próximos partidos cargados</div>';
+    return;
+  }
+
+  container.innerHTML = '';
+  state.proximos.forEach(m => {
+    const card = el('div', 'match-card');
+    const liveEntry = state.resultados?.marcadores?.find(e => e.match_id === m.match_id);
+    const isLive = liveEntry?.estado === 'en_juego';
+    const isDone = liveEntry?.estado === 'finalizado';
+    const jLabel = m.jornada ? `${m.grupo ? 'Grupo '+m.grupo+' · ' : ''}${m.jornada}` : (m.fase || '');
+
+    let scoreHtml = '';
+    if (isLive || isDone) {
+      scoreHtml = `<span class="match-live-score">${liveEntry.goles_local ?? '?'} – ${liveEntry.goles_visitante ?? '?'}</span>`;
+    } else {
+      scoreHtml = `<span class="match-vs">vs</span>`;
+    }
+
+    card.innerHTML = `
+      <div class="match-card-head">
+        <span class="match-meta">${escHtml(jLabel)}</span>
+        <span class="match-date-str">${fmtDate(m.fecha_hora_utc)}</span>
+      </div>
+      <div class="match-teams-row">
+        <div class="match-team home">${escHtml(m.local)}</div>
+        ${scoreHtml}
+        <div class="match-team away">${escHtml(m.visitante)}</div>
+      </div>
+    `;
+
+    // Predicciones grid
+    if (m.predicciones?.length) {
+      const grid = el('div', 'preds-grid');
+      m.predicciones.forEach(pr => {
+        const cell = el('div', 'pred-cell');
+        const p = pr.prediccion;
+        const valStr = p ? `${p.goles_local}-${p.goles_visitante}` : '—';
+        const signStr = p?.signo || '';
+        cell.innerHTML = `
+          <div class="pred-cell-nick">${escHtml(pr.nickname)}</div>
+          <div class="pred-cell-val">${valStr}</div>
+          <div class="pred-cell-sign">${signStr}</div>
+        `;
+        grid.appendChild(cell);
+      });
+      card.appendChild(grid);
+    }
+
+    container.appendChild(card);
+  });
+}
+
+// ── XSS safety ────────────────────────────────────────────────────────────────
+function escHtml(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g,'&amp;')
+    .replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;')
+    .replace(/'/g,'&#39;');
+}

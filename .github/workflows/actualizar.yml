@@ -1,0 +1,105 @@
+name: Actualizar Porra Mundial 2026
+
+# ── Disparadores ──────────────────────────────────────────────────────────────
+on:
+  schedule:
+    # Cada 5 minutos durante el Mundial. GitHub Actions puede retrasarlo
+    # hasta ~15 min en hora punta; es aceptable para este uso.
+    - cron: '*/5 * * * *'
+
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: 'demo = datos sintéticos | live = pipeline real'
+        required: false
+        default: 'demo'
+        type: choice
+        options:
+          - demo
+          - live
+      forzar_ventana:
+        description: 'Ignorar comprobación de ventana de partido (solo en modo live)'
+        required: false
+        default: true
+        type: boolean
+
+# ── Permisos ──────────────────────────────────────────────────────────────────
+permissions:
+  contents: write    # para git commit + push de los datos actualizados
+  pages: write       # para publicar en GitHub Pages
+  id-token: write    # requerido por actions/deploy-pages
+
+# Evita despliegues solapados; el segundo espera al primero.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+# ── Job ───────────────────────────────────────────────────────────────────────
+jobs:
+  actualizar-y-publicar:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+
+    steps:
+      # 1. Checkout
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Necesitamos poder hacer push; fetch-depth=0 da historial completo
+          fetch-depth: 0
+
+      # 2. Python
+      - name: Configurar Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      # 3. Pipeline ─────────────────────────────────────────────────────────
+      - name: Ejecutar pipeline (modo demo)
+        if: github.event_name == 'workflow_dispatch' && inputs.modo == 'demo'
+        run: python -X utf8 motor/pipeline.py --demo
+
+      - name: Ejecutar pipeline (modo live, forzar ventana)
+        if: github.event_name == 'workflow_dispatch' && inputs.modo == 'live'
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: |
+          EXTRA=""
+          ${{ inputs.forzar_ventana }} && EXTRA="--forzar"
+          python motor/pipeline.py $EXTRA
+
+      - name: Ejecutar pipeline (cron — verifica ventana internamente)
+        if: github.event_name == 'schedule'
+        env:
+          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
+        run: python motor/pipeline.py
+
+      # 4. Persistir datos actualizados en el repo ──────────────────────────
+      - name: Guardar datos en el repositorio
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add web/data/ datos/resultados.json
+          git diff --staged --quiet \
+            && echo "Sin cambios en los datos." \
+            || git commit -m "chore: datos $(date -u +%Y-%m-%dT%H:%M:%SZ) [skip ci]"
+          git push
+
+      # 5. Publicar en GitHub Pages ─────────────────────────────────────────
+      - name: Preparar GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Subir artefacto de Pages (carpeta web/)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./web
+
+      - name: Desplegar en GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,20 @@
+{
+  "porra": "amigos",
+  "clasificacion": [
+    {
+      "nickname": null,
+      "porra": "amigos",
+      "puntos_grupos": 26,
+      "puntos_eliminatorias": 10,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 26,
+      "puntos_fase_eliminatoria": 10,
+      "puntos_total": 36,
+      "advertencias_premios": [],
+      "posicion": 1,
+      "empate": false,
+      "posicion_fase_previa": 1
+    }
+  ]
+}

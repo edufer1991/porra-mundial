@@ -1,0 +1,1013 @@
+{
+  "torneo": "FIFA World Cup 2026",
+  "partidos": [
+    {
+      "id": 1,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "A",
+      "local": "Mexico",
+      "visitante": "South Africa",
+      "fecha_hora_utc": "2026-06-11T19:00:00Z",
+      "sede": "Mexico City"
+    },
+    {
+      "id": 2,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "A",
+      "local": "South Korea",
+      "visitante": "Czech Republic",
+      "fecha_hora_utc": "2026-06-12T02:00:00Z",
+      "sede": "Guadalajara"
+    },
+    {
+      "id": 3,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "B",
+      "local": "Canada",
+      "visitante": "Bosnia-Herzegovina",
+      "fecha_hora_utc": "2026-06-12T19:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 4,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "B",
+      "local": "Qatar",
+      "visitante": "Switzerland",
+      "fecha_hora_utc": "2026-06-13T19:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 5,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "C",
+      "local": "Brazil",
+      "visitante": "Morocco",
+      "fecha_hora_utc": "2026-06-13T22:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 6,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "C",
+      "local": "Haiti",
+      "visitante": "Scotland",
+      "fecha_hora_utc": "2026-06-14T01:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 7,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "D",
+      "local": "USA",
+      "visitante": "Paraguay",
+      "fecha_hora_utc": "2026-06-13T01:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 8,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "D",
+      "local": "Australia",
+      "visitante": "Turkey",
+      "fecha_hora_utc": "2026-06-14T04:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 9,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "E",
+      "local": "Germany",
+      "visitante": "Curacao",
+      "fecha_hora_utc": "2026-06-14T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 10,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "E",
+      "local": "Ivory Coast",
+      "visitante": "Ecuador",
+      "fecha_hora_utc": "2026-06-14T23:00:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 11,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "F",
+      "local": "Netherlands",
+      "visitante": "Japan",
+      "fecha_hora_utc": "2026-06-14T20:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 12,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "F",
+      "local": "Sweden",
+      "visitante": "Tunisia",
+      "fecha_hora_utc": "2026-06-15T02:00:00Z",
+      "sede": "Monterrey"
+    },
+    {
+      "id": 13,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "G",
+      "local": "Belgium",
+      "visitante": "Egypt",
+      "fecha_hora_utc": "2026-06-15T19:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 14,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "G",
+      "local": "Iran",
+      "visitante": "New Zealand",
+      "fecha_hora_utc": "2026-06-16T01:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 15,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "H",
+      "local": "Spain",
+      "visitante": "Cape Verde",
+      "fecha_hora_utc": "2026-06-15T16:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 16,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "H",
+      "local": "Saudi Arabia",
+      "visitante": "Uruguay",
+      "fecha_hora_utc": "2026-06-15T22:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 17,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "I",
+      "local": "France",
+      "visitante": "Senegal",
+      "fecha_hora_utc": "2026-06-16T19:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 18,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "I",
+      "local": "Iraq",
+      "visitante": "Norway",
+      "fecha_hora_utc": "2026-06-16T22:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 19,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "J",
+      "local": "Argentina",
+      "visitante": "Algeria",
+      "fecha_hora_utc": "2026-06-17T01:00:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 20,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "J",
+      "local": "Austria",
+      "visitante": "Jordan",
+      "fecha_hora_utc": "2026-06-17T04:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 21,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "K",
+      "local": "Portugal",
+      "visitante": "DR Congo",
+      "fecha_hora_utc": "2026-06-17T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 22,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "K",
+      "local": "Uzbekistan",
+      "visitante": "Colombia",
+      "fecha_hora_utc": "2026-06-18T02:00:00Z",
+      "sede": "Mexico City"
+    },
+    {
+      "id": 23,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "L",
+      "local": "England",
+      "visitante": "Croatia",
+      "fecha_hora_utc": "2026-06-17T20:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 24,
+      "fase": "grupos",
+      "jornada": "J1",
+      "grupo": "L",
+      "local": "Ghana",
+      "visitante": "Panama",
+      "fecha_hora_utc": "2026-06-17T23:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 25,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "A",
+      "local": "Czech Republic",
+      "visitante": "South Africa",
+      "fecha_hora_utc": "2026-06-18T16:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 26,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "A",
+      "local": "Mexico",
+      "visitante": "South Korea",
+      "fecha_hora_utc": "2026-06-19T01:00:00Z",
+      "sede": "Guadalajara"
+    },
+    {
+      "id": 27,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "B",
+      "local": "Switzerland",
+      "visitante": "Bosnia-Herzegovina",
+      "fecha_hora_utc": "2026-06-18T19:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 28,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "B",
+      "local": "Canada",
+      "visitante": "Qatar",
+      "fecha_hora_utc": "2026-06-18T22:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 29,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "C",
+      "local": "Scotland",
+      "visitante": "Morocco",
+      "fecha_hora_utc": "2026-06-19T22:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 30,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "C",
+      "local": "Brazil",
+      "visitante": "Haiti",
+      "fecha_hora_utc": "2026-06-20T00:30:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 31,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "D",
+      "local": "USA",
+      "visitante": "Australia",
+      "fecha_hora_utc": "2026-06-19T19:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 32,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "D",
+      "local": "Turkey",
+      "visitante": "Paraguay",
+      "fecha_hora_utc": "2026-06-20T03:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 33,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "E",
+      "local": "Germany",
+      "visitante": "Ivory Coast",
+      "fecha_hora_utc": "2026-06-20T20:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 34,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "E",
+      "local": "Ecuador",
+      "visitante": "Curacao",
+      "fecha_hora_utc": "2026-06-21T00:00:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 35,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "F",
+      "local": "Netherlands",
+      "visitante": "Sweden",
+      "fecha_hora_utc": "2026-06-20T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 36,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "F",
+      "local": "Tunisia",
+      "visitante": "Japan",
+      "fecha_hora_utc": "2026-06-21T04:00:00Z",
+      "sede": "Monterrey"
+    },
+    {
+      "id": 37,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "G",
+      "local": "Belgium",
+      "visitante": "Iran",
+      "fecha_hora_utc": "2026-06-21T19:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 38,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "G",
+      "local": "New Zealand",
+      "visitante": "Egypt",
+      "fecha_hora_utc": "2026-06-22T01:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 39,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "H",
+      "local": "Spain",
+      "visitante": "Saudi Arabia",
+      "fecha_hora_utc": "2026-06-21T16:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 40,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "H",
+      "local": "Uruguay",
+      "visitante": "Cape Verde",
+      "fecha_hora_utc": "2026-06-21T22:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 41,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "I",
+      "local": "France",
+      "visitante": "Iraq",
+      "fecha_hora_utc": "2026-06-22T21:00:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 42,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "I",
+      "local": "Norway",
+      "visitante": "Senegal",
+      "fecha_hora_utc": "2026-06-23T00:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 43,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "J",
+      "local": "Argentina",
+      "visitante": "Austria",
+      "fecha_hora_utc": "2026-06-22T17:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 44,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "J",
+      "local": "Jordan",
+      "visitante": "Algeria",
+      "fecha_hora_utc": "2026-06-23T03:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 45,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "K",
+      "local": "Portugal",
+      "visitante": "Uzbekistan",
+      "fecha_hora_utc": "2026-06-23T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 46,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "K",
+      "local": "Colombia",
+      "visitante": "DR Congo",
+      "fecha_hora_utc": "2026-06-24T02:00:00Z",
+      "sede": "Guadalajara"
+    },
+    {
+      "id": 47,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "L",
+      "local": "England",
+      "visitante": "Ghana",
+      "fecha_hora_utc": "2026-06-23T20:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 48,
+      "fase": "grupos",
+      "jornada": "J2",
+      "grupo": "L",
+      "local": "Panama",
+      "visitante": "Croatia",
+      "fecha_hora_utc": "2026-06-23T23:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 49,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "A",
+      "local": "Czech Republic",
+      "visitante": "Mexico",
+      "fecha_hora_utc": "2026-06-25T01:00:00Z",
+      "sede": "Mexico City"
+    },
+    {
+      "id": 50,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "A",
+      "local": "South Africa",
+      "visitante": "South Korea",
+      "fecha_hora_utc": "2026-06-25T01:00:00Z",
+      "sede": "Monterrey"
+    },
+    {
+      "id": 51,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "B",
+      "local": "Switzerland",
+      "visitante": "Canada",
+      "fecha_hora_utc": "2026-06-24T19:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 52,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "B",
+      "local": "Bosnia-Herzegovina",
+      "visitante": "Qatar",
+      "fecha_hora_utc": "2026-06-24T19:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 53,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "C",
+      "local": "Scotland",
+      "visitante": "Brazil",
+      "fecha_hora_utc": "2026-06-24T22:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 54,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "C",
+      "local": "Morocco",
+      "visitante": "Haiti",
+      "fecha_hora_utc": "2026-06-24T22:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 55,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "D",
+      "local": "Turkey",
+      "visitante": "USA",
+      "fecha_hora_utc": "2026-06-26T02:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 56,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "D",
+      "local": "Paraguay",
+      "visitante": "Australia",
+      "fecha_hora_utc": "2026-06-26T02:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 57,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "E",
+      "local": "Curacao",
+      "visitante": "Ivory Coast",
+      "fecha_hora_utc": "2026-06-25T20:00:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 58,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "E",
+      "local": "Ecuador",
+      "visitante": "Germany",
+      "fecha_hora_utc": "2026-06-25T20:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 59,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "F",
+      "local": "Japan",
+      "visitante": "Sweden",
+      "fecha_hora_utc": "2026-06-25T23:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 60,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "F",
+      "local": "Tunisia",
+      "visitante": "Netherlands",
+      "fecha_hora_utc": "2026-06-25T23:00:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 61,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "G",
+      "local": "Egypt",
+      "visitante": "Iran",
+      "fecha_hora_utc": "2026-06-27T03:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 62,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "G",
+      "local": "New Zealand",
+      "visitante": "Belgium",
+      "fecha_hora_utc": "2026-06-27T03:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 63,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "H",
+      "local": "Cape Verde",
+      "visitante": "Saudi Arabia",
+      "fecha_hora_utc": "2026-06-27T00:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 64,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "H",
+      "local": "Uruguay",
+      "visitante": "Spain",
+      "fecha_hora_utc": "2026-06-27T00:00:00Z",
+      "sede": "Guadalajara"
+    },
+    {
+      "id": 65,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "I",
+      "local": "Norway",
+      "visitante": "France",
+      "fecha_hora_utc": "2026-06-26T19:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 66,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "I",
+      "local": "Senegal",
+      "visitante": "Iraq",
+      "fecha_hora_utc": "2026-06-26T19:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 67,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "J",
+      "local": "Algeria",
+      "visitante": "Austria",
+      "fecha_hora_utc": "2026-06-28T02:00:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 68,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "J",
+      "local": "Jordan",
+      "visitante": "Argentina",
+      "fecha_hora_utc": "2026-06-28T02:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 69,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "K",
+      "local": "Colombia",
+      "visitante": "Portugal",
+      "fecha_hora_utc": "2026-06-27T23:30:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 70,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "K",
+      "local": "DR Congo",
+      "visitante": "Uzbekistan",
+      "fecha_hora_utc": "2026-06-27T23:30:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 71,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "L",
+      "local": "Panama",
+      "visitante": "England",
+      "fecha_hora_utc": "2026-06-27T21:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 72,
+      "fase": "grupos",
+      "jornada": "J3",
+      "grupo": "L",
+      "local": "Croatia",
+      "visitante": "Ghana",
+      "fecha_hora_utc": "2026-06-27T21:00:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 73,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "2A",
+      "visitante": "2B",
+      "fecha_hora_utc": "2026-06-28T19:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 74,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1E",
+      "visitante": "3A/B/C/D/F",
+      "fecha_hora_utc": "2026-06-29T20:30:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 75,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1F",
+      "visitante": "2C",
+      "fecha_hora_utc": "2026-06-30T01:00:00Z",
+      "sede": "Monterrey"
+    },
+    {
+      "id": 76,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1C",
+      "visitante": "2F",
+      "fecha_hora_utc": "2026-06-29T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 77,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1I",
+      "visitante": "3C/D/F/G/H",
+      "fecha_hora_utc": "2026-06-30T21:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 78,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "2E",
+      "visitante": "2I",
+      "fecha_hora_utc": "2026-06-30T17:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 79,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1A",
+      "visitante": "3C/E/F/H/I",
+      "fecha_hora_utc": "2026-07-01T01:00:00Z",
+      "sede": "Mexico City"
+    },
+    {
+      "id": 80,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1L",
+      "visitante": "3E/H/I/J/K",
+      "fecha_hora_utc": "2026-07-01T16:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 81,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1D",
+      "visitante": "3B/E/F/I/J",
+      "fecha_hora_utc": "2026-07-02T00:00:00Z",
+      "sede": "San Francisco Bay Area"
+    },
+    {
+      "id": 82,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1G",
+      "visitante": "3A/E/H/I/J",
+      "fecha_hora_utc": "2026-07-01T20:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 83,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "2K",
+      "visitante": "2L",
+      "fecha_hora_utc": "2026-07-02T23:00:00Z",
+      "sede": "Toronto"
+    },
+    {
+      "id": 84,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1H",
+      "visitante": "2J",
+      "fecha_hora_utc": "2026-07-02T19:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 85,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1B",
+      "visitante": "3E/F/G/I/J",
+      "fecha_hora_utc": "2026-07-03T03:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 86,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1J",
+      "visitante": "2H",
+      "fecha_hora_utc": "2026-07-03T22:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 87,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "1K",
+      "visitante": "3D/E/I/J/L",
+      "fecha_hora_utc": "2026-07-04T01:30:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 88,
+      "fase": "1/16",
+      "grupo": null,
+      "local": "2D",
+      "visitante": "2G",
+      "fecha_hora_utc": "2026-07-03T18:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 89,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W74",
+      "visitante": "W77",
+      "fecha_hora_utc": "2026-07-04T21:00:00Z",
+      "sede": "Philadelphia"
+    },
+    {
+      "id": 90,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W73",
+      "visitante": "W75",
+      "fecha_hora_utc": "2026-07-04T17:00:00Z",
+      "sede": "Houston"
+    },
+    {
+      "id": 91,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W76",
+      "visitante": "W78",
+      "fecha_hora_utc": "2026-07-05T20:00:00Z",
+      "sede": "New York/New Jersey"
+    },
+    {
+      "id": 92,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W79",
+      "visitante": "W80",
+      "fecha_hora_utc": "2026-07-06T00:00:00Z",
+      "sede": "Mexico City"
+    },
+    {
+      "id": 93,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W83",
+      "visitante": "W84",
+      "fecha_hora_utc": "2026-07-06T19:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 94,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W81",
+      "visitante": "W82",
+      "fecha_hora_utc": "2026-07-07T00:00:00Z",
+      "sede": "Seattle"
+    },
+    {
+      "id": 95,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W86",
+      "visitante": "W88",
+      "fecha_hora_utc": "2026-07-07T16:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 96,
+      "fase": "1/8",
+      "grupo": null,
+      "local": "W85",
+      "visitante": "W87",
+      "fecha_hora_utc": "2026-07-07T20:00:00Z",
+      "sede": "Vancouver"
+    },
+    {
+      "id": 97,
+      "fase": "1/4",
+      "grupo": null,
+      "local": "W89",
+      "visitante": "W90",
+      "fecha_hora_utc": "2026-07-09T20:00:00Z",
+      "sede": "Boston"
+    },
+    {
+      "id": 98,
+      "fase": "1/4",
+      "grupo": null,
+      "local": "W93",
+      "visitante": "W94",
+      "fecha_hora_utc": "2026-07-10T19:00:00Z",
+      "sede": "Los Angeles"
+    },
+    {
+      "id": 99,
+      "fase": "1/4",
+      "grupo": null,
+      "local": "W91",
+      "visitante": "W92",
+      "fecha_hora_utc": "2026-07-11T21:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 100,
+      "fase": "1/4",
+      "grupo": null,
+      "local": "W95",
+      "visitante": "W96",
+      "fecha_hora_utc": "2026-07-12T01:00:00Z",
+      "sede": "Kansas City"
+    },
+    {
+      "id": 101,
+      "fase": "semis",
+      "grupo": null,
+      "local": "W97",
+      "visitante": "W98",
+      "fecha_hora_utc": "2026-07-14T19:00:00Z",
+      "sede": "Dallas"
+    },
+    {
+      "id": 102,
+      "fase": "semis",
+      "grupo": null,
+      "local": "W99",
+      "visitante": "W100",
+      "fecha_hora_utc": "2026-07-15T19:00:00Z",
+      "sede": "Atlanta"
+    },
+    {
+      "id": 103,
+      "fase": "tercer_puesto",
+      "grupo": null,
+      "local": "L101",
+      "visitante": "L102",
+      "fecha_hora_utc": "2026-07-18T21:00:00Z",
+      "sede": "Miami"
+    },
+    {
+      "id": 104,
+      "fase": "final",
+      "grupo": null,
+      "local": "W101",
+      "visitante": "W102",
+      "fecha_hora_utc": "2026-07-19T19:00:00Z",
+      "sede": "New York/New Jersey"
+    }
+  ]
+}

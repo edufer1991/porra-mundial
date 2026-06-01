@@ -1,0 +1,7 @@
+{
+  "_descripcion": "Premios individuales del torneo. Rellenar manualmente al cierre del Mundial.",
+  "_instrucciones": "Editar este archivo con el nombre del jugador (texto libre). Se vuelca automaticamente a resultados.json al ejecutar descargar_resultados.py.",
+  "goleador": null,
+  "mvp": null,
+  "portero": null
+}
