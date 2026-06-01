@@ -1,7 +1,7 @@
 # ── Excels de participantes ───────────────────────────────────────────────────
-# Los archivos .xlsx nunca se suben al repositorio público.
-# El organizador los procesa en local con motor/parsear_excel.py y sube
-# únicamente los JSON resultantes de datos/pronosticos/.
+# Los .xlsx NUNCA se suben (contienen datos del formulario en crudo).
+# El organizador los procesa en local con motor/parsear_excel.py, que produce
+# datos/pronosticos/{porra}/{nickname}.json  → esos JSON SÍ se suben.
 *.xlsx
 *.xls
 
@@ -27,10 +27,6 @@ secrets.json
 *.p12
 *.pfx
 
-# ── Pronósticos de participantes ─────────────────────────────────────────────
-# IMPORTANTE: no subir antes del cierre del plazo (11 junio, 21:00 CEST).
-# Después del cierre: borrar esta línea y hacer git add datos/pronosticos/
-datos/pronosticos/
 
 # ── Sistema operativo ─────────────────────────────────────────────────────────
 .DS_Store
