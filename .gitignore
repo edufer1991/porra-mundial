@@ -1,9 +1,10 @@
 # ── Excels de participantes ───────────────────────────────────────────────────
 # Los .xlsx NUNCA se suben (contienen datos del formulario en crudo).
-# El organizador los procesa en local con motor/parsear_excel.py, que produce
+# El organizador los procesa en local con motor/parsear_todos.py, que produce
 # datos/pronosticos/{porra}/{nickname}.json  → esos JSON SÍ se suben.
 *.xlsx
 *.xls
+datos/excels_recibidos/
 
 # ── Entorno Python ────────────────────────────────────────────────────────────
 __pycache__/
