@@ -237,13 +237,16 @@ def _build_match_dir_index(calendario: dict) -> dict[tuple[str, str], tuple[int,
 
 def parsear_openfootball(
     data: dict,
-    grupo_idx: dict[tuple[str, str], int],
+    match_dir_idx: dict[tuple[str, str], tuple[int, bool]],
     rondas: dict[str, str],
     ahora: datetime | None = None,
     nombre_map: dict[str, str] | None = None,
 ) -> dict:
     """
     Convierte JSON de openfootball al esquema de resultados.json.
+
+    match_dir_idx: resultado de _build_match_dir_index(); índice orientado que
+    distingue si los equipos de openfootball están invertidos respecto al calendario.
 
     nombre_map: {norm(variante) → nombre_canonico} para resolver aliases de equipos.
 
@@ -276,18 +279,19 @@ def parsear_openfootball(
         # ── Grupos ──────────────────────────────────────────────────────────
         if match.get("group"):
             stats["grupos_encontrados"] += 1
-            mid = grupo_idx.get((norm(t1), norm(t2)))
-            if mid is None:
-                mid = grupo_idx.get((norm(t2), norm(t1)))
-            if mid is None:
+            entry = match_dir_idx.get((norm(t1), norm(t2)))
+            if entry is None:
                 stats["grupos_sin_id"] += 1
                 continue
+            mid, invertido = entry
             estado = _determinar_estado(match, ahora)
             marc: dict = {"match_id": mid, "estado": estado}
             if estado in ("finalizado", "en_juego"):
                 ft = _score_ft(match.get("score"))
                 if ft:
-                    marc["goles_local"], marc["goles_visitante"] = ft
+                    # invertido=True → openfootball pone como team1 al visitante del calendario
+                    marc["goles_local"]     = ft[1] if invertido else ft[0]
+                    marc["goles_visitante"] = ft[0] if invertido else ft[1]
             marcadores.append(marc)
             continue
 
@@ -462,7 +466,6 @@ def main() -> None:
     # Calendario 2026 (siempre se usa para resolver match_ids de grupos)
     with open(CALENDARIO, encoding="utf-8") as f:
         calendario = json.load(f)
-    grupo_idx    = _build_grupo_index(calendario)
     match_dir_idx = _build_match_dir_index(calendario)
 
     # Mapa de nombres para resolver aliases openfootball ↔ nombre canónico
@@ -487,7 +490,7 @@ def main() -> None:
             sys.exit(1)
 
     ahora     = datetime.now(timezone.utc)
-    resultado = parsear_openfootball(of_data, grupo_idx, rondas, ahora, nombre_map)
+    resultado = parsear_openfootball(of_data, match_dir_idx, rondas, ahora, nombre_map)
     stats     = resultado.pop("stats")
 
     # Premios manuales

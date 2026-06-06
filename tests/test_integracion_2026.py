@@ -21,7 +21,7 @@ sys.path.insert(0, str(ROOT))
 
 from motor.descargar_resultados import (
     RONDAS_2026,
-    _build_grupo_index,
+    _build_match_dir_index,
     _build_nombre_map,
     parsear_openfootball,
 )
@@ -267,11 +267,11 @@ def reglas():
 
 @pytest.fixture(scope="module")
 def resultados(calendario, equivalencias):
-    of_json    = _build_of_json(calendario)
-    grupo_idx  = _build_grupo_index(calendario)
-    nombre_map = _build_nombre_map(equivalencias)
-    parsed     = parsear_openfootball(of_json, grupo_idx, RONDAS_2026,
-                                      nombre_map=nombre_map)
+    of_json       = _build_of_json(calendario)
+    match_dir_idx = _build_match_dir_index(calendario)
+    nombre_map    = _build_nombre_map(equivalencias)
+    parsed        = parsear_openfootball(of_json, match_dir_idx, RONDAS_2026,
+                                         nombre_map=nombre_map)
     parsed.pop("stats", None)
     parsed["premios"] = {"goleador": "Lautaro Martinez", "mvp": None, "portero": None}
     return parsed
@@ -472,7 +472,7 @@ if __name__ == "__main__":
     _reg  = _json.load(open(ROOT / "config" / "reglas.json",           encoding="utf-8"))
 
     _of   = _build_of_json(_cal)
-    _idx  = _build_grupo_index(_cal)
+    _idx  = _build_match_dir_index(_cal)
     _nmap = _build_nombre_map(_eq)
     _res  = parsear_openfootball(_of, _idx, RONDAS_2026, nombre_map=_nmap)
     _res.pop("stats", None)

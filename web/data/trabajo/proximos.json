@@ -11,16 +11,16 @@
       {
         "nickname": "Txema_Boss",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 1,
-          "goles_visitante": 1
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
           "signo": "X",
-          "goles_local": 3,
+          "goles_local": 1,
           "goles_visitante": 1
         }
       },
@@ -28,32 +28,32 @@
         "nickname": "Proba_Stats",
         "prediccion": {
           "signo": "X",
-          "goles_local": 3,
+          "goles_local": 1,
           "goles_visitante": 1
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 0,
-          "goles_visitante": 0
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 0,
-          "goles_visitante": 0
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
           "signo": "X",
-          "goles_local": 3,
-          "goles_visitante": 2
+          "goles_local": 1,
+          "goles_visitante": 1
         }
       }
     ]
@@ -70,16 +70,16 @@
       {
         "nickname": "Txema_Boss",
         "prediccion": {
-          "signo": "1",
+          "signo": "2",
           "goles_local": 0,
-          "goles_visitante": 3
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
           "signo": "1",
-          "goles_local": 0,
+          "goles_local": 2,
           "goles_visitante": 0
         }
       },
@@ -87,24 +87,24 @@
         "nickname": "Proba_Stats",
         "prediccion": {
           "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
+          "goles_local": 3,
+          "goles_visitante": 2
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 0,
+          "signo": "2",
+          "goles_local": 2,
           "goles_visitante": 3
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 3,
-          "goles_visitante": 3
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
         }
       },
       {
@@ -112,7 +112,7 @@
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
-          "goles_visitante": 1
+          "goles_visitante": 0
         }
       }
     ]
@@ -129,49 +129,49 @@
       {
         "nickname": "Txema_Boss",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 0,
-          "goles_visitante": 0
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 0,
-          "goles_visitante": 0
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Proba_Stats",
         "prediccion": {
-          "signo": "2",
+          "signo": "X",
           "goles_local": 1,
-          "goles_visitante": 2
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 3
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 2,
-          "goles_visitante": 3
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
         }
       }
     ]
@@ -190,46 +190,46 @@
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
-          "goles_visitante": 3
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
-          "signo": "2",
+          "signo": "1",
           "goles_local": 3,
-          "goles_visitante": 0
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Proba_Stats",
         "prediccion": {
           "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 2
+          "goles_local": 3,
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
           "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
+          "goles_local": 2,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "2",
+          "signo": "1",
           "goles_local": 3,
-          "goles_visitante": 2
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
+          "signo": "2",
+          "goles_local": 0,
           "goles_visitante": 3
         }
       }
@@ -248,48 +248,48 @@
         "nickname": "Txema_Boss",
         "prediccion": {
           "signo": "2",
-          "goles_local": 1,
+          "goles_local": 2,
           "goles_visitante": 3
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 3,
-          "goles_visitante": 2
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Proba_Stats",
         "prediccion": {
-          "signo": "2",
-          "goles_local": 2,
-          "goles_visitante": 2
+          "signo": "X",
+          "goles_local": 3,
+          "goles_visitante": 3
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
           "signo": "1",
-          "goles_local": 2,
+          "goles_local": 3,
           "goles_visitante": 0
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 3,
+          "signo": "2",
+          "goles_local": 1,
           "goles_visitante": 2
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
         }
       }
     ]
@@ -307,22 +307,22 @@
         "nickname": "Txema_Boss",
         "prediccion": {
           "signo": "X",
-          "goles_local": 0,
+          "goles_local": 3,
           "goles_visitante": 3
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 3,
-          "goles_visitante": 2
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "Proba_Stats",
         "prediccion": {
-          "signo": "1",
+          "signo": "X",
           "goles_local": 0,
           "goles_visitante": 0
         }
@@ -331,24 +331,24 @@
         "nickname": "Aleatoria99",
         "prediccion": {
           "signo": "X",
-          "goles_local": 2,
-          "goles_visitante": 2
+          "goles_local": 3,
+          "goles_visitante": 3
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "X",
+          "signo": "2",
           "goles_local": 0,
-          "goles_visitante": 1
+          "goles_visitante": 3
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 2
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
         }
       }
     ]
@@ -366,48 +366,48 @@
         "nickname": "Txema_Boss",
         "prediccion": {
           "signo": "X",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "AnalisisProfundo",
-        "prediccion": {
-          "signo": "2",
           "goles_local": 2,
           "goles_visitante": 2
         }
       },
       {
-        "nickname": "Proba_Stats",
+        "nickname": "AnalisisProfundo",
         "prediccion": {
           "signo": "X",
           "goles_local": 0,
-          "goles_visitante": 3
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Proba_Stats",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
           "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
+          "goles_local": 1,
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
           "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 0
+          "goles_local": 2,
+          "goles_visitante": 3
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 1
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
         }
       }
     ]
@@ -425,48 +425,48 @@
         "nickname": "Txema_Boss",
         "prediccion": {
           "signo": "2",
-          "goles_local": 2,
-          "goles_visitante": 2
+          "goles_local": 1,
+          "goles_visitante": 3
         }
       },
       {
         "nickname": "AnalisisProfundo",
         "prediccion": {
           "signo": "X",
-          "goles_local": 3,
-          "goles_visitante": 1
+          "goles_local": 0,
+          "goles_visitante": 0
         }
       },
       {
         "nickname": "Proba_Stats",
         "prediccion": {
-          "signo": "X",
+          "signo": "2",
           "goles_local": 0,
-          "goles_visitante": 3
+          "goles_visitante": 2
         }
       },
       {
         "nickname": "Aleatoria99",
         "prediccion": {
           "signo": "2",
-          "goles_local": 2,
+          "goles_local": 0,
           "goles_visitante": 1
         }
       },
       {
         "nickname": "Iker_Jr",
         "prediccion": {
-          "signo": "X",
-          "goles_local": 0,
-          "goles_visitante": 3
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
         }
       },
       {
         "nickname": "PorriPorri",
         "prediccion": {
-          "signo": "1",
+          "signo": "2",
           "goles_local": 2,
-          "goles_visitante": 1
+          "goles_visitante": 3
         }
       }
     ]
