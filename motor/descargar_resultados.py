@@ -216,6 +216,23 @@ def _build_grupo_index(calendario: dict) -> dict[tuple[str, str], int]:
     return idx
 
 
+def _build_match_dir_index(calendario: dict) -> dict[tuple[str, str], tuple[int, bool]]:
+    """
+    Índice orientado para la fusión con API-Football.
+    Devuelve {(norm_equipoA, norm_equipoB): (match_id, invertido)} donde
+    invertido=False si equipoA es el local del calendario,
+    invertido=True  si equipoA es el visitante (la API los devuelve al revés).
+    Necesario porque _build_grupo_index es bidireccional y no distingue orientación.
+    """
+    idx: dict[tuple[str, str], tuple[int, bool]] = {}
+    for p in calendario.get("partidos", []):
+        if p.get("fase") == "grupos":
+            nl, nv = norm(p["local"]), norm(p["visitante"])
+            idx[(nl, nv)] = (p["id"], False)   # home API == local  → sin inversión
+            idx[(nv, nl)] = (p["id"], True)    # home API == visitante → invertido
+    return idx
+
+
 # ── Parser principal ──────────────────────────────────────────────────────────
 
 def parsear_openfootball(
@@ -355,10 +372,14 @@ def _fusionar_api_football(
     marcadores: list[dict],
     live_fixtures: list[dict],
     nombre_map: dict[str, str],
-    grupo_idx: dict[tuple[str, str], int],
+    match_dir_idx: dict[tuple[str, str], tuple[int, bool]],
 ) -> tuple[list[dict], int]:
     """
     Completa / actualiza marcadores de grupos (base openfootball) con datos de API-Football.
+
+    match_dir_idx debe ser el resultado de _build_match_dir_index(), no de
+    _build_grupo_index(): el índice orientado codifica si los equipos de la API
+    están invertidos respecto al calendario, lo que determina cómo asignar los goles.
 
     Regla de fusión: solo modifica entradas cuyo estado actual es 'pendiente' o 'en_juego';
     nunca sobreescribe un 'finalizado' ya confirmado por openfootball.
@@ -386,16 +407,14 @@ def _fusionar_api_football(
         home_can = nombre_map.get(norm(home_raw), home_raw)
         away_can = nombre_map.get(norm(away_raw), away_raw)
 
-        # Buscar match_id (normal e invertido respecto al calendario)
-        mid       = grupo_idx.get((norm(home_can), norm(away_can)))
-        invertido = False
-        if mid is None:
-            mid       = grupo_idx.get((norm(away_can), norm(home_can)))
-            invertido = True
-        if mid is None:
+        # Buscar match_id y orientación usando el índice dirigido
+        entry = match_dir_idx.get((norm(home_can), norm(away_can)))
+        if entry is None:
             continue  # no es un partido de grupos 2026
+        mid, invertido = entry
 
-        # Orientar goles según quién es local en nuestro calendario
+        # invertido=True → la API pone como home al equipo que en el calendario es visitante;
+        # hay que cruzar los goles para que goles_local corresponda siempre al local del calendario.
         gl = int(g_away_raw) if invertido else int(g_home_raw)
         gv = int(g_home_raw) if invertido else int(g_away_raw)
 
@@ -443,7 +462,8 @@ def main() -> None:
     # Calendario 2026 (siempre se usa para resolver match_ids de grupos)
     with open(CALENDARIO, encoding="utf-8") as f:
         calendario = json.load(f)
-    grupo_idx = _build_grupo_index(calendario)
+    grupo_idx    = _build_grupo_index(calendario)
+    match_dir_idx = _build_match_dir_index(calendario)
 
     # Mapa de nombres para resolver aliases openfootball ↔ nombre canónico
     nombre_map: dict[str, str] | None = None
@@ -489,7 +509,7 @@ def main() -> None:
             live = _fetch_api_football_live(api_key)
             if live:
                 resultado["marcadores"], n_act = _fusionar_api_football(
-                    resultado["marcadores"], live, nombre_map or {}, grupo_idx
+                    resultado["marcadores"], live, nombre_map or {}, match_dir_idx
                 )
                 print(f"  API-Football: {n_act} marcador(es) completados/actualizados.")
             else:
