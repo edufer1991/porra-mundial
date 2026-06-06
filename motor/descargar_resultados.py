@@ -351,6 +351,71 @@ def _fetch_api_football_goleadores(key: str, league_id: int, season: int) -> lis
     return data.get("response", [])
 
 
+def _fusionar_api_football(
+    marcadores: list[dict],
+    live_fixtures: list[dict],
+    nombre_map: dict[str, str],
+    grupo_idx: dict[tuple[str, str], int],
+) -> tuple[list[dict], int]:
+    """
+    Completa / actualiza marcadores de grupos (base openfootball) con datos de API-Football.
+
+    Regla de fusión: solo modifica entradas cuyo estado actual es 'pendiente' o 'en_juego';
+    nunca sobreescribe un 'finalizado' ya confirmado por openfootball.
+    Devuelve (lista_actualizada, n_cambios).
+    """
+    STATUS_LIVE = {"1H", "HT", "2H", "ET", "BT", "P", "INT"}
+    STATUS_FT   = {"FT", "AET", "PEN"}
+
+    marc_map: dict[int, dict] = {m["match_id"]: m for m in marcadores}
+    n_act = 0
+
+    for fix in live_fixtures:
+        status_short = fix.get("fixture", {}).get("status", {}).get("short", "")
+        if status_short not in STATUS_LIVE | STATUS_FT:
+            continue
+
+        goals      = fix.get("goals", {})
+        g_home_raw = goals.get("home")
+        g_away_raw = goals.get("away")
+        if g_home_raw is None or g_away_raw is None:
+            continue
+
+        home_raw = fix.get("teams", {}).get("home", {}).get("name", "")
+        away_raw = fix.get("teams", {}).get("away", {}).get("name", "")
+        home_can = nombre_map.get(norm(home_raw), home_raw)
+        away_can = nombre_map.get(norm(away_raw), away_raw)
+
+        # Buscar match_id (normal e invertido respecto al calendario)
+        mid       = grupo_idx.get((norm(home_can), norm(away_can)))
+        invertido = False
+        if mid is None:
+            mid       = grupo_idx.get((norm(away_can), norm(home_can)))
+            invertido = True
+        if mid is None:
+            continue  # no es un partido de grupos 2026
+
+        # Orientar goles según quién es local en nuestro calendario
+        gl = int(g_away_raw) if invertido else int(g_home_raw)
+        gv = int(g_home_raw) if invertido else int(g_away_raw)
+
+        api_estado = "finalizado" if status_short in STATUS_FT else "en_juego"
+        cur_estado = marc_map.get(mid, {}).get("estado", "pendiente")
+
+        # Solo actualizar si openfootball aún no tiene el resultado definitivo
+        if cur_estado in ("pendiente", "en_juego"):
+            marc_map[mid] = {
+                "match_id":        mid,
+                "estado":          api_estado,
+                "goles_local":     gl,
+                "goles_visitante": gv,
+                "_fuente":         "api_football",
+            }
+            n_act += 1
+
+    return sorted(marc_map.values(), key=lambda m: m["match_id"]), n_act
+
+
 # ── Escritura ─────────────────────────────────────────────────────────────────
 
 def guardar_resultados(resultado: dict, path: Path = RESULTADOS) -> None:
@@ -408,11 +473,30 @@ def main() -> None:
     # Premios manuales
     premios = cargar_premios()
 
-    # API-Football (opcional)
+    # API-Football — respaldo live: solo si algún partido ya ha comenzado (guarda de cuota)
     api_key = os.environ.get("API_FOOTBALL_KEY")
     if api_key:
-        print("  API-Football disponible (respaldo activo).")
-        # TODO (Fase 3b): fusionar live fixtures cuando haya partido en curso
+        partidos_iniciados = [
+            p for p in calendario.get("partidos", [])
+            if p.get("fase") == "grupos"
+            and datetime.fromisoformat(
+                p["fecha_hora_utc"].replace("Z", "+00:00")
+            ) <= ahora
+        ]
+        if partidos_iniciados:
+            print(f"  API-Football: {len(partidos_iniciados)} partido(s) de grupo iniciado(s);"
+                  f" consultando fixtures?live=all …")
+            live = _fetch_api_football_live(api_key)
+            if live:
+                resultado["marcadores"], n_act = _fusionar_api_football(
+                    resultado["marcadores"], live, nombre_map or {}, grupo_idx
+                )
+                print(f"  API-Football: {n_act} marcador(es) completados/actualizados.")
+            else:
+                print("  API-Football: fixtures?live=all vacío"
+                      " (ningún partido en curso en este momento).")
+        else:
+            print("  API-Football: ningún partido iniciado aún — cuota preservada (0 llamadas).")
 
     # Construir resultados.json
     ahora_iso = ahora.strftime("%Y-%m-%dT%H:%M:%SZ")
