@@ -25,7 +25,7 @@ from motor.descargar_resultados import (
     _build_nombre_map,
     parsear_openfootball,
 )
-from motor.puntuar import puntuar_participante, ordenar_clasificacion
+from motor.puntuar_v1 import puntuar_participante, ordenar_clasificacion
 
 
 # ── Bracket sintético ─────────────────────────────────────────────────────────

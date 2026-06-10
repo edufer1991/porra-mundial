@@ -19,7 +19,7 @@ import pytest
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from motor.puntuar import (
+from motor.puntuar_v1 import (
     ordenar_clasificacion,
     puntuar_eliminatorias,
     puntuar_grupos,
