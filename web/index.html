@@ -117,72 +117,76 @@
   <section class="view" id="view-reglas">
     <div class="section-title">Sistema de puntuación</div>
 
-    <div class="reglas-section" style="display:none">
-      <div class="reglas-title">⚽ Fase de Grupos <small style="font-size:.7rem;font-weight:400;opacity:.6">(72 partidos)</small></div>
+    <div class="reglas-section">
+      <div class="reglas-title">⚽ Fase de grupos <small style="font-size:.7rem;font-weight:400;opacity:.6">(por partido)</small></div>
       <table class="reglas-table">
-        <tr><td>Signo correcto (1 / X / 2)</td><td>+3 pts</td></tr>
-        <tr><td>Goles del local exactos</td><td>+goles_local + 1</td></tr>
-        <tr><td>Goles del visitante exactos</td><td>+goles_visit + 1</td></tr>
+        <tr><td>Acertar el ganador (o empate)</td><td>+5 pts</td></tr>
+        <tr><td>Acertar la diferencia de goles <small style="opacity:.6">(solo si acertaste el ganador)</small></td><td>+2 pts</td></tr>
+        <tr><td>Acertar el marcador exacto <small style="opacity:.6">(solo si acertaste la diferencia)</small></td><td>+8 pts</td></tr>
+        <tr><td>Acertar la posición final de un equipo en su grupo <small style="opacity:.6">(1º, 2º, 3º o 4º)</small></td><td>+5 pts cada una</td></tr>
+        <tr><td>Acertar qué equipo pasa a dieciseisavos</td><td>+5 pts</td></tr>
       </table>
       <div class="reglas-note">
-        Los tres conceptos son <strong>independientes</strong>. Ejemplo: pronóstico 1|1-2, resultado 1-2 →
-        signo ✓ (+3) + local ✓ (+1+1=2) + visitante ✓ (+2+1=3) = <strong>8 pts</strong>.
+        Los puntos del marcador son <strong>acumulativos</strong>: ganador → diferencia → exacto.
+        Ejemplo: pronóstico 1|2-1, resultado 1|3-2 → ganador ✓ (+5) + diferencia ✓ (+2) = <strong>7 pts</strong>.
       </div>
     </div>
 
-    <div class="reglas-section" style="display:none">
-      <div class="reglas-title">🏆 Eliminatorias <small style="font-size:.7rem;font-weight:400;opacity:.6">(acumulativo)</small></div>
+    <div class="reglas-section">
+      <div class="reglas-title">🏆 Fase eliminatoria <small style="font-size:.7rem;font-weight:400;opacity:.6">(por partido, desde dieciseisavos hasta semifinales)</small></div>
       <table class="reglas-table">
-        <tr><td>Clasificado a 1/16 (R32)</td><td>+5 pts</td></tr>
-        <tr><td>Clasificado a 1/8 (R16)</td><td>+10 pts</td></tr>
-        <tr><td>Clasificado a 1/4</td><td>+15 pts</td></tr>
-        <tr><td>Clasificado a Semis</td><td>+20 pts</td></tr>
-        <tr><td>Clasificado a Final</td><td>+30 pts</td></tr>
+        <tr><td>Acertar el ganador</td><td>+5 pts</td></tr>
+        <tr><td>Acertar la diferencia de goles <small style="opacity:.6">(solo si acertaste el ganador)</small></td><td>+2 pts</td></tr>
+        <tr><td>Acertar el marcador exacto <small style="opacity:.6">(solo si acertaste la diferencia)</small></td><td>+8 pts</td></tr>
+        <tr><td>Acertar qué equipo pasa a dieciseisavos</td><td>+10 pts</td></tr>
+        <tr><td>Acertar qué equipo pasa a octavos</td><td>+12 pts</td></tr>
+        <tr><td>Acertar qué equipo pasa a cuartos</td><td>+14 pts</td></tr>
+        <tr><td>Acertar qué equipo pasa a semifinales</td><td>+16 pts</td></tr>
+        <tr><td>Acertar qué equipo pasa a la final</td><td>+20 pts</td></tr>
       </table>
       <div class="reglas-note">
-        Puntos por cada selección que pronosticaste <strong>en esa ronda</strong> y realmente llegó a ella.
-        Un finalista que acertaste puntúa en <strong>todas</strong> las rondas: 5+10+15+20+30 = <strong>80 pts</strong>.
+        En el <strong>partido por el 3.<sup>er</sup> puesto y la final</strong> se aplican los mismos
+        criterios de marcador (ganador / diferencia / exacto).
       </div>
     </div>
 
-    <div class="reglas-section" style="display:none">
-      <div class="reglas-title">🥇 Posiciones de Honor</div>
+    <div class="reglas-section">
+      <div class="reglas-title">🥇 Cuadro de honor</div>
       <table class="reglas-table">
-        <tr><td>Campeón</td><td>+50 pts</td></tr>
-        <tr><td>Subcampeón</td><td>+40 pts</td></tr>
-        <tr><td>3.º Puesto</td><td>+30 pts</td></tr>
-        <tr><td>4.º Puesto</td><td>+20 pts</td></tr>
-      </table>
-    </div>
-
-    <div class="reglas-section" style="display:none">
-      <div class="reglas-title">🌟 Premios Individuales</div>
-      <table class="reglas-table">
-        <tr><td>Máximo goleador</td><td>+25 pts</td></tr>
-        <tr><td>MVP (Balón de Oro)</td><td>+25 pts</td></tr>
-        <tr><td>Portero menos goleado</td><td>+20 pts</td></tr>
+        <tr><td>Campeón</td><td>+25 pts</td></tr>
+        <tr><td>Subcampeón</td><td>+20 pts</td></tr>
+        <tr><td>3.<sup>er</sup> puesto</td><td>+15 pts</td></tr>
+        <tr><td>4.<sup>o</sup> puesto</td><td>+10 pts</td></tr>
       </table>
     </div>
 
     <div class="reglas-section">
-      <div class="reglas-title">💰 Reparto de premios</div>
+      <div class="reglas-title">🌟 Premios individuales</div>
       <table class="reglas-table">
-        <tr><td>1.º clasificado general</td><td>40 %</td></tr>
-        <tr><td>2.º clasificado general</td><td>25 %</td></tr>
-        <tr><td>3.º clasificado general</td><td>15 %</td></tr>
-        <tr><td>1.º de fase previa (grupos)</td><td>10 %</td></tr>
-        <tr><td>Mejor nickname</td><td>10 %</td></tr>
+        <tr><td>Máximo goleador</td><td>+15 pts</td></tr>
+        <tr><td>Mejor jugador (MVP)</td><td>+15 pts</td></tr>
+        <tr><td>Mejor portero</td><td>+15 pts</td></tr>
       </table>
     </div>
 
     <div class="reglas-section">
       <div class="reglas-title">⚖️ Desempate</div>
       <div class="reglas-note">
-        En caso de empate en puntos totales, se desempata por <strong>puntos de fase eliminatoria</strong>
-        (eliminatorias + honor, sin contar grupos ni premios individuales).
-        Si el empate persiste → <strong>reparto</strong> (misma posición).<br><br>
-        La <strong>sub-clasificación de fase previa</strong> (solo grupos) decide el premio especial al 1.º de grupos.
+        Si dos o más participantes tienen los <strong>mismos puntos totales</strong>, gana quien
+        haya acertado más <strong>equipos clasificados</strong> y <strong>posiciones de honor</strong>.
+        Los marcadores y los premios individuales <strong>no cuentan</strong> para el desempate.
       </div>
+    </div>
+
+    <div class="reglas-section">
+      <div class="reglas-title">💰 Reparto del bote</div>
+      <table class="reglas-table">
+        <tr><td>1.<sup>er</sup> clasificado general</td><td>40 %</td></tr>
+        <tr><td>2.<sup>o</sup> clasificado general</td><td>25 %</td></tr>
+        <tr><td>3.<sup>er</sup> clasificado general</td><td>15 %</td></tr>
+        <tr><td>1.<sup>o</sup> de la fase de grupos</td><td>10 %</td></tr>
+        <tr><td>Mejor nickname</td><td>10 %</td></tr>
+      </table>
     </div>
   </section>
 
