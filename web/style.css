@@ -736,6 +736,15 @@ a      { color: inherit; text-decoration: none; }
   overflow: visible;
 }
 
+/* Match result hit/miss indicators (G=ganador D=diferencia E=exacto) */
+.ind {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: .62rem; font-weight: 800; width: 15px; height: 15px;
+  border-radius: 3px; margin-left: 2px; letter-spacing: 0; vertical-align: middle;
+}
+.ind.ok { background: rgba(74,222,128,.15); color: var(--green); }
+.ind.no { background: rgba(248,113,113,.08); color: rgba(252,165,165,.55); }
+
 /* Pending toggle row */
 .match-row.pending-toggle-row {
   cursor: pointer;

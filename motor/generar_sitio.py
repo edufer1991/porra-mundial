@@ -119,11 +119,12 @@ def generar_detalle(porra: str,
         pp   = pron.get("pronosticos", {})
 
         detalle[nick] = {
-            "nickname":    nick,
-            "grupos":      _detalle_grupos(pp.get("grupos", []), marcadores_map, reglas),
-            "clasificados": pp.get("clasificados", {}),
-            "honor":       pp.get("honor", {}),
-            "premios":     pp.get("premios", {}),
+            "nickname":      nick,
+            "grupos":        _detalle_grupos(pp.get("grupos", []), marcadores_map, reglas),
+            "elim_marcadores": pp.get("elim_marcadores", []),
+            "clasificados":  pp.get("clasificados", {}),
+            "honor":         pp.get("honor", {}),
+            "premios":       pp.get("premios", {}),
         }
 
     return detalle
