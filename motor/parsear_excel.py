@@ -87,6 +87,13 @@ def _parsear_jornada(codigo) -> tuple[str | None, str | None]:
 # ── Parseo de predicción de grupos ───────────────────────────────────────────
 _RE_PRED = re.compile(r"^([1X2])\|(\d+)-(\d+)$")
 
+# ── Posiciones de grupo (filas 80-127, col B label + col C equipo) ────────────
+_RE_GROUP_POS = re.compile(r"^(1st|2nd|3rd|4th)\s+GROUP\s+([A-L])$", re.IGNORECASE)
+_ORD_MAP = {"1st": 1, "2nd": 2, "3rd": 3, "4th": 4}
+
+# ── Marcadores de eliminatoria (col C: "Local-Visitante·SIGNO|GL-GV") ─────────
+_RE_ELIM_PRED = re.compile(r"·([1X2])\|(\d+)-(\d+)$")
+
 def _parsear_pred_grupo(valor) -> dict | None:
     """
     '1|2-0' -> {signo:'1', goles_local:2, goles_visitante:0}
@@ -131,6 +138,97 @@ def _resolver_equipo(valor, nombre_idx: dict[str, str]) -> str | None:
         return None
     clave = norm(str(valor))
     return nombre_idx.get(clave)  # None si no reconocido
+
+
+def _split_match_elim(b_val, nombre_idx: dict[str, str]) -> tuple[str | None, str | None]:
+    """
+    Divide "LocalTeam-AwayTeam" (col B) en nombres canónicos.
+    Prueba cada '-' como separador para manejar nombres con guion.
+    """
+    s = str(b_val).strip()
+    pos = 0
+    while True:
+        idx = s.find("-", pos)
+        if idx == -1:
+            break
+        cand_l = s[:idx].strip()
+        cand_v = s[idx + 1:].strip()
+        l_can = nombre_idx.get(norm(cand_l))
+        v_can = nombre_idx.get(norm(cand_v))
+        if l_can and v_can:
+            return l_can, v_can
+        pos = idx + 1
+    # Fallback: primer guion
+    parts = s.split("-", 1)
+    if len(parts) == 2:
+        return (
+            nombre_idx.get(norm(parts[0].strip()), parts[0].strip()),
+            nombre_idx.get(norm(parts[1].strip()), parts[1].strip()),
+        )
+    return s, None
+
+
+def _parsear_posiciones_grupo(ws, nombre_idx: dict[str, str]) -> list[dict]:
+    """
+    Lee filas 80-127 de la hoja Pool.
+    Col B: etiqueta "1st GROUP A" … "4th GROUP L"
+    Col C: nombre del equipo
+    Devuelve 48 entradas (12 grupos × 4 posiciones).
+    No existe bloque separado de mejores terceros en el Excel; las posiciones 3
+    de cada grupo ya están incluidas aquí con pos=3.
+    """
+    posiciones: list[dict] = []
+    for fila in range(80, 128):
+        etiqueta  = ws.cell(fila, 2).value  # col B
+        equipo_raw = ws.cell(fila, 3).value  # col C
+        if not etiqueta or not equipo_raw:
+            continue
+        m = _RE_GROUP_POS.match(str(etiqueta).strip())
+        if not m:
+            continue
+        pos    = _ORD_MAP[m.group(1).lower()]
+        grupo  = m.group(2).upper()
+        equipo = nombre_idx.get(norm(str(equipo_raw)), str(equipo_raw).strip())
+        entrada: dict = {"grupo": grupo, "pos": pos, "equipo": equipo}
+        if pos == 3:
+            entrada["mejor_tercero"] = True
+        posiciones.append(entrada)
+    return posiciones
+
+
+def _parsear_elim_marcadores(ws, nombre_idx: dict[str, str]) -> list[dict]:
+    """
+    Lee los marcadores de los partidos de eliminatoria desde col C.
+    Formato celda: "Local-Visitante·SIGNO|GL-GV"
+    """
+    RONDAS: list[tuple[str, list[int]]] = [
+        ("1/16",  list(range(164, 180))),
+        ("1/8",   list(range(200, 208))),
+        ("1/4",   list(range(220, 224))),
+        ("semis", list(range(232, 234))),
+        ("3-4",   [244]),
+        ("final", [247]),
+    ]
+    marcadores: list[dict] = []
+    for ronda, filas in RONDAS:
+        for fila in filas:
+            col_b = ws.cell(fila, 2).value
+            col_c = ws.cell(fila, 3).value
+            if not col_b or not col_c:
+                continue
+            m = _RE_ELIM_PRED.search(str(col_c).strip())
+            if not m:
+                continue
+            local, visitante = _split_match_elim(col_b, nombre_idx)
+            marcadores.append({
+                "ronda":    ronda,
+                "local":    local,
+                "visitante": visitante,
+                "signo":    m.group(1),
+                "gl":       int(m.group(2)),
+                "gv":       int(m.group(3)),
+            })
+    return marcadores
 
 
 # ── Parser principal ──────────────────────────────────────────────────────────
@@ -211,6 +309,12 @@ def parsear_excel(ruta_excel: Path, porra: str) -> dict:
                 cuarto = eq
                 break
 
+    # ── Posiciones de grupo ───────────────────────────────────────────────────
+    posiciones_grupo = _parsear_posiciones_grupo(ws, nombre_idx)
+
+    # ── Marcadores de eliminatoria ────────────────────────────────────────────
+    elim_marcadores = _parsear_elim_marcadores(ws, nombre_idx)
+
     # ── Premios de jugador ────────────────────────────────────────────────────
     def _texto(v) -> str | None:
         if v is None:
@@ -248,6 +352,8 @@ def parsear_excel(ruta_excel: Path, porra: str) -> dict:
         "advertencias":    advertencias,
         "pronosticos": {
             "grupos": pronosticos_grupos,
+            "posiciones_grupo": posiciones_grupo,
+            "elim_marcadores": elim_marcadores,
             "clasificados": {
                 "1/16":  teams_1_16,
                 "1/8":   teams_1_8,
