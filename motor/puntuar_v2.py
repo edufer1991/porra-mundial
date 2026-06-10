@@ -34,8 +34,10 @@ import json
 import unicodedata
 from pathlib import Path
 
-BASE       = Path(__file__).resolve().parent.parent
-CALENDARIO = BASE / "datos" / "calendario.json"
+BASE        = Path(__file__).resolve().parent.parent
+CALENDARIO  = BASE / "datos" / "calendario.json"
+PRONOSTICOS = BASE / "datos" / "pronosticos"
+ALIAS_JUGAD = BASE / "datos" / "alias_jugadores.json"  # opcional
 
 
 # ── Reglas del sistema matejero (valores fijos del enunciado) ────────────────
@@ -399,4 +401,60 @@ def puntuar_participante(pronostico: dict,
     }
 
 
-__all__ = ["puntuar_participante", "REGLAS_V2", "signo_de"]
+# ── Alias de compatibilidad con v1 ───────────────────────────────────────────
+signo_real = signo_de   # generar_sitio.py usa el nombre signo_real
+
+
+# ── Ordenación (idéntica a v1; desempate por puntos_fase_eliminatoria) ────────
+def ordenar_clasificacion(participantes: list[dict]) -> list[dict]:
+    ordenados = sorted(
+        list(participantes),
+        key=lambda x: (-x["puntos_total"], -x["puntos_fase_eliminatoria"], norm(x.get("nickname") or "")),
+    )
+    for i, p in enumerate(ordenados):
+        p["posicion"] = i + 1
+        p["empate"]   = False
+
+    i = 0
+    while i < len(ordenados):
+        j = i + 1
+        while (j < len(ordenados)
+               and ordenados[j]["puntos_total"]              == ordenados[i]["puntos_total"]
+               and ordenados[j]["puntos_fase_eliminatoria"]  == ordenados[i]["puntos_fase_eliminatoria"]):
+            j += 1
+        if j - i > 1:
+            for k in range(i, j):
+                ordenados[k]["empate"]   = True
+                ordenados[k]["posicion"] = i + 1
+        i = j
+
+    by_previa = sorted(ordenados, key=lambda x: (-x["puntos_fase_previa"], norm(x.get("nickname") or "")))
+    for i, p in enumerate(by_previa):
+        p["posicion_fase_previa"] = i + 1
+
+    return ordenados
+
+
+# ── End-to-end por porra (interfaz compatible con v1; reglas ignoradas en v2) ─
+def generar_clasificacion(porra: str,
+                          resultados: dict,
+                          reglas: dict | None = None,
+                          alias_jugadores: dict | None = None) -> list[dict]:
+    dir_porra = PRONOSTICOS / porra
+    if not dir_porra.exists():
+        return []
+
+    cal = _cargar_calendario()
+    participantes: list[dict] = []
+    for ruta in sorted(dir_porra.glob("*.json")):
+        with open(ruta, encoding="utf-8") as f:
+            pron = json.load(f)
+        participantes.append(puntuar_participante(pron, resultados, calendario=cal, alias_jugadores=alias_jugadores))
+
+    return ordenar_clasificacion(participantes)
+
+
+__all__ = [
+    "puntuar_participante", "generar_clasificacion", "ordenar_clasificacion",
+    "REGLAS_V2", "signo_de", "signo_real", "norm",
+]

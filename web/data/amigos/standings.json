@@ -5,14 +5,59 @@
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 9,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 9,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 9,
+      "puntos_total": 15,
       "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 1
@@ -20,14 +65,59 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 9,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 9,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 9,
+      "puntos_total": 15,
       "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 2
@@ -35,14 +125,59 @@
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 9,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 9,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 9,
+      "puntos_total": 15,
       "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 3
@@ -50,59 +185,239 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 9,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 9,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 9,
+      "puntos_total": 15,
       "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 4
     },
     {
-      "nickname": "Ubi",
+      "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 9,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 9,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 9,
+      "puntos_total": 15,
       "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 5
     },
     {
-      "nickname": "Maximo10",
+      "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 8,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 8,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 8,
+      "puntos_total": 15,
       "advertencias_premios": [],
-      "posicion": 6,
-      "empate": false,
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 1,
+      "empate": true,
       "posicion_fase_previa": 6
     },
     {
-      "nickname": "Pulpo Paul",
+      "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 7,
+      "puntos_grupos": 5,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 7,
+      "puntos_fase_previa": 5,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 7,
+      "puntos_total": 5,
       "advertencias_premios": [],
+      "total": 5,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 5,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 7,
       "empate": false,
       "posicion_fase_previa": 7
@@ -118,6 +433,38 @@
       "puntos_fase_eliminatoria": 0,
       "puntos_total": 0,
       "advertencias_premios": [],
+      "total": 0,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
       "posicion": 8,
       "empate": false,
       "posicion_fase_previa": 8

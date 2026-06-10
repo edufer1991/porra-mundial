@@ -29,7 +29,7 @@ from pathlib import Path
 BASE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(BASE))
 
-from motor.puntuar import (
+from motor.puntuar_v2 import (
     generar_clasificacion,
     norm,
     signo_real,

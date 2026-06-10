@@ -873,6 +873,265 @@
         }
       }
     ],
+    "posiciones_grupo": [],
+    "elim_marcadores": [
+      {
+        "ronda": "1/16",
+        "local": "South Korea",
+        "visitante": "Switzerland",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/16",
+        "local": "Morocco",
+        "visitante": "Netherlands",
+        "signo": "1",
+        "gl": 3,
+        "gv": 2
+      },
+      {
+        "ronda": "1/16",
+        "local": "Germany",
+        "visitante": "Scotland",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/16",
+        "local": "Japan",
+        "visitante": "Brazil",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/16",
+        "local": "Ivory Coast",
+        "visitante": "Senegal",
+        "signo": "2",
+        "gl": 1,
+        "gv": 2
+      },
+      {
+        "ronda": "1/16",
+        "local": "France",
+        "visitante": "USA",
+        "signo": "1",
+        "gl": 3,
+        "gv": 0
+      },
+      {
+        "ronda": "1/16",
+        "local": "Mexico",
+        "visitante": "Saudi Arabia",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/16",
+        "local": "England",
+        "visitante": "Norway",
+        "signo": "1",
+        "gl": 3,
+        "gv": 2
+      },
+      {
+        "ronda": "1/16",
+        "local": "Belgium",
+        "visitante": "Czech Republic",
+        "signo": "2",
+        "gl": 1,
+        "gv": 2
+      },
+      {
+        "ronda": "1/16",
+        "local": "Turkey",
+        "visitante": "Qatar",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/16",
+        "local": "Spain",
+        "visitante": "Algeria",
+        "signo": "1",
+        "gl": 3,
+        "gv": 1
+      },
+      {
+        "ronda": "1/16",
+        "local": "Portugal",
+        "visitante": "Croatia",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/16",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "New Zealand",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/16",
+        "local": "Paraguay",
+        "visitante": "Egypt",
+        "signo": "2",
+        "gl": 1,
+        "gv": 2
+      },
+      {
+        "ronda": "1/16",
+        "local": "Argentina",
+        "visitante": "Uruguay",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/16",
+        "local": "Colombia",
+        "visitante": "Ecuador",
+        "signo": "2",
+        "gl": 0,
+        "gv": 2
+      },
+      {
+        "ronda": "1/8",
+        "local": "South Korea",
+        "visitante": "Japan",
+        "signo": "2",
+        "gl": 0,
+        "gv": 2
+      },
+      {
+        "ronda": "1/8",
+        "local": "Germany",
+        "visitante": "France",
+        "signo": "2",
+        "gl": 1,
+        "gv": 3
+      },
+      {
+        "ronda": "1/8",
+        "local": "Morocco",
+        "visitante": "Senegal",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/8",
+        "local": "Mexico",
+        "visitante": "England",
+        "signo": "2",
+        "gl": 1,
+        "gv": 2
+      },
+      {
+        "ronda": "1/8",
+        "local": "Portugal",
+        "visitante": "Spain",
+        "signo": "2",
+        "gl": 0,
+        "gv": 2
+      },
+      {
+        "ronda": "1/8",
+        "local": "Turkey",
+        "visitante": "Czech Republic",
+        "signo": "2",
+        "gl": 2,
+        "gv": 3
+      },
+      {
+        "ronda": "1/8",
+        "local": "Argentina",
+        "visitante": "Egypt",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/8",
+        "local": "Bosnia-Herzegovina",
+        "visitante": "Ecuador",
+        "signo": "2",
+        "gl": 1,
+        "gv": 2
+      },
+      {
+        "ronda": "1/4",
+        "local": "France",
+        "visitante": "Japan",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/4",
+        "local": "Spain",
+        "visitante": "Czech Republic",
+        "signo": "1",
+        "gl": 2,
+        "gv": 0
+      },
+      {
+        "ronda": "1/4",
+        "local": "Morocco",
+        "visitante": "England",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "1/4",
+        "local": "Argentina",
+        "visitante": "Ecuador",
+        "signo": "1",
+        "gl": 3,
+        "gv": 2
+      },
+      {
+        "ronda": "semis",
+        "local": "France",
+        "visitante": "Spain",
+        "signo": "1",
+        "gl": 3,
+        "gv": 2
+      },
+      {
+        "ronda": "semis",
+        "local": "Morocco",
+        "visitante": "Argentina",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "3-4",
+        "local": "Spain",
+        "visitante": "Argentina",
+        "signo": "1",
+        "gl": 2,
+        "gv": 1
+      },
+      {
+        "ronda": "final",
+        "local": "France",
+        "visitante": "Morocco",
+        "signo": "1",
+        "gl": 3,
+        "gv": 1
+      }
+    ],
     "clasificados": {
       "1/16": [
         "South Korea",
