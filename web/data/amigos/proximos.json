@@ -60,6 +60,14 @@
         }
       },
       {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Ubi",
         "prediccion": {
           "signo": "1",
@@ -123,6 +131,14 @@
       },
       {
         "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
         "prediccion": {
           "signo": "2",
           "goles_local": 1,
@@ -200,6 +216,14 @@
         }
       },
       {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Ubi",
         "prediccion": {
           "signo": "1",
@@ -267,6 +291,14 @@
           "signo": "1",
           "goles_local": 1,
           "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
         }
       },
       {
@@ -340,6 +372,14 @@
         }
       },
       {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 11
+        }
+      },
+      {
         "nickname": "Ubi",
         "prediccion": {
           "signo": "2",
@@ -407,6 +447,14 @@
           "signo": "1",
           "goles_local": 2,
           "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
         }
       },
       {
@@ -480,6 +528,14 @@
         }
       },
       {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
         "nickname": "Ubi",
         "prediccion": {
           "signo": "2",
@@ -546,6 +602,14 @@
         "prediccion": {
           "signo": "2",
           "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
           "goles_visitante": 2
         }
       },

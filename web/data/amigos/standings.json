@@ -93,7 +93,7 @@
       "posicion_fase_previa": 6
     },
     {
-      "nickname": "Ubi",
+      "nickname": "Tucas",
       "porra": "amigos",
       "puntos_grupos": 0,
       "puntos_eliminatorias": 0,
@@ -106,6 +106,21 @@
       "posicion": 1,
       "empate": true,
       "posicion_fase_previa": 7
+    },
+    {
+      "nickname": "Ubi",
+      "porra": "amigos",
+      "puntos_grupos": 0,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 0,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 0,
+      "advertencias_premios": [],
+      "posicion": 1,
+      "empate": true,
+      "posicion_fase_previa": 8
     }
   ]
 }
