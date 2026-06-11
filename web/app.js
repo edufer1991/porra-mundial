@@ -25,7 +25,7 @@ let state = {
   snapshots: null,
   resultados: null,
   selectedNick: null,
-  activeTab: 'clasificacion',
+  activeTab: 'mi-porra',
   prevStandings: null,
   refreshTimer: null,
   lastUpdate: null,
@@ -284,92 +284,28 @@ function selectNick(nick) {
 
 function renderNickDetail(nick) {
   const detailEl = $('mi-porra-detail');
-  const standingP = state.standings?.clasificacion?.find(p => p.nickname === nick);
-  const detalleP  = state.detalle?.[nick];
+  const detalleP = state.detalle?.[nick];
 
-  if (!standingP) {
+  if (!state.standings?.clasificacion?.find(p => p.nickname === nick)) {
     detailEl.className = 'mi-porra-detail show';
     detailEl.innerHTML = '<div class="empty-state"><div class="icon">🔍</div>Nickname no encontrado</div>';
     return;
   }
 
-  let html = `
-    <!-- Resumen de puntos -->
-    <div class="score-breakdown">
-      <div class="score-card total">
-        <div class="score-card-label">Total</div>
-        <div class="score-card-pts">${fmtPts(standingP.puntos_total)}</div>
-        <div class="score-card-sub">Posición ${standingP.posicion}${standingP.empate ? ' (empate)' : ''}</div>
-      </div>
-      <div class="score-card">
-        <div class="score-card-label">Grupos</div>
-        <div class="score-card-pts">${fmtPts(standingP.puntos_grupos)}</div>
-      </div>
-      <div class="score-card">
-        <div class="score-card-label">Eliminatorias</div>
-        <div class="score-card-pts">${fmtPts(standingP.puntos_eliminatorias)}</div>
-      </div>
-      <div class="score-card">
-        <div class="score-card-label">Honor</div>
-        <div class="score-card-pts">${fmtPts(standingP.puntos_honor)}</div>
-      </div>
-      <div class="score-card">
-        <div class="score-card-label">Premios</div>
-        <div class="score-card-pts">${fmtPts(standingP.puntos_premios)}</div>
-      </div>
-    </div>
-  `;
-
-  // Advertencias de premios
-  if (standingP.advertencias_premios?.length) {
-    html += `<div class="advertencias mb16">
-      <div class="advertencias-title">⚠ Pendiente revisión manual</div>`;
-    standingP.advertencias_premios.forEach(a => {
-      html += `<div class="advertencia-row">
-        <strong>${escHtml(a.premio)}</strong>:
-        predicción "<em>${escHtml(a.prediccion || '?')}</em>" vs
-        real "<em>${escHtml(a.real || '?')}</em>"
-      </div>`;
-    });
-    html += '</div>';
-  }
-
   if (!detalleP) {
     detailEl.className = 'mi-porra-detail show';
-    detailEl.innerHTML = html;
+    detailEl.innerHTML = '<div class="empty-state"><div class="icon">📋</div>Sin datos de pronóstico</div>';
     return;
   }
 
-  // Grupos detallados
-  const completados = (detalleP.grupos || []).filter(g => g.resultado);
-  const pendientes  = (detalleP.grupos || []).filter(g => !g.resultado);
+  let html = '';
 
-  if (completados.length) {
-    html += `<div class="section-title mt16">Partidos de grupos finalizados</div>
-    <div class="match-table">`;
-    completados.forEach(g => {
-      const pts = g.puntos ?? 0;
-      const cls = pts > 0 ? 'correct' : 'wrong';
-      const pStr = g.prediccion ? `${g.prediccion.goles_local}-${g.prediccion.goles_visitante} (${g.prediccion.signo})` : '—';
-      const rStr = `${g.resultado.goles_local}-${g.resultado.goles_visitante}`;
-      html += `<div class="match-row ${cls}">
-        <div class="match-row-idx">${g.match_id}</div>
-        <div class="match-row-teams">
-          <div class="match-teams-main">${escHtml(g.local)} - ${escHtml(g.visitante)}</div>
-          <div class="match-subtext">Pred: ${pStr} · Real: ${rStr}</div>
-        </div>
-        <div class="match-row-pred">${g.acierto_signo ? '✓' : '✗'}${g.acierto_local ? '✓' : '✗'}${g.acierto_visitante ? '✓' : '✗'}</div>
-        <div class="match-row-pts ${pts > 0 ? 'pos' : 'zero'}">${pts > 0 ? '+'+pts : '0'}</div>
-      </div>`;
-    });
-    html += '</div>';
-  }
-
-  if (pendientes.length) {
+  // Grupos — todos en lista neutra, sin coloreado ni puntos
+  const todosGrupos = detalleP.grupos || [];
+  if (todosGrupos.length) {
     const showAll = state.showAllPending;
-    const visible = showAll ? pendientes : pendientes.slice(0, 8);
-    html += `<div class="section-title mt16">Partidos pendientes</div>
-    <div class="match-table">`;
+    const visible = showAll ? todosGrupos : todosGrupos.slice(0, 8);
+    html += `<div class="section-title mt16">Partidos de grupos</div><div class="match-table">`;
     visible.forEach(g => {
       const pStr = g.prediccion ? `${g.prediccion.goles_local}-${g.prediccion.goles_visitante} (${g.prediccion.signo})` : '—';
       html += `<div class="match-row pending">
@@ -378,12 +314,10 @@ function renderNickDetail(nick) {
           <div class="match-teams-main">${escHtml(g.local)} - ${escHtml(g.visitante)}</div>
           <div class="match-subtext">Pred: ${pStr}</div>
         </div>
-        <div class="match-row-pred">—</div>
-        <div class="match-row-pts zero">—</div>
       </div>`;
     });
-    if (pendientes.length > 8) {
-      const more = pendientes.length - 8;
+    if (todosGrupos.length > 8) {
+      const more = todosGrupos.length - 8;
       html += `<div class="match-row pending-toggle-row" id="pending-toggle">
         <div class="match-row-idx">${showAll ? '▲' : '▼'}</div>
         <div class="match-row-teams">${showAll ? 'Mostrar menos' : `Ver ${more} pronósticos más`}</div>
@@ -393,81 +327,51 @@ function renderNickDetail(nick) {
     html += '</div>';
   }
 
-  // Eliminatorias
-  if (detalleP.clasificados && state.resultados) {
+  // Eliminatorias — equipos sin hit/miss ni puntos
+  if (detalleP.clasificados) {
     html += `<div class="section-title mt16">Eliminatorias</div>`;
-    const rondas = ['1/16','1/8','1/4','semis','final'];
-    const ptsMap = {'1/16':5,'1/8':10,'1/4':15,'semis':20,'final':30};
-    rondas.forEach(r => {
-      const pred = new Set((detalleP.clasificados[r] || []).map(t => t.toLowerCase()));
-      const real = new Set((state.resultados.clasificados?.[r] || []).map(t => t.toLowerCase()));
-      let ptsRonda = 0;
-      const teamsHtml = [...pred].map(t => {
-        const hit = real.has(t);
-        if (hit) ptsRonda += ptsMap[r];
-        return `<span class="elim-team ${hit ? 'hit' : 'miss'}">${escHtml(t)}</span>`;
-      }).join('');
-      const empty = pred.size === 0 ? '<span style="color:var(--text3);font-size:.75rem">—</span>' : '';
+    ['1/16','1/8','1/4','semis','final'].forEach(r => {
+      const pred = detalleP.clasificados[r] || [];
+      const teamsHtml = pred.map(t => `<span class="elim-team">${escHtml(t)}</span>`).join('');
       html += `<div class="elim-round">
         <span class="elim-round-label">${r}</span>
-        <div class="elim-teams">${teamsHtml || empty}</div>
-        <span class="elim-round-pts">+${ptsRonda}</span>
+        <div class="elim-teams">${teamsHtml || '<span style="color:var(--text3);font-size:.75rem">—</span>'}</div>
       </div>`;
     });
   }
 
-  // Honor
-  if (detalleP.honor && state.resultados?.honor) {
-    const rh = state.resultados.honor;
-    const ph = detalleP.honor;
-    const honorRows = [
-      {k:'campeon',  label:'Campeón',    pts:50},
-      {k:'subcampeon',label:'Subcampeón',pts:40},
-      {k:'tercero',  label:'3.º',        pts:30},
-      {k:'cuarto',   label:'4.º',        pts:20},
-    ];
-    html += `<div class="section-title mt16">Posiciones de honor</div>
-    <div class="match-table">`;
-    honorRows.forEach(({k, label, pts}) => {
-      const pred = ph[k]; const real = rh[k];
-      const hit = pred && real && pred.toLowerCase() === real.toLowerCase();
-      html += `<div class="match-row match-row--honor ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+  // Posiciones de honor — solo predicción
+  if (detalleP.honor) {
+    html += `<div class="section-title mt16">Posiciones de honor</div><div class="match-table">`;
+    [
+      {k:'campeon',    label:'Campeón'},
+      {k:'subcampeon', label:'Subcampeón'},
+      {k:'tercero',    label:'3.º'},
+      {k:'cuarto',     label:'4.º'},
+    ].forEach(({k, label}) => {
+      html += `<div class="match-row pending">
         <div class="match-row-idx">${label}</div>
         <div class="match-row-teams">
-          <div class="match-teams-main">
-            Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
-          </div>
+          <div class="match-teams-main">${escHtml(detalleP.honor[k] || '—')}</div>
         </div>
-        <div class="match-row-pred">${real ? (hit ? '✓' : '✗') : '—'}</div>
-        <div class="match-row-pts ${hit ? 'pos' : 'zero'}">${hit ? '+'+pts : (real ? '0' : '—')}</div>
       </div>`;
     });
     html += '</div>';
   }
 
-  // Premios
-  if (detalleP.premios && state.resultados?.premios) {
-    const rp = state.resultados.premios;
-    const pp = detalleP.premios;
-    const premiosRows = [
-      {k:'goleador', label:'Goleador',    pts:25},
-      {k:'mvp',      label:'MVP',         pts:25},
-      {k:'portero',  label:'Portero',     pts:20},
-    ];
-    html += `<div class="section-title mt16">Premios individuales</div>
-    <div class="match-table">`;
-    premiosRows.forEach(({k, label, pts}) => {
-      const pred = pp[k]; const real = rp[k];
-      const hit = pred && real && normalize(pred) === normalize(real);
-      html += `<div class="match-row match-row--honor ${real ? (hit ? 'correct' : 'wrong') : 'pending'}">
+  // Premios individuales — solo predicción
+  if (detalleP.premios) {
+    html += `<div class="section-title mt16">Premios individuales</div><div class="match-table">`;
+    [
+      {k:'goleador', label:'Goleador'},
+      {k:'mvp',      label:'MVP'},
+      {k:'portero',  label:'Portero'},
+    ].forEach(({k, label}) => {
+      html += `<div class="match-row pending">
         <div class="match-row-idx">${label}</div>
         <div class="match-row-teams">
-          <div class="match-teams-main">
-            Pred: ${escHtml(pred || '—')} · Real: ${escHtml(real || 'pendiente')}
-          </div>
+          <div class="match-teams-main">${escHtml(detalleP.premios[k] || '—')}</div>
         </div>
-        <div class="match-row-pred">${real ? (hit ? '✓' : '✗') : '—'}</div>
-        <div class="match-row-pts ${hit ? 'pos' : 'zero'}">${hit ? '+'+pts : (real ? '0' : '—')}</div>
       </div>`;
     });
     html += '</div>';
@@ -476,7 +380,6 @@ function renderNickDetail(nick) {
   detailEl.className = 'mi-porra-detail show';
   detailEl.innerHTML = html;
 
-  // Pending toggle click handler
   const toggleRow = detailEl.querySelector('#pending-toggle');
   if (toggleRow) {
     toggleRow.addEventListener('click', () => {
@@ -484,10 +387,6 @@ function renderNickDetail(nick) {
       renderNickDetail(state.selectedNick);
     });
   }
-}
-
-function normalize(s) {
-  return s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 }
 
 // ── EVOLUCIÓN ─────────────────────────────────────────────────────────────────

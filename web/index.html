@@ -71,20 +71,20 @@
 
   <!-- Tab Bar -->
   <nav class="tab-bar" id="tab-bar">
-    <button class="tab-btn active" data-tab="clasificacion">Clasificación</button>
-    <button class="tab-btn" data-tab="mi-porra">Mi Porra</button>
-    <button class="tab-btn" data-tab="evolucion">Evolución</button>
+    <button class="tab-btn hidden" data-tab="clasificacion">Clasificación</button>
+    <button class="tab-btn active" data-tab="mi-porra">Mi Porra</button>
+    <button class="tab-btn hidden" data-tab="evolucion">Evolución</button>
     <button class="tab-btn" data-tab="proximos">Próximos</button>
     <button class="tab-btn" data-tab="reglas">Reglas</button>
   </nav>
 
   <!-- ── View: Clasificación ─────────────────────────────────────────────── -->
-  <section class="view active" id="view-clasificacion">
+  <section class="view" id="view-clasificacion">
     <div id="standings-container"></div>
   </section>
 
   <!-- ── View: Mi Porra ──────────────────────────────────────────────────── -->
-  <section class="view" id="view-mi-porra">
+  <section class="view active" id="view-mi-porra">
     <div class="section-title">Busca tu nickname</div>
     <div class="search-wrap">
       <input id="nick-search" class="search-input" type="text" placeholder="Escribe tu nickname…">
@@ -117,7 +117,7 @@
   <section class="view" id="view-reglas">
     <div class="section-title">Sistema de puntuación</div>
 
-    <div class="reglas-section">
+    <div class="reglas-section" style="display:none">
       <div class="reglas-title">⚽ Fase de Grupos <small style="font-size:.7rem;font-weight:400;opacity:.6">(72 partidos)</small></div>
       <table class="reglas-table">
         <tr><td>Signo correcto (1 / X / 2)</td><td>+3 pts</td></tr>
@@ -130,7 +130,7 @@
       </div>
     </div>
 
-    <div class="reglas-section">
+    <div class="reglas-section" style="display:none">
       <div class="reglas-title">🏆 Eliminatorias <small style="font-size:.7rem;font-weight:400;opacity:.6">(acumulativo)</small></div>
       <table class="reglas-table">
         <tr><td>Clasificado a 1/16 (R32)</td><td>+5 pts</td></tr>
@@ -145,7 +145,7 @@
       </div>
     </div>
 
-    <div class="reglas-section">
+    <div class="reglas-section" style="display:none">
       <div class="reglas-title">🥇 Posiciones de Honor</div>
       <table class="reglas-table">
         <tr><td>Campeón</td><td>+50 pts</td></tr>
@@ -155,7 +155,7 @@
       </table>
     </div>
 
-    <div class="reglas-section">
+    <div class="reglas-section" style="display:none">
       <div class="reglas-title">🌟 Premios Individuales</div>
       <table class="reglas-table">
         <tr><td>Máximo goleador</td><td>+25 pts</td></tr>
