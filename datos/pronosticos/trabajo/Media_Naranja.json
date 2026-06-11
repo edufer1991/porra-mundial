@@ -2,10 +2,8 @@
   "nickname": "Media Naranja",
   "porra": "trabajo",
   "archivo_origen": "Media Naranja.xlsx",
-  "incompleto": true,
-  "advertencias": [
-    "premios incompletos: faltan goleador, MVP, portero"
-  ],
+  "incompleto": false,
+  "advertencias": [],
   "pronosticos": {
     "grupos": [
       {
@@ -954,9 +952,9 @@
       "cuarto": "Spain"
     },
     "premios": {
-      "goleador": null,
-      "mvp": null,
-      "portero": null
+      "goleador": "Harry Kane",
+      "mvp": "Lionel Messi",
+      "portero": "Bart Verbrugge"
     }
   }
 }
