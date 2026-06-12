@@ -4,11 +4,15 @@
   "marcadores": [
     {
       "match_id": 1,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0
     },
     {
       "match_id": 2,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1
     },
     {
       "match_id": 3,
