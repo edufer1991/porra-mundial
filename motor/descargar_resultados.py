@@ -22,7 +22,7 @@ import re
 import sys
 import unicodedata
 import urllib.request
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 BASE         = Path(__file__).resolve().parent.parent
@@ -360,6 +360,20 @@ def _fetch_api_football_live(key: str) -> list[dict]:
     return data.get("response", [])
 
 
+def _fetch_api_football_dia(key: str, fecha: str) -> list[dict]:
+    """
+    Devuelve todos los fixtures de una fecha concreta (YYYY-MM-DD).
+    Complementa a _fetch_api_football_live: fixtures?live=all solo devuelve
+    partidos activos, pero no los recién terminados que aún no están en
+    openfootball. Esta llamada cubre ese hueco.
+    """
+    url  = f"{API_FOOTBALL_BASE}/fixtures?from={fecha}&to={fecha}"
+    data = _fetch_json(url, api_key=key)
+    if not data:
+        return []
+    return data.get("response", [])
+
+
 def _fetch_api_football_goleadores(key: str, league_id: int, season: int) -> list[dict]:
     """
     Devuelve tabla de goleadores desde API-Football.
@@ -490,8 +504,32 @@ def main() -> None:
             sys.exit(1)
 
     ahora     = datetime.now(timezone.utc)
+
+    # Preservar finalizados ya confirmados en ejecuciones previas.
+    # openfootball puede tardar horas en publicar score.ft; si ya obtuvimos
+    # el resultado (vía API-Football o una ejecución anterior de openfootball),
+    # lo restauramos para no perderlo y evitar llamadas API redundantes.
+    finalizados_previos: dict[int, dict] = {}
+    if salida.exists():
+        try:
+            prev_data = json.loads(salida.read_text(encoding="utf-8"))
+            finalizados_previos = {
+                m["match_id"]: m
+                for m in prev_data.get("marcadores", [])
+                if m.get("estado") == "finalizado"
+            }
+            if finalizados_previos:
+                print(f"  Restaurando {len(finalizados_previos)} finalizado(s) de {salida.name}.")
+        except Exception:
+            pass
+
     resultado = parsear_openfootball(of_data, match_dir_idx, rondas, ahora, nombre_map)
     stats     = resultado.pop("stats")
+
+    # Restaurar resultados ya confirmados que openfootball aún no refleja
+    for m in resultado["marcadores"]:
+        if m.get("estado") == "pendiente" and m["match_id"] in finalizados_previos:
+            m.update(finalizados_previos[m["match_id"]])
 
     # Premios manuales
     premios = cargar_premios()
@@ -507,17 +545,50 @@ def main() -> None:
             ) <= ahora
         ]
         if partidos_iniciados:
-            print(f"  API-Football: {len(partidos_iniciados)} partido(s) de grupo iniciado(s);"
+            # Llamada 1: partidos activos en este momento
+            print(f"  API-Football: {len(partidos_iniciados)} partido(s) iniciado(s);"
                   f" consultando fixtures?live=all …")
             live = _fetch_api_football_live(api_key)
             if live:
                 resultado["marcadores"], n_act = _fusionar_api_football(
                     resultado["marcadores"], live, nombre_map or {}, match_dir_idx
                 )
-                print(f"  API-Football: {n_act} marcador(es) completados/actualizados.")
+                print(f"  API-Football live: {n_act} marcador(es) actualizados.")
             else:
-                print("  API-Football: fixtures?live=all vacío"
-                      " (ningún partido en curso en este momento).")
+                print("  API-Football: fixtures?live=all vacío (ningún partido activo ahora).")
+
+            # Llamada 2: partidos que deberían haber terminado (>100 min desde inicio)
+            # pero siguen pendientes — fixtures?live=all no los devuelve porque ya finalizaron.
+            DURACION_MIN = 100  # minutos suficientes para que un partido haya acabado
+            pendientes_vencidos = [
+                p for p in calendario.get("partidos", [])
+                if p.get("fase") == "grupos"
+                and datetime.fromisoformat(
+                    p["fecha_hora_utc"].replace("Z", "+00:00")
+                ) <= ahora - timedelta(minutes=DURACION_MIN)
+                and any(
+                    m["match_id"] == p["id"] and m["estado"] == "pendiente"
+                    for m in resultado["marcadores"]
+                )
+            ]
+            if pendientes_vencidos:
+                fechas_utc = {
+                    datetime.fromisoformat(
+                        p["fecha_hora_utc"].replace("Z", "+00:00")
+                    ).strftime("%Y-%m-%d")
+                    for p in pendientes_vencidos
+                }
+                for fecha in sorted(fechas_utc):
+                    print(f"  API-Football: {len([p for p in pendientes_vencidos if fecha in p['fecha_hora_utc']])} partido(s) vencido(s) sin resultado;"
+                          f" consultando fixtures?from={fecha}&to={fecha} …")
+                    recientes = _fetch_api_football_dia(api_key, fecha)
+                    if recientes:
+                        resultado["marcadores"], n_act2 = _fusionar_api_football(
+                            resultado["marcadores"], recientes, nombre_map or {}, match_dir_idx
+                        )
+                        print(f"  API-Football recientes ({fecha}): {n_act2} marcador(es) actualizados.")
+                    else:
+                        print(f"  API-Football recientes ({fecha}): sin datos.")
         else:
             print("  API-Football: ningún partido iniciado aún — cuota preservada (0 llamadas).")
 
