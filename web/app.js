@@ -24,6 +24,9 @@ let state = {
   proximos: null,
   snapshots: null,
   resultados: null,
+  calendario: null,
+  calIdx: {},          // match_id → partido (built on load)
+  sectionOpen: {},     // section ID → bool (open/closed state)
   selectedNick: null,
   activeTab: 'mi-porra',
   prevStandings: null,
@@ -122,12 +125,13 @@ async function fetchJSON(url) {
 
 async function loadAll() {
   const p = state.porra;
-  const [standings, detalle, proximos, snapshots, resultados] = await Promise.all([
+  const [standings, detalle, proximos, snapshots, resultados, calendario] = await Promise.all([
     fetchJSON(`${DATA_BASE}${p}/standings.json`),
     fetchJSON(`${DATA_BASE}${p}/detalle.json`),
     fetchJSON(`${DATA_BASE}${p}/proximos.json`),
     fetchJSON(`${DATA_BASE}${p}/snapshots.json`),
     fetchJSON(`${DATA_BASE}resultados.json`),
+    fetchJSON(`${DATA_BASE}calendario.json`),
   ]);
   state.prevStandings = state.standings;
   state.standings  = standings;
@@ -135,6 +139,8 @@ async function loadAll() {
   state.proximos   = proximos;
   state.snapshots  = snapshots;
   state.resultados = resultados;
+  state.calendario = calendario;
+  state.calIdx     = Object.fromEntries((calendario?.partidos || []).map(p => [p.id, p]));
   state.lastUpdate = new Date();
   updateRefreshBar();
   checkLive();
@@ -244,6 +250,16 @@ function renderClasificacion() {
       <div class="col-grp">${fmtPts(p.puntos_grupos)}</div>
       <div class="col-elim">${fmtPts(p.puntos_fase_eliminatoria)}</div>
     `;
+    row.addEventListener('click', () => {
+      // Cambiar a Mi Porra y cargar el nick
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.querySelector('[data-tab="mi-porra"]')?.classList.add('active');
+      $('view-mi-porra')?.classList.add('active');
+      state.activeTab = 'mi-porra';
+      selectNick(p.nickname);
+      renderMiPorra();
+    });
     heroEl.appendChild(row);
   });
   container.innerHTML = '';
@@ -313,6 +329,131 @@ function findElimResult(local, visitante, marcadores) {
   return null;
 }
 
+// ── Mi Porra helpers ──────────────────────────────────────────────────────────
+function fmtCEST(iso) {
+  if (!iso) return '';
+  return new Date(iso).toLocaleDateString('es-ES', {
+    timeZone: 'Europe/Madrid', weekday: 'short',
+    day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit',
+  });
+}
+
+const RONDAS_PTS  = { '1/16': 10, '1/8': 12, '1/4': 14, 'semis': 16, 'final': 20 };
+const NEXT_ROUND  = { '1/16': '1/8', '1/8': '1/4', '1/4': 'semis', 'semis': 'final' };
+const ROUND_LABEL = { '1/16': 'Dieciseisavos', '1/8': 'Octavos', '1/4': 'Cuartos',
+                      'semis': 'Semifinales', '3-4': '3.er y 4.º puesto', 'final': 'Final' };
+const RONDA_ORDER = { '1/16': 0, '1/8': 1, '1/4': 2, 'semis': 3, '3-4': 4, 'final': 5 };
+
+function elimClassifBadges(local, visitante, ronda, predClasifs, realClasifs) {
+  const nextRound = NEXT_ROUND[ronda];
+  if (!nextRound) return [];
+  const predSet = new Set((predClasifs?.[nextRound] || []).map(normStr));
+  const realSet = new Set((realClasifs?.[nextRound] || []).map(normStr));
+  const hasReal = realSet.size > 0;
+  const pts     = RONDAS_PTS[nextRound] || 0;
+  const label   = ROUND_LABEL[nextRound] || nextRound;
+  return [local, visitante].filter(t => t && predSet.has(normStr(t))).map(team => ({
+    team, pts, label,
+    hit: hasReal ? realSet.has(normStr(team)) : null,
+  }));
+}
+
+function mcpCard(fase, fechaStr, local, visitante, pred, resultado, classifBadges) {
+  const pgl = pred?.gl ?? pred?.goles_local;
+  const pgv = pred?.gv ?? pred?.goles_visitante;
+  const predStr = pred ? `${pred.signo}|${pgl}-${pgv}` : '—';
+
+  let scoreHtml, indHtml = '', cardMod = '';
+
+  if (resultado) {
+    const { goles_local: gl, goles_visitante: gv } = resultado;
+    const sc = v2Score(pred, gl, gv);
+    cardMod = sc.pts > 0 ? ' mcp-ok' : ' mcp-ko';
+    const scoreCls = sc.exacto ? 'exact' : sc.signo ? 'partial' : 'miss';
+    scoreHtml = `
+      <div class="mcp-score-row">
+        <span class="mcp-home-name">${escHtml(local)}</span>
+        <span class="mcp-score-big ${scoreCls}">${gl} – ${gv}</span>
+        <span class="mcp-away-name">${escHtml(visitante)}</span>
+      </div>
+      <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>`;
+    indHtml = `
+      <div class="mcp-indicators">
+        <span class="mcp-ind ${sc.signo?'ok':'no'}">${sc.signo?'✓':'✗'} Ganador${sc.signo?' +5':''}</span>
+        <span class="mcp-ind ${sc.diferencia?'ok':'no'}">${sc.diferencia?'✓':'✗'} Diferencia${sc.diferencia?' +2':''}</span>
+        <span class="mcp-ind ${sc.exacto?'ok':'no'}">${sc.exacto?'✓':'✗'} Exacto${sc.exacto?' +8':''}</span>
+        <span class="mcp-total ${sc.pts>0?'pos':'zero'}">+${sc.pts} pts</span>
+      </div>`;
+  } else {
+    scoreHtml = `
+      <div class="mcp-score-row">
+        <span class="mcp-home-name">${escHtml(local)}</span>
+        <span class="mcp-score-big pending">Pendiente</span>
+        <span class="mcp-away-name">${escHtml(visitante)}</span>
+      </div>
+      <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>`;
+  }
+
+  const badgesHtml = (classifBadges || []).map(b => {
+    if (b.hit === null) return `<div class="mcp-badge neutral">⏳ ${escHtml(b.team)} clasif. a ${escHtml(b.label)} +${b.pts}pts</div>`;
+    return b.hit
+      ? `<div class="mcp-badge hit">✓ ${escHtml(b.team)} clasif. a ${escHtml(b.label)} +${b.pts}pts</div>`
+      : `<div class="mcp-badge miss">✗ ${escHtml(b.team)} no clasif. a ${escHtml(b.label)}</div>`;
+  }).join('');
+
+  return `<div class="mcp-card${cardMod}">
+    <div class="mcp-head">
+      <span class="mcp-fase">${escHtml(fase)}</span>
+      ${fechaStr ? `<span class="mcp-date">${escHtml(fechaStr)}</span>` : ''}
+    </div>
+    ${scoreHtml}
+    ${indHtml}
+    ${badgesHtml}
+  </div>`;
+}
+
+function sectionPts(sectionId, standP) {
+  const d = standP?.desglose;
+  if (!d) return 0;
+  if (sectionId === 'grupos') {
+    return (d.grupos?.total || 0)
+         + (d.posiciones_grupo?.total || 0)
+         + (d.clasificado_1_16_desde_grupos?.total || 0);
+  }
+  return (d.elim_marcadores?.detalle || [])
+    .filter(e => e.ronda === sectionId)
+    .reduce((s, e) => s + (e.pts || 0), 0);
+}
+
+function defaultOpenSection(detalleP, marcadores) {
+  // Latest elim round with a played match takes priority
+  let latestElim = null;
+  for (const p of (detalleP.elim_marcadores || [])) {
+    const r = findElimResult(p.local, p.visitante, marcadores);
+    if (r) {
+      const ord = RONDA_ORDER[p.ronda] ?? 0;
+      if (latestElim === null || ord > (RONDA_ORDER[latestElim] ?? 0)) latestElim = p.ronda;
+    }
+  }
+  if (latestElim) return latestElim;
+  if ((detalleP.grupos || []).some(g => g.resultado)) return 'grupos';
+  return 'grupos';
+}
+
+function sectionBlock(id, title, matchCount, pts, cardsHtml) {
+  const isOpen = state.sectionOpen[id] ?? false;
+  const chevron = '▶';
+  const metaPts = pts > 0 ? ` · <span class="sec-pts">+${pts} pts</span>` : '';
+  return `<div class="sec-block${isOpen ? ' open' : ''}" data-sec="${id}">
+    <button class="sec-header" type="button">
+      <span class="sec-chevron">${chevron}</span>
+      <span class="sec-title">${escHtml(title)}</span>
+      <span class="sec-meta">${matchCount} partidos${metaPts}</span>
+    </button>
+    <div class="sec-body"><div class="sec-inner">${cardsHtml}</div></div>
+  </div>`;
+}
+
 // ── MI PORRA ──────────────────────────────────────────────────────────────────
 function renderMiPorra() {
   if (!state.standings) return;
@@ -341,6 +482,7 @@ $('nick-search').addEventListener('input', function() {
 function selectNick(nick) {
   state.selectedNick = nick;
   state.showAllPending = false;
+  state.sectionOpen = {};   // reset so defaultOpenSection runs again
   document.querySelectorAll('.nick-chip').forEach(c => c.classList.toggle('active', c.textContent === nick));
   renderNickDetail(nick);
 }
@@ -361,10 +503,20 @@ function renderNickDetail(nick) {
     return;
   }
 
+  const marcadores  = state.resultados?.marcadores  || [];
+  const realClasifs = state.resultados?.clasificados || {};
+  const realHonor   = state.resultados?.honor        || {};
+  const realPremios = state.resultados?.premios      || {};
+
+  // Inicializar estados de sección (primera vez que se abre Mi Porra para este nick)
+  if (Object.keys(state.sectionOpen).length === 0) {
+    const defSec = defaultOpenSection(detalleP, marcadores);
+    ['grupos','1/16','1/8','1/4','semis','3-4','final','honor','premios'].forEach(id => {
+      state.sectionOpen[id] = (id === defSec);
+    });
+  }
+
   let html = '';
-  const marcadores = state.resultados?.marcadores || [];
-  const realHonor  = state.resultados?.honor   || {};
-  const realPremios = state.resultados?.premios || {};
 
   // ── Resumen de puntos ──────────────────────────────────────────────────────
   const standP = state.standings?.clasificacion?.find(p => p.nickname === nick);
@@ -387,138 +539,101 @@ function renderNickDetail(nick) {
     </div>`;
   }
 
-  // ── Partidos de grupos ─────────────────────────────────────────────────────
-  const todosGrupos = detalleP.grupos || [];
-  if (todosGrupos.length) {
-    const showAll = state.showAllPending;
-    const visible = showAll ? todosGrupos : todosGrupos.slice(0, 8);
-    html += `<div class="section-title mt16">Partidos de grupos</div><div class="match-table">`;
-    visible.forEach(g => {
-      // resultado viene del detalle.json (v1 campos), pero puntuamos v2 en JS
-      const res = g.resultado
+  // ── Sección: Fase de grupos ────────────────────────────────────────────────
+  {
+    const grupos = (detalleP.grupos || []).slice().sort((a, b) => {
+      const fa = state.calIdx[a.match_id]?.fecha_hora_utc || '';
+      const fb = state.calIdx[b.match_id]?.fecha_hora_utc || '';
+      return fa < fb ? -1 : fa > fb ? 1 : 0;
+    });
+    const cardsHtml = grupos.map(g => {
+      const cal  = state.calIdx[g.match_id];
+      const fase = cal ? `Grupo ${cal.grupo} · ${cal.jornada}` : '';
+      const res  = g.resultado
         ? { goles_local: g.resultado.goles_local, goles_visitante: g.resultado.goles_visitante }
         : null;
-      html += matchRowV2(g.match_id, g.local, g.visitante, g.prediccion, res);
-    });
-    if (todosGrupos.length > 8) {
-      const more = todosGrupos.length - 8;
-      html += `<div class="match-row pending-toggle-row" id="pending-toggle">
-        <div class="match-row-idx">${showAll?'▲':'▼'}</div>
-        <div class="match-row-teams">${showAll?'Mostrar menos':`Ver ${more} pronósticos más`}</div>
-        <div></div><div></div>
-      </div>`;
-    }
-    html += '</div>';
+      return mcpCard(fase, fmtCEST(cal?.fecha_hora_utc), g.local, g.visitante, g.prediccion, res, null);
+    }).join('');
+    html += sectionBlock('grupos', 'Fase de grupos', grupos.length, sectionPts('grupos', standP), cardsHtml);
   }
 
-  // ── Marcadores de eliminatoria ─────────────────────────────────────────────
+  // ── Secciones: Eliminatorias ───────────────────────────────────────────────
   const elimPreds = detalleP.elim_marcadores || [];
-  if (elimPreds.length) {
-    const RONDAS_LABEL = { '1/16':'1/16', '1/8':'1/8', '1/4':'Cuartos',
-                           'semis':'Semis', '3-4':'3er puesto', 'final':'Final' };
-    const byRonda = {};
-    elimPreds.forEach(p => { (byRonda[p.ronda] = byRonda[p.ronda]||[]).push(p); });
-    html += `<div class="section-title mt16">Marcadores eliminatoria</div>`;
-    ['1/16','1/8','1/4','semis','3-4','final'].forEach(r => {
-      const partidos = byRonda[r];
-      if (!partidos?.length) return;
-      html += `<div class="section-title" style="font-size:.75rem;margin-top:10px;margin-bottom:4px;opacity:.6">${RONDAS_LABEL[r]||r}</div>`;
-      html += '<div class="match-table">';
-      partidos.forEach(p => {
-        const res = findElimResult(p.local, p.visitante, marcadores);
-        const pred = { signo: p.signo, goles_local: p.gl, goles_visitante: p.gv };
-        html += matchRowV2('', p.local, p.visitante, pred, res);
-      });
-      html += '</div>';
-    });
-  }
+  const byRonda = {};
+  elimPreds.forEach(p => { (byRonda[p.ronda] = byRonda[p.ronda] || []).push(p); });
 
-  // ── Clasificados por ronda (equipos) ───────────────────────────────────────
-  if (detalleP.clasificados) {
-    const realClas = state.resultados?.clasificados || {};
-    html += `<div class="section-title mt16">Clasificados por ronda</div>`;
-    ['1/16','1/8','1/4','semis','final'].forEach(r => {
-      const pred = detalleP.clasificados[r] || [];
-      if (!pred.length) return;
-      const realSet = new Set((realClas[r]||[]).map(normStr));
-      const hasReal = realSet.size > 0;
-      const teamsHtml = pred.map(t => {
-        const cls = !hasReal ? '' : (realSet.has(normStr(t)) ? ' hit' : ' miss');
-        return `<span class="elim-team${cls}">${escHtml(t)}</span>`;
-      }).join('');
-      html += `<div class="elim-round">
-        <span class="elim-round-label">${r}</span>
-        <div class="elim-teams">${teamsHtml}</div>
-      </div>`;
-    });
-  }
+  ['1/16','1/8','1/4','semis','3-4','final'].forEach(r => {
+    const partidos = byRonda[r];
+    if (!partidos?.length) return;
+    const cardsHtml = partidos.map(p => {
+      const res    = findElimResult(p.local, p.visitante, marcadores);
+      const pred   = { signo: p.signo, goles_local: p.gl, goles_visitante: p.gv };
+      const badges = r !== '3-4' && r !== 'final'
+        ? elimClassifBadges(p.local, p.visitante, p.ronda, detalleP.clasificados, realClasifs)
+        : [];
+      return mcpCard(ROUND_LABEL[r], '', p.local, p.visitante, pred, res, badges);
+    }).join('');
+    html += sectionBlock(r, ROUND_LABEL[r], partidos.length, sectionPts(r, standP), cardsHtml);
+  });
 
-  // ── Posiciones de honor ────────────────────────────────────────────────────
-  if (detalleP.honor) {
-    html += `<div class="section-title mt16">Posiciones de honor</div><div class="match-table">`;
-    [{k:'campeon',label:'Campeón'},{k:'subcampeon',label:'Subcampeón'},{k:'tercero',label:'3.º'},{k:'cuarto',label:'4.º'}]
-    .forEach(({k, label}) => {
-      const predVal = detalleP.honor[k];
+  // ── Sección: Honor y premios ───────────────────────────────────────────────
+  {
+    const honorRows = [{k:'campeon',label:'Campeón',pts:25},{k:'subcampeon',label:'Subcampeón',pts:20},
+                       {k:'tercero',label:'3.º',pts:15},{k:'cuarto',label:'4.º',pts:10}];
+    const honorHtml = honorRows.map(({k,label,pts}) => {
+      const predVal = detalleP.honor?.[k];
       const realVal = realHonor[k];
-      const played = !!realVal;
-      const hit = played && normStr(predVal) === normStr(realVal);
-      const rowCls = !played ? 'pending' : (hit ? 'correct' : 'wrong');
+      const played  = !!realVal;
+      const hit     = played && normStr(predVal) === normStr(realVal);
+      const rowCls  = !played ? 'pending' : (hit ? 'correct' : 'wrong');
       const subHtml = played
-        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>`
-        : '';
+        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>` : '';
       const ptsHtml = played
-        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?25:0}</div>`
-        : '';
-      html += `<div class="match-row match-row--honor ${rowCls}">
+        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?pts:0}</div>` : '';
+      return `<div class="match-row match-row--honor ${rowCls}">
         <div class="match-row-idx">${label}</div>
-        <div class="match-row-teams">
-          <div class="match-teams-main">${escHtml(predVal||'—')}</div>
-          ${subHtml}
-        </div>
+        <div class="match-row-teams"><div class="match-teams-main">${escHtml(predVal||'—')}</div>${subHtml}</div>
         ${ptsHtml}
       </div>`;
-    });
-    html += '</div>';
+    }).join('');
+    const honorPts = standP?.desglose?.honor?.total || 0;
+    html += sectionBlock('honor', 'Cuadro de honor', 4, honorPts,
+      `<div class="match-table" style="margin-top:4px">${honorHtml}</div>`);
   }
-
-  // ── Premios individuales ───────────────────────────────────────────────────
-  if (detalleP.premios) {
-    html += `<div class="section-title mt16">Premios individuales</div><div class="match-table">`;
-    [{k:'goleador',label:'Goleador'},{k:'mvp',label:'MVP'},{k:'portero',label:'Portero'}]
-    .forEach(({k, label}) => {
-      const predVal = detalleP.premios[k];
+  {
+    const premiosRows = [{k:'goleador',label:'Goleador',pts:15},{k:'mvp',label:'MVP',pts:15},{k:'portero',label:'Portero',pts:15}];
+    const premiosHtml = premiosRows.map(({k,label,pts}) => {
+      const predVal = detalleP.premios?.[k];
       const realVal = realPremios[k];
-      const played = !!realVal;
-      const hit = played && normStr(predVal) === normStr(realVal);
-      const rowCls = !played ? 'pending' : (hit ? 'correct' : 'wrong');
+      const played  = !!realVal;
+      const hit     = played && normStr(predVal) === normStr(realVal);
+      const rowCls  = !played ? 'pending' : (hit ? 'correct' : 'wrong');
       const subHtml = played
-        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>`
-        : '';
+        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>` : '';
       const ptsHtml = played
-        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?15:0}</div>`
-        : '';
-      html += `<div class="match-row match-row--honor ${rowCls}">
+        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?pts:0}</div>` : '';
+      return `<div class="match-row match-row--honor ${rowCls}">
         <div class="match-row-idx">${label}</div>
-        <div class="match-row-teams">
-          <div class="match-teams-main">${escHtml(predVal||'—')}</div>
-          ${subHtml}
-        </div>
+        <div class="match-row-teams"><div class="match-teams-main">${escHtml(predVal||'—')}</div>${subHtml}</div>
         ${ptsHtml}
       </div>`;
-    });
-    html += '</div>';
+    }).join('');
+    const premiosPts = standP?.desglose?.premios?.total || 0;
+    html += sectionBlock('premios', 'Premios individuales', 3, premiosPts,
+      `<div class="match-table" style="margin-top:4px">${premiosHtml}</div>`);
   }
 
   detailEl.className = 'mi-porra-detail show';
   detailEl.innerHTML = html;
 
-  const toggleRow = detailEl.querySelector('#pending-toggle');
-  if (toggleRow) {
-    toggleRow.addEventListener('click', () => {
-      state.showAllPending = !state.showAllPending;
-      renderNickDetail(state.selectedNick);
+  // Eventos de toggle en las secciones
+  detailEl.querySelectorAll('.sec-header').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const secId = btn.closest('.sec-block').dataset.sec;
+      state.sectionOpen[secId] = !state.sectionOpen[secId];
+      renderNickDetail(nick);
     });
-  }
+  });
 }
 
 // ── EVOLUCIÓN ─────────────────────────────────────────────────────────────────
