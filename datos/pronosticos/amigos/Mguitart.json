@@ -4,16 +4,16 @@
   "archivo_origen": "MGUITART.xlsx",
   "incompleto": true,
   "advertencias": [
-    "premios incompletos: faltan goleador, MVP, portero"
+    "32/32 equipos de 1/16 sin rellenar"
   ],
   "pronosticos": {
     "grupos": [
       {
-        "match_id": 1,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J1",
-        "local": "Mexico",
-        "visitante": "South Africa",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -21,11 +21,11 @@
         }
       },
       {
-        "match_id": 2,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J1",
-        "local": "South Korea",
-        "visitante": "Czech Republic",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -33,11 +33,11 @@
         }
       },
       {
-        "match_id": 3,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J1",
-        "local": "Canada",
-        "visitante": "Bosnia-Herzegovina",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -45,11 +45,11 @@
         }
       },
       {
-        "match_id": 4,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J1",
-        "local": "Qatar",
-        "visitante": "Switzerland",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -57,11 +57,11 @@
         }
       },
       {
-        "match_id": 5,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J1",
-        "local": "Brazil",
-        "visitante": "Morocco",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -69,11 +69,11 @@
         }
       },
       {
-        "match_id": 6,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J1",
-        "local": "Haiti",
-        "visitante": "Scotland",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -81,11 +81,11 @@
         }
       },
       {
-        "match_id": 7,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J1",
-        "local": "USA",
-        "visitante": "Paraguay",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -93,11 +93,11 @@
         }
       },
       {
-        "match_id": 8,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J1",
-        "local": "Australia",
-        "visitante": "Turkey",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -105,11 +105,11 @@
         }
       },
       {
-        "match_id": 9,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J1",
-        "local": "Germany",
-        "visitante": "Curacao",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -117,11 +117,11 @@
         }
       },
       {
-        "match_id": 10,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J1",
-        "local": "Ivory Coast",
-        "visitante": "Ecuador",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -129,11 +129,11 @@
         }
       },
       {
-        "match_id": 11,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J1",
-        "local": "Netherlands",
-        "visitante": "Japan",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -141,11 +141,11 @@
         }
       },
       {
-        "match_id": 12,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J1",
-        "local": "Sweden",
-        "visitante": "Tunisia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -153,11 +153,11 @@
         }
       },
       {
-        "match_id": 13,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J1",
-        "local": "Belgium",
-        "visitante": "Egypt",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -165,11 +165,11 @@
         }
       },
       {
-        "match_id": 14,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J1",
-        "local": "Iran",
-        "visitante": "New Zealand",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -177,11 +177,11 @@
         }
       },
       {
-        "match_id": 15,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J1",
-        "local": "Spain",
-        "visitante": "Cape Verde",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -189,11 +189,11 @@
         }
       },
       {
-        "match_id": 16,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J1",
-        "local": "Saudi Arabia",
-        "visitante": "Uruguay",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -201,11 +201,11 @@
         }
       },
       {
-        "match_id": 17,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J1",
-        "local": "France",
-        "visitante": "Senegal",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -213,11 +213,11 @@
         }
       },
       {
-        "match_id": 18,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J1",
-        "local": "Iraq",
-        "visitante": "Norway",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -225,11 +225,11 @@
         }
       },
       {
-        "match_id": 19,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J1",
-        "local": "Argentina",
-        "visitante": "Algeria",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -237,11 +237,11 @@
         }
       },
       {
-        "match_id": 20,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J1",
-        "local": "Austria",
-        "visitante": "Jordan",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -249,11 +249,11 @@
         }
       },
       {
-        "match_id": 21,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J1",
-        "local": "Portugal",
-        "visitante": "DR Congo",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -261,11 +261,11 @@
         }
       },
       {
-        "match_id": 22,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J1",
-        "local": "Uzbekistan",
-        "visitante": "Colombia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 1,
@@ -273,11 +273,11 @@
         }
       },
       {
-        "match_id": 23,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J1",
-        "local": "England",
-        "visitante": "Croatia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -285,11 +285,11 @@
         }
       },
       {
-        "match_id": 24,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J1",
-        "local": "Ghana",
-        "visitante": "Panama",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -297,11 +297,11 @@
         }
       },
       {
-        "match_id": 25,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J2",
-        "local": "Czech Republic",
-        "visitante": "South Africa",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -309,11 +309,11 @@
         }
       },
       {
-        "match_id": 26,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J2",
-        "local": "Mexico",
-        "visitante": "South Korea",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -321,11 +321,11 @@
         }
       },
       {
-        "match_id": 27,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J2",
-        "local": "Switzerland",
-        "visitante": "Bosnia-Herzegovina",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -333,11 +333,11 @@
         }
       },
       {
-        "match_id": 28,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J2",
-        "local": "Canada",
-        "visitante": "Qatar",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -345,11 +345,11 @@
         }
       },
       {
-        "match_id": 29,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J2",
-        "local": "Scotland",
-        "visitante": "Morocco",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 0,
@@ -357,11 +357,11 @@
         }
       },
       {
-        "match_id": 30,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J2",
-        "local": "Brazil",
-        "visitante": "Haiti",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -369,11 +369,11 @@
         }
       },
       {
-        "match_id": 31,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J2",
-        "local": "USA",
-        "visitante": "Australia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -381,11 +381,11 @@
         }
       },
       {
-        "match_id": 32,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J2",
-        "local": "Turkey",
-        "visitante": "Paraguay",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -393,11 +393,11 @@
         }
       },
       {
-        "match_id": 33,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J2",
-        "local": "Germany",
-        "visitante": "Ivory Coast",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -405,11 +405,11 @@
         }
       },
       {
-        "match_id": 34,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J2",
-        "local": "Ecuador",
-        "visitante": "Curacao",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -417,11 +417,11 @@
         }
       },
       {
-        "match_id": 35,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J2",
-        "local": "Netherlands",
-        "visitante": "Sweden",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -429,11 +429,11 @@
         }
       },
       {
-        "match_id": 36,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J2",
-        "local": "Tunisia",
-        "visitante": "Japan",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -441,11 +441,11 @@
         }
       },
       {
-        "match_id": 37,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J2",
-        "local": "Belgium",
-        "visitante": "Iran",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -453,11 +453,11 @@
         }
       },
       {
-        "match_id": 38,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J2",
-        "local": "New Zealand",
-        "visitante": "Egypt",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -465,11 +465,11 @@
         }
       },
       {
-        "match_id": 39,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J2",
-        "local": "Spain",
-        "visitante": "Saudi Arabia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -477,11 +477,11 @@
         }
       },
       {
-        "match_id": 40,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J2",
-        "local": "Uruguay",
-        "visitante": "Cape Verde",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -489,11 +489,11 @@
         }
       },
       {
-        "match_id": 41,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J2",
-        "local": "France",
-        "visitante": "Iraq",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -501,11 +501,11 @@
         }
       },
       {
-        "match_id": 42,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J2",
-        "local": "Norway",
-        "visitante": "Senegal",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -513,11 +513,11 @@
         }
       },
       {
-        "match_id": 43,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J2",
-        "local": "Argentina",
-        "visitante": "Austria",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -525,11 +525,11 @@
         }
       },
       {
-        "match_id": 44,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J2",
-        "local": "Jordan",
-        "visitante": "Algeria",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -537,11 +537,11 @@
         }
       },
       {
-        "match_id": 45,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J2",
-        "local": "Portugal",
-        "visitante": "Uzbekistan",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -549,11 +549,11 @@
         }
       },
       {
-        "match_id": 46,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J2",
-        "local": "Colombia",
-        "visitante": "DR Congo",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -561,11 +561,11 @@
         }
       },
       {
-        "match_id": 47,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J2",
-        "local": "England",
-        "visitante": "Ghana",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -573,11 +573,11 @@
         }
       },
       {
-        "match_id": 48,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J2",
-        "local": "Panama",
-        "visitante": "Croatia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -585,11 +585,11 @@
         }
       },
       {
-        "match_id": 49,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J3",
-        "local": "Czech Republic",
-        "visitante": "Mexico",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -597,11 +597,11 @@
         }
       },
       {
-        "match_id": 50,
+        "match_id": null,
         "grupo": "A",
         "jornada": "J3",
-        "local": "South Africa",
-        "visitante": "South Korea",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -609,11 +609,11 @@
         }
       },
       {
-        "match_id": 51,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J3",
-        "local": "Switzerland",
-        "visitante": "Canada",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -621,11 +621,11 @@
         }
       },
       {
-        "match_id": 52,
+        "match_id": null,
         "grupo": "B",
         "jornada": "J3",
-        "local": "Bosnia-Herzegovina",
-        "visitante": "Qatar",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -633,11 +633,11 @@
         }
       },
       {
-        "match_id": 53,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J3",
-        "local": "Scotland",
-        "visitante": "Brazil",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -645,11 +645,11 @@
         }
       },
       {
-        "match_id": 54,
+        "match_id": null,
         "grupo": "C",
         "jornada": "J3",
-        "local": "Morocco",
-        "visitante": "Haiti",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -657,11 +657,11 @@
         }
       },
       {
-        "match_id": 55,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J3",
-        "local": "Turkey",
-        "visitante": "USA",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -669,11 +669,11 @@
         }
       },
       {
-        "match_id": 56,
+        "match_id": null,
         "grupo": "D",
         "jornada": "J3",
-        "local": "Paraguay",
-        "visitante": "Australia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -681,11 +681,11 @@
         }
       },
       {
-        "match_id": 57,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J3",
-        "local": "Curacao",
-        "visitante": "Ivory Coast",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -693,11 +693,11 @@
         }
       },
       {
-        "match_id": 58,
+        "match_id": null,
         "grupo": "E",
         "jornada": "J3",
-        "local": "Ecuador",
-        "visitante": "Germany",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -705,11 +705,11 @@
         }
       },
       {
-        "match_id": 59,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J3",
-        "local": "Japan",
-        "visitante": "Sweden",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -717,11 +717,11 @@
         }
       },
       {
-        "match_id": 60,
+        "match_id": null,
         "grupo": "F",
         "jornada": "J3",
-        "local": "Tunisia",
-        "visitante": "Netherlands",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -729,11 +729,11 @@
         }
       },
       {
-        "match_id": 61,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J3",
-        "local": "Egypt",
-        "visitante": "Iran",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -741,11 +741,11 @@
         }
       },
       {
-        "match_id": 62,
+        "match_id": null,
         "grupo": "G",
         "jornada": "J3",
-        "local": "New Zealand",
-        "visitante": "Belgium",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -753,11 +753,11 @@
         }
       },
       {
-        "match_id": 63,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J3",
-        "local": "Cape Verde",
-        "visitante": "Saudi Arabia",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -765,11 +765,11 @@
         }
       },
       {
-        "match_id": 64,
+        "match_id": null,
         "grupo": "H",
         "jornada": "J3",
-        "local": "Uruguay",
-        "visitante": "Spain",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -777,11 +777,11 @@
         }
       },
       {
-        "match_id": 65,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J3",
-        "local": "Norway",
-        "visitante": "France",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -789,11 +789,11 @@
         }
       },
       {
-        "match_id": 66,
+        "match_id": null,
         "grupo": "I",
         "jornada": "J3",
-        "local": "Senegal",
-        "visitante": "Iraq",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
@@ -801,11 +801,11 @@
         }
       },
       {
-        "match_id": 67,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J3",
-        "local": "Algeria",
-        "visitante": "Austria",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "X",
           "goles_local": 1,
@@ -813,11 +813,11 @@
         }
       },
       {
-        "match_id": 68,
+        "match_id": null,
         "grupo": "J",
         "jornada": "J3",
-        "local": "Jordan",
-        "visitante": "Argentina",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -825,11 +825,11 @@
         }
       },
       {
-        "match_id": 69,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J3",
-        "local": "Colombia",
-        "visitante": "Portugal",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -837,11 +837,11 @@
         }
       },
       {
-        "match_id": 70,
+        "match_id": null,
         "grupo": "K",
         "jornada": "J3",
-        "local": "DR Congo",
-        "visitante": "Uzbekistan",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
@@ -849,11 +849,11 @@
         }
       },
       {
-        "match_id": 71,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J3",
-        "local": "Panama",
-        "visitante": "England",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
@@ -861,11 +861,11 @@
         }
       },
       {
-        "match_id": 72,
+        "match_id": null,
         "grupo": "L",
         "jornada": "J3",
-        "local": "Croatia",
-        "visitante": "Ghana",
+        "local": "Original: matejero.es",
+        "visitante": null,
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
@@ -877,256 +877,256 @@
     "elim_marcadores": [
       {
         "ronda": "1/16",
-        "local": "South Korea",
-        "visitante": "Canada",
+        "local": "2A",
+        "visitante": "2B",
         "signo": "2",
         "gl": 0,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "Brazil",
-        "visitante": "Japan",
+        "local": "1C",
+        "visitante": "2F",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Germany",
-        "visitante": "Scotland",
+        "local": "1E",
+        "visitante": "3ABCDF",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Netherlands",
-        "visitante": "Morocco",
+        "local": "1F",
+        "visitante": "2C",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "Ecuador",
-        "visitante": "Norway",
+        "local": "2E",
+        "visitante": "2I",
         "signo": "2",
         "gl": 0,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "France",
-        "visitante": "Sweden",
+        "local": "1I",
+        "visitante": "3CDFGH",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Mexico",
-        "visitante": "Ivory Coast",
+        "local": "1A",
+        "visitante": "3CEFHI",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "England",
-        "visitante": "DR Congo",
+        "local": "1L",
+        "visitante": "3EHIJK",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Belgium",
-        "visitante": "Czech Republic",
+        "local": "1G",
+        "visitante": "3AEHIJ",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "USA",
-        "visitante": "Bosnia-Herzegovina",
+        "local": "1D",
+        "visitante": "3BEFIJ",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Spain",
-        "visitante": "Austria",
+        "local": "1H",
+        "visitante": "2J",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "Colombia",
-        "visitante": "Croatia",
+        "local": "2K",
+        "visitante": "2L",
         "signo": "2",
         "gl": 1,
         "gv": 2
       },
       {
         "ronda": "1/16",
-        "local": "Switzerland",
-        "visitante": "Algeria",
+        "local": "1B",
+        "visitante": "3EFGIJ",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Paraguay",
-        "visitante": "Egypt",
+        "local": "2D",
+        "visitante": "2G",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "1/16",
-        "local": "Argentina",
-        "visitante": "Uruguay",
+        "local": "1J",
+        "visitante": "2H",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/16",
-        "local": "Portugal",
-        "visitante": "Senegal",
+        "local": "1K",
+        "visitante": "3DEIJL",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/8",
-        "local": "Canada",
-        "visitante": "Netherlands",
+        "local": "2B",
+        "visitante": "1F",
         "signo": "2",
         "gl": 0,
         "gv": 2
       },
       {
         "ronda": "1/8",
-        "local": "Germany",
-        "visitante": "France",
+        "local": "1E",
+        "visitante": "1I",
         "signo": "2",
         "gl": 0,
         "gv": 2
       },
       {
         "ronda": "1/8",
-        "local": "Brazil",
-        "visitante": "Norway",
+        "local": "1C",
+        "visitante": "2I",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "1/8",
-        "local": "Mexico",
-        "visitante": "England",
+        "local": "1A",
+        "visitante": "1L",
         "signo": "2",
         "gl": 1,
         "gv": 2
       },
       {
         "ronda": "1/8",
-        "local": "Croatia",
-        "visitante": "Spain",
+        "local": "2L",
+        "visitante": "1H",
         "signo": "2",
         "gl": 0,
         "gv": 2
       },
       {
         "ronda": "1/8",
-        "local": "USA",
-        "visitante": "Belgium",
+        "local": "1D",
+        "visitante": "1G",
         "signo": "2",
         "gl": 0,
         "gv": 1
       },
       {
         "ronda": "1/8",
-        "local": "Argentina",
-        "visitante": "Paraguay",
+        "local": "1J",
+        "visitante": "2D",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/8",
-        "local": "Switzerland",
-        "visitante": "Portugal",
+        "local": "1B",
+        "visitante": "1K",
         "signo": "2",
         "gl": 1,
         "gv": 2
       },
       {
         "ronda": "1/4",
-        "local": "France",
-        "visitante": "Netherlands",
+        "local": "1I",
+        "visitante": "1F",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "1/4",
-        "local": "Spain",
-        "visitante": "Belgium",
+        "local": "1H",
+        "visitante": "1G",
         "signo": "1",
         "gl": 2,
         "gv": 0
       },
       {
         "ronda": "1/4",
-        "local": "Brazil",
-        "visitante": "England",
+        "local": "1C",
+        "visitante": "1L",
         "signo": "2",
         "gl": 1,
         "gv": 2
       },
       {
         "ronda": "1/4",
-        "local": "Argentina",
-        "visitante": "Portugal",
+        "local": "1J",
+        "visitante": "1K",
         "signo": "1",
         "gl": 2,
         "gv": 1
       },
       {
         "ronda": "semis",
-        "local": "France",
-        "visitante": "Spain",
+        "local": "1I",
+        "visitante": "1H",
         "signo": "2",
         "gl": 0,
         "gv": 1
       },
       {
         "ronda": "semis",
-        "local": "England",
-        "visitante": "Argentina",
+        "local": "1L",
+        "visitante": "1J",
         "signo": "2",
         "gl": 0,
         "gv": 2
       },
       {
         "ronda": "3-4",
-        "local": "France",
-        "visitante": "England",
+        "local": "1I",
+        "visitante": "1L",
         "signo": "1",
         "gl": 1,
         "gv": 0
       },
       {
         "ronda": "final",
-        "local": "Spain",
-        "visitante": "Argentina",
+        "local": "1H",
+        "visitante": "1J",
         "signo": "1",
         "gl": 2,
         "gv": 1
@@ -1134,88 +1134,88 @@
     ],
     "clasificados": {
       "1/16": [
-        "South Korea",
-        "Brazil",
-        "Germany",
-        "Netherlands",
-        "Ecuador",
-        "France",
-        "Mexico",
-        "England",
-        "Belgium",
-        "USA",
-        "Spain",
-        "Colombia",
-        "Switzerland",
-        "Paraguay",
-        "Argentina",
-        "Portugal",
-        "Canada",
-        "Japan",
-        "Scotland",
-        "Morocco",
-        "Norway",
-        "Sweden",
-        "Ivory Coast",
-        "DR Congo",
-        "Czech Republic",
-        "Bosnia-Herzegovina",
-        "Austria",
-        "Croatia",
-        "Algeria",
-        "Egypt",
-        "Uruguay",
-        "Senegal"
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "1/8": [
-        "Canada",
-        "Germany",
-        "Brazil",
-        "Mexico",
-        "Croatia",
-        "USA",
-        "Argentina",
-        "Switzerland",
-        "Netherlands",
-        "France",
-        "Norway",
-        "England",
-        "Spain",
-        "Belgium",
-        "Paraguay",
-        "Portugal"
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "1/4": [
-        "France",
-        "Spain",
-        "Brazil",
-        "Argentina",
-        "Netherlands",
-        "Belgium",
-        "England",
-        "Portugal"
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
       ],
       "semis": [
-        "France",
-        "England",
-        "Spain",
-        "Argentina"
+        null,
+        null,
+        null,
+        null
       ],
       "final": [
-        "Spain",
-        "Argentina"
+        null,
+        null
       ]
     },
     "honor": {
-      "campeon": "Spain",
-      "subcampeon": "Argentina",
-      "tercero": "France",
-      "cuarto": "England"
+      "campeon": null,
+      "subcampeon": null,
+      "tercero": null,
+      "cuarto": null
     },
     "premios": {
-      "goleador": null,
-      "mvp": null,
-      "portero": null
+      "goleador": "Mbappe",
+      "mvp": "Messi",
+      "portero": "Unai Simón"
     }
   }
 }
