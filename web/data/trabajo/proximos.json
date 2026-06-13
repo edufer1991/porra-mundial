@@ -7,9 +7,9 @@
     "jornada": "J1",
     "local": "Qatar",
     "visitante": "Switzerland",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
+    "estado": "en_juego",
+    "goles_local": 0,
+    "goles_visitante": 1,
     "predicciones": [
       {
         "nickname": "ADL",
