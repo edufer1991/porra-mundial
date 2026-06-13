@@ -1,190 +1,58 @@
 {
   "porra": "amigos",
   "nicknames": [
-    "El_Profeta",
-    "LaQuiniela",
-    "Kante08",
-    "TodoAEspana",
-    "LaMaquina"
+    "Mguitart",
+    "Pulpo Paul",
+    "Pol",
+    "Ubi",
+    "Jordi",
+    "Mr_Jusi_17",
+    "Tucas",
+    "Maximo10"
   ],
   "snapshots": [
     {
-      "fecha": "2026-06-14T22:00:00Z",
+      "fecha": "2026-06-13T09:10:53Z",
       "clasificacion": [
         {
-          "nickname": "LaQuiniela",
+          "nickname": "Mguitart",
           "posicion": 1,
-          "puntos_total": 45
-        },
-        {
-          "nickname": "El_Profeta",
-          "posicion": 2,
-          "puntos_total": 32
-        },
-        {
-          "nickname": "Kante08",
-          "posicion": 3,
-          "puntos_total": 28
-        },
-        {
-          "nickname": "TodoAEspana",
-          "posicion": 4,
-          "puntos_total": 22
-        },
-        {
-          "nickname": "LaMaquina",
-          "posicion": 5,
-          "puntos_total": 18
-        }
-      ]
-    },
-    {
-      "fecha": "2026-06-19T22:00:00Z",
-      "clasificacion": [
-        {
-          "nickname": "LaQuiniela",
-          "posicion": 1,
-          "puntos_total": 72
-        },
-        {
-          "nickname": "El_Profeta",
-          "posicion": 2,
-          "puntos_total": 58
-        },
-        {
-          "nickname": "Kante08",
-          "posicion": 3,
-          "puntos_total": 41
-        },
-        {
-          "nickname": "TodoAEspana",
-          "posicion": 4,
           "puntos_total": 35
         },
         {
-          "nickname": "LaMaquina",
-          "posicion": 5,
-          "puntos_total": 28
-        }
-      ]
-    },
-    {
-      "fecha": "2026-06-24T22:00:00Z",
-      "clasificacion": [
-        {
-          "nickname": "El_Profeta",
+          "nickname": "Pulpo Paul",
           "posicion": 1,
-          "puntos_total": 178
+          "puntos_total": 35
         },
         {
-          "nickname": "LaQuiniela",
-          "posicion": 2,
-          "puntos_total": 162
-        },
-        {
-          "nickname": "Kante08",
+          "nickname": "Pol",
           "posicion": 3,
-          "puntos_total": 141
+          "puntos_total": 20
         },
         {
-          "nickname": "LaMaquina",
-          "posicion": 4,
-          "puntos_total": 118
-        },
-        {
-          "nickname": "TodoAEspana",
-          "posicion": 5,
-          "puntos_total": 105
-        }
-      ]
-    },
-    {
-      "fecha": "2026-06-29T22:00:00Z",
-      "clasificacion": [
-        {
-          "nickname": "El_Profeta",
-          "posicion": 1,
-          "puntos_total": 318
-        },
-        {
-          "nickname": "Kante08",
-          "posicion": 2,
-          "puntos_total": 261
-        },
-        {
-          "nickname": "LaQuiniela",
+          "nickname": "Ubi",
           "posicion": 3,
-          "puntos_total": 252
+          "puntos_total": 20
         },
         {
-          "nickname": "TodoAEspana",
-          "posicion": 4,
-          "puntos_total": 185
-        },
-        {
-          "nickname": "LaMaquina",
+          "nickname": "Jordi",
           "posicion": 5,
-          "puntos_total": 158
-        }
-      ]
-    },
-    {
-      "fecha": "2026-07-05T22:00:00Z",
-      "clasificacion": [
-        {
-          "nickname": "El_Profeta",
-          "posicion": 1,
-          "puntos_total": 418
+          "puntos_total": 15
         },
         {
-          "nickname": "LaQuiniela",
-          "posicion": 2,
-          "puntos_total": 342
-        },
-        {
-          "nickname": "Kante08",
-          "posicion": 3,
-          "puntos_total": 321
-        },
-        {
-          "nickname": "TodoAEspana",
-          "posicion": 4,
-          "puntos_total": 215
-        },
-        {
-          "nickname": "LaMaquina",
+          "nickname": "Mr_Jusi_17",
           "posicion": 5,
-          "puntos_total": 178
-        }
-      ]
-    },
-    {
-      "fecha": "2026-06-28T21:30:00Z",
-      "clasificacion": [
-        {
-          "nickname": "El_Profeta",
-          "posicion": 1,
-          "puntos_total": 603
+          "puntos_total": 15
         },
         {
-          "nickname": "LaQuiniela",
-          "posicion": 2,
-          "puntos_total": 467
-        },
-        {
-          "nickname": "Kante08",
-          "posicion": 3,
-          "puntos_total": 381
-        },
-        {
-          "nickname": "TodoAEspana",
-          "posicion": 4,
-          "puntos_total": 245
-        },
-        {
-          "nickname": "LaMaquina",
+          "nickname": "Tucas",
           "posicion": 5,
-          "puntos_total": 178
+          "puntos_total": 15
+        },
+        {
+          "nickname": "Maximo10",
+          "posicion": 8,
+          "puntos_total": 10
         }
       ]
     }

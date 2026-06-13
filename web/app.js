@@ -524,29 +524,30 @@ function renderNickDetail(nick) {
 // ── EVOLUCIÓN ─────────────────────────────────────────────────────────────────
 function renderEvolucion() {
   const chartArea = $('view-evolucion');
-  if (!state.snapshots) return;
-  const snaps = state.snapshots.snapshots || [];
-  const nicknames = state.snapshots.nicknames || [];
+  const chartCont = chartArea.querySelector('.chart-container');
+  const ptsCont   = chartArea.querySelector('.pts-chart-container');
+
+  // Reset state on every call: clear previous content and any empty-state message
+  chartArea.querySelector('.evolucion-empty')?.remove();
+  $('pos-chart').innerHTML  = '';
+  $('pts-chart').innerHTML  = '';
+  $('pos-legend').innerHTML = '';
+
+  const snaps     = state.snapshots?.snapshots || [];
+  const nicknames = state.snapshots?.nicknames || [];
 
   if (snaps.length < 2) {
-    const msg = chartArea.querySelector('.evolucion-empty');
-    if (!msg) {
-      const div = document.createElement('div');
-      div.className = 'empty-state evolucion-empty';
-      div.innerHTML = '<div class="icon">📈</div>El gráfico de evolución estará disponible cuando haya más partidos jugados';
-      // Insert before the charts (keep SVG in DOM but hide)
-      chartArea.querySelector('.chart-container').style.display = 'none';
-      chartArea.querySelector('.pts-chart-container').style.display = 'none';
-      chartArea.insertBefore(div, chartArea.querySelector('.chart-container'));
-    }
+    chartCont.style.display = 'none';
+    ptsCont.style.display   = 'none';
+    const div = document.createElement('div');
+    div.className = 'empty-state evolucion-empty';
+    div.innerHTML = '<div class="icon">📈</div>El gráfico de evolución estará disponible cuando haya más partidos jugados';
+    chartArea.insertBefore(div, chartCont);
     return;
   }
 
-  // Enough data — ensure charts are visible and remove placeholder
-  const msg = chartArea.querySelector('.evolucion-empty');
-  if (msg) msg.remove();
-  chartArea.querySelector('.chart-container').style.display = '';
-  chartArea.querySelector('.pts-chart-container').style.display = '';
+  chartCont.style.display = '';
+  ptsCont.style.display   = '';
 
   const svgPos  = $('pos-chart');
   const svgPts  = $('pts-chart');
