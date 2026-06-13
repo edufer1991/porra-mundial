@@ -54,12 +54,18 @@ def _run(args: list[str], **kwargs) -> None:
         sys.exit(result.returncode)
 
 
-def descargar_resultados() -> None:
-    """Llama a descargar_resultados.py con el entorno actual (hereda API_FOOTBALL_KEY)."""
+def descargar_resultados(sin_api: bool = False) -> None:
+    """
+    Llama a descargar_resultados.py con el entorno actual.
+    sin_api=True → pasa --sin-api: solo openfootball, sin llamar a API-Football.
+    """
     script = BASE / "motor" / "descargar_resultados.py"
     salida = BASE / "datos" / "resultados.json"
     cmd = [sys.executable, str(script), "--salida", str(salida)]
-    print(f"  descargando resultados…")
+    if sin_api:
+        cmd.append("--sin-api")
+    nota = "  (solo openfootball, sin API)" if sin_api else ""
+    print(f"  descargando resultados…{nota}")
     _run(cmd, env=os.environ.copy())
 
 
@@ -113,17 +119,18 @@ def main() -> None:
             print(f"[{ts}] Sin ventana de partido.")
             sys.exit(1)
 
-    # ── Sin ventana y sin forzar → salida limpia ──────────────────────────────
-    if not ventana and not args.forzar:
-        print(f"[{ts}] Sin ventana de partido activa. "
-              f"Pipeline terminado sin llamar a la API.")
-        return
-
-    print(f"[{ts}] Ventana={ventana} forzar={args.forzar}. "
-          f"Iniciando pipeline completo…")
+    en_ventana = ventana or args.forzar
 
     # ── Paso 1: descargar resultados ──────────────────────────────────────────
-    descargar_resultados()
+    # Siempre: openfootball (URL pública, sin clave, coste cero).
+    # Solo en ventana: también la API-Football en directo (gasta cuota).
+    if en_ventana:
+        print(f"[{ts}] Ventana activa (forzar={args.forzar}). Pipeline completo.")
+    else:
+        print(f"[{ts}] Sin ventana activa — descargando openfootball para recoger "
+              f"resultados pendientes (API-Football omitida).")
+
+    descargar_resultados(sin_api=not en_ventana)
 
     # ── Paso 2: generar sitio (standings + detalle + proximos + snapshots) ────
     print("  generando datos web…")

@@ -472,6 +472,9 @@ def main() -> None:
                         help="Ruta local al JSON de openfootball (omite la descarga)")
     parser.add_argument("--salida",  default=None,
                         help="Ruta de salida (default: datos/resultados.json)")
+    parser.add_argument("--sin-api", action="store_true",
+                        help="Omitir llamadas a API-Football; usar solo openfootball "
+                             "(para ejecuciones fuera de ventana de partido)")
     args = parser.parse_args()
 
     ano    = args.ano
@@ -534,9 +537,12 @@ def main() -> None:
     # Premios manuales
     premios = cargar_premios()
 
-    # API-Football — respaldo live: solo si algún partido ya ha comenzado (guarda de cuota)
+    # API-Football — respaldo live: solo en ventana de partido y con clave disponible.
+    # --sin-api permite saltarse este bloque cuando el pipeline corre fuera de ventana.
     api_key = os.environ.get("API_FOOTBALL_KEY")
-    if api_key:
+    if args.sin_api:
+        print("  API-Football: omitida (flag --sin-api, fuera de ventana de partido).")
+    elif api_key:
         partidos_iniciados = [
             p for p in calendario.get("partidos", [])
             if p.get("fase") == "grupos"
