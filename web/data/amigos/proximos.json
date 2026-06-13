@@ -28,6 +28,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "2",
@@ -49,6 +57,14 @@
           "signo": "2",
           "goles_local": 0,
           "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
         }
       },
       {
@@ -90,6 +106,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "X",
@@ -111,6 +135,14 @@
           "signo": "1",
           "goles_local": 2,
           "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
         }
       },
       {
@@ -152,6 +184,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "2",
@@ -173,6 +213,14 @@
           "signo": "2",
           "goles_local": 0,
           "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
         }
       },
       {
@@ -214,6 +262,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "2",
@@ -234,6 +290,14 @@
         "prediccion": {
           "signo": "2",
           "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
           "goles_visitante": 2
         }
       },
@@ -276,6 +340,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "1",
@@ -297,6 +369,14 @@
           "signo": "1",
           "goles_local": 5,
           "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
         }
       },
       {
@@ -338,6 +418,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "X",
@@ -359,6 +447,14 @@
           "signo": "X",
           "goles_local": 1,
           "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
         }
       },
       {
@@ -400,6 +496,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "2",
@@ -421,6 +525,14 @@
           "signo": "X",
           "goles_local": 2,
           "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
         }
       },
       {
@@ -462,6 +574,14 @@
         }
       },
       {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
         "nickname": "Mr_Jusi_17",
         "prediccion": {
           "signo": "X",
@@ -483,6 +603,14 @@
           "signo": "1",
           "goles_local": 2,
           "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
         }
       },
       {

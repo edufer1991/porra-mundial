@@ -954,9 +954,9 @@
       "cuarto": "England"
     },
     "premios": {
-      "goleador": Mbappe,
-      "mvp": Messi,
-      "portero": Unai Simón
+      "goleador": "Mbappe",
+      "mvp": "Messi",
+      "portero": "Unai Simón"
     }
   }
 }
