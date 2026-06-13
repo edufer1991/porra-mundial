@@ -1,91 +1,7 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-13T09:10:54Z",
+  "ultima_actualizacion": "2026-06-13T10:08:43Z",
   "clasificacion": [
-    {
-      "nickname": "Mguitart",
-      "porra": "amigos",
-      "puntos_grupos": 35,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 35,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
-      "advertencias_premios": [],
-      "total": 35,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 35,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 3,
-              "partido": "Canada-Bosnia-Herzegovina",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 7,
-              "partido": "USA-Paraguay",
-              "pred": "1|2-0",
-              "real": "1|4-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 1,
-      "empate": true,
-      "posicion_fase_previa": 1
-    },
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
@@ -167,8 +83,8 @@
         }
       },
       "posicion": 1,
-      "empate": true,
-      "posicion_fase_previa": 2
+      "empate": false,
+      "posicion_fase_previa": 1
     },
     {
       "nickname": "Pol",
@@ -238,9 +154,9 @@
           "detalle": {}
         }
       },
-      "posicion": 3,
+      "posicion": 2,
       "empate": true,
-      "posicion_fase_previa": 3
+      "posicion_fase_previa": 2
     },
     {
       "nickname": "Ubi",
@@ -310,9 +226,9 @@
           "detalle": {}
         }
       },
-      "posicion": 3,
+      "posicion": 2,
       "empate": true,
-      "posicion_fase_previa": 4
+      "posicion_fase_previa": 3
     },
     {
       "nickname": "Jordi",
@@ -370,9 +286,9 @@
           "detalle": {}
         }
       },
-      "posicion": 5,
+      "posicion": 4,
       "empate": true,
-      "posicion_fase_previa": 5
+      "posicion_fase_previa": 4
     },
     {
       "nickname": "Mr_Jusi_17",
@@ -430,69 +346,9 @@
           "detalle": {}
         }
       },
-      "posicion": 5,
+      "posicion": 4,
       "empate": true,
-      "posicion_fase_previa": 6
-    },
-    {
-      "nickname": "Tucas",
-      "porra": "amigos",
-      "puntos_grupos": 15,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 15,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 15,
-      "advertencias_premios": [],
-      "total": 15,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 15,
-          "detalle": [
-            {
-              "match_id": 3,
-              "partido": "Canada-Bosnia-Herzegovina",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 5,
-      "empate": true,
-      "posicion_fase_previa": 7
+      "posicion_fase_previa": 5
     },
     {
       "nickname": "Maximo10",
@@ -562,8 +418,102 @@
           "detalle": {}
         }
       },
-      "posicion": 8,
+      "posicion": 6,
       "empate": false,
+      "posicion_fase_previa": 6
+    },
+    {
+      "nickname": "Mguitart",
+      "porra": "amigos",
+      "puntos_grupos": 0,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 0,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 0,
+      "advertencias_premios": [],
+      "total": 0,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 7,
+      "empate": true,
+      "posicion_fase_previa": 7
+    },
+    {
+      "nickname": "Tucas",
+      "porra": "amigos",
+      "puntos_grupos": 0,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 0,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 0,
+      "advertencias_premios": [],
+      "total": 0,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 7,
+      "empate": true,
       "posicion_fase_previa": 8
     }
   ]
