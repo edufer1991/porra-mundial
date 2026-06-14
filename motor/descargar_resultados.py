@@ -2,9 +2,8 @@
 """
 descargar_resultados.py — Descarga y normaliza resultados del Mundial.
 
-Fuente principal : openfootball worldcup.json (JSON público, sin clave).
-Respaldo         : API-Football (clave en env var API_FOOTBALL_KEY).
-Premios manuales : datos/premios.json  →  se vuelca a resultados.json.
+Fuente         : openfootball worldcup.json (JSON público, sin clave).
+Premios manuales: datos/premios.json  →  se vuelca a resultados.json.
 
 Uso:
   python motor/descargar_resultados.py                   # 2026, escribe datos/resultados.json
@@ -17,12 +16,11 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 import unicodedata
 import urllib.request
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 
 BASE         = Path(__file__).resolve().parent.parent
@@ -71,8 +69,6 @@ RONDAS_2022: dict[str, str] = {
     "Match for third place":    "tercer_puesto",
 }
 
-API_FOOTBALL_BASE = "https://v3.football.api-sports.io"
-
 
 # ── Utilidades ────────────────────────────────────────────────────────────────
 
@@ -98,20 +94,17 @@ def _build_nombre_map(equivalencias: dict) -> dict[str, str]:
         canonical = sel.get("nombre_openfootball", "")
         if not canonical:
             continue
-        # El nombre canónico se mapea a sí mismo
         mapping[norm(canonical)] = canonical
-        # Nombre en Excel
         excel_name = sel.get("nombre_excel", "")
         if excel_name:
             mapping[norm(excel_name)] = canonical
-        # Aliases conocidos
         for alias in sel.get("aliases_es", []):
             if alias:
                 mapping[norm(alias)] = canonical
     return mapping
 
 
-def _fetch_json(url: str, api_key: str | None = None) -> dict | None:
+def _fetch_json(url: str) -> dict | None:
     import ssl
     # Try verified SSL first; fall back to unverified (workaround para Windows con certs mal configurados)
     ssl_contexts: list = [None]
@@ -126,8 +119,6 @@ def _fetch_json(url: str, api_key: str | None = None) -> dict | None:
     for ctx in ssl_contexts:
         try:
             req = urllib.request.Request(url)
-            if api_key:
-                req.add_header("x-apisports-key", api_key)
             kw: dict = {"timeout": 20}
             if ctx is not None:
                 kw["context"] = ctx
@@ -135,7 +126,6 @@ def _fetch_json(url: str, api_key: str | None = None) -> dict | None:
                 return json.loads(r.read().decode())
         except (ssl.SSLError, urllib.error.URLError) as exc:
             last_exc = exc
-            # Solo reintentar si la causa es un error SSL
             reason = getattr(exc, "reason", exc)
             if isinstance(reason, ssl.SSLError):
                 continue
@@ -201,35 +191,18 @@ def _map_ronda(ronda_str: str, rondas: dict[str, str]) -> str | None:
 
 # ── Índice de partidos de grupos ──────────────────────────────────────────────
 
-def _build_grupo_index(calendario: dict) -> dict[tuple[str, str], int]:
-    """
-    Devuelve {(norm(local), norm(visitante)): match_id} para fase de grupos.
-    Bidireccional por si openfootball invierte la asignación local/visitante.
-    """
-    idx: dict[tuple[str, str], int] = {}
-    for p in calendario.get("partidos", []):
-        if p.get("fase") == "grupos":
-            k1 = (norm(p["local"]),     norm(p["visitante"]))
-            k2 = (norm(p["visitante"]), norm(p["local"]))
-            idx[k1] = p["id"]
-            idx[k2] = p["id"]
-    return idx
-
-
 def _build_match_dir_index(calendario: dict) -> dict[tuple[str, str], tuple[int, bool]]:
     """
-    Índice orientado para la fusión con API-Football.
-    Devuelve {(norm_equipoA, norm_equipoB): (match_id, invertido)} donde
+    Índice orientado: {(norm_equipoA, norm_equipoB): (match_id, invertido)}.
     invertido=False si equipoA es el local del calendario,
-    invertido=True  si equipoA es el visitante (la API los devuelve al revés).
-    Necesario porque _build_grupo_index es bidireccional y no distingue orientación.
+    invertido=True  si equipoA es el visitante (openfootball los devuelve al revés).
     """
     idx: dict[tuple[str, str], tuple[int, bool]] = {}
     for p in calendario.get("partidos", []):
         if p.get("fase") == "grupos":
             nl, nv = norm(p["local"]), norm(p["visitante"])
-            idx[(nl, nv)] = (p["id"], False)   # home API == local  → sin inversión
-            idx[(nv, nl)] = (p["id"], True)    # home API == visitante → invertido
+            idx[(nl, nv)] = (p["id"], False)
+            idx[(nv, nl)] = (p["id"], True)
     return idx
 
 
@@ -245,11 +218,6 @@ def parsear_openfootball(
     """
     Convierte JSON de openfootball al esquema de resultados.json.
 
-    match_dir_idx: resultado de _build_match_dir_index(); índice orientado que
-    distingue si los equipos de openfootball están invertidos respecto al calendario.
-
-    nombre_map: {norm(variante) → nombre_canonico} para resolver aliases de equipos.
-
     Retorna dict con:
       marcadores   — partidos de grupos con match_id, estado, goles
       clasificados — equipos por ronda eliminatoria (conjuntos)
@@ -259,7 +227,6 @@ def parsear_openfootball(
     RONDAS_CLAS = {"1/16", "1/8", "1/4", "semis", "final"}
 
     def _resolver_nombre(nombre: str) -> str:
-        """Devuelve el nombre canónico (openfootball) resolviendo aliases."""
         if not nombre_map:
             return nombre
         return nombre_map.get(norm(nombre), nombre)
@@ -289,7 +256,6 @@ def parsear_openfootball(
             if estado in ("finalizado", "en_juego"):
                 ft = _score_ft(match.get("score"))
                 if ft:
-                    # invertido=True → openfootball pone como team1 al visitante del calendario
                     marc["goles_local"]     = ft[1] if invertido else ft[0]
                     marc["goles_visitante"] = ft[0] if invertido else ft[1]
             marcadores.append(marc)
@@ -302,7 +268,6 @@ def parsear_openfootball(
 
         stats["elim_procesadas"] += 1
 
-        # Ignorar bracket codes (el equipo aún no está determinado)
         t1_real = t1 if t1 and not _es_placeholder(t1) else None
         t2_real = t2 if t2 and not _es_placeholder(t2) else None
 
@@ -346,236 +311,6 @@ def cargar_premios() -> dict:
     return base
 
 
-# ── API-Football (respaldo / goleadores en vivo) ──────────────────────────────
-
-def _fetch_api_football_live(key: str) -> list[dict]:
-    """
-    Devuelve fixtures actualmente en juego desde API-Football.
-    Se usa para actualizar marcadores de grupos en tiempo real.
-    """
-    url  = f"{API_FOOTBALL_BASE}/fixtures?live=all&league=1&season=2026"
-    data = _fetch_json(url, api_key=key)
-    if not data:
-        return []
-    return data.get("response", [])
-
-
-def _fetch_api_football_dia(key: str, fecha: str) -> list[dict]:
-    """
-    Devuelve todos los fixtures del Mundial 2026 en una fecha concreta (YYYY-MM-DD).
-    Complementa a _fetch_api_football_live: fixtures?live=all solo devuelve
-    partidos activos, pero no los recién terminados que aún no están en
-    openfootball. Esta llamada cubre ese hueco.
-    """
-    url  = f"{API_FOOTBALL_BASE}/fixtures?date={fecha}&league=1&season=2026"
-    data = _fetch_json(url, api_key=key)
-    if not data:
-        return []
-    return data.get("response", [])
-
-
-def _fetch_api_football_goleadores(key: str, league_id: int, season: int) -> list[dict]:
-    """
-    Devuelve tabla de goleadores desde API-Football.
-    league_id para WC 2026 a confirmar durante el torneo.
-    """
-    url  = f"{API_FOOTBALL_BASE}/players/topscorers?league={league_id}&season={season}"
-    data = _fetch_json(url, api_key=key)
-    if not data:
-        return []
-    return data.get("response", [])
-
-
-def _fusionar_api_football(
-    marcadores: list[dict],
-    live_fixtures: list[dict],
-    nombre_map: dict[str, str],
-    match_dir_idx: dict[tuple[str, str], tuple[int, bool]],
-) -> tuple[list[dict], int]:
-    """
-    Completa / actualiza marcadores de grupos (base openfootball) con datos de API-Football.
-
-    match_dir_idx debe ser el resultado de _build_match_dir_index(), no de
-    _build_grupo_index(): el índice orientado codifica si los equipos de la API
-    están invertidos respecto al calendario, lo que determina cómo asignar los goles.
-
-    Regla de fusión: solo modifica entradas cuyo estado actual es 'pendiente' o 'en_juego';
-    nunca sobreescribe un 'finalizado' ya confirmado por openfootball.
-    Devuelve (lista_actualizada, n_cambios).
-    """
-    STATUS_LIVE = {"1H", "HT", "2H", "ET", "BT", "P", "INT"}
-    STATUS_FT   = {"FT", "AET", "PEN"}
-
-    marc_map: dict[int, dict] = {m["match_id"]: m for m in marcadores}
-    n_act = 0
-
-    for fix in live_fixtures:
-        status_short = fix.get("fixture", {}).get("status", {}).get("short", "")
-        if status_short not in STATUS_LIVE | STATUS_FT:
-            continue
-
-        goals      = fix.get("goals", {})
-        g_home_raw = goals.get("home")
-        g_away_raw = goals.get("away")
-        if g_home_raw is None or g_away_raw is None:
-            continue
-
-        home_raw = fix.get("teams", {}).get("home", {}).get("name", "")
-        away_raw = fix.get("teams", {}).get("away", {}).get("name", "")
-        home_can = nombre_map.get(norm(home_raw), home_raw)
-        away_can = nombre_map.get(norm(away_raw), away_raw)
-
-        # Buscar match_id y orientación usando el índice dirigido
-        entry = match_dir_idx.get((norm(home_can), norm(away_can)))
-        if entry is None:
-            continue  # no es un partido de grupos 2026
-        mid, invertido = entry
-
-        # invertido=True → la API pone como home al equipo que en el calendario es visitante;
-        # hay que cruzar los goles para que goles_local corresponda siempre al local del calendario.
-        gl = int(g_away_raw) if invertido else int(g_home_raw)
-        gv = int(g_home_raw) if invertido else int(g_away_raw)
-
-        api_estado = "finalizado" if status_short in STATUS_FT else "en_juego"
-        cur_estado = marc_map.get(mid, {}).get("estado", "pendiente")
-
-        # Solo actualizar si openfootball aún no tiene el resultado definitivo
-        if cur_estado in ("pendiente", "en_juego"):
-            marc_map[mid] = {
-                "match_id":        mid,
-                "estado":          api_estado,
-                "goles_local":     gl,
-                "goles_visitante": gv,
-                "_fuente":         "api_football",
-            }
-            n_act += 1
-
-    return sorted(marc_map.values(), key=lambda m: m["match_id"]), n_act
-
-
-# ── Fallback de partidos huérfanos ────────────────────────────────────────────
-#
-# Un "huérfano" es un partido de grupos cuya fecha programada terminó hace más
-# de UMBRAL_HUERFANO (4h por defecto) pero que sigue como 'pendiente' en
-# resultados.json porque openfootball aún no ha publicado el score. Cuando esto
-# ocurre fuera de la ventana activa del pipeline (típico de partidos cuya cron
-# pertinente se saltó por inactividad de GitHub Actions o por demora del cron),
-# necesitamos un mecanismo independiente que consulte API-Football por fecha
-# para recuperar el marcador final.
-#
-# Reglas:
-#   • Solo huérfanos cuyo estado actual es 'pendiente' (nunca pisa finalizado).
-#   • Agrupa por fecha para minimizar llamadas (1 request por día).
-#   • Permite excluir fechas ya consultadas en este mismo ciclo (cuota).
-#   • Etiqueta los marcadores recuperados con _fuente='api_football_fallback'.
-
-UMBRAL_HUERFANO_DEFAULT = timedelta(hours=4)
-
-
-def _aplicar_fallback_huerfanos(
-    marcadores: list[dict],
-    calendario: dict,
-    match_dir_idx: dict[tuple[str, str], tuple[int, bool]],
-    nombre_map: dict[str, str],
-    api_key: str,
-    ahora: datetime,
-    fetch_dia=None,
-    umbral: timedelta = UMBRAL_HUERFANO_DEFAULT,
-    fechas_ya_consultadas: set[str] | None = None,
-    log=print,
-) -> tuple[list[dict], int, int]:
-    """
-    Para partidos pendientes cuya fecha programada es anterior a `ahora - umbral`,
-    consulta API-Football por fecha y, si la API los marca FT/AET/PEN, los guarda
-    con _fuente='api_football_fallback'.
-
-    fetch_dia(api_key, fecha_str) → list[dict]   (inyectable para tests)
-
-    Devuelve (marcadores_actualizados, n_huerfanos, n_encontrados).
-    """
-    if fetch_dia is None:
-        fetch_dia = _fetch_api_football_dia
-    if fechas_ya_consultadas is None:
-        fechas_ya_consultadas = set()
-
-    STATUS_FT = {"FT", "AET", "PEN"}
-
-    fecha_por_id: dict[int, str] = {
-        p["id"]: p["fecha_hora_utc"]
-        for p in calendario.get("partidos", [])
-        if p.get("fase") == "grupos" and p.get("fecha_hora_utc")
-    }
-
-    limite = ahora - umbral
-    huerfanos: list[tuple[int, datetime]] = []
-    for m in marcadores:
-        if m.get("estado") != "pendiente":
-            continue
-        fhu = fecha_por_id.get(m["match_id"])
-        if not fhu:
-            continue
-        try:
-            fecha_partido = datetime.fromisoformat(fhu.replace("Z", "+00:00"))
-        except ValueError:
-            continue
-        if fecha_partido < limite:
-            huerfanos.append((m["match_id"], fecha_partido))
-
-    if not huerfanos:
-        return marcadores, 0, 0
-
-    huerfano_ids = {mid for mid, _ in huerfanos}
-    fechas_huerfanas = sorted({fp.strftime("%Y-%m-%d") for _, fp in huerfanos})
-
-    marc_map: dict[int, dict] = {m["match_id"]: m for m in marcadores}
-    n_encontrados = 0
-
-    for fecha in fechas_huerfanas:
-        if fecha in fechas_ya_consultadas:
-            continue
-        fixtures = fetch_dia(api_key, fecha) or []
-
-        for fix in fixtures:
-            status_short = fix.get("fixture", {}).get("status", {}).get("short", "")
-            if status_short not in STATUS_FT:
-                continue
-            goals = fix.get("goals", {})
-            g_home_raw = goals.get("home")
-            g_away_raw = goals.get("away")
-            if g_home_raw is None or g_away_raw is None:
-                continue
-
-            home_raw = fix.get("teams", {}).get("home", {}).get("name", "")
-            away_raw = fix.get("teams", {}).get("away", {}).get("name", "")
-            home_can = nombre_map.get(norm(home_raw), home_raw)
-            away_can = nombre_map.get(norm(away_raw), away_raw)
-
-            entry = match_dir_idx.get((norm(home_can), norm(away_can)))
-            if entry is None:
-                continue
-            mid, invertido = entry
-            if mid not in huerfano_ids:
-                continue
-            if marc_map.get(mid, {}).get("estado") == "finalizado":
-                continue   # alguien lo cerró antes (no debería pasar, pero seguro)
-
-            gl = int(g_away_raw) if invertido else int(g_home_raw)
-            gv = int(g_home_raw) if invertido else int(g_away_raw)
-            marc_map[mid] = {
-                "match_id":        mid,
-                "estado":          "finalizado",
-                "goles_local":     gl,
-                "goles_visitante": gv,
-                "_fuente":         "api_football_fallback",
-            }
-            n_encontrados += 1
-
-    marcadores_act = sorted(marc_map.values(), key=lambda m: m["match_id"])
-    log(f"  API-Football fallback: {len(huerfanos)} partidos huérfanos, "
-        f"{n_encontrados} encontrados.")
-    return marcadores_act, len(huerfanos), n_encontrados
-
-
 # ── Escritura ─────────────────────────────────────────────────────────────────
 
 def guardar_resultados(resultado: dict, path: Path = RESULTADOS) -> None:
@@ -595,20 +330,15 @@ def main() -> None:
                         help="Ruta local al JSON de openfootball (omite la descarga)")
     parser.add_argument("--salida",  default=None,
                         help="Ruta de salida (default: datos/resultados.json)")
-    parser.add_argument("--sin-api", action="store_true",
-                        help="Omitir llamadas a API-Football; usar solo openfootball "
-                             "(para ejecuciones fuera de ventana de partido)")
     args = parser.parse_args()
 
     ano    = args.ano
     salida = Path(args.salida) if args.salida else RESULTADOS
 
-    # Calendario 2026 (siempre se usa para resolver match_ids de grupos)
     with open(CALENDARIO, encoding="utf-8") as f:
         calendario = json.load(f)
     match_dir_idx = _build_match_dir_index(calendario)
 
-    # Mapa de nombres para resolver aliases openfootball ↔ nombre canónico
     nombre_map: dict[str, str] | None = None
     if EQUIVALENCIAS.exists():
         with open(EQUIVALENCIAS, encoding="utf-8") as f:
@@ -616,7 +346,6 @@ def main() -> None:
 
     rondas = RONDAS_2022 if ano == "2022" else RONDAS_2026
 
-    # Fuente openfootball
     if args.archivo:
         print(f"  Usando fichero local: {args.archivo}")
         with open(args.archivo, encoding="utf-8") as f:
@@ -629,12 +358,11 @@ def main() -> None:
             print("  [ERROR] No se pudo obtener datos de openfootball. Abortando.", file=sys.stderr)
             sys.exit(1)
 
-    ahora     = datetime.now(timezone.utc)
+    ahora = datetime.now(timezone.utc)
 
     # Preservar finalizados ya confirmados en ejecuciones previas.
-    # openfootball puede tardar horas en publicar score.ft; si ya obtuvimos
-    # el resultado (vía API-Football o una ejecución anterior de openfootball),
-    # lo restauramos para no perderlo y evitar llamadas API redundantes.
+    # openfootball puede tardar horas en publicar score.ft; los restauramos
+    # para no perderlos mientras el JSON remoto se actualiza.
     finalizados_previos: dict[int, dict] = {}
     if salida.exists():
         try:
@@ -652,92 +380,12 @@ def main() -> None:
     resultado = parsear_openfootball(of_data, match_dir_idx, rondas, ahora, nombre_map)
     stats     = resultado.pop("stats")
 
-    # Restaurar resultados ya confirmados que openfootball aún no refleja
     for m in resultado["marcadores"]:
         if m.get("estado") == "pendiente" and m["match_id"] in finalizados_previos:
             m.update(finalizados_previos[m["match_id"]])
 
-    # Premios manuales
     premios = cargar_premios()
 
-    # API-Football — respaldo live: solo en ventana de partido y con clave disponible.
-    # --sin-api permite saltarse este bloque cuando el pipeline corre fuera de ventana.
-    api_key = os.environ.get("API_FOOTBALL_KEY")
-    fechas_ya_consultadas: set[str] = set()
-    if args.sin_api:
-        print("  API-Football: omitida (flag --sin-api, fuera de ventana de partido).")
-    elif api_key:
-        partidos_iniciados = [
-            p for p in calendario.get("partidos", [])
-            if p.get("fase") == "grupos"
-            and datetime.fromisoformat(
-                p["fecha_hora_utc"].replace("Z", "+00:00")
-            ) <= ahora
-        ]
-        if partidos_iniciados:
-            # Llamada 1: partidos activos en este momento
-            print(f"  API-Football: {len(partidos_iniciados)} partido(s) iniciado(s);"
-                  f" consultando fixtures?live=all …")
-            live = _fetch_api_football_live(api_key)
-            if live:
-                resultado["marcadores"], n_act = _fusionar_api_football(
-                    resultado["marcadores"], live, nombre_map or {}, match_dir_idx
-                )
-                print(f"  API-Football live: {n_act} marcador(es) actualizados.")
-            else:
-                print("  API-Football: fixtures?live=all vacío (ningún partido activo ahora).")
-
-            # Llamada 2: partidos que deberían haber terminado (>100 min desde inicio)
-            # pero siguen pendientes — fixtures?live=all no los devuelve porque ya finalizaron.
-            DURACION_MIN = 100  # minutos suficientes para que un partido haya acabado
-            pendientes_vencidos = [
-                p for p in calendario.get("partidos", [])
-                if p.get("fase") == "grupos"
-                and datetime.fromisoformat(
-                    p["fecha_hora_utc"].replace("Z", "+00:00")
-                ) <= ahora - timedelta(minutes=DURACION_MIN)
-                and any(
-                    m["match_id"] == p["id"] and m["estado"] == "pendiente"
-                    for m in resultado["marcadores"]
-                )
-            ]
-            if pendientes_vencidos:
-                fechas_utc = {
-                    datetime.fromisoformat(
-                        p["fecha_hora_utc"].replace("Z", "+00:00")
-                    ).strftime("%Y-%m-%d")
-                    for p in pendientes_vencidos
-                }
-                for fecha in sorted(fechas_utc):
-                    print(f"  API-Football: {len([p for p in pendientes_vencidos if fecha in p['fecha_hora_utc']])} partido(s) vencido(s) sin resultado;"
-                          f" consultando fixtures?from={fecha}&to={fecha} …")
-                    recientes = _fetch_api_football_dia(api_key, fecha)
-                    fechas_ya_consultadas.add(fecha)
-                    if recientes:
-                        resultado["marcadores"], n_act2 = _fusionar_api_football(
-                            resultado["marcadores"], recientes, nombre_map or {}, match_dir_idx
-                        )
-                        print(f"  API-Football recientes ({fecha}): {n_act2} marcador(es) actualizados.")
-                    else:
-                        print(f"  API-Football recientes ({fecha}): sin datos.")
-        else:
-            print("  API-Football: ningún partido iniciado aún — cuota preservada (0 llamadas).")
-
-        # Fallback huérfanos: independiente de la ventana. Cubre el caso de un
-        # partido cuyo score openfootball nunca llegó a publicar (cron saltado,
-        # API caída temporalmente, etc.) y que ya lleva > UMBRAL_HUERFANO sin
-        # resolverse. Solo activo si hay api_key y no --sin-api.
-        resultado["marcadores"], _, _ = _aplicar_fallback_huerfanos(
-            resultado["marcadores"],
-            calendario,
-            match_dir_idx,
-            nombre_map or {},
-            api_key,
-            ahora,
-            fechas_ya_consultadas=fechas_ya_consultadas,
-        )
-
-    # Construir resultados.json
     ahora_iso = ahora.strftime("%Y-%m-%dT%H:%M:%SZ")
     salida_dict = {
         "_descripcion": (
@@ -753,10 +401,9 @@ def main() -> None:
 
     guardar_resultados(salida_dict, salida)
 
-    # Resumen
-    n_final  = sum(1 for m in resultado["marcadores"] if m.get("estado") == "finalizado")
-    n_vivo   = sum(1 for m in resultado["marcadores"] if m.get("estado") == "en_juego")
-    n_pend   = sum(1 for m in resultado["marcadores"] if m.get("estado") == "pendiente")
+    n_final = sum(1 for m in resultado["marcadores"] if m.get("estado") == "finalizado")
+    n_vivo  = sum(1 for m in resultado["marcadores"] if m.get("estado") == "en_juego")
+    n_pend  = sum(1 for m in resultado["marcadores"] if m.get("estado") == "pendiente")
     print(f"  Partidos de grupo procesados  : {stats['grupos_encontrados']}"
           f"  (sin ID en calendario: {stats['grupos_sin_id']})")
     print(f"  Marcadores: {n_final} finalizados, {n_vivo} en juego, {n_pend} pendientes")

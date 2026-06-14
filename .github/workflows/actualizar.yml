@@ -20,11 +20,6 @@ on:
         options:
           - demo
           - live
-      forzar_ventana:
-        description: 'Ignorar comprobación de ventana de partido (solo en modo live)'
-        required: false
-        default: true
-        type: boolean
 
 # ── Permisos ──────────────────────────────────────────────────────────────────
 permissions:
@@ -68,20 +63,13 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.modo == 'demo'
         run: python -X utf8 motor/pipeline.py --demo
 
-      - name: Ejecutar pipeline (modo live, forzar ventana)
+      - name: Ejecutar pipeline (modo live)
         if: github.event_name == 'workflow_dispatch' && inputs.modo == 'live'
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: |
-          EXTRA=""
-          ${{ inputs.forzar_ventana }} && EXTRA="--forzar"
-          python motor/pipeline.py $EXTRA
+        run: python -X utf8 motor/pipeline.py
 
-      - name: Ejecutar pipeline (cron — verifica ventana internamente)
+      - name: Ejecutar pipeline (cron)
         if: github.event_name == 'schedule'
-        env:
-          API_FOOTBALL_KEY: ${{ secrets.API_FOOTBALL_KEY }}
-        run: python motor/pipeline.py
+        run: python -X utf8 motor/pipeline.py
 
       # 4. Persistir datos actualizados en el repo ──────────────────────────
       - name: Guardar datos en el repositorio
