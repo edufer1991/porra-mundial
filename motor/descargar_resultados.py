@@ -527,13 +527,41 @@ def _aplicar_fallback_huerfanos(
     huerfano_ids = {mid for mid, _ in huerfanos}
     fechas_huerfanas = sorted({fp.strftime("%Y-%m-%d") for _, fp in huerfanos})
 
+    # Índice inverso para el debug: match_id → (local, visitante) del calendario.
+    nombres_por_id: dict[int, tuple[str, str]] = {
+        p["id"]: (p.get("local", ""), p.get("visitante", ""))
+        for p in calendario.get("partidos", [])
+        if p.get("fase") == "grupos"
+    }
+
     marc_map: dict[int, dict] = {m["match_id"]: m for m in marcadores}
     n_encontrados = 0
 
     for fecha in fechas_huerfanas:
         if fecha in fechas_ya_consultadas:
+            log(f"  [DEBUG fallback] fecha {fecha} omitida (ya consultada por bloque previo).")
             continue
         fixtures = fetch_dia(api_key, fecha) or []
+
+        # ── DEBUG temporal: contexto del matching ────────────────────────────
+        huerfanos_de_la_fecha = [
+            mid for mid, fp in huerfanos
+            if fp.strftime("%Y-%m-%d") == fecha
+        ]
+        log(f"  [DEBUG fallback] fecha {fecha}: fixtures recibidos = {len(fixtures)}, "
+            f"huérfanos esperados = {len(huerfanos_de_la_fecha)}")
+        for mid in huerfanos_de_la_fecha:
+            loc, vis = nombres_por_id.get(mid, ("?", "?"))
+            log(f"    huérfano match_id={mid}  calendario=({loc!r}, {vis!r})  "
+                f"norm=({norm(loc)!r}, {norm(vis)!r})")
+        ft_fixtures = [
+            f for f in fixtures
+            if f.get("fixture", {}).get("status", {}).get("short", "") in STATUS_FT
+        ]
+        log(f"    fixtures FT en la respuesta = {len(ft_fixtures)} / {len(fixtures)}")
+        encontrados_en_fecha = 0
+        # ─────────────────────────────────────────────────────────────────────
+
         for fix in fixtures:
             status_short = fix.get("fixture", {}).get("status", {}).get("short", "")
             if status_short not in STATUS_FT:
@@ -550,6 +578,17 @@ def _aplicar_fallback_huerfanos(
             away_can = nombre_map.get(norm(away_raw), away_raw)
 
             entry = match_dir_idx.get((norm(home_can), norm(away_can)))
+
+            # ── DEBUG temporal: cada FT fixture y su matching ────────────────
+            mid_dbg = entry[0] if entry else None
+            es_huerfano_dbg = mid_dbg in huerfano_ids if entry else False
+            log(f"    FT fixture: api_raw=({home_raw!r}, {away_raw!r})  "
+                f"→ canon=({home_can!r}, {away_can!r})  "
+                f"norm=({norm(home_can)!r}, {norm(away_can)!r})  "
+                f"match_dir_idx={'HIT mid='+str(mid_dbg) if entry else 'MISS'}  "
+                f"es_huerfano={es_huerfano_dbg}")
+            # ─────────────────────────────────────────────────────────────────
+
             if entry is None:
                 continue
             mid, invertido = entry
@@ -568,6 +607,13 @@ def _aplicar_fallback_huerfanos(
                 "_fuente":         "api_football_fallback",
             }
             n_encontrados += 1
+            encontrados_en_fecha += 1
+
+        # ── DEBUG temporal: resumen de la fecha ──────────────────────────────
+        if encontrados_en_fecha == 0 and huerfanos_de_la_fecha and fixtures:
+            log(f"    [DEBUG fallback] fecha {fecha}: ningún FT fixture matcheó "
+                f"con los huérfanos esperados.")
+        # ─────────────────────────────────────────────────────────────────────
 
     marcadores_act = sorted(marc_map.values(), key=lambda m: m["match_id"])
     log(f"  API-Football fallback: {len(huerfanos)} partidos huérfanos, "
