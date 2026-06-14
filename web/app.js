@@ -28,7 +28,7 @@ let state = {
   calIdx: {},          // match_id → partido (built on load)
   sectionOpen: {},     // section ID → bool (open/closed state)
   selectedNick: null,
-  activeTab: 'mi-porra',
+  activeTab: 'clasificacion',
   prevStandings: null,
   refreshTimer: null,
   lastUpdate: null,
@@ -777,59 +777,185 @@ function renderEvolucion() {
   `).join('');
 }
 
-// ── PRÓXIMOS ──────────────────────────────────────────────────────────────────
+// ── PRÓXIMOS + JUGADOS ────────────────────────────────────────────────────────
 function renderProximos() {
+  renderJugados();
+
   const container = $('proximos-container');
   if (!state.proximos?.length) {
     container.innerHTML = '<div class="empty-state"><div class="icon">📅</div>No hay próximos partidos cargados</div>';
-    return;
+  } else {
+    container.innerHTML = '';
+    state.proximos.forEach(m => {
+      const card = el('div', 'match-card');
+      const liveEntry = state.resultados?.marcadores?.find(e => e.match_id === m.match_id);
+      const isLive = liveEntry?.estado === 'en_juego';
+      const isDone = liveEntry?.estado === 'finalizado';
+      const jLabel = m.jornada ? `${m.grupo ? 'Grupo '+m.grupo+' · ' : ''}${m.jornada}` : (m.fase || '');
+
+      let scoreHtml = '';
+      if (isLive || isDone) {
+        scoreHtml = `<span class="match-live-score">${liveEntry.goles_local ?? '?'} – ${liveEntry.goles_visitante ?? '?'}</span>`;
+      } else {
+        scoreHtml = `<span class="match-vs">vs</span>`;
+      }
+
+      card.innerHTML = `
+        <div class="match-card-head">
+          <span class="match-meta">${escHtml(jLabel)}</span>
+          <span class="match-date-str">${fmtDate(m.fecha_hora_utc)}</span>
+        </div>
+        <div class="match-teams-row">
+          <div class="match-team home">${escHtml(m.local)}</div>
+          ${scoreHtml}
+          <div class="match-team away">${escHtml(m.visitante)}</div>
+        </div>
+      `;
+
+      if (m.predicciones?.length) {
+        const grid = el('div', 'preds-grid');
+        m.predicciones.forEach(pr => {
+          const cell = el('div', 'pred-cell');
+          const p = pr.prediccion;
+          const valStr = p ? `${p.goles_local}-${p.goles_visitante}` : '—';
+          cell.innerHTML = `
+            <div class="pred-cell-nick">${escHtml(pr.nickname)}</div>
+            <div class="pred-cell-val">${valStr}</div>
+          `;
+          grid.appendChild(cell);
+        });
+        card.appendChild(grid);
+      }
+
+      container.appendChild(card);
+    });
+  }
+}
+
+// Returns CSS class for the score value in a played-match cell.
+// hit-exact · hit-diff · hit-sign · hit-wrong
+function _predValClass(pr, resultado) {
+  if (!pr.acierto_signo) return 'hit-wrong';
+  if (pr.acierto_local && pr.acierto_visitante) return 'hit-exact';
+  if (resultado) {
+    const pd = (pr.prediccion?.goles_local ?? 0) - (pr.prediccion?.goles_visitante ?? 0);
+    const rd = (resultado.goles_local ?? 0) - (resultado.goles_visitante ?? 0);
+    if (pd === rd) return 'hit-diff';
+  }
+  return 'hit-sign';
+}
+
+// Returns inner HTML for the badges row (G / D / E), empty string when no badges.
+function _predBadgesHtml(cls) {
+  if (cls === 'hit-wrong') return '';
+  let html = '<span class="pred-badge">G</span>';
+  if (cls === 'hit-diff' || cls === 'hit-exact') html += '<span class="pred-badge">D</span>';
+  if (cls === 'hit-exact') html += '<span class="pred-badge">E</span>';
+  return html;
+}
+
+// Builds the list of played matches from detalle.json, sorted most-recent first.
+function _buildJugadosIndex() {
+  if (!state.detalle) return [];
+  const matchMap = new Map();
+  for (const [nick, participant] of Object.entries(state.detalle)) {
+    for (const g of (participant.grupos || [])) {
+      if (!g.resultado || g.acierto_signo === null || g.acierto_signo === undefined) continue;
+      if (!matchMap.has(g.match_id)) {
+        const cal = state.calIdx[g.match_id] || {};
+        matchMap.set(g.match_id, {
+          match_id:      g.match_id,
+          local:         g.local,
+          visitante:     g.visitante,
+          grupo:         g.grupo,
+          jornada:       g.jornada,
+          fase:          cal.fase || 'grupos',
+          fecha_hora_utc: cal.fecha_hora_utc || '',
+          resultado:     g.resultado,
+          predicciones:  [],
+        });
+      }
+      matchMap.get(g.match_id).predicciones.push({
+        nickname:        nick,
+        prediccion:      g.prediccion,
+        acierto_signo:   g.acierto_signo,
+        acierto_local:   g.acierto_local,
+        acierto_visitante: g.acierto_visitante,
+      });
+    }
+  }
+  return [...matchMap.values()].sort((a, b) =>
+    (b.fecha_hora_utc || '').localeCompare(a.fecha_hora_utc || ''));
+}
+
+function renderJugados() {
+  const wrap = $('jugados-wrap');
+  // Preserve open/closed state across re-renders
+  const wasOpen = wrap.querySelector('.sec-block')?.classList.contains('open') ?? false;
+  const jugados = _buildJugadosIndex();
+
+  // Reuse the same sec-block structure and CSS as Mi Porra sections
+  const secBlock = el('div', `sec-block${wasOpen ? ' open' : ''}`);
+  secBlock.innerHTML = `
+    <button class="sec-header" type="button">
+      <span class="sec-chevron">▶</span>
+      <span class="sec-title">Partidos jugados</span>
+      <span class="sec-meta">${jugados.length} partidos</span>
+    </button>
+    <div class="sec-body"><div class="sec-inner"></div></div>
+  `;
+
+  const secInner = secBlock.querySelector('.sec-inner');
+
+  if (!jugados.length) {
+    secInner.innerHTML = '<div class="empty-state"><div class="icon">🏁</div>Aún no hay partidos jugados</div>';
+  } else {
+    jugados.forEach(m => {
+      const card  = el('div', 'match-card');
+      const jLabel = m.grupo ? `Grupo ${m.grupo} · ${m.jornada}` : (m.jornada || m.fase || '');
+      const r = m.resultado;
+
+      card.innerHTML = `
+        <div class="match-card-head">
+          <span class="match-meta">${escHtml(jLabel)}</span>
+          <span class="match-date-str">${fmtDate(m.fecha_hora_utc)}</span>
+        </div>
+        <div class="match-teams-row">
+          <div class="match-team home">${escHtml(m.local)}</div>
+          <span class="match-final-score">${r.goles_local ?? '?'} – ${r.goles_visitante ?? '?'}</span>
+          <div class="match-team away">${escHtml(m.visitante)}</div>
+        </div>
+      `;
+
+      if (m.predicciones?.length) {
+        const sorted = [...m.predicciones].sort((a, b) => a.nickname.localeCompare(b.nickname));
+        const grid = el('div', 'preds-grid');
+        sorted.forEach(pr => {
+          const cell = el('div', 'pred-cell');
+          const p = pr.prediccion;
+          const valStr = p ? `${p.goles_local}-${p.goles_visitante}` : '—';
+          const valCls = _predValClass(pr, m.resultado);
+          const badges = _predBadgesHtml(valCls);
+          cell.innerHTML = `
+            <div class="pred-cell-nick">${escHtml(pr.nickname)}</div>
+            <div class="pred-cell-val ${valCls}">${valStr}</div>
+            <div class="pred-badges">${badges}</div>
+          `;
+          grid.appendChild(cell);
+        });
+        card.appendChild(grid);
+      }
+
+      secInner.appendChild(card);
+    });
   }
 
-  container.innerHTML = '';
-  state.proximos.forEach(m => {
-    const card = el('div', 'match-card');
-    const liveEntry = state.resultados?.marcadores?.find(e => e.match_id === m.match_id);
-    const isLive = liveEntry?.estado === 'en_juego';
-    const isDone = liveEntry?.estado === 'finalizado';
-    const jLabel = m.jornada ? `${m.grupo ? 'Grupo '+m.grupo+' · ' : ''}${m.jornada}` : (m.fase || '');
-
-    let scoreHtml = '';
-    if (isLive || isDone) {
-      scoreHtml = `<span class="match-live-score">${liveEntry.goles_local ?? '?'} – ${liveEntry.goles_visitante ?? '?'}</span>`;
-    } else {
-      scoreHtml = `<span class="match-vs">vs</span>`;
-    }
-
-    card.innerHTML = `
-      <div class="match-card-head">
-        <span class="match-meta">${escHtml(jLabel)}</span>
-        <span class="match-date-str">${fmtDate(m.fecha_hora_utc)}</span>
-      </div>
-      <div class="match-teams-row">
-        <div class="match-team home">${escHtml(m.local)}</div>
-        ${scoreHtml}
-        <div class="match-team away">${escHtml(m.visitante)}</div>
-      </div>
-    `;
-
-    // Predicciones grid
-    if (m.predicciones?.length) {
-      const grid = el('div', 'preds-grid');
-      m.predicciones.forEach(pr => {
-        const cell = el('div', 'pred-cell');
-        const p = pr.prediccion;
-        const valStr = p ? `${p.goles_local}-${p.goles_visitante}` : '—';
-        cell.innerHTML = `
-          <div class="pred-cell-nick">${escHtml(pr.nickname)}</div>
-          <div class="pred-cell-val">${valStr}</div>
-        `;
-        grid.appendChild(cell);
-      });
-      card.appendChild(grid);
-    }
-
-    container.appendChild(card);
+  secBlock.querySelector('.sec-header').addEventListener('click', () => {
+    secBlock.classList.toggle('open');
   });
+
+  wrap.innerHTML = '';
+  wrap.appendChild(secBlock);
 }
 
 // ── XSS safety ────────────────────────────────────────────────────────────────

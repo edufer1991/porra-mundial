@@ -890,6 +890,13 @@ a      { color: inherit; text-decoration: none; }
   color: var(--red);
   flex-shrink: 0;
 }
+.match-final-score {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--accent);
+  flex-shrink: 0;
+}
 
 /* Predictions grid */
 .preds-grid {
@@ -918,12 +925,36 @@ a      { color: inherit; text-decoration: none; }
   font-weight: 700;
   color: var(--text);
 }
+/* Accuracy levels for played matches — all (0,2,0) specificity, beat .pred-cell-val */
+.pred-cell-val.hit-wrong { color: #e74c3c; }
+.pred-cell-val.hit-sign  { color: var(--green); }
+.pred-cell-val.hit-diff  { color: var(--green); font-size: calc(1rem + 2px); }
+.pred-cell-val.hit-exact { color: var(--green); font-size: calc(1rem + 4px); font-weight: 900; }
+
+/* Badges G / D / E */
+.pred-badges {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  min-height: 14px;
+  margin-top: 2px;
+}
+.pred-badge {
+  font-family: 'Outfit', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--green);
+  line-height: 1;
+}
 .pred-cell-sign {
   font-size: .72rem;
   font-weight: 600;
   color: var(--text3);
   margin-top: 1px;
 }
+
+/* ── Partidos jugados — reuses .sec-block / .sec-header / .sec-body from Mi Porra ── */
+#jugados-wrap { margin-bottom: 20px; }
 
 /* ── Reglas ──────────────────────────────────────────────────────────────── */
 .reglas-section {
