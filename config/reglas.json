@@ -35,6 +35,14 @@
     "_doc": "Comparación con normalización (sin tildes ni mayúsculas) + tabla de alias en alias_jugadores.json (opcional). No-coincidencias se devuelven en advertencias_premios para revisión manual."
   },
 
+  "reparto_amigos": {
+    "1_general":    45,
+    "2_general":    30,
+    "3_general":    15,
+    "1_fase_previa": 10,
+    "_doc": "Porra amigos. Sin premio mejor nickname. Suma: 45+30+15+10 = 100 %."
+  },
+
   "desempate_clasificacion": {
     "criterio": "puntos_fase_eliminatoria",
     "incluye": ["eliminatorias", "honor"],

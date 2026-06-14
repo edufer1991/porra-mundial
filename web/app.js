@@ -93,6 +93,10 @@ async function enterApp(porra) {
   // Logo: solo visible en porra trabajo
   $('trabajo-logo').classList.toggle('hidden', porra !== 'trabajo');
 
+  // Reparto del bote: mostrar sección correcta según porra
+  $('reparto-amigos').classList.toggle('hidden', porra !== 'amigos');
+  $('reparto-trabajo').classList.toggle('hidden', porra !== 'trabajo');
+
   await loadAll();
   renderActiveTab();
   startRefreshLoop();
