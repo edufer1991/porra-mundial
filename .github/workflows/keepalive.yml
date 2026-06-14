@@ -1,0 +1,26 @@
+name: Keepalive — evitar pausa del cron
+
+# GitHub pausa los crons tras 60 días sin actividad en el repo.
+# Este workflow hace un commit vacío cada ~50 días para mantenerlo activo.
+on:
+  schedule:
+    - cron: '0 0 1,15 * *'   # 1 y 15 de cada mes, medianoche UTC (~cada 15 días)
+  workflow_dispatch:          # también se puede lanzar a mano
+
+permissions:
+  contents: write
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Commit vacío para mantener cron activo
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit --allow-empty -m "chore: keepalive [skip ci]"
+          git push
