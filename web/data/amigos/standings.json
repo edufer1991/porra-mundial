@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-14T19:02:38Z",
+  "ultima_actualizacion": "2026-06-14T19:12:31Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 50,
+      "puntos_grupos": 55,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 50,
+      "puntos_fase_previa": 55,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 50,
+      "puntos_total": 55,
       "advertencias_premios": [],
-      "total": 50,
+      "total": 55,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 50,
+          "total": 55,
           "detalle": [
             {
               "match_id": 1,
@@ -66,6 +66,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -101,19 +113,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 40,
+      "puntos_grupos": 45,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 40,
+      "puntos_fase_previa": 45,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 40,
+      "puntos_total": 45,
       "advertencias_premios": [],
-      "total": 40,
+      "total": 45,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 40,
+          "total": 45,
           "detalle": [
             {
               "match_id": 1,
@@ -162,6 +174,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -197,19 +221,19 @@
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 35,
+      "puntos_grupos": 40,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 35,
+      "puntos_fase_previa": 40,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
+      "puntos_total": 40,
       "advertencias_premios": [],
-      "total": 35,
+      "total": 40,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 35,
+          "total": 40,
           "detalle": [
             {
               "match_id": 1,
@@ -240,6 +264,18 @@
               "partido": "Haiti-Scotland",
               "pred": "2|0-3",
               "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|7-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -281,19 +317,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 35,
+      "puntos_grupos": 40,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 35,
+      "puntos_fase_previa": 40,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
+      "puntos_total": 40,
       "advertencias_premios": [],
-      "total": 35,
+      "total": 40,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 35,
+          "total": 40,
           "detalle": [
             {
               "match_id": 1,
@@ -324,6 +360,18 @@
               "partido": "USA-Paraguay",
               "pred": "1|2-1",
               "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -365,19 +413,19 @@
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 27,
+      "puntos_grupos": 32,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 27,
+      "puntos_fase_previa": 32,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 27,
+      "puntos_total": 32,
       "advertencias_premios": [],
-      "total": 27,
+      "total": 32,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 27,
+          "total": 32,
           "detalle": [
             {
               "match_id": 1,
@@ -408,6 +456,18 @@
               "partido": "Haiti-Scotland",
               "pred": "2|0-3",
               "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -449,19 +509,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 25,
+      "puntos_grupos": 30,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 25,
+      "puntos_fase_previa": 30,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 25,
+      "puntos_total": 30,
       "advertencias_premios": [],
-      "total": 25,
+      "total": 30,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 25,
+          "total": 30,
           "detalle": [
             {
               "match_id": 1,
@@ -492,6 +552,18 @@
               "partido": "USA-Paraguay",
               "pred": "1|2-0",
               "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -533,19 +605,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 15,
+      "puntos_grupos": 20,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 15,
+      "puntos_fase_previa": 20,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 15,
+      "puntos_total": 20,
       "advertencias_premios": [],
-      "total": 15,
+      "total": 20,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 15,
+          "total": 20,
           "detalle": [
             {
               "match_id": 1,
@@ -576,6 +648,18 @@
               "partido": "USA-Paraguay",
               "pred": "1|2-1",
               "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -617,19 +701,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 15,
+      "puntos_grupos": 20,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 15,
+      "puntos_fase_previa": 20,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 15,
+      "puntos_total": 20,
       "advertencias_premios": [],
-      "total": 15,
+      "total": 20,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 15,
+          "total": 20,
           "detalle": [
             {
               "match_id": 3,
@@ -642,6 +726,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-1",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },

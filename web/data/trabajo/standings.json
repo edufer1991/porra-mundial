@@ -1,23 +1,23 @@
 {
   "porra": "trabajo",
-  "ultima_actualizacion": "2026-06-14T19:02:38Z",
+  "ultima_actualizacion": "2026-06-14T19:12:31Z",
   "clasificacion": [
     {
       "nickname": "Goal Digger",
       "porra": "trabajo",
-      "puntos_grupos": 57,
+      "puntos_grupos": 62,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 57,
+      "puntos_fase_previa": 62,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 57,
+      "puntos_total": 62,
       "advertencias_premios": [],
-      "total": 57,
+      "total": 62,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 57,
+          "total": 62,
           "detalle": [
             {
               "match_id": 1,
@@ -78,6 +78,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|2-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -113,19 +125,19 @@
     {
       "nickname": "Media Naranja",
       "porra": "trabajo",
-      "puntos_grupos": 50,
+      "puntos_grupos": 55,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 50,
+      "puntos_fase_previa": 55,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 50,
+      "puntos_total": 55,
       "advertencias_premios": [],
-      "total": 50,
+      "total": 55,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 50,
+          "total": 55,
           "detalle": [
             {
               "match_id": 1,
@@ -174,6 +186,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -209,19 +233,19 @@
     {
       "nickname": "BlackBoxOracle",
       "porra": "trabajo",
-      "puntos_grupos": 49,
+      "puntos_grupos": 54,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 49,
+      "puntos_fase_previa": 54,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 49,
+      "puntos_total": 54,
       "advertencias_premios": [],
-      "total": 49,
+      "total": 54,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 49,
+          "total": 54,
           "detalle": [
             {
               "match_id": 1,
@@ -282,6 +306,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -317,19 +353,19 @@
     {
       "nickname": "Ladycash",
       "porra": "trabajo",
-      "puntos_grupos": 49,
+      "puntos_grupos": 54,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 49,
+      "puntos_fase_previa": 54,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 49,
+      "puntos_total": 54,
       "advertencias_premios": [],
-      "total": 49,
+      "total": 54,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 49,
+          "total": 54,
           "detalle": [
             {
               "match_id": 1,
@@ -414,6 +450,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -449,19 +497,19 @@
     {
       "nickname": "Pickles' Retrievers",
       "porra": "trabajo",
-      "puntos_grupos": 47,
+      "puntos_grupos": 52,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 47,
+      "puntos_fase_previa": 52,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 47,
+      "puntos_total": 52,
       "advertencias_premios": [],
-      "total": 47,
+      "total": 52,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 47,
+          "total": 52,
           "detalle": [
             {
               "match_id": 1,
@@ -522,6 +570,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -557,19 +617,19 @@
     {
       "nickname": "La de la intuición",
       "porra": "trabajo",
-      "puntos_grupos": 44,
+      "puntos_grupos": 49,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 44,
+      "puntos_fase_previa": 49,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 44,
+      "puntos_total": 49,
       "advertencias_premios": [],
-      "total": 44,
+      "total": 49,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 44,
+          "total": 49,
           "detalle": [
             {
               "match_id": 1,
@@ -618,6 +678,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -653,19 +725,19 @@
     {
       "nickname": "depedro",
       "porra": "trabajo",
-      "puntos_grupos": 40,
+      "puntos_grupos": 47,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 40,
+      "puntos_fase_previa": 47,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 40,
+      "puntos_total": 47,
       "advertencias_premios": [],
-      "total": 40,
+      "total": 47,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 40,
+          "total": 47,
           "detalle": [
             {
               "match_id": 1,
@@ -714,6 +786,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|6-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -743,25 +827,25 @@
         }
       },
       "posicion": 7,
-      "empate": true,
+      "empate": false,
       "posicion_fase_previa": 7
     },
     {
       "nickname": "Des-cono-cida",
       "porra": "trabajo",
-      "puntos_grupos": 40,
+      "puntos_grupos": 45,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 40,
+      "puntos_fase_previa": 45,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 40,
+      "puntos_total": 45,
       "advertencias_premios": [],
-      "total": 40,
+      "total": 45,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 40,
+          "total": 45,
           "detalle": [
             {
               "match_id": 1,
@@ -810,6 +894,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-1",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -838,26 +934,26 @@
           "detalle": {}
         }
       },
-      "posicion": 7,
+      "posicion": 8,
       "empate": true,
       "posicion_fase_previa": 8
     },
     {
       "nickname": "Pulpo Paul",
       "porra": "trabajo",
-      "puntos_grupos": 40,
+      "puntos_grupos": 45,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 40,
+      "puntos_fase_previa": 45,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 40,
+      "puntos_total": 45,
       "advertencias_premios": [],
-      "total": 40,
+      "total": 45,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 40,
+          "total": 45,
           "detalle": [
             {
               "match_id": 1,
@@ -906,6 +1002,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -934,26 +1042,26 @@
           "detalle": {}
         }
       },
-      "posicion": 7,
+      "posicion": 8,
       "empate": true,
       "posicion_fase_previa": 9
     },
     {
       "nickname": "ADL",
       "porra": "trabajo",
-      "puntos_grupos": 39,
+      "puntos_grupos": 44,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 39,
+      "puntos_fase_previa": 44,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 39,
+      "puntos_total": 44,
       "advertencias_premios": [],
-      "total": 39,
+      "total": 44,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 39,
+          "total": 44,
           "detalle": [
             {
               "match_id": 1,
@@ -1014,6 +1122,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1047,189 +1167,21 @@
       "posicion_fase_previa": 10
     },
     {
-      "nickname": "Chistu",
-      "porra": "trabajo",
-      "puntos_grupos": 35,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 35,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
-      "advertencias_premios": [],
-      "total": 35,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 35,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 3,
-              "partido": "Canada-Bosnia-Herzegovina",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 6,
-              "partido": "Haiti-Scotland",
-              "pred": "2|0-3",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 11,
-      "empate": true,
-      "posicion_fase_previa": 11
-    },
-    {
-      "nickname": "La Roja Zero Waste",
-      "porra": "trabajo",
-      "puntos_grupos": 35,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 35,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
-      "advertencias_premios": [],
-      "total": 35,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 35,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-1",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 3,
-              "partido": "Canada-Bosnia-Herzegovina",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 6,
-              "partido": "Haiti-Scotland",
-              "pred": "2|0-1",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 11,
-      "empate": true,
-      "posicion_fase_previa": 12
-    },
-    {
       "nickname": "TexMex",
       "porra": "trabajo",
-      "puntos_grupos": 34,
+      "puntos_grupos": 41,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 34,
+      "puntos_fase_previa": 41,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 34,
+      "puntos_total": 41,
       "advertencias_premios": [],
-      "total": 34,
+      "total": 41,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 34,
+          "total": 41,
           "detalle": [
             {
               "match_id": 1,
@@ -1278,6 +1230,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|6-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -1306,26 +1270,218 @@
           "detalle": {}
         }
       },
-      "posicion": 13,
+      "posicion": 11,
       "empate": false,
+      "posicion_fase_previa": 11
+    },
+    {
+      "nickname": "Chistu",
+      "porra": "trabajo",
+      "puntos_grupos": 40,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 40,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 40,
+      "advertencias_premios": [],
+      "total": 40,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 40,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 3,
+              "partido": "Canada-Bosnia-Herzegovina",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-3",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|5-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 12,
+      "empate": true,
+      "posicion_fase_previa": 12
+    },
+    {
+      "nickname": "La Roja Zero Waste",
+      "porra": "trabajo",
+      "puntos_grupos": 40,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 40,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 40,
+      "advertencias_premios": [],
+      "total": 40,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 40,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 3,
+              "partido": "Canada-Bosnia-Herzegovina",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-1",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 12,
+      "empate": true,
       "posicion_fase_previa": 13
     },
     {
       "nickname": "Barrilete Cósmico",
       "porra": "trabajo",
-      "puntos_grupos": 27,
+      "puntos_grupos": 32,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 27,
+      "puntos_fase_previa": 32,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 27,
+      "puntos_total": 32,
       "advertencias_premios": [],
-      "total": 27,
+      "total": 32,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 27,
+          "total": 32,
           "detalle": [
             {
               "match_id": 1,
@@ -1386,6 +1542,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|2-1",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1421,19 +1589,19 @@
     {
       "nickname": "colometa",
       "porra": "trabajo",
-      "puntos_grupos": 27,
+      "puntos_grupos": 32,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 27,
+      "puntos_fase_previa": 32,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 27,
+      "puntos_total": 32,
       "advertencias_premios": [],
-      "total": 27,
+      "total": 32,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 27,
+          "total": 32,
           "detalle": [
             {
               "match_id": 1,
@@ -1494,6 +1662,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1529,19 +1709,19 @@
     {
       "nickname": "The French Knicks fan",
       "porra": "trabajo",
-      "puntos_grupos": 27,
+      "puntos_grupos": 32,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 27,
+      "puntos_fase_previa": 32,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 27,
+      "puntos_total": 32,
       "advertencias_premios": [],
-      "total": 27,
+      "total": 32,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 27,
+          "total": 32,
           "detalle": [
             {
               "match_id": 1,
@@ -1572,6 +1752,18 @@
               "partido": "Haiti-Scotland",
               "pred": "2|0-3",
               "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|7-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -1611,189 +1803,21 @@
       "posicion_fase_previa": 16
     },
     {
-      "nickname": "Gargamel",
-      "porra": "trabajo",
-      "puntos_grupos": 25,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 25,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 25,
-      "advertencias_premios": [],
-      "total": 25,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 25,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-1",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 6,
-              "partido": "Haiti-Scotland",
-              "pred": "2|0-1",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 8,
-              "partido": "Australia-Turkey",
-              "pred": "1|1-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 17,
-      "empate": true,
-      "posicion_fase_previa": 17
-    },
-    {
-      "nickname": "Paps",
-      "porra": "trabajo",
-      "puntos_grupos": 25,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 25,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 25,
-      "advertencias_premios": [],
-      "total": 25,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 25,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 6,
-              "partido": "Haiti-Scotland",
-              "pred": "2|0-2",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 8,
-              "partido": "Australia-Turkey",
-              "pred": "1|2-1",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 17,
-      "empate": true,
-      "posicion_fase_previa": 18
-    },
-    {
       "nickname": "ilovealiens",
       "porra": "trabajo",
-      "puntos_grupos": 24,
+      "puntos_grupos": 31,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 24,
+      "puntos_fase_previa": 31,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 24,
+      "puntos_total": 31,
       "advertencias_premios": [],
-      "total": 24,
+      "total": 31,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 24,
+          "total": 31,
           "detalle": [
             {
               "match_id": 1,
@@ -1842,6 +1866,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|6-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -1870,26 +1906,218 @@
           "detalle": {}
         }
       },
-      "posicion": 19,
+      "posicion": 17,
       "empate": false,
+      "posicion_fase_previa": 17
+    },
+    {
+      "nickname": "Gargamel",
+      "porra": "trabajo",
+      "puntos_grupos": 30,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 30,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 30,
+      "advertencias_premios": [],
+      "total": 30,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 30,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-1",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 8,
+              "partido": "Australia-Turkey",
+              "pred": "1|1-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|2-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 18,
+      "empate": true,
+      "posicion_fase_previa": 18
+    },
+    {
+      "nickname": "Paps",
+      "porra": "trabajo",
+      "puntos_grupos": 30,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 30,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 30,
+      "advertencias_premios": [],
+      "total": 30,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 30,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 8,
+              "partido": "Australia-Turkey",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|2-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 18,
+      "empate": true,
       "posicion_fase_previa": 19
     },
     {
       "nickname": "Killo Emvabé",
       "porra": "trabajo",
-      "puntos_grupos": 20,
+      "puntos_grupos": 25,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 20,
+      "puntos_fase_previa": 25,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 20,
+      "puntos_total": 25,
       "advertencias_premios": [],
-      "total": 20,
+      "total": 25,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 20,
+          "total": 25,
           "detalle": [
             {
               "match_id": 1,
@@ -1914,6 +2142,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1949,19 +2189,19 @@
     {
       "nickname": "Mundial? Qué Mundial?",
       "porra": "trabajo",
-      "puntos_grupos": 17,
+      "puntos_grupos": 22,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 17,
+      "puntos_fase_previa": 22,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 17,
+      "puntos_total": 22,
       "advertencias_premios": [],
-      "total": 17,
+      "total": 22,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 17,
+          "total": 22,
           "detalle": [
             {
               "match_id": 1,
@@ -1992,6 +2232,18 @@
               "partido": "Haiti-Scotland",
               "pred": "2|0-2",
               "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -2033,19 +2285,19 @@
     {
       "nickname": "Negreira",
       "porra": "trabajo",
-      "puntos_grupos": 17,
+      "puntos_grupos": 22,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 17,
+      "puntos_fase_previa": 22,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 17,
+      "puntos_total": 22,
       "advertencias_premios": [],
-      "total": 17,
+      "total": 22,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 17,
+          "total": 22,
           "detalle": [
             {
               "match_id": 1,
@@ -2076,6 +2328,18 @@
               "partido": "Haiti-Scotland",
               "pred": "2|0-3",
               "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -2117,19 +2381,19 @@
     {
       "nickname": "Indio",
       "porra": "trabajo",
-      "puntos_grupos": 10,
+      "puntos_grupos": 15,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 10,
+      "puntos_fase_previa": 15,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 10,
+      "puntos_total": 15,
       "advertencias_premios": [],
-      "total": 10,
+      "total": 15,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 10,
+          "total": 15,
           "detalle": [
             {
               "match_id": 6,
@@ -2148,6 +2412,18 @@
               "partido": "Australia-Turkey",
               "pred": "1|1-0",
               "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|4-0",
+              "real": "1|7-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -2189,19 +2465,19 @@
     {
       "nickname": "PitchPerfect",
       "porra": "trabajo",
-      "puntos_grupos": 5,
+      "puntos_grupos": 12,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 5,
+      "puntos_fase_previa": 12,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 5,
+      "puntos_total": 12,
       "advertencias_premios": [],
-      "total": 5,
+      "total": 12,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 5,
+          "total": 12,
           "detalle": [
             {
               "match_id": 7,
@@ -2214,6 +2490,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|6-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
