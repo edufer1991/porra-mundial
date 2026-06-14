@@ -191,6 +191,17 @@ def _map_ronda(ronda_str: str, rondas: dict[str, str]) -> str | None:
 
 # ── Índice de partidos de grupos ──────────────────────────────────────────────
 
+def _build_elim_time_index(calendario: dict) -> dict[str, int]:
+    """Maps fecha_hora_utc → match_id for elimination entries."""
+    idx: dict[str, int] = {}
+    for p in calendario.get("partidos", []):
+        if p.get("fase") != "grupos":
+            dt = p.get("fecha_hora_utc")
+            if dt:
+                idx[dt] = p["id"]
+    return idx
+
+
 def _build_match_dir_index(calendario: dict) -> dict[tuple[str, str], tuple[int, bool]]:
     """
     Índice orientado: {(norm_equipoA, norm_equipoB): (match_id, invertido)}.
@@ -214,6 +225,7 @@ def parsear_openfootball(
     rondas: dict[str, str],
     ahora: datetime | None = None,
     nombre_map: dict[str, str] | None = None,
+    elim_time_idx: dict[str, int] | None = None,
 ) -> dict:
     """
     Convierte JSON de openfootball al esquema de resultados.json.
@@ -290,6 +302,26 @@ def parsear_openfootball(
                 else:
                     honor["campeon"], honor["subcampeon"] = t2_real, t1_real
 
+        # Record FT marcador for elimination match when we have real teams and a time index
+        if t1_real and t2_real and elim_time_idx is not None:
+            ft = _score_ft(match.get("score"))
+            if ft:
+                of_date = match.get("date", "")
+                of_time = match.get("time", "00:00")
+                if of_date:
+                    dt_str = f"{of_date}T{of_time}:00Z"
+                    mid = elim_time_idx.get(dt_str)
+                    if mid is not None:
+                        marcadores.append({
+                            "match_id": mid,
+                            "estado": "finalizado",
+                            "goles_local": ft[0],
+                            "goles_visitante": ft[1],
+                            "local": t1_real,
+                            "visitante": t2_real,
+                        })
+                        stats["elim_marcadores"] = stats.get("elim_marcadores", 0) + 1
+
     return {
         "marcadores":   sorted(marcadores, key=lambda m: m["match_id"]),
         "clasificados": {k: sorted(v) for k, v in clasificados.items()},
@@ -337,7 +369,8 @@ def main() -> None:
 
     with open(CALENDARIO, encoding="utf-8") as f:
         calendario = json.load(f)
-    match_dir_idx = _build_match_dir_index(calendario)
+    match_dir_idx  = _build_match_dir_index(calendario)
+    elim_time_idx  = _build_elim_time_index(calendario)
 
     nombre_map: dict[str, str] | None = None
     if EQUIVALENCIAS.exists():
@@ -377,7 +410,8 @@ def main() -> None:
         except Exception:
             pass
 
-    resultado = parsear_openfootball(of_data, match_dir_idx, rondas, ahora, nombre_map)
+    resultado = parsear_openfootball(of_data, match_dir_idx, rondas, ahora, nombre_map,
+                                     elim_time_idx=elim_time_idx)
     stats     = resultado.pop("stats")
 
     for m in resultado["marcadores"]:
@@ -407,7 +441,8 @@ def main() -> None:
     print(f"  Partidos de grupo procesados  : {stats['grupos_encontrados']}"
           f"  (sin ID en calendario: {stats['grupos_sin_id']})")
     print(f"  Marcadores: {n_final} finalizados, {n_vivo} en juego, {n_pend} pendientes")
-    print(f"  Eliminatorias procesadas      : {stats['elim_procesadas']} partidos")
+    print(f"  Eliminatorias procesadas      : {stats['elim_procesadas']} partidos"
+          f"  (marcadores guardados: {stats.get('elim_marcadores', 0)})")
     print(f"  Clasificados por ronda        : "
           + ", ".join(f"{k}={len(v)}" for k, v in resultado["clasificados"].items()))
     print(f"  Honor  : {resultado['honor']}")
