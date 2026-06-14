@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-13T20:48:50Z",
+  "ultima_actualizacion": "2026-06-14T08:39:33Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 35,
+      "puntos_grupos": 50,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 35,
+      "puntos_fase_previa": 50,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
+      "puntos_total": 50,
       "advertencias_premios": [],
-      "total": 35,
+      "total": 50,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 35,
+          "total": 50,
           "detalle": [
             {
               "match_id": 1,
@@ -36,6 +36,18 @@
               "partido": "Canada-Bosnia-Herzegovina",
               "pred": "X|1-1",
               "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-1",
+              "real": "2|0-1",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
@@ -83,25 +95,25 @@
         }
       },
       "posicion": 1,
-      "empate": true,
+      "empate": false,
       "posicion_fase_previa": 1
     },
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 35,
+      "puntos_grupos": 40,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 35,
+      "puntos_fase_previa": 40,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 35,
+      "puntos_total": 40,
       "advertencias_premios": [],
-      "total": 35,
+      "total": 40,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 35,
+          "total": 40,
           "detalle": [
             {
               "match_id": 1,
@@ -126,6 +138,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             },
             {
               "match_id": 7,
@@ -166,32 +190,128 @@
           "detalle": {}
         }
       },
-      "posicion": 1,
-      "empate": true,
+      "posicion": 2,
+      "empate": false,
       "posicion_fase_previa": 2
     },
     {
-      "nickname": "Pol",
+      "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 20,
+      "puntos_grupos": 35,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 20,
+      "puntos_fase_previa": 35,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 20,
+      "puntos_total": 35,
       "advertencias_premios": [],
-      "total": 20,
+      "total": 35,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 20,
+          "total": 35,
           "detalle": [
             {
               "match_id": 1,
               "partido": "Mexico-South Africa",
               "pred": "1|2-0",
               "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 5,
+              "partido": "Brazil-Morocco",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-3",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 3,
+      "empate": true,
+      "posicion_fase_previa": 3
+    },
+    {
+      "nickname": "Pol",
+      "porra": "amigos",
+      "puntos_grupos": 35,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 35,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 35,
+      "advertencias_premios": [],
+      "total": 35,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 35,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-1",
+              "real": "2|0-1",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
@@ -240,24 +360,24 @@
       },
       "posicion": 3,
       "empate": true,
-      "posicion_fase_previa": 3
+      "posicion_fase_previa": 4
     },
     {
-      "nickname": "Ubi",
+      "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 20,
+      "puntos_grupos": 27,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 20,
+      "puntos_fase_previa": 27,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 20,
+      "puntos_total": 27,
       "advertencias_premios": [],
-      "total": 20,
+      "total": 27,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 20,
+          "total": 27,
           "detalle": [
             {
               "match_id": 1,
@@ -270,6 +390,102 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 5,
+              "partido": "Brazil-Morocco",
+              "pred": "X|2-2",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-3",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 5,
+      "empate": false,
+      "posicion_fase_previa": 5
+    },
+    {
+      "nickname": "Ubi",
+      "porra": "amigos",
+      "puntos_grupos": 25,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 25,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 25,
+      "advertencias_premios": [],
+      "total": 25,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 25,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             },
             {
               "match_id": 7,
@@ -310,129 +526,93 @@
           "detalle": {}
         }
       },
-      "posicion": 3,
-      "empate": true,
-      "posicion_fase_previa": 4
-    },
-    {
-      "nickname": "Jordi",
-      "porra": "amigos",
-      "puntos_grupos": 15,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 15,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 15,
-      "advertencias_premios": [],
-      "total": 15,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 15,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 5,
-      "empate": true,
-      "posicion_fase_previa": 5
-    },
-    {
-      "nickname": "Mr_Jusi_17",
-      "porra": "amigos",
-      "puntos_grupos": 15,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 15,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 15,
-      "advertencias_premios": [],
-      "total": 15,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 15,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 5,
-      "empate": true,
+      "posicion": 6,
+      "empate": false,
       "posicion_fase_previa": 6
+    },
+    {
+      "nickname": "Maximo10",
+      "porra": "amigos",
+      "puntos_grupos": 15,
+      "puntos_eliminatorias": 0,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 15,
+      "puntos_fase_eliminatoria": 0,
+      "puntos_total": 15,
+      "advertencias_premios": [],
+      "total": 15,
+      "puntos_eliminatoria": 0,
+      "desglose": {
+        "grupos": {
+          "total": 15,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 7,
+              "partido": "USA-Paraguay",
+              "pred": "1|2-1",
+              "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 0,
+          "detalle": {}
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 7,
+      "empate": true,
+      "posicion_fase_previa": 7
     },
     {
       "nickname": "Tucas",
@@ -490,80 +670,8 @@
           "detalle": {}
         }
       },
-      "posicion": 5,
+      "posicion": 7,
       "empate": true,
-      "posicion_fase_previa": 7
-    },
-    {
-      "nickname": "Maximo10",
-      "porra": "amigos",
-      "puntos_grupos": 10,
-      "puntos_eliminatorias": 0,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 10,
-      "puntos_fase_eliminatoria": 0,
-      "puntos_total": 10,
-      "advertencias_premios": [],
-      "total": 10,
-      "puntos_eliminatoria": 0,
-      "desglose": {
-        "grupos": {
-          "total": 10,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-1",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 7,
-              "partido": "USA-Paraguay",
-              "pred": "1|2-1",
-              "real": "1|4-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 0,
-          "detalle": {}
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 8,
-      "empate": false,
       "posicion_fase_previa": 8
     }
   ]
