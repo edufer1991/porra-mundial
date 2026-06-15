@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-15T04:02:36Z",
+  "ultima_actualizacion": "2026-06-15T04:12:35Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 55,
+      "puntos_grupos": 60,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 55,
+      "puntos_fase_previa": 60,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 55,
+      "puntos_total": 60,
       "advertencias_premios": [],
-      "total": 55,
+      "total": 60,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 55,
+          "total": 60,
           "detalle": [
             {
               "match_id": 1,
@@ -78,6 +78,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|1-0",
+              "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -113,19 +125,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 52,
+      "puntos_grupos": 57,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 52,
+      "puntos_fase_previa": 57,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 52,
+      "puntos_total": 57,
       "advertencias_premios": [],
-      "total": 52,
+      "total": 57,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 52,
+          "total": 57,
           "detalle": [
             {
               "match_id": 1,
@@ -198,6 +210,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|2-0",
+              "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -341,19 +365,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 40,
+      "puntos_grupos": 45,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 40,
+      "puntos_fase_previa": 45,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 40,
+      "puntos_total": 45,
       "advertencias_premios": [],
-      "total": 40,
+      "total": 45,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 40,
+          "total": 45,
           "detalle": [
             {
               "match_id": 1,
@@ -396,6 +420,18 @@
               "partido": "Germany-Curacao",
               "pred": "1|4-0",
               "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|3-0",
+              "real": "1|5-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -623,25 +659,25 @@
         }
       },
       "posicion": 6,
-      "empate": false,
+      "empate": true,
       "posicion_fase_previa": 6
     },
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 30,
+      "puntos_grupos": 35,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 30,
+      "puntos_fase_previa": 35,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 30,
+      "puntos_total": 35,
       "advertencias_premios": [],
-      "total": 30,
+      "total": 35,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 30,
+          "total": 35,
           "detalle": [
             {
               "match_id": 1,
@@ -690,6 +726,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|2-0",
+              "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -718,26 +766,26 @@
           "detalle": {}
         }
       },
-      "posicion": 7,
-      "empate": false,
+      "posicion": 6,
+      "empate": true,
       "posicion_fase_previa": 7
     },
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 20,
+      "puntos_grupos": 25,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 20,
+      "puntos_fase_previa": 25,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 20,
+      "puntos_total": 25,
       "advertencias_premios": [],
-      "total": 20,
+      "total": 25,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 20,
+          "total": 25,
           "detalle": [
             {
               "match_id": 1,
@@ -780,6 +828,18 @@
               "partido": "Germany-Curacao",
               "pred": "1|3-0",
               "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|1-0",
+              "real": "1|5-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
