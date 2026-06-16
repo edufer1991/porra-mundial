@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-16T03:02:29Z",
+  "ultima_actualizacion": "2026-06-16T03:12:28Z",
   "clasificacion": [
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 72,
+      "puntos_grupos": 79,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 72,
+      "puntos_fase_previa": 79,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 72,
+      "puntos_total": 79,
       "advertencias_premios": [],
-      "total": 72,
+      "total": 79,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 72,
+          "total": 79,
           "detalle": [
             {
               "match_id": 1,
@@ -114,6 +114,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 14,
+              "partido": "Iran-New Zealand",
+              "pred": "X|0-0",
+              "real": "X|2-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -275,25 +287,25 @@
         }
       },
       "posicion": 2,
-      "empate": false,
+      "empate": true,
       "posicion_fase_previa": 2
     },
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 62,
+      "puntos_grupos": 69,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 62,
+      "puntos_fase_previa": 69,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 62,
+      "puntos_total": 69,
       "advertencias_premios": [],
-      "total": 62,
+      "total": 69,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 62,
+          "total": 69,
           "detalle": [
             {
               "match_id": 1,
@@ -366,6 +378,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 14,
+              "partido": "Iran-New Zealand",
+              "pred": "X|1-1",
+              "real": "X|2-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -394,26 +418,26 @@
           "detalle": {}
         }
       },
-      "posicion": 3,
-      "empate": false,
+      "posicion": 2,
+      "empate": true,
       "posicion_fase_previa": 3
     },
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 60,
+      "puntos_grupos": 67,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 60,
+      "puntos_fase_previa": 67,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 60,
+      "puntos_total": 67,
       "advertencias_premios": [],
-      "total": 60,
+      "total": 67,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 60,
+          "total": 67,
           "detalle": [
             {
               "match_id": 1,
@@ -486,6 +510,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 14,
+              "partido": "Iran-New Zealand",
+              "pred": "X|1-1",
+              "real": "X|2-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -521,19 +557,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 45,
+      "puntos_grupos": 52,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 45,
+      "puntos_fase_previa": 52,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 45,
+      "puntos_total": 52,
       "advertencias_premios": [],
-      "total": 45,
+      "total": 52,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 45,
+          "total": 52,
           "detalle": [
             {
               "match_id": 1,
@@ -594,6 +630,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 14,
+              "partido": "Iran-New Zealand",
+              "pred": "X|0-0",
+              "real": "X|2-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
