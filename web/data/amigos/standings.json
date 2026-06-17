@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-17T22:02:34Z",
+  "ultima_actualizacion": "2026-06-17T22:12:38Z",
   "clasificacion": [
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 101,
+      "puntos_grupos": 106,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 101,
+      "puntos_fase_previa": 106,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 101,
+      "puntos_total": 106,
       "advertencias_premios": [],
-      "total": 101,
+      "total": 106,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 101,
+          "total": 106,
           "detalle": [
             {
               "match_id": 1,
@@ -150,6 +150,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|1-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -179,7 +191,7 @@
         }
       },
       "posicion": 1,
-      "empate": true,
+      "empate": false,
       "posicion_fase_previa": 1
     },
     {
@@ -382,26 +394,26 @@
           "detalle": {}
         }
       },
-      "posicion": 1,
-      "empate": true,
+      "posicion": 2,
+      "empate": false,
       "posicion_fase_previa": 2
     },
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 91,
+      "puntos_grupos": 96,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 91,
+      "puntos_fase_previa": 96,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 91,
+      "puntos_total": 96,
       "advertencias_premios": [],
-      "total": 91,
+      "total": 96,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 91,
+          "total": 96,
           "detalle": [
             {
               "match_id": 1,
@@ -534,6 +546,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|2-1",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -569,19 +593,19 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 89,
+      "puntos_grupos": 94,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 89,
+      "puntos_fase_previa": 94,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 89,
+      "puntos_total": 94,
       "advertencias_premios": [],
-      "total": 89,
+      "total": 94,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 89,
+          "total": 94,
           "detalle": [
             {
               "match_id": 1,
@@ -714,6 +738,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|2-1",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -749,19 +785,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 84,
+      "puntos_grupos": 89,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 84,
+      "puntos_fase_previa": 89,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 84,
+      "puntos_total": 89,
       "advertencias_premios": [],
-      "total": 84,
+      "total": 89,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 84,
+          "total": 89,
           "detalle": [
             {
               "match_id": 1,
@@ -882,6 +918,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|1-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -917,19 +965,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 69,
+      "puntos_grupos": 76,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 69,
+      "puntos_fase_previa": 76,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 69,
+      "puntos_total": 76,
       "advertencias_premios": [],
-      "total": 69,
+      "total": 76,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 69,
+          "total": 76,
           "detalle": [
             {
               "match_id": 1,
@@ -1038,6 +1086,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|2-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -1073,19 +1133,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 52,
+      "puntos_grupos": 57,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 52,
+      "puntos_fase_previa": 57,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 52,
+      "puntos_total": 57,
       "advertencias_premios": [],
-      "total": 52,
+      "total": 57,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 52,
+          "total": 57,
           "detalle": [
             {
               "match_id": 3,
@@ -1158,6 +1218,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|2-1",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
