@@ -1,83 +1,5 @@
 [
   {
-    "match_id": 30,
-    "fecha_hora_utc": "2026-06-20T00:30:00Z",
-    "fase": "grupos",
-    "grupo": "C",
-    "jornada": "J2",
-    "local": "Brazil",
-    "visitante": "Haiti",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Jordi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Maximo10",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Mguitart",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Mr_Jusi_17",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pol",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 5,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Tucas",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Ubi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      }
-    ]
-  },
-  {
     "match_id": 32,
     "fecha_hora_utc": "2026-06-20T03:00:00Z",
     "fase": "grupos",
@@ -618,6 +540,84 @@
         "prediccion": {
           "signo": "1",
           "goles_local": 3,
+          "goles_visitante": 0
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 40,
+    "fecha_hora_utc": "2026-06-21T22:00:00Z",
+    "fase": "grupos",
+    "grupo": "H",
+    "jornada": "J2",
+    "local": "Uruguay",
+    "visitante": "Cape Verde",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Maximo10",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Pol",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
           "goles_visitante": 0
         }
       }
