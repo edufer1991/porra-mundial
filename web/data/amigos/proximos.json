@@ -1,83 +1,5 @@
 [
   {
-    "match_id": 33,
-    "fecha_hora_utc": "2026-06-20T20:00:00Z",
-    "fase": "grupos",
-    "grupo": "E",
-    "jornada": "J2",
-    "local": "Germany",
-    "visitante": "Ivory Coast",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Jordi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Maximo10",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mguitart",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mr_Jusi_17",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Pol",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Tucas",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Ubi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      }
-    ]
-  },
-  {
     "match_id": 34,
     "fecha_hora_utc": "2026-06-21T00:00:00Z",
     "fase": "grupos",
@@ -618,6 +540,84 @@
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
+          "goles_visitante": 0
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 41,
+    "fecha_hora_utc": "2026-06-22T21:00:00Z",
+    "fase": "grupos",
+    "grupo": "I",
+    "jornada": "J2",
+    "local": "France",
+    "visitante": "Iraq",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Maximo10",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Pol",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 5,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
           "goles_visitante": 0
         }
       }
