@@ -2,7 +2,7 @@
   "nickname": "The French Knicks fan",
   "porra": "trabajo",
   "archivo_origen": "The French Knicks fan.xlsx",
-  "incompleto": true,
+  "incompleto": false,
   "advertencias": [
     "premios incompletos: faltan goleador, MVP, portero"
   ],
@@ -1213,9 +1213,9 @@
       "cuarto": "Argentina"
     },
     "premios": {
-      "goleador": null,
-      "mvp": null,
-      "portero": null
+      "goleador": "Mbappe",
+      "mvp": "Olise",
+      "portero": "Maignan"
     }
   }
 }
