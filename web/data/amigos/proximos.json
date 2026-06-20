@@ -1,83 +1,5 @@
 [
   {
-    "match_id": 32,
-    "fecha_hora_utc": "2026-06-20T03:00:00Z",
-    "fase": "grupos",
-    "grupo": "D",
-    "jornada": "J2",
-    "local": "Turkey",
-    "visitante": "Paraguay",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Jordi",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 1,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Maximo10",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mguitart",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mr_Jusi_17",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Pol",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Tucas",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Ubi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      }
-    ]
-  },
-  {
     "match_id": 35,
     "fecha_hora_utc": "2026-06-20T17:00:00Z",
     "fase": "grupos",
@@ -619,6 +541,84 @@
           "signo": "1",
           "goles_local": 2,
           "goles_visitante": 0
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 38,
+    "fecha_hora_utc": "2026-06-22T01:00:00Z",
+    "fase": "grupos",
+    "grupo": "G",
+    "jornada": "J2",
+    "local": "New Zealand",
+    "visitante": "Egypt",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Maximo10",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pol",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Tucas",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
         }
       }
     ]
