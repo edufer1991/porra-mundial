@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-21T06:02:28Z",
+  "ultima_actualizacion": "2026-06-21T06:12:30Z",
   "clasificacion": [
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 178,
+      "puntos_grupos": 183,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 178,
+      "puntos_fase_previa": 183,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 178,
+      "puntos_total": 183,
       "advertencias_premios": [],
-      "total": 178,
+      "total": 183,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 178,
+          "total": 183,
           "detalle": [
             {
               "match_id": 1,
@@ -258,6 +258,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-2",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -293,19 +305,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 165,
+      "puntos_grupos": 170,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 165,
+      "puntos_fase_previa": 170,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 165,
+      "puntos_total": 170,
       "advertencias_premios": [],
-      "total": 165,
+      "total": 170,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 165,
+          "total": 170,
           "detalle": [
             {
               "match_id": 1,
@@ -558,6 +570,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-1",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -593,19 +617,19 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 164,
+      "puntos_grupos": 169,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 164,
+      "puntos_fase_previa": 169,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 164,
+      "puntos_total": 169,
       "advertencias_premios": [],
-      "total": 164,
+      "total": 169,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 164,
+          "total": 169,
           "detalle": [
             {
               "match_id": 1,
@@ -846,6 +870,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-2",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -881,19 +917,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 149,
+      "puntos_grupos": 154,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 149,
+      "puntos_fase_previa": 154,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 149,
+      "puntos_total": 154,
       "advertencias_premios": [],
-      "total": 149,
+      "total": 154,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 149,
+          "total": 154,
           "detalle": [
             {
               "match_id": 1,
@@ -1146,6 +1182,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-3",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1181,19 +1229,19 @@
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 147,
+      "puntos_grupos": 152,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 147,
+      "puntos_fase_previa": 152,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 147,
+      "puntos_total": 152,
       "advertencias_premios": [],
-      "total": 147,
+      "total": 152,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 147,
+          "total": 152,
           "detalle": [
             {
               "match_id": 1,
@@ -1446,6 +1494,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|1-2",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1481,19 +1541,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 134,
+      "puntos_grupos": 139,
       "puntos_eliminatorias": 0,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 134,
+      "puntos_fase_previa": 139,
       "puntos_fase_eliminatoria": 0,
-      "puntos_total": 134,
+      "puntos_total": 139,
       "advertencias_premios": [],
-      "total": 134,
+      "total": 139,
       "puntos_eliminatoria": 0,
       "desglose": {
         "grupos": {
-          "total": 134,
+          "total": 139,
           "detalle": [
             {
               "match_id": 1,
@@ -1728,6 +1788,18 @@
               "partido": "Netherlands-Sweden",
               "pred": "1|2-1",
               "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-2",
+              "real": "2|0-4",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
