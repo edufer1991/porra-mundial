@@ -1,623 +1,5 @@
 [
   {
-    "match_id": 37,
-    "fecha_hora_utc": "2026-06-21T19:00:00Z",
-    "fase": "grupos",
-    "grupo": "G",
-    "jornada": "J2",
-    "local": "Belgium",
-    "visitante": "Iran",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "ADL",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Barrilete Cósmico",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "BlackBoxOracle",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Chistu",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Gargamel",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 1,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Goal Digger",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Indio",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Killo Emvabé",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "La Roja Zero Waste",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "La de la intuición",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Ladycash",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Media Naranja",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mundial? Qué Mundial?",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Negreira",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Paps",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pickles' Retrievers",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "PitchPerfect",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 0,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "TexMex",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "colometa",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "depedro",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "ilovealiens",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      }
-    ]
-  },
-  {
-    "match_id": 40,
-    "fecha_hora_utc": "2026-06-21T22:00:00Z",
-    "fase": "grupos",
-    "grupo": "H",
-    "jornada": "J2",
-    "local": "Uruguay",
-    "visitante": "Cape Verde",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "ADL",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Barrilete Cósmico",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "BlackBoxOracle",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Chistu",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 6,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Gargamel",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Goal Digger",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Indio",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 2,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Killo Emvabé",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "La Roja Zero Waste",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "La de la intuición",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Ladycash",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Media Naranja",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Mundial? Qué Mundial?",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Negreira",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Paps",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pickles' Retrievers",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "PitchPerfect",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "TexMex",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "colometa",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "depedro",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "ilovealiens",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      }
-    ]
-  },
-  {
-    "match_id": 38,
-    "fecha_hora_utc": "2026-06-22T01:00:00Z",
-    "fase": "grupos",
-    "grupo": "G",
-    "jornada": "J2",
-    "local": "New Zealand",
-    "visitante": "Egypt",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "ADL",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Barrilete Cósmico",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 2,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "BlackBoxOracle",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "Chistu",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Gargamel",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Goal Digger",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Indio",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Killo Emvabé",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "La Roja Zero Waste",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "La de la intuición",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 1,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Ladycash",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "Media Naranja",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mundial? Qué Mundial?",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Negreira",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Paps",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Pickles' Retrievers",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "PitchPerfect",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 1,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "TexMex",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "colometa",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "depedro",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "ilovealiens",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 0,
-          "goles_visitante": 0
-        }
-      }
-    ]
-  },
-  {
     "match_id": 43,
     "fecha_hora_utc": "2026-06-22T17:00:00Z",
     "fase": "grupos",
@@ -1642,6 +1024,624 @@
         "prediccion": {
           "signo": "1",
           "goles_local": 1,
+          "goles_visitante": 0
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 47,
+    "fecha_hora_utc": "2026-06-23T20:00:00Z",
+    "fase": "grupos",
+    "grupo": "L",
+    "jornada": "J2",
+    "local": "England",
+    "visitante": "Ghana",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "ADL",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Barrilete Cósmico",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "BlackBoxOracle",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Chistu",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Des-cono-cida",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Gargamel",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Goal Digger",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Indio",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Killo Emvabé",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "La Roja Zero Waste",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "La de la intuición",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Ladycash",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Media Naranja",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mundial? Qué Mundial?",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Negreira",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Paps",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Pickles' Retrievers",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "PitchPerfect",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 0,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "TexMex",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "The French Knicks fan",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "colometa",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "depedro",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "ilovealiens",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 48,
+    "fecha_hora_utc": "2026-06-23T23:00:00Z",
+    "fase": "grupos",
+    "grupo": "L",
+    "jornada": "J2",
+    "local": "Panama",
+    "visitante": "Croatia",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "ADL",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Barrilete Cósmico",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "BlackBoxOracle",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Chistu",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Des-cono-cida",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Gargamel",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Goal Digger",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Indio",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Killo Emvabé",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "La Roja Zero Waste",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "La de la intuición",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Ladycash",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 4
+        }
+      },
+      {
+        "nickname": "Media Naranja",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mundial? Qué Mundial?",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Negreira",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Paps",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Pickles' Retrievers",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 4
+        }
+      },
+      {
+        "nickname": "PitchPerfect",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "TexMex",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 3
+        }
+      },
+      {
+        "nickname": "The French Knicks fan",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 2,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "colometa",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 4
+        }
+      },
+      {
+        "nickname": "depedro",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "ilovealiens",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 46,
+    "fecha_hora_utc": "2026-06-24T02:00:00Z",
+    "fase": "grupos",
+    "grupo": "K",
+    "jornada": "J2",
+    "local": "Colombia",
+    "visitante": "DR Congo",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "ADL",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Barrilete Cósmico",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "BlackBoxOracle",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Chistu",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Des-cono-cida",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Gargamel",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Goal Digger",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Indio",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Killo Emvabé",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "La Roja Zero Waste",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "La de la intuición",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Ladycash",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Media Naranja",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Mundial? Qué Mundial?",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Negreira",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Paps",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pickles' Retrievers",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "PitchPerfect",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "X",
+          "goles_local": 1,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "TexMex",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "The French Knicks fan",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "colometa",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "depedro",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "ilovealiens",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
           "goles_visitante": 0
         }
       }
