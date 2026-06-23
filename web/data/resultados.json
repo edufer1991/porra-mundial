@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-06-23T22:32:28Z",
+  "ultima_actualizacion": "2026-06-23T22:42:29Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -384,13 +384,13 @@
     }
   ],
   "clasificados": {
+    "1/8": [],
     "1/16": [
       "Germany",
       "Mexico",
       "USA"
     ],
     "final": [],
-    "1/8": [],
     "1/4": [],
     "semis": []
   },
