@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-24T04:02:28Z",
+  "ultima_actualizacion": "2026-06-24T04:12:29Z",
   "clasificacion": [
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 230,
+      "puntos_grupos": 237,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 230,
+      "puntos_fase_previa": 237,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 260,
+      "puntos_total": 267,
       "advertencias_premios": [],
-      "total": 260,
+      "total": 267,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 230,
+          "total": 237,
           "detalle": [
             {
               "match_id": 1,
@@ -344,6 +344,18 @@
               "pts": 5
             },
             {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 48,
               "partido": "Panama-Croatia",
               "pred": "2|0-2",
@@ -388,7 +400,7 @@
         }
       },
       "posicion": 1,
-      "empate": true,
+      "empate": false,
       "posicion_fase_previa": 1
     },
     {
@@ -800,8 +812,8 @@
           "detalle": {}
         }
       },
-      "posicion": 1,
-      "empate": true,
+      "posicion": 2,
+      "empate": false,
       "posicion_fase_previa": 2
     },
     {
@@ -1208,19 +1220,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 204,
+      "puntos_grupos": 211,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 204,
+      "puntos_fase_previa": 211,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 234,
+      "puntos_total": 241,
       "advertencias_premios": [],
-      "total": 234,
+      "total": 241,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 204,
+          "total": 211,
           "detalle": [
             {
               "match_id": 1,
@@ -1547,6 +1559,18 @@
               "pts": 5
             },
             {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 48,
               "partido": "Panama-Croatia",
               "pred": "2|0-1",
@@ -1597,19 +1621,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 203,
+      "puntos_grupos": 208,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 203,
+      "puntos_fase_previa": 208,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 233,
+      "puntos_total": 238,
       "advertencias_premios": [],
-      "total": 233,
+      "total": 238,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 203,
+          "total": 208,
           "detalle": [
             {
               "match_id": 1,
@@ -1948,6 +1972,18 @@
               "pts": 5
             },
             {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-0",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 48,
               "partido": "Panama-Croatia",
               "pred": "2|0-2",
@@ -1998,19 +2034,19 @@
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 201,
+      "puntos_grupos": 206,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 201,
+      "puntos_fase_previa": 206,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 231,
+      "puntos_total": 236,
       "advertencias_premios": [],
-      "total": 231,
+      "total": 236,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 201,
+          "total": 206,
           "detalle": [
             {
               "match_id": 1,
@@ -2349,6 +2385,18 @@
               "pts": 5
             },
             {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-0",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 48,
               "partido": "Panama-Croatia",
               "pred": "2|0-2",
@@ -2399,19 +2447,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 165,
+      "puntos_grupos": 172,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 165,
+      "puntos_fase_previa": 172,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 195,
+      "puntos_total": 202,
       "advertencias_premios": [],
-      "total": 195,
+      "total": 202,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 165,
+          "total": 172,
           "detalle": [
             {
               "match_id": 1,
@@ -2678,6 +2726,18 @@
               "pts": 5
             },
             {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 48,
               "partido": "Panama-Croatia",
               "pred": "2|0-2",
@@ -2728,19 +2788,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 160,
+      "puntos_grupos": 167,
       "puntos_eliminatorias": 10,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 160,
+      "puntos_fase_previa": 167,
       "puntos_fase_eliminatoria": 10,
-      "puntos_total": 170,
+      "puntos_total": 177,
       "advertencias_premios": [],
-      "total": 170,
+      "total": 177,
       "puntos_eliminatoria": 10,
       "desglose": {
         "grupos": {
-          "total": 160,
+          "total": 167,
           "detalle": [
             {
               "match_id": 3,
@@ -2993,6 +3053,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             },
             {
               "match_id": 48,
