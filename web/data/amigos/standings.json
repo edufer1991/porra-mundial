@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-25T00:02:27Z",
+  "ultima_actualizacion": "2026-06-25T00:12:31Z",
   "clasificacion": [
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 257,
+      "puntos_grupos": 267,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 257,
+      "puntos_fase_previa": 267,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 287,
+      "puntos_total": 297,
       "advertencias_premios": [],
-      "total": 287,
+      "total": 297,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 257,
+          "total": 267,
           "detalle": [
             {
               "match_id": 1,
@@ -390,6 +390,30 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|1-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|4-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -430,19 +454,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 245,
+      "puntos_grupos": 255,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 245,
+      "puntos_fase_previa": 255,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 275,
+      "puntos_total": 285,
       "advertencias_premios": [],
-      "total": 275,
+      "total": 285,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 245,
+          "total": 255,
           "detalle": [
             {
               "match_id": 1,
@@ -815,6 +839,30 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|1-3",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|3-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -855,19 +903,19 @@
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 241,
+      "puntos_grupos": 251,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 241,
+      "puntos_fase_previa": 251,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 271,
+      "puntos_total": 281,
       "advertencias_premios": [],
-      "total": 271,
+      "total": 281,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 241,
+          "total": 251,
           "detalle": [
             {
               "match_id": 1,
@@ -1240,6 +1288,30 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|1-3",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|3-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1280,19 +1352,19 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 230,
+      "puntos_grupos": 242,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 230,
+      "puntos_fase_previa": 242,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 260,
+      "puntos_total": 272,
       "advertencias_premios": [],
-      "total": 260,
+      "total": 272,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 230,
+          "total": 242,
           "detalle": [
             {
               "match_id": 1,
@@ -1653,6 +1725,30 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|0-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|2-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -1693,19 +1789,19 @@
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 218,
+      "puntos_grupos": 228,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 218,
+      "puntos_fase_previa": 228,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 248,
+      "puntos_total": 258,
       "advertencias_premios": [],
-      "total": 248,
+      "total": 258,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 218,
+          "total": 228,
           "detalle": [
             {
               "match_id": 1,
@@ -2090,6 +2186,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|0-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|3-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -2130,19 +2250,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 215,
+      "puntos_grupos": 225,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 215,
+      "puntos_fase_previa": 225,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 245,
+      "puntos_total": 255,
       "advertencias_premios": [],
-      "total": 245,
+      "total": 255,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 215,
+          "total": 225,
           "detalle": [
             {
               "match_id": 1,
@@ -2515,6 +2635,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|0-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|3-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -2555,19 +2699,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 179,
+      "puntos_grupos": 191,
       "puntos_eliminatorias": 30,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 179,
+      "puntos_fase_previa": 191,
       "puntos_fase_eliminatoria": 30,
-      "puntos_total": 209,
+      "puntos_total": 221,
       "advertencias_premios": [],
-      "total": 209,
+      "total": 221,
       "puntos_eliminatoria": 30,
       "desglose": {
         "grupos": {
-          "total": 179,
+          "total": 191,
           "detalle": [
             {
               "match_id": 1,
@@ -2868,6 +3012,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|0-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|2-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -2908,19 +3076,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 174,
+      "puntos_grupos": 186,
       "puntos_eliminatorias": 10,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 174,
+      "puntos_fase_previa": 186,
       "puntos_fase_eliminatoria": 10,
-      "puntos_total": 184,
+      "puntos_total": 196,
       "advertencias_premios": [],
-      "total": 184,
+      "total": 196,
       "puntos_eliminatoria": 10,
       "desglose": {
         "grupos": {
-          "total": 174,
+          "total": 186,
           "detalle": [
             {
               "match_id": 3,
@@ -3203,6 +3371,30 @@
               "partido": "Switzerland-Canada",
               "pred": "1|1-0",
               "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|1-3",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|2-0",
+              "real": "1|4-2",
               "niveles": {
                 "signo": true,
                 "diferencia": true,

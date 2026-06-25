@@ -1047,11 +1047,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -1064,11 +1067,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -2769,11 +2775,14 @@
           "goles_local": 2,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -2786,11 +2795,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -4491,11 +4503,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -4508,11 +4523,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -6213,11 +6231,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -6230,11 +6251,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -7935,11 +7959,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -7952,11 +7979,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -9657,11 +9687,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -9674,11 +9707,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -11379,11 +11415,14 @@
           "goles_local": 0,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -11396,11 +11435,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -13101,11 +13143,14 @@
           "goles_local": 2,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -13118,11 +13163,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -14823,11 +14871,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -14840,11 +14891,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -16545,11 +16599,14 @@
           "goles_local": 0,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -16562,11 +16619,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -18267,11 +18327,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -18284,11 +18347,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -19989,11 +20055,14 @@
           "goles_local": 2,
           "goles_visitante": 4
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -20006,11 +20075,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -21711,11 +21783,14 @@
           "goles_local": 0,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -21728,11 +21803,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -23433,11 +23511,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -23450,11 +23531,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -25155,11 +25239,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -25172,11 +25259,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -26877,11 +26967,14 @@
           "goles_local": 0,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -26894,11 +26987,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -28599,11 +28695,14 @@
           "goles_local": 0,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 4,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -28616,11 +28715,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -30321,11 +30423,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -30338,11 +30443,14 @@
           "goles_local": 2,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 55,
@@ -32043,11 +32151,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -32060,11 +32171,14 @@
           "goles_local": 3,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -33765,11 +33879,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -33782,11 +33899,14 @@
           "goles_local": 5,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -35487,11 +35607,14 @@
           "goles_local": 2,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -35504,11 +35627,14 @@
           "goles_local": 5,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -37209,11 +37335,14 @@
           "goles_local": 1,
           "goles_visitante": 3
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 7,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       },
       {
         "match_id": 54,
@@ -37226,11 +37355,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -38931,11 +39063,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -38948,11 +39083,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
@@ -40653,11 +40791,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 0,
+          "goles_visitante": 3
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 54,
@@ -40670,11 +40811,14 @@
           "goles_local": 5,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 4,
+          "goles_visitante": 2
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       },
       {
         "match_id": 55,
