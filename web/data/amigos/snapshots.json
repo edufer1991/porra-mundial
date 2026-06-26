@@ -2,11 +2,11 @@
   "porra": "amigos",
   "nicknames": [
     "Mr_Jusi_17",
-    "Pol",
     "Pulpo Paul",
     "Mguitart",
-    "Ubi",
+    "Pol",
     "Jordi",
+    "Ubi",
     "Maximo10",
     "Tucas"
   ],
@@ -10898,6 +10898,51 @@
           "nickname": "Tucas",
           "posicion": 8,
           "puntos_total": 251
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-26T01:42:32Z",
+      "clasificacion": [
+        {
+          "nickname": "Mr_Jusi_17",
+          "posicion": 1,
+          "puntos_total": 359
+        },
+        {
+          "nickname": "Pulpo Paul",
+          "posicion": 2,
+          "puntos_total": 345
+        },
+        {
+          "nickname": "Mguitart",
+          "posicion": 3,
+          "puntos_total": 344
+        },
+        {
+          "nickname": "Pol",
+          "posicion": 4,
+          "puntos_total": 341
+        },
+        {
+          "nickname": "Jordi",
+          "posicion": 5,
+          "puntos_total": 313
+        },
+        {
+          "nickname": "Ubi",
+          "posicion": 6,
+          "puntos_total": 310
+        },
+        {
+          "nickname": "Maximo10",
+          "posicion": 7,
+          "puntos_total": 303
+        },
+        {
+          "nickname": "Tucas",
+          "posicion": 8,
+          "puntos_total": 266
         }
       ]
     }
