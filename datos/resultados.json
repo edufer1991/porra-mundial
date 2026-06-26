@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-06-26T21:02:32Z",
+  "ultima_actualizacion": "2026-06-26T21:12:32Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -380,11 +380,15 @@
     },
     {
       "match_id": 65,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 4
     },
     {
       "match_id": 66,
-      "estado": "pendiente"
+      "estado": "finalizado",
+      "goles_local": 5,
+      "goles_visitante": 0
     },
     {
       "match_id": 67,
@@ -412,7 +416,7 @@
     }
   ],
   "clasificados": {
-    "semis": [],
+    "1/4": [],
     "1/16": [
       "Australia",
       "Brazil",
@@ -427,9 +431,9 @@
       "Switzerland",
       "USA"
     ],
+    "1/8": [],
     "final": [],
-    "1/4": [],
-    "1/8": []
+    "semis": []
   },
   "honor": {
     "campeon": null,

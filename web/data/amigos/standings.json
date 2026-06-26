@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-26T21:02:32Z",
+  "ultima_actualizacion": "2026-06-26T21:12:32Z",
   "clasificacion": [
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 285,
+      "puntos_grupos": 295,
       "puntos_eliminatorias": 110,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 285,
+      "puntos_fase_previa": 295,
       "puntos_fase_eliminatoria": 110,
-      "puntos_total": 395,
+      "puntos_total": 405,
       "advertencias_premios": [],
-      "total": 395,
+      "total": 405,
       "puntos_eliminatoria": 110,
       "desglose": {
         "grupos": {
-          "total": 285,
+          "total": 295,
           "detalle": [
             {
               "match_id": 1,
@@ -462,6 +462,30 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|2-3",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|3-1",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -497,24 +521,24 @@
       },
       "posicion": 1,
       "empate": false,
-      "posicion_fase_previa": 3
+      "posicion_fase_previa": 2
     },
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 299,
+      "puntos_grupos": 309,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 299,
+      "puntos_fase_previa": 309,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 389,
+      "puntos_total": 399,
       "advertencias_premios": [],
-      "total": 389,
+      "total": 399,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 299,
+          "total": 309,
           "detalle": [
             {
               "match_id": 1,
@@ -959,6 +983,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|1-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -999,19 +1047,19 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 281,
+      "puntos_grupos": 291,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 281,
+      "puntos_fase_previa": 291,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 381,
+      "puntos_total": 391,
       "advertencias_premios": [],
-      "total": 381,
+      "total": 391,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 281,
+          "total": 291,
           "detalle": [
             {
               "match_id": 1,
@@ -1456,6 +1504,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|0-1",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1496,19 +1568,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 290,
+      "puntos_grupos": 295,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 290,
+      "puntos_fase_previa": 295,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 380,
+      "puntos_total": 385,
       "advertencias_premios": [],
-      "total": 380,
+      "total": 385,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 290,
+          "total": 295,
           "detalle": [
             {
               "match_id": 1,
@@ -1941,6 +2013,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|3-1",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1976,24 +2060,24 @@
       },
       "posicion": 4,
       "empate": false,
-      "posicion_fase_previa": 2
+      "posicion_fase_previa": 3
     },
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 275,
+      "puntos_grupos": 285,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 275,
+      "puntos_fase_previa": 285,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 365,
+      "puntos_total": 375,
       "advertencias_premios": [],
-      "total": 365,
+      "total": 375,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 275,
+          "total": 285,
           "detalle": [
             {
               "match_id": 1,
@@ -2462,6 +2546,30 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|0-1",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -2502,19 +2610,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 240,
+      "puntos_grupos": 250,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 240,
+      "puntos_fase_previa": 250,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 330,
+      "puntos_total": 340,
       "advertencias_premios": [],
-      "total": 330,
+      "total": 340,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 240,
+          "total": 250,
           "detalle": [
             {
               "match_id": 1,
@@ -2899,6 +3007,30 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|1-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -2939,19 +3071,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 240,
+      "puntos_grupos": 250,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 240,
+      "puntos_fase_previa": 250,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 330,
+      "puntos_total": 340,
       "advertencias_premios": [],
-      "total": 330,
+      "total": 340,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 240,
+          "total": 250,
           "detalle": [
             {
               "match_id": 1,
@@ -3384,6 +3516,30 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|1-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -3424,19 +3580,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 213,
+      "puntos_grupos": 218,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 213,
+      "puntos_fase_previa": 218,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 313,
+      "puntos_total": 318,
       "advertencias_premios": [],
-      "total": 313,
+      "total": 318,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 213,
+          "total": 218,
           "detalle": [
             {
               "match_id": 3,
@@ -3785,6 +3941,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|0-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
