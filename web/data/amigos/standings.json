@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-27T01:52:28Z",
+  "ultima_actualizacion": "2026-06-27T02:02:31Z",
   "clasificacion": [
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 295,
+      "puntos_grupos": 302,
       "puntos_eliminatorias": 110,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 295,
+      "puntos_fase_previa": 302,
       "puntos_fase_eliminatoria": 110,
-      "puntos_total": 405,
+      "puntos_total": 412,
       "advertencias_premios": [],
-      "total": 405,
+      "total": 412,
       "puntos_eliminatoria": 110,
       "desglose": {
         "grupos": {
-          "total": 295,
+          "total": 302,
           "detalle": [
             {
               "match_id": 1,
@@ -462,6 +462,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             },
             {
               "match_id": 65,
@@ -1047,19 +1059,19 @@
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 291,
+      "puntos_grupos": 298,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 291,
+      "puntos_fase_previa": 298,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 391,
+      "puntos_total": 398,
       "advertencias_premios": [],
-      "total": 391,
+      "total": 398,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 291,
+          "total": 298,
           "detalle": [
             {
               "match_id": 1,
@@ -1506,6 +1518,18 @@
               "pts": 7
             },
             {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 65,
               "partido": "Norway-France",
               "pred": "2|0-1",
@@ -1568,19 +1592,19 @@
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 295,
+      "puntos_grupos": 302,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 295,
+      "puntos_fase_previa": 302,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 385,
+      "puntos_total": 392,
       "advertencias_premios": [],
-      "total": 385,
+      "total": 392,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 295,
+          "total": 302,
           "detalle": [
             {
               "match_id": 1,
@@ -2013,6 +2037,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             },
             {
               "match_id": 66,
@@ -2610,19 +2646,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 250,
+      "puntos_grupos": 257,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 250,
+      "puntos_fase_previa": 257,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 340,
+      "puntos_total": 347,
       "advertencias_premios": [],
-      "total": 340,
+      "total": 347,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 250,
+          "total": 257,
           "detalle": [
             {
               "match_id": 1,
@@ -3009,6 +3045,18 @@
               "pts": 7
             },
             {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 65,
               "partido": "Norway-France",
               "pred": "2|1-2",
@@ -3065,7 +3113,7 @@
         }
       },
       "posicion": 6,
-      "empate": true,
+      "empate": false,
       "posicion_fase_previa": 6
     },
     {
@@ -3573,26 +3621,26 @@
           "detalle": {}
         }
       },
-      "posicion": 6,
-      "empate": true,
+      "posicion": 7,
+      "empate": false,
       "posicion_fase_previa": 7
     },
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 218,
+      "puntos_grupos": 225,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 218,
+      "puntos_fase_previa": 225,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 318,
+      "puntos_total": 325,
       "advertencias_premios": [],
-      "total": 318,
+      "total": 325,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 218,
+          "total": 225,
           "detalle": [
             {
               "match_id": 3,
@@ -3941,6 +3989,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             },
             {
               "match_id": 65,
