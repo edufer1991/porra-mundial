@@ -1,23 +1,23 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-06-27T05:02:32Z",
+  "ultima_actualizacion": "2026-06-27T05:12:28Z",
   "clasificacion": [
     {
       "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 309,
+      "puntos_grupos": 314,
       "puntos_eliminatorias": 110,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 309,
+      "puntos_fase_previa": 314,
       "puntos_fase_eliminatoria": 110,
-      "puntos_total": 419,
+      "puntos_total": 424,
       "advertencias_premios": [],
-      "total": 419,
+      "total": 424,
       "puntos_eliminatoria": 110,
       "desglose": {
         "grupos": {
-          "total": 309,
+          "total": 314,
           "detalle": [
             {
               "match_id": 1,
@@ -464,6 +464,18 @@
               "pts": 5
             },
             {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|1-3",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 63,
               "partido": "Cape Verde-Saudi Arabia",
               "pred": "X|1-1",
@@ -545,24 +557,24 @@
       },
       "posicion": 1,
       "empate": false,
-      "posicion_fase_previa": 2
+      "posicion_fase_previa": 3
     },
     {
       "nickname": "Mguitart",
       "porra": "amigos",
-      "puntos_grupos": 303,
+      "puntos_grupos": 323,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 303,
+      "puntos_fase_previa": 323,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 403,
+      "puntos_total": 423,
       "advertencias_premios": [],
-      "total": 403,
+      "total": 423,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 303,
+          "total": 323,
           "detalle": [
             {
               "match_id": 1,
@@ -1009,6 +1021,30 @@
               "pts": 7
             },
             {
+              "match_id": 61,
+              "partido": "Egypt-Iran",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-2",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 63,
               "partido": "Cape Verde-Saudi Arabia",
               "pred": "X|1-1",
@@ -1090,24 +1126,24 @@
       },
       "posicion": 2,
       "empate": false,
-      "posicion_fase_previa": 4
+      "posicion_fase_previa": 1
     },
     {
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
-      "puntos_grupos": 309,
+      "puntos_grupos": 316,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 309,
+      "puntos_fase_previa": 316,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 399,
+      "puntos_total": 406,
       "advertencias_premios": [],
-      "total": 399,
+      "total": 406,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 309,
+          "total": 316,
           "detalle": [
             {
               "match_id": 1,
@@ -1554,6 +1590,18 @@
               "pts": 7
             },
             {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-4",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 65,
               "partido": "Norway-France",
               "pred": "2|1-2",
@@ -1610,25 +1658,25 @@
         }
       },
       "posicion": 3,
-      "empate": true,
-      "posicion_fase_previa": 1
+      "empate": false,
+      "posicion_fase_previa": 2
     },
     {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
-      "puntos_grupos": 309,
+      "puntos_grupos": 314,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 309,
+      "puntos_fase_previa": 314,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 399,
+      "puntos_total": 404,
       "advertencias_premios": [],
-      "total": 399,
+      "total": 404,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 309,
+          "total": 314,
           "detalle": [
             {
               "match_id": 1,
@@ -2063,6 +2111,18 @@
               "pts": 15
             },
             {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|1-2",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 63,
               "partido": "Cape Verde-Saudi Arabia",
               "pred": "X|1-1",
@@ -2130,26 +2190,26 @@
           "detalle": {}
         }
       },
-      "posicion": 3,
-      "empate": true,
-      "posicion_fase_previa": 3
+      "posicion": 4,
+      "empate": false,
+      "posicion_fase_previa": 4
     },
     {
       "nickname": "Jordi",
       "porra": "amigos",
-      "puntos_grupos": 300,
+      "puntos_grupos": 305,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 300,
+      "puntos_fase_previa": 305,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 390,
+      "puntos_total": 395,
       "advertencias_premios": [],
-      "total": 390,
+      "total": 395,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 300,
+          "total": 305,
           "detalle": [
             {
               "match_id": 1,
@@ -2620,6 +2680,18 @@
               "pts": 5
             },
             {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-3",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 64,
               "partido": "Uruguay-Spain",
               "pred": "2|0-1",
@@ -2694,19 +2766,19 @@
     {
       "nickname": "Maximo10",
       "porra": "amigos",
-      "puntos_grupos": 264,
+      "puntos_grupos": 284,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 264,
+      "puntos_fase_previa": 284,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 354,
+      "puntos_total": 374,
       "advertencias_premios": [],
-      "total": 354,
+      "total": 374,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 264,
+          "total": 284,
           "detalle": [
             {
               "match_id": 1,
@@ -3093,6 +3165,30 @@
               "pts": 7
             },
             {
+              "match_id": 61,
+              "partido": "Egypt-Iran",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-3",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 63,
               "partido": "Cape Verde-Saudi Arabia",
               "pred": "X|1-1",
@@ -3179,19 +3275,19 @@
     {
       "nickname": "Ubi",
       "porra": "amigos",
-      "puntos_grupos": 255,
+      "puntos_grupos": 275,
       "puntos_eliminatorias": 90,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 255,
+      "puntos_fase_previa": 275,
       "puntos_fase_eliminatoria": 90,
-      "puntos_total": 345,
+      "puntos_total": 365,
       "advertencias_premios": [],
-      "total": 345,
+      "total": 365,
       "puntos_eliminatoria": 90,
       "desglose": {
         "grupos": {
-          "total": 255,
+          "total": 275,
           "detalle": [
             {
               "match_id": 1,
@@ -3626,6 +3722,30 @@
               "pts": 5
             },
             {
+              "match_id": 61,
+              "partido": "Egypt-Iran",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-3",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 64,
               "partido": "Uruguay-Spain",
               "pred": "2|0-2",
@@ -3700,19 +3820,19 @@
     {
       "nickname": "Tucas",
       "porra": "amigos",
-      "puntos_grupos": 232,
+      "puntos_grupos": 252,
       "puntos_eliminatorias": 100,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 232,
+      "puntos_fase_previa": 252,
       "puntos_fase_eliminatoria": 100,
-      "puntos_total": 332,
+      "puntos_total": 352,
       "advertencias_premios": [],
-      "total": 332,
+      "total": 352,
       "puntos_eliminatoria": 100,
       "desglose": {
         "grupos": {
-          "total": 232,
+          "total": 252,
           "detalle": [
             {
               "match_id": 3,
@@ -4061,6 +4181,30 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "match_id": 61,
+              "partido": "Egypt-Iran",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|1-2",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             },
             {
               "match_id": 63,
