@@ -1421,11 +1421,14 @@
           "goles_local": 1,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -3194,11 +3197,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -4967,11 +4973,14 @@
           "goles_local": 1,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -6740,11 +6749,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -8513,11 +8525,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -10286,11 +10301,14 @@
           "goles_local": 1,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -12059,11 +12077,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -13832,11 +13853,14 @@
           "goles_local": 2,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": false,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -15605,11 +15629,14 @@
           "goles_local": 0,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -17378,11 +17405,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -19151,11 +19181,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -20924,11 +20957,14 @@
           "goles_local": 4,
           "goles_visitante": 2
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -22697,11 +22733,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -24470,11 +24509,14 @@
           "goles_local": 0,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 0,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -26243,11 +26285,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -28016,11 +28061,14 @@
           "goles_local": 2,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 8,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -29789,11 +29837,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -31562,11 +31613,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -33335,11 +33389,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -35108,11 +35165,14 @@
           "goles_local": 2,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 6,
+        "acierto_signo": true,
+        "acierto_local": true,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -36881,11 +36941,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -38654,11 +38717,14 @@
           "goles_local": 3,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 5,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
@@ -40427,11 +40493,14 @@
           "goles_local": 1,
           "goles_visitante": 0
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 3,
+        "acierto_signo": true,
+        "acierto_local": false,
+        "acierto_visitante": false
       }
     ],
     "elim_marcadores": [
@@ -42200,11 +42269,14 @@
           "goles_local": 1,
           "goles_visitante": 1
         },
-        "resultado": null,
-        "puntos": null,
-        "acierto_signo": null,
-        "acierto_local": null,
-        "acierto_visitante": null
+        "resultado": {
+          "goles_local": 2,
+          "goles_visitante": 1
+        },
+        "puntos": 2,
+        "acierto_signo": false,
+        "acierto_local": false,
+        "acierto_visitante": true
       }
     ],
     "elim_marcadores": [
