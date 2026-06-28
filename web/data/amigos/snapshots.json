@@ -5,8 +5,8 @@
     "Mr_Jusi_17",
     "Pol",
     "Pulpo Paul",
-    "Jordi",
     "Maximo10",
+    "Jordi",
     "Ubi",
     "Tucas"
   ],
@@ -12923,6 +12923,51 @@
           "nickname": "Tucas",
           "posicion": 8,
           "puntos_total": 364
+        }
+      ]
+    },
+    {
+      "fecha": "2026-06-28T02:42:28Z",
+      "clasificacion": [
+        {
+          "nickname": "Mguitart",
+          "posicion": 1,
+          "puntos_total": 448
+        },
+        {
+          "nickname": "Mr_Jusi_17",
+          "posicion": 2,
+          "puntos_total": 448
+        },
+        {
+          "nickname": "Pol",
+          "posicion": 3,
+          "puntos_total": 429
+        },
+        {
+          "nickname": "Pulpo Paul",
+          "posicion": 4,
+          "puntos_total": 426
+        },
+        {
+          "nickname": "Maximo10",
+          "posicion": 5,
+          "puntos_total": 401
+        },
+        {
+          "nickname": "Jordi",
+          "posicion": 6,
+          "puntos_total": 400
+        },
+        {
+          "nickname": "Ubi",
+          "posicion": 7,
+          "puntos_total": 385
+        },
+        {
+          "nickname": "Tucas",
+          "posicion": 8,
+          "puntos_total": 369
         }
       ]
     }
