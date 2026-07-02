@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-07-02T01:42:29Z",
+  "ultima_actualizacion": "2026-07-02T01:50:44Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -436,6 +436,8 @@
     }
   ],
   "clasificados": {
+    "1/4": [],
+    "final": [],
     "semis": [],
     "1/16": [
       "Algeria",
@@ -471,8 +473,6 @@
       "Switzerland",
       "USA"
     ],
-    "1/4": [],
-    "final": [],
     "1/8": [
       "Brazil",
       "Canada",
