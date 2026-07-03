@@ -1,20 +1,20 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-03T14:52:26Z",
+  "ultima_actualizacion": "2026-07-03T15:02:28Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 362,
-      "puntos_eliminatorias": 388,
+      "puntos_eliminatorias": 424,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 362,
-      "puntos_fase_eliminatoria": 388,
-      "puntos_total": 750,
+      "puntos_fase_eliminatoria": 424,
+      "puntos_total": 786,
       "advertencias_premios": [],
-      "total": 750,
-      "puntos_eliminatoria": 388,
+      "total": 786,
+      "puntos_eliminatoria": 424,
       "desglose": {
         "grupos": {
           "total": 362,
@@ -610,15 +610,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 388,
+          "total": 424,
           "detalle": {
             "1/16": {
               "aciertos": 28,
               "pts": 280
             },
             "1/8": {
-              "aciertos": 9,
-              "pts": 108
+              "aciertos": 12,
+              "pts": 144
             }
           }
         },
@@ -639,15 +639,15 @@
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
       "puntos_grupos": 363,
-      "puntos_eliminatorias": 366,
+      "puntos_eliminatorias": 402,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 363,
-      "puntos_fase_eliminatoria": 366,
-      "puntos_total": 729,
+      "puntos_fase_eliminatoria": 402,
+      "puntos_total": 765,
       "advertencias_premios": [],
-      "total": 729,
-      "puntos_eliminatoria": 366,
+      "total": 765,
+      "puntos_eliminatoria": 402,
       "desglose": {
         "grupos": {
           "total": 363,
@@ -1207,15 +1207,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 366,
+          "total": 402,
           "detalle": {
             "1/16": {
               "aciertos": 27,
               "pts": 270
             },
             "1/8": {
-              "aciertos": 8,
-              "pts": 96
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
@@ -1236,15 +1236,15 @@
       "nickname": "Pol",
       "porra": "amigos",
       "puntos_grupos": 324,
-      "puntos_eliminatorias": 366,
+      "puntos_eliminatorias": 402,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 324,
-      "puntos_fase_eliminatoria": 366,
-      "puntos_total": 690,
+      "puntos_fase_eliminatoria": 402,
+      "puntos_total": 726,
       "advertencias_premios": [],
-      "total": 690,
-      "puntos_eliminatoria": 366,
+      "total": 726,
+      "puntos_eliminatoria": 402,
       "desglose": {
         "grupos": {
           "total": 324,
@@ -1792,15 +1792,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 366,
+          "total": 402,
           "detalle": {
             "1/16": {
               "aciertos": 27,
               "pts": 270
             },
             "1/8": {
-              "aciertos": 8,
-              "pts": 96
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
@@ -1821,15 +1821,15 @@
       "nickname": "Pulpo Paul",
       "porra": "amigos",
       "puntos_grupos": 348,
-      "puntos_eliminatorias": 342,
+      "puntos_eliminatorias": 378,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 348,
-      "puntos_fase_eliminatoria": 342,
-      "puntos_total": 690,
+      "puntos_fase_eliminatoria": 378,
+      "puntos_total": 726,
       "advertencias_premios": [],
-      "total": 690,
-      "puntos_eliminatoria": 342,
+      "total": 726,
+      "puntos_eliminatoria": 378,
       "desglose": {
         "grupos": {
           "total": 348,
@@ -2377,15 +2377,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 342,
+          "total": 378,
           "detalle": {
             "1/16": {
               "aciertos": 27,
               "pts": 270
             },
             "1/8": {
-              "aciertos": 6,
-              "pts": 72
+              "aciertos": 9,
+              "pts": 108
             }
           }
         },
@@ -2406,15 +2406,15 @@
       "nickname": "Maximo10",
       "porra": "amigos",
       "puntos_grupos": 323,
-      "puntos_eliminatorias": 344,
+      "puntos_eliminatorias": 380,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 323,
-      "puntos_fase_eliminatoria": 344,
-      "puntos_total": 667,
+      "puntos_fase_eliminatoria": 380,
+      "puntos_total": 703,
       "advertencias_premios": [],
-      "total": 667,
-      "puntos_eliminatoria": 344,
+      "total": 703,
+      "puntos_eliminatoria": 380,
       "desglose": {
         "grupos": {
           "total": 323,
@@ -2950,15 +2950,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 344,
+          "total": 380,
           "detalle": {
             "1/16": {
               "aciertos": 26,
               "pts": 260
             },
             "1/8": {
-              "aciertos": 7,
-              "pts": 84
+              "aciertos": 10,
+              "pts": 120
             }
           }
         },
@@ -2979,15 +2979,15 @@
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 307,
-      "puntos_eliminatorias": 356,
+      "puntos_eliminatorias": 392,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 307,
-      "puntos_fase_eliminatoria": 356,
-      "puntos_total": 663,
+      "puntos_fase_eliminatoria": 392,
+      "puntos_total": 699,
       "advertencias_premios": [],
-      "total": 663,
-      "puntos_eliminatoria": 356,
+      "total": 699,
+      "puntos_eliminatoria": 392,
       "desglose": {
         "grupos": {
           "total": 307,
@@ -3547,15 +3547,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 356,
+          "total": 392,
           "detalle": {
             "1/16": {
               "aciertos": 26,
               "pts": 260
             },
             "1/8": {
-              "aciertos": 8,
-              "pts": 96
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
@@ -3576,15 +3576,15 @@
       "nickname": "Jordi",
       "porra": "amigos",
       "puntos_grupos": 315,
-      "puntos_eliminatorias": 346,
+      "puntos_eliminatorias": 382,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 315,
-      "puntos_fase_eliminatoria": 346,
-      "puntos_total": 661,
+      "puntos_fase_eliminatoria": 382,
+      "puntos_total": 697,
       "advertencias_premios": [],
-      "total": 661,
-      "puntos_eliminatoria": 346,
+      "total": 697,
+      "puntos_eliminatoria": 382,
       "desglose": {
         "grupos": {
           "total": 315,
@@ -4144,15 +4144,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 346,
+          "total": 382,
           "detalle": {
             "1/16": {
               "aciertos": 25,
               "pts": 250
             },
             "1/8": {
-              "aciertos": 8,
-              "pts": 96
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
@@ -4173,15 +4173,15 @@
       "nickname": "Tucas",
       "porra": "amigos",
       "puntos_grupos": 291,
-      "puntos_eliminatorias": 324,
+      "puntos_eliminatorias": 360,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 291,
-      "puntos_fase_eliminatoria": 324,
-      "puntos_total": 615,
+      "puntos_fase_eliminatoria": 360,
+      "puntos_total": 651,
       "advertencias_premios": [],
-      "total": 615,
-      "puntos_eliminatoria": 324,
+      "total": 651,
+      "puntos_eliminatoria": 360,
       "desglose": {
         "grupos": {
           "total": 291,
@@ -4669,15 +4669,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 324,
+          "total": 360,
           "detalle": {
             "1/16": {
               "aciertos": 24,
               "pts": 240
             },
             "1/8": {
-              "aciertos": 7,
-              "pts": 84
+              "aciertos": 10,
+              "pts": 120
             }
           }
         },
