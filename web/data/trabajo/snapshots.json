@@ -50401,6 +50401,131 @@
           "puntos_total": 528
         }
       ]
+    },
+    {
+      "fecha": "2026-07-03T07:32:36Z",
+      "clasificacion": [
+        {
+          "nickname": "BlackBoxOracle",
+          "posicion": 1,
+          "puntos_total": 717
+        },
+        {
+          "nickname": "Media Naranja",
+          "posicion": 2,
+          "puntos_total": 701
+        },
+        {
+          "nickname": "Pulpo Paul",
+          "posicion": 3,
+          "puntos_total": 690
+        },
+        {
+          "nickname": "ADL",
+          "posicion": 4,
+          "puntos_total": 686
+        },
+        {
+          "nickname": "Ladycash",
+          "posicion": 5,
+          "puntos_total": 676
+        },
+        {
+          "nickname": "La Roja Zero Waste",
+          "posicion": 6,
+          "puntos_total": 674
+        },
+        {
+          "nickname": "Pickles' Retrievers",
+          "posicion": 7,
+          "puntos_total": 669
+        },
+        {
+          "nickname": "Gargamel",
+          "posicion": 8,
+          "puntos_total": 668
+        },
+        {
+          "nickname": "Paps",
+          "posicion": 9,
+          "puntos_total": 653
+        },
+        {
+          "nickname": "La de la intuición",
+          "posicion": 10,
+          "puntos_total": 631
+        },
+        {
+          "nickname": "Goal Digger",
+          "posicion": 11,
+          "puntos_total": 630
+        },
+        {
+          "nickname": "Chistu",
+          "posicion": 12,
+          "puntos_total": 624
+        },
+        {
+          "nickname": "Mundial? Qué Mundial?",
+          "posicion": 13,
+          "puntos_total": 620
+        },
+        {
+          "nickname": "Des-cono-cida",
+          "posicion": 14,
+          "puntos_total": 613
+        },
+        {
+          "nickname": "depedro",
+          "posicion": 15,
+          "puntos_total": 612
+        },
+        {
+          "nickname": "TexMex",
+          "posicion": 16,
+          "puntos_total": 603
+        },
+        {
+          "nickname": "ilovealiens",
+          "posicion": 17,
+          "puntos_total": 591
+        },
+        {
+          "nickname": "colometa",
+          "posicion": 18,
+          "puntos_total": 588
+        },
+        {
+          "nickname": "Killo Emvabé",
+          "posicion": 19,
+          "puntos_total": 561
+        },
+        {
+          "nickname": "Indio",
+          "posicion": 20,
+          "puntos_total": 559
+        },
+        {
+          "nickname": "Barrilete Cósmico",
+          "posicion": 21,
+          "puntos_total": 558
+        },
+        {
+          "nickname": "PitchPerfect",
+          "posicion": 22,
+          "puntos_total": 552
+        },
+        {
+          "nickname": "Negreira",
+          "posicion": 23,
+          "puntos_total": 547
+        },
+        {
+          "nickname": "The French Knicks fan",
+          "posicion": 24,
+          "puntos_total": 528
+        }
+      ]
     }
   ]
 }
