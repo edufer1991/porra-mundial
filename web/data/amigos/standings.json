@@ -1,20 +1,20 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-04T11:22:28Z",
+  "ultima_actualizacion": "2026-07-04T11:32:32Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 362,
-      "puntos_eliminatorias": 424,
+      "puntos_eliminatorias": 436,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 362,
-      "puntos_fase_eliminatoria": 424,
-      "puntos_total": 786,
+      "puntos_fase_eliminatoria": 436,
+      "puntos_total": 798,
       "advertencias_premios": [],
-      "total": 786,
-      "puntos_eliminatoria": 424,
+      "total": 798,
+      "puntos_eliminatoria": 436,
       "desglose": {
         "grupos": {
           "total": 362,
@@ -610,15 +610,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 424,
+          "total": 436,
           "detalle": {
             "1/16": {
               "aciertos": 28,
               "pts": 280
             },
             "1/8": {
-              "aciertos": 12,
-              "pts": 144
+              "aciertos": 13,
+              "pts": 156
             }
           }
         },
@@ -639,15 +639,15 @@
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
       "puntos_grupos": 363,
-      "puntos_eliminatorias": 402,
+      "puntos_eliminatorias": 426,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 363,
-      "puntos_fase_eliminatoria": 402,
-      "puntos_total": 765,
+      "puntos_fase_eliminatoria": 426,
+      "puntos_total": 789,
       "advertencias_premios": [],
-      "total": 765,
-      "puntos_eliminatoria": 402,
+      "total": 789,
+      "puntos_eliminatoria": 426,
       "desglose": {
         "grupos": {
           "total": 363,
@@ -1207,15 +1207,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 402,
+          "total": 426,
           "detalle": {
             "1/16": {
               "aciertos": 27,
               "pts": 270
             },
             "1/8": {
-              "aciertos": 11,
-              "pts": 132
+              "aciertos": 13,
+              "pts": 156
             }
           }
         },
@@ -1233,603 +1233,18 @@
       "posicion_fase_previa": 1
     },
     {
-      "nickname": "Pol",
-      "porra": "amigos",
-      "puntos_grupos": 324,
-      "puntos_eliminatorias": 402,
-      "puntos_honor": 0,
-      "puntos_premios": 0,
-      "puntos_fase_previa": 324,
-      "puntos_fase_eliminatoria": 402,
-      "puntos_total": 726,
-      "advertencias_premios": [],
-      "total": 726,
-      "puntos_eliminatoria": 402,
-      "desglose": {
-        "grupos": {
-          "total": 324,
-          "detalle": [
-            {
-              "match_id": 1,
-              "partido": "Mexico-South Africa",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 6,
-              "partido": "Haiti-Scotland",
-              "pred": "2|0-1",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 7,
-              "partido": "USA-Paraguay",
-              "pred": "1|2-1",
-              "real": "1|4-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 9,
-              "partido": "Germany-Curacao",
-              "pred": "1|4-0",
-              "real": "1|7-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 12,
-              "partido": "Sweden-Tunisia",
-              "pred": "1|3-0",
-              "real": "1|5-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 14,
-              "partido": "Iran-New Zealand",
-              "pred": "X|0-0",
-              "real": "X|2-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 17,
-              "partido": "France-Senegal",
-              "pred": "1|3-1",
-              "real": "1|3-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 18,
-              "partido": "Iraq-Norway",
-              "pred": "2|0-1",
-              "real": "2|1-4",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 19,
-              "partido": "Argentina-Algeria",
-              "pred": "1|4-0",
-              "real": "1|3-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 20,
-              "partido": "Austria-Jordan",
-              "pred": "1|2-0",
-              "real": "1|3-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 22,
-              "partido": "Uzbekistan-Colombia",
-              "pred": "2|0-2",
-              "real": "2|1-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 23,
-              "partido": "England-Croatia",
-              "pred": "1|1-0",
-              "real": "1|4-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 24,
-              "partido": "Ghana-Panama",
-              "pred": "1|3-1",
-              "real": "1|1-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 26,
-              "partido": "Mexico-South Korea",
-              "pred": "1|3-2",
-              "real": "1|1-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 27,
-              "partido": "Switzerland-Bosnia-Herzegovina",
-              "pred": "1|3-1",
-              "real": "1|4-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 28,
-              "partido": "Canada-Qatar",
-              "pred": "1|4-0",
-              "real": "1|6-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 29,
-              "partido": "Scotland-Morocco",
-              "pred": "2|1-2",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 30,
-              "partido": "Brazil-Haiti",
-              "pred": "1|5-0",
-              "real": "1|3-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 33,
-              "partido": "Germany-Ivory Coast",
-              "pred": "1|3-2",
-              "real": "1|2-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 34,
-              "partido": "Ecuador-Curacao",
-              "pred": "X|1-1",
-              "real": "X|0-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 35,
-              "partido": "Netherlands-Sweden",
-              "pred": "1|2-1",
-              "real": "1|5-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 36,
-              "partido": "Tunisia-Japan",
-              "pred": "2|0-3",
-              "real": "2|0-4",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 38,
-              "partido": "New Zealand-Egypt",
-              "pred": "2|1-2",
-              "real": "2|1-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 39,
-              "partido": "Spain-Saudi Arabia",
-              "pred": "1|1-0",
-              "real": "1|4-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 41,
-              "partido": "France-Iraq",
-              "pred": "1|4-0",
-              "real": "1|3-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 42,
-              "partido": "Norway-Senegal",
-              "pred": "1|3-2",
-              "real": "1|3-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 45,
-              "partido": "Portugal-Uzbekistan",
-              "pred": "1|2-0",
-              "real": "1|5-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 46,
-              "partido": "Colombia-DR Congo",
-              "pred": "1|2-1",
-              "real": "1|1-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 48,
-              "partido": "Panama-Croatia",
-              "pred": "2|0-1",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 51,
-              "partido": "Switzerland-Canada",
-              "pred": "1|2-1",
-              "real": "1|2-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 52,
-              "partido": "Bosnia-Herzegovina-Qatar",
-              "pred": "1|3-1",
-              "real": "1|3-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 53,
-              "partido": "Scotland-Brazil",
-              "pred": "2|1-3",
-              "real": "2|0-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 54,
-              "partido": "Morocco-Haiti",
-              "pred": "1|3-0",
-              "real": "1|4-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 55,
-              "partido": "Turkey-USA",
-              "pred": "1|2-1",
-              "real": "1|3-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 56,
-              "partido": "Paraguay-Australia",
-              "pred": "X|2-2",
-              "real": "X|0-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 57,
-              "partido": "Curacao-Ivory Coast",
-              "pred": "2|0-2",
-              "real": "2|0-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 60,
-              "partido": "Tunisia-Netherlands",
-              "pred": "2|1-4",
-              "real": "2|1-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 62,
-              "partido": "New Zealand-Belgium",
-              "pred": "2|1-3",
-              "real": "2|1-5",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 63,
-              "partido": "Cape Verde-Saudi Arabia",
-              "pred": "X|1-1",
-              "real": "X|0-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 64,
-              "partido": "Uruguay-Spain",
-              "pred": "2|1-2",
-              "real": "2|0-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 65,
-              "partido": "Norway-France",
-              "pred": "2|2-3",
-              "real": "2|1-4",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 66,
-              "partido": "Senegal-Iraq",
-              "pred": "1|3-1",
-              "real": "1|5-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 68,
-              "partido": "Jordan-Argentina",
-              "pred": "2|1-5",
-              "real": "2|1-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 71,
-              "partido": "Panama-England",
-              "pred": "2|0-3",
-              "real": "2|0-2",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            }
-          ]
-        },
-        "posiciones_grupo": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificado_1_16_desde_grupos": {
-          "total": 0,
-          "detalle": []
-        },
-        "elim_marcadores": {
-          "total": 0,
-          "detalle": []
-        },
-        "clasificados": {
-          "total": 402,
-          "detalle": {
-            "1/16": {
-              "aciertos": 27,
-              "pts": 270
-            },
-            "1/8": {
-              "aciertos": 11,
-              "pts": 132
-            }
-          }
-        },
-        "honor": {
-          "total": 0,
-          "detalle": {}
-        },
-        "premios": {
-          "total": 0,
-          "detalle": {}
-        }
-      },
-      "posicion": 3,
-      "empate": false,
-      "posicion_fase_previa": 4
-    },
-    {
       "nickname": "Pulpo Paul",
       "porra": "amigos",
       "puntos_grupos": 348,
-      "puntos_eliminatorias": 378,
+      "puntos_eliminatorias": 402,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 348,
-      "puntos_fase_eliminatoria": 378,
-      "puntos_total": 726,
+      "puntos_fase_eliminatoria": 402,
+      "puntos_total": 750,
       "advertencias_premios": [],
-      "total": 726,
-      "puntos_eliminatoria": 378,
+      "total": 750,
+      "puntos_eliminatoria": 402,
       "desglose": {
         "grupos": {
           "total": 348,
@@ -2377,15 +1792,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 378,
+          "total": 402,
           "detalle": {
             "1/16": {
               "aciertos": 27,
               "pts": 270
             },
             "1/8": {
-              "aciertos": 9,
-              "pts": 108
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
@@ -2398,50 +1813,50 @@
           "detalle": {}
         }
       },
-      "posicion": 4,
+      "posicion": 3,
       "empate": false,
       "posicion_fase_previa": 3
     },
     {
-      "nickname": "Maximo10",
+      "nickname": "Pol",
       "porra": "amigos",
-      "puntos_grupos": 323,
-      "puntos_eliminatorias": 380,
+      "puntos_grupos": 324,
+      "puntos_eliminatorias": 414,
       "puntos_honor": 0,
       "puntos_premios": 0,
-      "puntos_fase_previa": 323,
-      "puntos_fase_eliminatoria": 380,
-      "puntos_total": 703,
+      "puntos_fase_previa": 324,
+      "puntos_fase_eliminatoria": 414,
+      "puntos_total": 738,
       "advertencias_premios": [],
-      "total": 703,
-      "puntos_eliminatoria": 380,
+      "total": 738,
+      "puntos_eliminatoria": 414,
       "desglose": {
         "grupos": {
-          "total": 323,
+          "total": 324,
           "detalle": [
             {
               "match_id": 1,
               "partido": "Mexico-South Africa",
-              "pred": "1|2-1",
+              "pred": "1|2-0",
               "real": "1|2-0",
               "niveles": {
                 "signo": true,
-                "diferencia": false,
-                "exacto": false
+                "diferencia": true,
+                "exacto": true
               },
-              "pts": 5
+              "pts": 15
             },
             {
               "match_id": 6,
               "partido": "Haiti-Scotland",
-              "pred": "2|0-2",
+              "pred": "2|0-1",
               "real": "2|0-1",
               "niveles": {
                 "signo": true,
-                "diferencia": false,
-                "exacto": false
+                "diferencia": true,
+                "exacto": true
               },
-              "pts": 5
+              "pts": 15
             },
             {
               "match_id": 7,
@@ -2458,7 +1873,7 @@
             {
               "match_id": 9,
               "partido": "Germany-Curacao",
-              "pred": "1|3-0",
+              "pred": "1|4-0",
               "real": "1|7-1",
               "niveles": {
                 "signo": true,
@@ -2470,7 +1885,7 @@
             {
               "match_id": 12,
               "partido": "Sweden-Tunisia",
-              "pred": "1|1-0",
+              "pred": "1|3-0",
               "real": "1|5-1",
               "niveles": {
                 "signo": true,
@@ -2480,21 +1895,33 @@
               "pts": 5
             },
             {
+              "match_id": 14,
+              "partido": "Iran-New Zealand",
+              "pred": "X|0-0",
+              "real": "X|2-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
               "match_id": 17,
               "partido": "France-Senegal",
-              "pred": "1|2-1",
+              "pred": "1|3-1",
               "real": "1|3-1",
               "niveles": {
                 "signo": true,
-                "diferencia": false,
-                "exacto": false
+                "diferencia": true,
+                "exacto": true
               },
-              "pts": 5
+              "pts": 15
             },
             {
               "match_id": 18,
               "partido": "Iraq-Norway",
-              "pred": "2|0-2",
+              "pred": "2|0-1",
               "real": "2|1-4",
               "niveles": {
                 "signo": true,
@@ -2506,7 +1933,7 @@
             {
               "match_id": 19,
               "partido": "Argentina-Algeria",
-              "pred": "1|2-0",
+              "pred": "1|4-0",
               "real": "1|3-0",
               "niveles": {
                 "signo": true,
@@ -2540,9 +1967,33 @@
               "pts": 7
             },
             {
+              "match_id": 23,
+              "partido": "England-Croatia",
+              "pred": "1|1-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 24,
               "partido": "Ghana-Panama",
-              "pred": "1|2-1",
+              "pred": "1|3-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 26,
+              "partido": "Mexico-South Korea",
+              "pred": "1|3-2",
               "real": "1|1-0",
               "niveles": {
                 "signo": true,
@@ -2554,7 +2005,7 @@
             {
               "match_id": 27,
               "partido": "Switzerland-Bosnia-Herzegovina",
-              "pred": "1|2-1",
+              "pred": "1|3-1",
               "real": "1|4-1",
               "niveles": {
                 "signo": true,
@@ -2566,7 +2017,7 @@
             {
               "match_id": 28,
               "partido": "Canada-Qatar",
-              "pred": "1|3-0",
+              "pred": "1|4-0",
               "real": "1|6-0",
               "niveles": {
                 "signo": true,
@@ -2576,46 +2027,10 @@
               "pts": 5
             },
             {
-              "match_id": 30,
-              "partido": "Brazil-Haiti",
-              "pred": "1|3-0",
-              "real": "1|3-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 31,
-              "partido": "USA-Australia",
-              "pred": "1|2-0",
-              "real": "1|2-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 33,
-              "partido": "Germany-Ivory Coast",
-              "pred": "1|2-1",
-              "real": "1|2-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 38,
-              "partido": "New Zealand-Egypt",
-              "pred": "2|0-2",
-              "real": "2|1-3",
+              "match_id": 29,
+              "partido": "Scotland-Morocco",
+              "pred": "2|1-2",
+              "real": "2|0-1",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
@@ -2624,9 +2039,81 @@
               "pts": 7
             },
             {
+              "match_id": 30,
+              "partido": "Brazil-Haiti",
+              "pred": "1|5-0",
+              "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 33,
+              "partido": "Germany-Ivory Coast",
+              "pred": "1|3-2",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 34,
+              "partido": "Ecuador-Curacao",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 35,
+              "partido": "Netherlands-Sweden",
+              "pred": "1|2-1",
+              "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 36,
+              "partido": "Tunisia-Japan",
+              "pred": "2|0-3",
+              "real": "2|0-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 38,
+              "partido": "New Zealand-Egypt",
+              "pred": "2|1-2",
+              "real": "2|1-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
               "match_id": 39,
               "partido": "Spain-Saudi Arabia",
-              "pred": "1|2-0",
+              "pred": "1|1-0",
               "real": "1|4-0",
               "niveles": {
                 "signo": true,
@@ -2638,20 +2125,8 @@
             {
               "match_id": 41,
               "partido": "France-Iraq",
-              "pred": "1|3-0",
+              "pred": "1|4-0",
               "real": "1|3-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
-              "match_id": 43,
-              "partido": "Argentina-Austria",
-              "pred": "1|2-1",
-              "real": "1|2-0",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -2660,16 +2135,16 @@
               "pts": 5
             },
             {
-              "match_id": 44,
-              "partido": "Jordan-Algeria",
-              "pred": "2|0-1",
-              "real": "2|1-2",
+              "match_id": 42,
+              "partido": "Norway-Senegal",
+              "pred": "1|3-2",
+              "real": "1|3-2",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
-                "exacto": false
+                "exacto": true
               },
-              "pts": 7
+              "pts": 15
             },
             {
               "match_id": 45,
@@ -2698,43 +2173,43 @@
             {
               "match_id": 48,
               "partido": "Panama-Croatia",
-              "pred": "2|0-2",
+              "pred": "2|0-1",
               "real": "2|0-1",
               "niveles": {
                 "signo": true,
-                "diferencia": false,
-                "exacto": false
+                "diferencia": true,
+                "exacto": true
               },
-              "pts": 5
+              "pts": 15
             },
             {
-              "match_id": 49,
-              "partido": "Czech Republic-Mexico",
-              "pred": "2|1-2",
-              "real": "2|0-3",
+              "match_id": 51,
+              "partido": "Switzerland-Canada",
+              "pred": "1|2-1",
+              "real": "1|2-1",
               "niveles": {
                 "signo": true,
-                "diferencia": false,
-                "exacto": false
+                "diferencia": true,
+                "exacto": true
               },
-              "pts": 5
+              "pts": 15
             },
             {
               "match_id": 52,
               "partido": "Bosnia-Herzegovina-Qatar",
-              "pred": "1|2-0",
+              "pred": "1|3-1",
               "real": "1|3-1",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
-                "exacto": false
+                "exacto": true
               },
-              "pts": 7
+              "pts": 15
             },
             {
               "match_id": 53,
               "partido": "Scotland-Brazil",
-              "pred": "2|0-2",
+              "pred": "2|1-3",
               "real": "2|0-3",
               "niveles": {
                 "signo": true,
@@ -2746,8 +2221,20 @@
             {
               "match_id": 54,
               "partido": "Morocco-Haiti",
-              "pred": "1|2-0",
+              "pred": "1|3-0",
               "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 55,
+              "partido": "Turkey-USA",
+              "pred": "1|2-1",
+              "real": "1|3-2",
               "niveles": {
                 "signo": true,
                 "diferencia": true,
@@ -2758,7 +2245,7 @@
             {
               "match_id": 56,
               "partido": "Paraguay-Australia",
-              "pred": "X|1-1",
+              "pred": "X|2-2",
               "real": "X|0-0",
               "niveles": {
                 "signo": true,
@@ -2780,45 +2267,21 @@
               "pts": 15
             },
             {
-              "match_id": 59,
-              "partido": "Japan-Sweden",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
-            },
-            {
               "match_id": 60,
               "partido": "Tunisia-Netherlands",
-              "pred": "2|0-2",
+              "pred": "2|1-4",
               "real": "2|1-3",
               "niveles": {
                 "signo": true,
-                "diferencia": true,
+                "diferencia": false,
                 "exacto": false
               },
-              "pts": 7
-            },
-            {
-              "match_id": 61,
-              "partido": "Egypt-Iran",
-              "pred": "X|1-1",
-              "real": "X|1-1",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": true
-              },
-              "pts": 15
+              "pts": 5
             },
             {
               "match_id": 62,
               "partido": "New Zealand-Belgium",
-              "pred": "2|0-3",
+              "pred": "2|1-3",
               "real": "2|1-5",
               "niveles": {
                 "signo": true,
@@ -2854,7 +2317,7 @@
             {
               "match_id": 65,
               "partido": "Norway-France",
-              "pred": "2|1-2",
+              "pred": "2|2-3",
               "real": "2|1-4",
               "niveles": {
                 "signo": true,
@@ -2866,7 +2329,7 @@
             {
               "match_id": 66,
               "partido": "Senegal-Iraq",
-              "pred": "1|2-0",
+              "pred": "1|3-1",
               "real": "1|5-0",
               "niveles": {
                 "signo": true,
@@ -2876,46 +2339,10 @@
               "pts": 5
             },
             {
-              "match_id": 67,
-              "partido": "Algeria-Austria",
-              "pred": "X|1-1",
-              "real": "X|3-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
               "match_id": 68,
               "partido": "Jordan-Argentina",
-              "pred": "2|0-3",
+              "pred": "2|1-5",
               "real": "2|1-3",
-              "niveles": {
-                "signo": true,
-                "diferencia": false,
-                "exacto": false
-              },
-              "pts": 5
-            },
-            {
-              "match_id": 69,
-              "partido": "Colombia-Portugal",
-              "pred": "X|1-1",
-              "real": "X|0-0",
-              "niveles": {
-                "signo": true,
-                "diferencia": true,
-                "exacto": false
-              },
-              "pts": 7
-            },
-            {
-              "match_id": 70,
-              "partido": "DR Congo-Uzbekistan",
-              "pred": "1|1-0",
-              "real": "1|3-1",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -2926,14 +2353,14 @@
             {
               "match_id": 71,
               "partido": "Panama-England",
-              "pred": "2|0-2",
+              "pred": "2|0-3",
               "real": "2|0-2",
               "niveles": {
                 "signo": true,
-                "diferencia": true,
-                "exacto": true
+                "diferencia": false,
+                "exacto": false
               },
-              "pts": 15
+              "pts": 5
             }
           ]
         },
@@ -2950,15 +2377,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 380,
+          "total": 414,
           "detalle": {
             "1/16": {
-              "aciertos": 26,
-              "pts": 260
+              "aciertos": 27,
+              "pts": 270
             },
             "1/8": {
-              "aciertos": 10,
-              "pts": 120
+              "aciertos": 12,
+              "pts": 144
             }
           }
         },
@@ -2971,23 +2398,23 @@
           "detalle": {}
         }
       },
-      "posicion": 5,
+      "posicion": 4,
       "empate": false,
-      "posicion_fase_previa": 5
+      "posicion_fase_previa": 4
     },
     {
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 307,
-      "puntos_eliminatorias": 392,
+      "puntos_eliminatorias": 428,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 307,
-      "puntos_fase_eliminatoria": 392,
-      "puntos_total": 699,
+      "puntos_fase_eliminatoria": 428,
+      "puntos_total": 735,
       "advertencias_premios": [],
-      "total": 699,
-      "puntos_eliminatoria": 392,
+      "total": 735,
+      "puntos_eliminatoria": 428,
       "desglose": {
         "grupos": {
           "total": 307,
@@ -3547,15 +2974,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 392,
+          "total": 428,
           "detalle": {
             "1/16": {
               "aciertos": 26,
               "pts": 260
             },
             "1/8": {
-              "aciertos": 11,
-              "pts": 132
+              "aciertos": 14,
+              "pts": 168
             }
           }
         },
@@ -3568,7 +2995,7 @@
           "detalle": {}
         }
       },
-      "posicion": 6,
+      "posicion": 5,
       "empate": false,
       "posicion_fase_previa": 7
     },
@@ -3576,15 +3003,15 @@
       "nickname": "Jordi",
       "porra": "amigos",
       "puntos_grupos": 315,
-      "puntos_eliminatorias": 382,
+      "puntos_eliminatorias": 406,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 315,
-      "puntos_fase_eliminatoria": 382,
-      "puntos_total": 697,
+      "puntos_fase_eliminatoria": 406,
+      "puntos_total": 721,
       "advertencias_premios": [],
-      "total": 697,
-      "puntos_eliminatoria": 382,
+      "total": 721,
+      "puntos_eliminatoria": 406,
       "desglose": {
         "grupos": {
           "total": 315,
@@ -4144,11 +3571,584 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 382,
+          "total": 406,
           "detalle": {
             "1/16": {
               "aciertos": 25,
               "pts": 250
+            },
+            "1/8": {
+              "aciertos": 13,
+              "pts": 156
+            }
+          }
+        },
+        "honor": {
+          "total": 0,
+          "detalle": {}
+        },
+        "premios": {
+          "total": 0,
+          "detalle": {}
+        }
+      },
+      "posicion": 6,
+      "empate": false,
+      "posicion_fase_previa": 6
+    },
+    {
+      "nickname": "Maximo10",
+      "porra": "amigos",
+      "puntos_grupos": 323,
+      "puntos_eliminatorias": 392,
+      "puntos_honor": 0,
+      "puntos_premios": 0,
+      "puntos_fase_previa": 323,
+      "puntos_fase_eliminatoria": 392,
+      "puntos_total": 715,
+      "advertencias_premios": [],
+      "total": 715,
+      "puntos_eliminatoria": 392,
+      "desglose": {
+        "grupos": {
+          "total": 323,
+          "detalle": [
+            {
+              "match_id": 1,
+              "partido": "Mexico-South Africa",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 6,
+              "partido": "Haiti-Scotland",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 7,
+              "partido": "USA-Paraguay",
+              "pred": "1|2-1",
+              "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 9,
+              "partido": "Germany-Curacao",
+              "pred": "1|3-0",
+              "real": "1|7-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 12,
+              "partido": "Sweden-Tunisia",
+              "pred": "1|1-0",
+              "real": "1|5-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 17,
+              "partido": "France-Senegal",
+              "pred": "1|2-1",
+              "real": "1|3-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 18,
+              "partido": "Iraq-Norway",
+              "pred": "2|0-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 19,
+              "partido": "Argentina-Algeria",
+              "pred": "1|2-0",
+              "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 20,
+              "partido": "Austria-Jordan",
+              "pred": "1|2-0",
+              "real": "1|3-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 22,
+              "partido": "Uzbekistan-Colombia",
+              "pred": "2|0-2",
+              "real": "2|1-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 24,
+              "partido": "Ghana-Panama",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 27,
+              "partido": "Switzerland-Bosnia-Herzegovina",
+              "pred": "1|2-1",
+              "real": "1|4-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 28,
+              "partido": "Canada-Qatar",
+              "pred": "1|3-0",
+              "real": "1|6-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 30,
+              "partido": "Brazil-Haiti",
+              "pred": "1|3-0",
+              "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 31,
+              "partido": "USA-Australia",
+              "pred": "1|2-0",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 33,
+              "partido": "Germany-Ivory Coast",
+              "pred": "1|2-1",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 38,
+              "partido": "New Zealand-Egypt",
+              "pred": "2|0-2",
+              "real": "2|1-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 39,
+              "partido": "Spain-Saudi Arabia",
+              "pred": "1|2-0",
+              "real": "1|4-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 41,
+              "partido": "France-Iraq",
+              "pred": "1|3-0",
+              "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 43,
+              "partido": "Argentina-Austria",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 44,
+              "partido": "Jordan-Algeria",
+              "pred": "2|0-1",
+              "real": "2|1-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 45,
+              "partido": "Portugal-Uzbekistan",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 46,
+              "partido": "Colombia-DR Congo",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 48,
+              "partido": "Panama-Croatia",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 49,
+              "partido": "Czech Republic-Mexico",
+              "pred": "2|1-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 52,
+              "partido": "Bosnia-Herzegovina-Qatar",
+              "pred": "1|2-0",
+              "real": "1|3-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 53,
+              "partido": "Scotland-Brazil",
+              "pred": "2|0-2",
+              "real": "2|0-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 54,
+              "partido": "Morocco-Haiti",
+              "pred": "1|2-0",
+              "real": "1|4-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 56,
+              "partido": "Paraguay-Australia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 57,
+              "partido": "Curacao-Ivory Coast",
+              "pred": "2|0-2",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 59,
+              "partido": "Japan-Sweden",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 60,
+              "partido": "Tunisia-Netherlands",
+              "pred": "2|0-2",
+              "real": "2|1-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 61,
+              "partido": "Egypt-Iran",
+              "pred": "X|1-1",
+              "real": "X|1-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "match_id": 62,
+              "partido": "New Zealand-Belgium",
+              "pred": "2|0-3",
+              "real": "2|1-5",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 63,
+              "partido": "Cape Verde-Saudi Arabia",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 64,
+              "partido": "Uruguay-Spain",
+              "pred": "2|1-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 65,
+              "partido": "Norway-France",
+              "pred": "2|1-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 66,
+              "partido": "Senegal-Iraq",
+              "pred": "1|2-0",
+              "real": "1|5-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 67,
+              "partido": "Algeria-Austria",
+              "pred": "X|1-1",
+              "real": "X|3-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 68,
+              "partido": "Jordan-Argentina",
+              "pred": "2|0-3",
+              "real": "2|1-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 69,
+              "partido": "Colombia-Portugal",
+              "pred": "X|1-1",
+              "real": "X|0-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
+            },
+            {
+              "match_id": 70,
+              "partido": "DR Congo-Uzbekistan",
+              "pred": "1|1-0",
+              "real": "1|3-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "match_id": 71,
+              "partido": "Panama-England",
+              "pred": "2|0-2",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            }
+          ]
+        },
+        "posiciones_grupo": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificado_1_16_desde_grupos": {
+          "total": 0,
+          "detalle": []
+        },
+        "elim_marcadores": {
+          "total": 0,
+          "detalle": []
+        },
+        "clasificados": {
+          "total": 392,
+          "detalle": {
+            "1/16": {
+              "aciertos": 26,
+              "pts": 260
             },
             "1/8": {
               "aciertos": 11,
@@ -4167,21 +4167,21 @@
       },
       "posicion": 7,
       "empate": false,
-      "posicion_fase_previa": 6
+      "posicion_fase_previa": 5
     },
     {
       "nickname": "Tucas",
       "porra": "amigos",
       "puntos_grupos": 291,
-      "puntos_eliminatorias": 360,
+      "puntos_eliminatorias": 372,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 291,
-      "puntos_fase_eliminatoria": 360,
-      "puntos_total": 651,
+      "puntos_fase_eliminatoria": 372,
+      "puntos_total": 663,
       "advertencias_premios": [],
-      "total": 651,
-      "puntos_eliminatoria": 360,
+      "total": 663,
+      "puntos_eliminatoria": 372,
       "desglose": {
         "grupos": {
           "total": 291,
@@ -4669,15 +4669,15 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 360,
+          "total": 372,
           "detalle": {
             "1/16": {
               "aciertos": 24,
               "pts": 240
             },
             "1/8": {
-              "aciertos": 10,
-              "pts": 120
+              "aciertos": 11,
+              "pts": 132
             }
           }
         },
