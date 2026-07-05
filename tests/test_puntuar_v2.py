@@ -78,10 +78,6 @@ def pos_detalle(r):
     return r["desglose"]["posiciones_grupo"]
 
 
-def clas16_detalle(r):
-    return r["desglose"]["clasificado_1_16_desde_grupos"]
-
-
 def elim_detalle(r):
     return r["desglose"]["elim_marcadores"]
 
@@ -163,24 +159,22 @@ def test_posicion_grupo_fallada():
     assert pos_detalle(result)["total"] == 0
 
 
-def test_mejor_terceros_ocho_de_doce_pasan():
+def test_mejor_tercero_no_duplica_puntuacion():
     """
-    12 terceros pronosticados con mejor_tercero=True.
-    Solo 8 aparecen en resultados.clasificados["1/16"].
-    Los 8 puntúan +5 (clasificado_1_16_desde_grupos); los 4 restantes → 0.
+    Retirada (2026-07-03) la sección 'clasificado_1_16_desde_grupos': un
+    mejor-tercero acertado (posición Y clasificación real) ya no suma un +5
+    extra aparte de "posiciones_grupo" y "clasificados". La sección ya no
+    existe en el desglose.
     """
-    # 12 equipos como terceros
     teams = [f"Team{i}" for i in range(12)]
     pos_pred = [{"grupo": chr(65 + i), "pos": 3, "equipo": t, "mejor_tercero": True}
                 for i, t in enumerate(teams)]
-    # Solo los primeros 8 pasan
     clasificados_real = {"1/16": teams[:8], "1/8": [], "1/4": [], "semis": [], "final": []}
 
     p = pron(posiciones_grupo=pos_pred, clasificados=CLAS_VACIAS.copy())
     r = res(clasificados=clasificados_real)
     result = calcular(p, r)
-    assert clas16_detalle(result)["total"] == 8 * 5  # 40 pts
-    assert len(clas16_detalle(result)["detalle"]) == 8
+    assert "clasificado_1_16_desde_grupos" not in result["desglose"]
 
 
 # ── Eliminatoria: marcador ───────────────────────────────────────────────────

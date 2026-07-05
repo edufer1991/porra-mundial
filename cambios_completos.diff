@@ -1,0 +1,542 @@
+diff --git a/datos/pronosticos/amigos/Tucas.json b/datos/pronosticos/amigos/Tucas.json
+index 418ec5e9..2a12f475 100644
+--- a/datos/pronosticos/amigos/Tucas.json
++++ b/datos/pronosticos/amigos/Tucas.json
+@@ -2,8 +2,11 @@
+   "nickname": "Tucas",
+   "porra": "amigos",
+   "archivo_origen": "Tucas.xlsx",
+-  "incompleto": false,
+-  "advertencias": [],
++  "incompleto": true,
++  "advertencias": [
++    "posiciones_grupo: no se pudo parsear del Excel de origen (corrupto); se deriva automaticamente de los 72 marcadores de grupo en tiempo de puntuacion.",
++    "elim_marcadores: ausente en Tucas.xlsx (0 de 32 predicciones). No hay fuente para recuperarlo; contribuye 0 puntos a la seccion de eliminatoria hasta que Tucas reenvie sus pronosticos de eliminatoria."
++  ],
+   "pronosticos": {
+     "grupos": [
+       {
+@@ -955,6 +958,8 @@
+       "goleador": "Dembele",
+       "mvp": "Bernardo Silva",
+       "portero": "Diogo Costa"
+-    }
++    },
++    "posiciones_grupo": [],
++    "elim_marcadores": []
+   }
+ }
+\ No newline at end of file
+diff --git a/motor/descargar_resultados.py b/motor/descargar_resultados.py
+index 7d21ce26..393106c1 100644
+--- a/motor/descargar_resultados.py
++++ b/motor/descargar_resultados.py
+@@ -23,6 +23,9 @@ import urllib.request
+ from datetime import datetime, timezone
+ from pathlib import Path
+ 
++sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
++from motor.tabla_grupo import calcular_tabla_grupos
++
+ BASE         = Path(__file__).resolve().parent.parent
+ CALENDARIO   = BASE / "datos" / "calendario.json"
+ RESULTADOS   = BASE / "datos" / "resultados.json"
+@@ -79,6 +82,10 @@ def norm(t) -> str:
+     return "".join(c for c in s if unicodedata.category(c) != "Mn").strip().lower()
+ 
+ 
++def _pair_key(a: str, b: str) -> frozenset:
++    return frozenset({a, b})
++
++
+ def _es_placeholder(nombre: str) -> bool:
+     """True si el nombre es un código de bracket (ej. '1A', 'W73', '3ABCD')."""
+     return bool(_RE_PLACEHOLDER.match(nombre.strip()))
+@@ -148,6 +155,25 @@ def _score_ft(score: dict | None) -> tuple[int, int] | None:
+     return None
+ 
+ 
++def _score_para_marcador(score: dict | None) -> tuple[int, int] | None:
++    """
++    Marcador que cuenta para puntuar signo/diferencia/exacto, según la regla
++    oficial de matejero para eliminatorias: si el 90' termina en empate y hay
++    resultado de prórroga, cuenta el marcador de la prórroga (120'); si no hay
++    empate al 90', cuenta el resultado del 90'.
++    Ref: https://matejero.es/faq-porra-mundial-2026-excel/
++    """
++    ft = _score_ft(score)
++    if ft is None:
++        return None
++    if ft[0] != ft[1]:
++        return ft
++    et = (score or {}).get("et")
++    if et and len(et) == 2 and et[0] is not None and et[1] is not None:
++        return int(et[0]), int(et[1])
++    return ft
++
++
+ def _ganador_perdedor(match: dict) -> tuple[str | None, str | None]:
+     """Devuelve (ganador, perdedor). Usa penaltis > prorroga > T.R."""
+     score = match.get("score") or {}
+@@ -162,20 +188,53 @@ def _ganador_perdedor(match: dict) -> tuple[str | None, str | None]:
+     return None, None
+ 
+ 
++_RE_OF_TIME = re.compile(r'^\s*(\d{1,2}):(\d{2})(?:\s*UTC([+-]\d{1,2}(?::?\d{2})?))?\s*$')
++
++
++def _of_datetime_a_utc_iso(fecha: str, hora: str) -> str | None:
++    """
++    Convierte (date, time) de openfootball a 'YYYY-MM-DDTHH:MM:SSZ' en UTC real.
++
++    openfootball expresa 'time' en hora LOCAL de la sede con el offset incluido,
++    p.ej. '12:00 UTC-7' o '16:30 UTC-4'. Hay que restar el offset para obtener
++    la hora UTC real; si no hay offset (p.ej. en tests o fuentes ya en UTC),
++    se asume que 'hora' ya está en UTC.
++    """
++    m = _RE_OF_TIME.match(hora or "")
++    if not m:
++        return None
++    hh, mm, offset = m.groups()
++    try:
++        dt_local = datetime.strptime(f"{fecha} {hh}:{mm}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
++    except ValueError:
++        return None
++    if offset:
++        offset = offset.replace(":", "")
++        sign = -1 if offset[0] == "-" else 1
++        offset = offset.lstrip("+-")
++        off_h = int(offset[:2]) if len(offset) >= 2 else int(offset)
++        off_m = int(offset[2:]) if len(offset) > 2 else 0
++        # dt_local es hora local = UTC + offset  →  UTC = local - offset
++        from datetime import timedelta
++        dt_local = dt_local - timedelta(hours=sign * off_h, minutes=sign * off_m)
++    return dt_local.strftime("%Y-%m-%dT%H:%M:%SZ")
++
++
+ def _determinar_estado(match: dict, ahora: datetime | None = None) -> str:
+     if _score_ft(match.get("score")):
+         return "finalizado"
+     fecha = match.get("date")
+     hora  = match.get("time", "00:00")
+     if fecha and ahora:
+-        try:
+-            ts_str = f"{fecha}T{hora}:00Z"
+-            ts = datetime.strptime(ts_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+-            diff = (ahora - ts).total_seconds()
+-            if 0 <= diff <= 7200:
+-                return "en_juego"
+-        except ValueError:
+-            pass
++        ts_str = _of_datetime_a_utc_iso(fecha, hora)
++        if ts_str:
++            try:
++                ts = datetime.strptime(ts_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
++                diff = (ahora - ts).total_seconds()
++                if 0 <= diff <= 7200:
++                    return "en_juego"
++            except ValueError:
++                pass
+     return "pendiente"
+ 
+ 
+@@ -302,15 +361,16 @@ def parsear_openfootball(
+                 else:
+                     honor["campeon"], honor["subcampeon"] = t2_real, t1_real
+ 
+-        # Record FT marcador for elimination match when we have real teams and a time index
++        # Record marcador for elimination match when we have real teams and a time index
++        # (usa 120' si el 90' fue empate, según regla oficial de matejero)
+         if t1_real and t2_real and elim_time_idx is not None:
+-            ft = _score_ft(match.get("score"))
++            ft = _score_para_marcador(match.get("score"))
+             if ft:
+                 of_date = match.get("date", "")
+                 of_time = match.get("time", "00:00")
+                 if of_date:
+-                    dt_str = f"{of_date}T{of_time}:00Z"
+-                    mid = elim_time_idx.get(dt_str)
++                    dt_str = _of_datetime_a_utc_iso(of_date, of_time)
++                    mid = elim_time_idx.get(dt_str) if dt_str else None
+                     if mid is not None:
+                         marcadores.append({
+                             "match_id": mid,
+@@ -330,6 +390,38 @@ def parsear_openfootball(
+     }
+ 
+ 
++# ── Posiciones finales de grupo (1º-4º) ───────────────────────────────────────
++
++def _calcular_posiciones_grupo(calendario: dict, marcadores: list[dict]) -> list[dict]:
++    """
++    Calcula la clasificación 1º-4º real de cada grupo a partir de los partidos
++    de grupo finalizados, usando motor.tabla_grupo (mismo algoritmo que se usa
++    para derivar la tabla implícita de cada participante en puntuar_v2.py).
++    """
++    marc_por_id = {m["match_id"]: m for m in marcadores}
++    partidos_por_grupo: dict[str, list[tuple[str, str, int, int]]] = {}
++
++    for p in calendario.get("partidos", []):
++        if p.get("fase") != "grupos":
++            continue
++        m = marc_por_id.get(p["id"])
++        if not m or m.get("estado") != "finalizado":
++            continue
++        gl, gv = m.get("goles_local"), m.get("goles_visitante")
++        if gl is None or gv is None:
++            continue
++        partidos_por_grupo.setdefault(p["grupo"], []).append((p["local"], p["visitante"], gl, gv))
++
++    posiciones, avisos = calcular_tabla_grupos(partidos_por_grupo, min_partidos=6)
++
++    if avisos:
++        print("  [AVISO] posiciones_grupo con empates no resueltos:")
++        for a in avisos:
++            print(f"    - {a}")
++
++    return posiciones
++
++
+ # ── Premios manuales ──────────────────────────────────────────────────────────
+ 
+ def cargar_premios() -> dict:
+@@ -419,6 +511,7 @@ def main() -> None:
+             m.update(finalizados_previos[m["match_id"]])
+ 
+     premios = cargar_premios()
++    posiciones_grupo = _calcular_posiciones_grupo(calendario, resultado["marcadores"])
+ 
+     ahora_iso = ahora.strftime("%Y-%m-%dT%H:%M:%SZ")
+     salida_dict = {
+@@ -427,10 +520,11 @@ def main() -> None:
+             "Actualizado automaticamente por motor/descargar_resultados.py."
+         ),
+         "ultima_actualizacion": ahora_iso,
+-        "marcadores":   resultado["marcadores"],
+-        "clasificados": resultado["clasificados"],
+-        "honor":        resultado["honor"],
+-        "premios":      premios,
++        "marcadores":       resultado["marcadores"],
++        "posiciones_grupo": posiciones_grupo,
++        "clasificados":     resultado["clasificados"],
++        "honor":            resultado["honor"],
++        "premios":          premios,
+     }
+ 
+     guardar_resultados(salida_dict, salida)
+@@ -445,6 +539,9 @@ def main() -> None:
+           f"  (marcadores guardados: {stats.get('elim_marcadores', 0)})")
+     print(f"  Clasificados por ronda        : "
+           + ", ".join(f"{k}={len(v)}" for k, v in resultado["clasificados"].items()))
++    grupos_completos = sorted({p["grupo"] for p in posiciones_grupo})
++    print(f"  Posiciones de grupo calculadas: {len(grupos_completos)}/12 grupos "
++          f"({len(posiciones_grupo)} equipos posicionados)")
+     print(f"  Honor  : {resultado['honor']}")
+     print(f"  Premios: {premios}")
+     if ano != "2026":
+diff --git a/motor/puntuar_v2.py b/motor/puntuar_v2.py
+index 3d245090..1bc34b04 100644
+--- a/motor/puntuar_v2.py
++++ b/motor/puntuar_v2.py
+@@ -5,7 +5,6 @@ puntuar_v2.py — Motor matejero de la Porra Mundial 2026.
+ Sistema:
+   · Grupos por partido:  signo=5  diferencia=2 (si signo)  exacto=8 (si diferencia)
+   · Posición exacta 1-4 en su grupo: 5 c/u
+-  · Clasificado a 1/16 (desde posiciones_grupo): 5 c/u
+   · Eliminatoria por partido: signo=5  diferencia=2  exacto=8
+   · Clasificados:  1/16→10  1/8→12  1/4→14  semis→16  final→20
+   · Honor:  campeon=25  sub=20  3º=15  4º=10
+@@ -14,6 +13,11 @@ Sistema:
+     de eliminatoria, SIN grupos, SIN premios). Sólo cuentan equipos
+     clasificados por ronda y posiciones de honor.
+ 
++  NOTA: se retiró (2026-07-03) el bono "clasificado a 1/16 desde
++  posiciones_grupo" (+5 extra por equipo pronosticado 1º/2º/mejor-tercero
++  que clasificaba). Duplicaba el acierto que ya paga "clasificados" (ronda
++  1/16, +10 c/u, sin depender del orden — regla oficial de matejero).
++
+ Empate en 90' (penaltis):
+   · signo=X puntúa si el marcador real terminó en X.
+   · Diferencia 0 = 0, así que cualquier predicción X con cualquier resultado X
+@@ -34,6 +38,10 @@ import json
+ import unicodedata
+ from pathlib import Path
+ 
++import sys
++sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
++from motor.tabla_grupo import calcular_tabla_grupos
++
+ BASE        = Path(__file__).resolve().parent.parent
+ CALENDARIO  = BASE / "datos" / "calendario.json"
+ PRONOSTICOS = BASE / "datos" / "pronosticos"
+@@ -44,7 +52,6 @@ ALIAS_JUGAD = BASE / "datos" / "alias_jugadores.json"  # opcional
+ REGLAS_V2: dict = {
+     "grupos_partido": {"signo": 5, "diferencia": 2, "exacto": 8},
+     "posicion_exacta": 5,
+-    "clasificado_1_16_desde_grupos": 5,
+     "elim_partido":   {"signo": 5, "diferencia": 2, "exacto": 8},
+     "clasificados": {
+         "1/16":  10,
+@@ -140,6 +147,35 @@ def _puntuar_grupos_partidos(grupos_pred: list[dict],
+     return {"total": total, "detalle": detalle}
+ 
+ 
++# ── Sección: posiciones de grupo derivadas del pronóstico de marcadores ──────
++def _derivar_posiciones_grupo(grupos_pred: list[dict]) -> tuple[list[dict], list[str]]:
++    """
++    Deriva la tabla de grupo (1º-4º) que se desprende de los marcadores que el
++    participante pronosticó para los 72 partidos de grupos, usando el mismo
++    algoritmo de clasificación (puntos/DG/GF/enfrentamiento directo) que se
++    usa para la tabla real.
++
++    Se usa como ÚNICA fuente para "posiciones_grupo" cuando el pronóstico no
++    trae el bloque explícito (p. ej. porque el Excel de origen está corrupto
++    y no se puede reparsear): el marcador partido a partido SÍ está intacto
++    en el JSON ya parseado, así que de ahí se puede reconstruir de forma
++    determinista qué tabla esperaba el participante, sin inventar nada.
++    """
++    por_grupo: dict[str, list[tuple[str, str, int, int]]] = {}
++    for p in grupos_pred or []:
++        pred  = p.get("prediccion")
++        grupo = p.get("grupo")
++        local, visit = p.get("local"), p.get("visitante")
++        if not (pred and grupo and local and visit):
++            continue
++        gl = pred.get("goles_local")
++        gv = pred.get("goles_visitante")
++        if gl is None or gv is None:
++            continue
++        por_grupo.setdefault(grupo, []).append((local, visit, gl, gv))
++    return calcular_tabla_grupos(por_grupo, min_partidos=6)
++
++
+ # ── Sección: posiciones de grupo (1º/2º/3º/4º) ───────────────────────────────
+ def _puntuar_posiciones_grupo(pos_pred: list[dict],
+                               pos_real: list[dict]) -> dict:
+@@ -164,32 +200,13 @@ def _puntuar_posiciones_grupo(pos_pred: list[dict],
+ 
+ 
+ # ── Sección: clasificado a 1/16 (desde posiciones_grupo) ─────────────────────
+-def _puntuar_clasificado_1_16(pos_pred: list[dict],
+-                              clas_1_16_real: list[str]) -> dict:
+-    """
+-    Por cada equipo del pronóstico en posiciones_grupo con pos in {1, 2}
+-    o mejor_tercero=True, +5 si está en resultados.clasificados["1/16"].
+-    """
+-    real_set = {norm(e) for e in (clas_1_16_real or []) if e}
+-    detalle: list[dict] = []
+-    total = 0
+-    R = REGLAS_V2["clasificado_1_16_desde_grupos"]
+-    for p in pos_pred or []:
+-        equipo = p.get("equipo")
+-        if not equipo:
+-            continue
+-        es_pronosticado_clasif = (
+-            p.get("pos") in (1, 2)
+-            or p.get("mejor_tercero") is True
+-        )
+-        if es_pronosticado_clasif and norm(equipo) in real_set:
+-            total += R
+-            detalle.append({
+-                "equipo": equipo,
+-                "via":    f"grupo {p.get('grupo')} pos {p.get('pos')}" + (" (mejor 3º)" if p.get("mejor_tercero") else ""),
+-                "pts":    R,
+-            })
+-    return {"total": total, "detalle": detalle}
++# NOTA (retirada 2026-07-03): esta sección otorgaba +5 extra por cada equipo
++# pronosticado como 1º/2º/mejor-tercero que efectivamente clasificaba a 1/16.
++# Se retira por duplicar el mismo acierto que ya paga la sección general
++# "clasificados" (ronda "1/16", +10 c/u, no depende del orden — así lo define
++# la regla oficial de matejero: "no importa el orden de clasificación").
++# Mantener ambas suponía cobrar dos veces por el mismo acierto para cualquier
++# equipo pronosticado en 1º/2º puesto.
+ 
+ 
+ # ── Sección: marcadores de eliminatoria ──────────────────────────────────────
+@@ -339,12 +356,19 @@ def puntuar_participante(pronostico: dict,
+ 
+     marc_por_id = {m["match_id"]: m for m in (resultados.get("marcadores") or [])}
+ 
++    # posiciones_grupo: usar el bloque explícito del pronóstico si existe;
++    # si no (Excel de origen corrupto y no reparseable), derivarlo de los
++    # marcadores de grupo que el propio participante pronosticó.
++    pos_pred = pp.get("posiciones_grupo") or []
++    pos_pred_origen = "explicita"
++    if not pos_pred:
++        pos_pred, _avisos_pos = _derivar_posiciones_grupo(pp.get("grupos") or [])
++        pos_pred_origen = "derivada_de_marcadores_pronosticados"
++
+     # Secciones
+     secc_grupos = _puntuar_grupos_partidos(pp.get("grupos") or [], marc_por_id)
+-    secc_pos    = _puntuar_posiciones_grupo(pp.get("posiciones_grupo") or [],
++    secc_pos    = _puntuar_posiciones_grupo(pos_pred,
+                                             resultados.get("posiciones_grupo") or [])
+-    secc_clas16g = _puntuar_clasificado_1_16(pp.get("posiciones_grupo") or [],
+-                                             (resultados.get("clasificados") or {}).get("1/16") or [])
+     secc_elim   = _puntuar_elim_marcadores(pp.get("elim_marcadores") or [],
+                                            marc_por_id, cal_idx_por_id)
+     secc_clas   = _puntuar_clasificados(pp.get("clasificados") or {},
+@@ -358,7 +382,6 @@ def puntuar_participante(pronostico: dict,
+     pts_grupos_totales = (
+         secc_grupos["total"]
+         + secc_pos["total"]
+-        + secc_clas16g["total"]
+     )
+     # Suma de todos los puntos de la fase eliminatoria (para el total)
+     pts_fase_eliminatoria_total = (
+@@ -391,8 +414,7 @@ def puntuar_participante(pronostico: dict,
+         "puntos_eliminatoria":       pts_eliminatoria_desempate,
+         "desglose": {
+             "grupos":            secc_grupos,
+-            "posiciones_grupo":  secc_pos,
+-            "clasificado_1_16_desde_grupos": secc_clas16g,
++            "posiciones_grupo":  {**secc_pos, "origen": pos_pred_origen},
+             "elim_marcadores":   secc_elim,
+             "clasificados":      secc_clas,
+             "honor":             secc_honor,
+diff --git a/motor/tabla_grupo.py b/motor/tabla_grupo.py
+new file mode 100644
+index 00000000..f1a03d96
+--- /dev/null
++++ b/motor/tabla_grupo.py
+@@ -0,0 +1,94 @@
++#!/usr/bin/env python3
++"""
++tabla_grupo.py — Cálculo de la tabla de un grupo (1º-4º) a partir de los
++marcadores de sus 6 partidos.
++
++Módulo compartido entre:
++  · descargar_resultados.py → tabla REAL, a partir de los marcadores reales
++    descargados de openfootball.
++  · puntuar_v2.py → tabla IMPLÍCITA de cada participante, a partir de sus
++    propios pronósticos de marcador para los 72 partidos de grupos. Se usa
++    como fallback cuando el bloque explícito "posiciones de grupo
++    pronosticadas" del Excel no está disponible (p. ej. Excel de origen
++    corrupto / no reparseable) — en ese caso la mejor fuente de verdad que
++    queda es el marcador que el propio participante predijo para cada
++    partido, y de ahí se puede derivar de forma determinista qué tabla de
++    grupo esperaba.
++
++Desempate: puntos → diferencia de goles → goles a favor → enfrentamiento
++directo (sólo si el empate es entre dos equipos consecutivos en la tabla).
++Empates reales de 3+ equipos no se resuelven (se avisa) para no reimplementar
++el reglamento completo de desempate de la FIFA (fair play, sorteo, etc.).
++"""
++
++from __future__ import annotations
++
++
++def _pair_key(a: str, b: str) -> frozenset:
++    return frozenset({a, b})
++
++
++def calcular_tabla_grupos(
++    partidos_por_grupo: dict[str, list[tuple[str, str, int, int]]],
++    min_partidos: int = 6,
++) -> tuple[list[dict], list[str]]:
++    """
++    partidos_por_grupo: {grupo: [(local, visitante, gl, gv), ...]}, sólo
++    partidos con marcador conocido (gl/gv no None).
++
++    Un grupo sólo se puntúa si tiene al menos `min_partidos` partidos con
++    marcador (por defecto 6 = grupo completo de 4 equipos todos-contra-todos).
++
++    Devuelve (posiciones, avisos):
++      posiciones: [{"grupo": "A", "pos": 1, "equipo": "Mexico"}, ...]
++      avisos: descripciones de empates no resueltos (informativo)
++    """
++    resultado: list[dict] = []
++    avisos: list[str] = []
++
++    for grupo, partidos in sorted(partidos_por_grupo.items()):
++        if len(partidos) < min_partidos:
++            continue
++
++        equipos = sorted({p[0] for p in partidos} | {p[1] for p in partidos})
++        tabla = {e: {"pts": 0, "gf": 0, "gc": 0} for e in equipos}
++        h2h: dict[frozenset, dict[str, int]] = {}
++
++        for local, visit, gl, gv in partidos:
++            tabla[local]["gf"] += gl
++            tabla[local]["gc"] += gv
++            tabla[visit]["gf"] += gv
++            tabla[visit]["gc"] += gl
++            if gl > gv:
++                tabla[local]["pts"] += 3
++            elif gl < gv:
++                tabla[visit]["pts"] += 3
++            else:
++                tabla[local]["pts"] += 1
++                tabla[visit]["pts"] += 1
++            h2h[_pair_key(local, visit)] = {local: gl, visit: gv}
++
++        def clave_orden(e: str, _tabla=tabla):
++            return (-_tabla[e]["pts"], -(_tabla[e]["gf"] - _tabla[e]["gc"]), -_tabla[e]["gf"])
++
++        orden = sorted(equipos, key=clave_orden)
++
++        i = 0
++        while i < len(orden) - 1:
++            a, b = orden[i], orden[i + 1]
++            if clave_orden(a) == clave_orden(b):
++                enfrentamiento = h2h.get(_pair_key(a, b))
++                if enfrentamiento and enfrentamiento.get(a, 0) != enfrentamiento.get(b, 0):
++                    if enfrentamiento.get(b, 0) > enfrentamiento.get(a, 0):
++                        orden[i], orden[i + 1] = b, a
++                else:
++                    avisos.append(f"Grupo {grupo}: empate entre {a} y {b} no resoluble.")
++            i += 1
++
++        for pos, equipo in enumerate(orden, start=1):
++            resultado.append({"grupo": grupo, "pos": pos, "equipo": equipo})
++
++    return resultado, avisos
++
++
++__all__ = ["calcular_tabla_grupos"]
+diff --git a/tests/test_puntuar_v2.py b/tests/test_puntuar_v2.py
+index c316f8e6..b4fac96f 100644
+--- a/tests/test_puntuar_v2.py
++++ b/tests/test_puntuar_v2.py
+@@ -78,10 +78,6 @@ def pos_detalle(r):
+     return r["desglose"]["posiciones_grupo"]
+ 
+ 
+-def clas16_detalle(r):
+-    return r["desglose"]["clasificado_1_16_desde_grupos"]
+-
+-
+ def elim_detalle(r):
+     return r["desglose"]["elim_marcadores"]
+ 
+@@ -163,24 +159,22 @@ def test_posicion_grupo_fallada():
+     assert pos_detalle(result)["total"] == 0
+ 
+ 
+-def test_mejor_terceros_ocho_de_doce_pasan():
++def test_mejor_tercero_no_duplica_puntuacion():
+     """
+-    12 terceros pronosticados con mejor_tercero=True.
+-    Solo 8 aparecen en resultados.clasificados["1/16"].
+-    Los 8 puntúan +5 (clasificado_1_16_desde_grupos); los 4 restantes → 0.
++    Retirada (2026-07-03) la sección 'clasificado_1_16_desde_grupos': un
++    mejor-tercero acertado (posición Y clasificación real) ya no suma un +5
++    extra aparte de "posiciones_grupo" y "clasificados". La sección ya no
++    existe en el desglose.
+     """
+-    # 12 equipos como terceros
+     teams = [f"Team{i}" for i in range(12)]
+     pos_pred = [{"grupo": chr(65 + i), "pos": 3, "equipo": t, "mejor_tercero": True}
+                 for i, t in enumerate(teams)]
+-    # Solo los primeros 8 pasan
+     clasificados_real = {"1/16": teams[:8], "1/8": [], "1/4": [], "semis": [], "final": []}
+ 
+     p = pron(posiciones_grupo=pos_pred, clasificados=CLAS_VACIAS.copy())
+     r = res(clasificados=clasificados_real)
+     result = calcular(p, r)
+-    assert clas16_detalle(result)["total"] == 8 * 5  # 40 pts
+-    assert len(clas16_detalle(result)["detalle"]) == 8
++    assert "clasificado_1_16_desde_grupos" not in result["desglose"]
+ 
+ 
+ # ── Eliminatoria: marcador ───────────────────────────────────────────────────

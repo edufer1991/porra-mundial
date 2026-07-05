@@ -2,8 +2,11 @@
   "nickname": "Tucas",
   "porra": "amigos",
   "archivo_origen": "Tucas.xlsx",
-  "incompleto": false,
-  "advertencias": [],
+  "incompleto": true,
+  "advertencias": [
+    "posiciones_grupo: no se pudo parsear del Excel de origen (corrupto); se deriva automaticamente de los 72 marcadores de grupo en tiempo de puntuacion.",
+    "elim_marcadores: ausente en Tucas.xlsx (0 de 32 predicciones). No hay fuente para recuperarlo; contribuye 0 puntos a la seccion de eliminatoria hasta que Tucas reenvie sus pronosticos de eliminatoria."
+  ],
   "pronosticos": {
     "grupos": [
       {
@@ -1214,6 +1217,8 @@
       "goleador": "Dembele",
       "mvp": "Bernardo Silva",
       "portero": "Diogo Costa"
-    }
+    },
+    "posiciones_grupo": [],
+    "elim_marcadores": []
   }
 }

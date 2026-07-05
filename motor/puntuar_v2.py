@@ -5,7 +5,6 @@ puntuar_v2.py — Motor matejero de la Porra Mundial 2026.
 Sistema:
   · Grupos por partido:  signo=5  diferencia=2 (si signo)  exacto=8 (si diferencia)
   · Posición exacta 1-4 en su grupo: 5 c/u
-  · Clasificado a 1/16 (desde posiciones_grupo): 5 c/u
   · Eliminatoria por partido: signo=5  diferencia=2  exacto=8
   · Clasificados:  1/16→10  1/8→12  1/4→14  semis→16  final→20
   · Honor:  campeon=25  sub=20  3º=15  4º=10
@@ -13,6 +12,11 @@ Sistema:
   · Desempate: puntos_eliminatoria = clasificados + honor (SIN marcadores
     de eliminatoria, SIN grupos, SIN premios). Sólo cuentan equipos
     clasificados por ronda y posiciones de honor.
+
+  NOTA: se retiró (2026-07-03) el bono "clasificado a 1/16 desde
+  posiciones_grupo" (+5 extra por equipo pronosticado 1º/2º/mejor-tercero
+  que clasificaba). Duplicaba el acierto que ya paga "clasificados" (ronda
+  1/16, +10 c/u, sin depender del orden — regla oficial de matejero).
 
 Empate en 90' (penaltis):
   · signo=X puntúa si el marcador real terminó en X.
@@ -34,6 +38,10 @@ import json
 import unicodedata
 from pathlib import Path
 
+import sys
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from motor.tabla_grupo import calcular_tabla_grupos
+
 BASE        = Path(__file__).resolve().parent.parent
 CALENDARIO  = BASE / "datos" / "calendario.json"
 PRONOSTICOS = BASE / "datos" / "pronosticos"
@@ -44,7 +52,6 @@ ALIAS_JUGAD = BASE / "datos" / "alias_jugadores.json"  # opcional
 REGLAS_V2: dict = {
     "grupos_partido": {"signo": 5, "diferencia": 2, "exacto": 8},
     "posicion_exacta": 5,
-    "clasificado_1_16_desde_grupos": 5,
     "elim_partido":   {"signo": 5, "diferencia": 2, "exacto": 8},
     "clasificados": {
         "1/16":  10,
@@ -140,6 +147,35 @@ def _puntuar_grupos_partidos(grupos_pred: list[dict],
     return {"total": total, "detalle": detalle}
 
 
+# ── Sección: posiciones de grupo derivadas del pronóstico de marcadores ──────
+def _derivar_posiciones_grupo(grupos_pred: list[dict]) -> tuple[list[dict], list[str]]:
+    """
+    Deriva la tabla de grupo (1º-4º) que se desprende de los marcadores que el
+    participante pronosticó para los 72 partidos de grupos, usando el mismo
+    algoritmo de clasificación (puntos/DG/GF/enfrentamiento directo) que se
+    usa para la tabla real.
+
+    Se usa como ÚNICA fuente para "posiciones_grupo" cuando el pronóstico no
+    trae el bloque explícito (p. ej. porque el Excel de origen está corrupto
+    y no se puede reparsear): el marcador partido a partido SÍ está intacto
+    en el JSON ya parseado, así que de ahí se puede reconstruir de forma
+    determinista qué tabla esperaba el participante, sin inventar nada.
+    """
+    por_grupo: dict[str, list[tuple[str, str, int, int]]] = {}
+    for p in grupos_pred or []:
+        pred  = p.get("prediccion")
+        grupo = p.get("grupo")
+        local, visit = p.get("local"), p.get("visitante")
+        if not (pred and grupo and local and visit):
+            continue
+        gl = pred.get("goles_local")
+        gv = pred.get("goles_visitante")
+        if gl is None or gv is None:
+            continue
+        por_grupo.setdefault(grupo, []).append((local, visit, gl, gv))
+    return calcular_tabla_grupos(por_grupo, min_partidos=6)
+
+
 # ── Sección: posiciones de grupo (1º/2º/3º/4º) ───────────────────────────────
 def _puntuar_posiciones_grupo(pos_pred: list[dict],
                               pos_real: list[dict]) -> dict:
@@ -164,32 +200,13 @@ def _puntuar_posiciones_grupo(pos_pred: list[dict],
 
 
 # ── Sección: clasificado a 1/16 (desde posiciones_grupo) ─────────────────────
-def _puntuar_clasificado_1_16(pos_pred: list[dict],
-                              clas_1_16_real: list[str]) -> dict:
-    """
-    Por cada equipo del pronóstico en posiciones_grupo con pos in {1, 2}
-    o mejor_tercero=True, +5 si está en resultados.clasificados["1/16"].
-    """
-    real_set = {norm(e) for e in (clas_1_16_real or []) if e}
-    detalle: list[dict] = []
-    total = 0
-    R = REGLAS_V2["clasificado_1_16_desde_grupos"]
-    for p in pos_pred or []:
-        equipo = p.get("equipo")
-        if not equipo:
-            continue
-        es_pronosticado_clasif = (
-            p.get("pos") in (1, 2)
-            or p.get("mejor_tercero") is True
-        )
-        if es_pronosticado_clasif and norm(equipo) in real_set:
-            total += R
-            detalle.append({
-                "equipo": equipo,
-                "via":    f"grupo {p.get('grupo')} pos {p.get('pos')}" + (" (mejor 3º)" if p.get("mejor_tercero") else ""),
-                "pts":    R,
-            })
-    return {"total": total, "detalle": detalle}
+# NOTA (retirada 2026-07-03): esta sección otorgaba +5 extra por cada equipo
+# pronosticado como 1º/2º/mejor-tercero que efectivamente clasificaba a 1/16.
+# Se retira por duplicar el mismo acierto que ya paga la sección general
+# "clasificados" (ronda "1/16", +10 c/u, no depende del orden — así lo define
+# la regla oficial de matejero: "no importa el orden de clasificación").
+# Mantener ambas suponía cobrar dos veces por el mismo acierto para cualquier
+# equipo pronosticado en 1º/2º puesto.
 
 
 # ── Sección: marcadores de eliminatoria ──────────────────────────────────────
@@ -339,12 +356,19 @@ def puntuar_participante(pronostico: dict,
 
     marc_por_id = {m["match_id"]: m for m in (resultados.get("marcadores") or [])}
 
+    # posiciones_grupo: usar el bloque explícito del pronóstico si existe;
+    # si no (Excel de origen corrupto y no reparseable), derivarlo de los
+    # marcadores de grupo que el propio participante pronosticó.
+    pos_pred = pp.get("posiciones_grupo") or []
+    pos_pred_origen = "explicita"
+    if not pos_pred:
+        pos_pred, _avisos_pos = _derivar_posiciones_grupo(pp.get("grupos") or [])
+        pos_pred_origen = "derivada_de_marcadores_pronosticados"
+
     # Secciones
     secc_grupos = _puntuar_grupos_partidos(pp.get("grupos") or [], marc_por_id)
-    secc_pos    = _puntuar_posiciones_grupo(pp.get("posiciones_grupo") or [],
+    secc_pos    = _puntuar_posiciones_grupo(pos_pred,
                                             resultados.get("posiciones_grupo") or [])
-    secc_clas16g = _puntuar_clasificado_1_16(pp.get("posiciones_grupo") or [],
-                                             (resultados.get("clasificados") or {}).get("1/16") or [])
     secc_elim   = _puntuar_elim_marcadores(pp.get("elim_marcadores") or [],
                                            marc_por_id, cal_idx_por_id)
     secc_clas   = _puntuar_clasificados(pp.get("clasificados") or {},
@@ -358,7 +382,6 @@ def puntuar_participante(pronostico: dict,
     pts_grupos_totales = (
         secc_grupos["total"]
         + secc_pos["total"]
-        + secc_clas16g["total"]
     )
     # Suma de todos los puntos de la fase eliminatoria (para el total)
     pts_fase_eliminatoria_total = (
@@ -391,8 +414,7 @@ def puntuar_participante(pronostico: dict,
         "puntos_eliminatoria":       pts_eliminatoria_desempate,
         "desglose": {
             "grupos":            secc_grupos,
-            "posiciones_grupo":  secc_pos,
-            "clasificado_1_16_desde_grupos": secc_clas16g,
+            "posiciones_grupo":  {**secc_pos, "origen": pos_pred_origen},
             "elim_marcadores":   secc_elim,
             "clasificados":      secc_clas,
             "honor":             secc_honor,

@@ -23,6 +23,9 @@ import urllib.request
 from datetime import datetime, timezone
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+from motor.tabla_grupo import calcular_tabla_grupos
+
 BASE         = Path(__file__).resolve().parent.parent
 CALENDARIO   = BASE / "datos" / "calendario.json"
 RESULTADOS   = BASE / "datos" / "resultados.json"
@@ -77,6 +80,10 @@ def norm(t) -> str:
         return ""
     s = unicodedata.normalize("NFD", str(t))
     return "".join(c for c in s if unicodedata.category(c) != "Mn").strip().lower()
+
+
+def _pair_key(a: str, b: str) -> frozenset:
+    return frozenset({a, b})
 
 
 def _es_placeholder(nombre: str) -> bool:
@@ -148,6 +155,25 @@ def _score_ft(score: dict | None) -> tuple[int, int] | None:
     return None
 
 
+def _score_para_marcador(score: dict | None) -> tuple[int, int] | None:
+    """
+    Marcador que cuenta para puntuar signo/diferencia/exacto, según la regla
+    oficial de matejero para eliminatorias: si el 90' termina en empate y hay
+    resultado de prórroga, cuenta el marcador de la prórroga (120'); si no hay
+    empate al 90', cuenta el resultado del 90'.
+    Ref: https://matejero.es/faq-porra-mundial-2026-excel/
+    """
+    ft = _score_ft(score)
+    if ft is None:
+        return None
+    if ft[0] != ft[1]:
+        return ft
+    et = (score or {}).get("et")
+    if et and len(et) == 2 and et[0] is not None and et[1] is not None:
+        return int(et[0]), int(et[1])
+    return ft
+
+
 def _ganador_perdedor(match: dict) -> tuple[str | None, str | None]:
     """Devuelve (ganador, perdedor). Usa penaltis > prorroga > T.R."""
     score = match.get("score") or {}
@@ -162,20 +188,53 @@ def _ganador_perdedor(match: dict) -> tuple[str | None, str | None]:
     return None, None
 
 
+_RE_OF_TIME = re.compile(r'^\s*(\d{1,2}):(\d{2})(?:\s*UTC([+-]\d{1,2}(?::?\d{2})?))?\s*$')
+
+
+def _of_datetime_a_utc_iso(fecha: str, hora: str) -> str | None:
+    """
+    Convierte (date, time) de openfootball a 'YYYY-MM-DDTHH:MM:SSZ' en UTC real.
+
+    openfootball expresa 'time' en hora LOCAL de la sede con el offset incluido,
+    p.ej. '12:00 UTC-7' o '16:30 UTC-4'. Hay que restar el offset para obtener
+    la hora UTC real; si no hay offset (p.ej. en tests o fuentes ya en UTC),
+    se asume que 'hora' ya está en UTC.
+    """
+    m = _RE_OF_TIME.match(hora or "")
+    if not m:
+        return None
+    hh, mm, offset = m.groups()
+    try:
+        dt_local = datetime.strptime(f"{fecha} {hh}:{mm}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+    except ValueError:
+        return None
+    if offset:
+        offset = offset.replace(":", "")
+        sign = -1 if offset[0] == "-" else 1
+        offset = offset.lstrip("+-")
+        off_h = int(offset[:2]) if len(offset) >= 2 else int(offset)
+        off_m = int(offset[2:]) if len(offset) > 2 else 0
+        # dt_local es hora local = UTC + offset  →  UTC = local - offset
+        from datetime import timedelta
+        dt_local = dt_local - timedelta(hours=sign * off_h, minutes=sign * off_m)
+    return dt_local.strftime("%Y-%m-%dT%H:%M:%SZ")
+
+
 def _determinar_estado(match: dict, ahora: datetime | None = None) -> str:
     if _score_ft(match.get("score")):
         return "finalizado"
     fecha = match.get("date")
     hora  = match.get("time", "00:00")
     if fecha and ahora:
-        try:
-            ts_str = f"{fecha}T{hora}:00Z"
-            ts = datetime.strptime(ts_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
-            diff = (ahora - ts).total_seconds()
-            if 0 <= diff <= 7200:
-                return "en_juego"
-        except ValueError:
-            pass
+        ts_str = _of_datetime_a_utc_iso(fecha, hora)
+        if ts_str:
+            try:
+                ts = datetime.strptime(ts_str, "%Y-%m-%dT%H:%M:%SZ").replace(tzinfo=timezone.utc)
+                diff = (ahora - ts).total_seconds()
+                if 0 <= diff <= 7200:
+                    return "en_juego"
+            except ValueError:
+                pass
     return "pendiente"
 
 
@@ -302,15 +361,16 @@ def parsear_openfootball(
                 else:
                     honor["campeon"], honor["subcampeon"] = t2_real, t1_real
 
-        # Record FT marcador for elimination match when we have real teams and a time index
+        # Record marcador for elimination match when we have real teams and a time index
+        # (usa 120' si el 90' fue empate, según regla oficial de matejero)
         if t1_real and t2_real and elim_time_idx is not None:
-            ft = _score_ft(match.get("score"))
+            ft = _score_para_marcador(match.get("score"))
             if ft:
                 of_date = match.get("date", "")
                 of_time = match.get("time", "00:00")
                 if of_date:
-                    dt_str = f"{of_date}T{of_time}:00Z"
-                    mid = elim_time_idx.get(dt_str)
+                    dt_str = _of_datetime_a_utc_iso(of_date, of_time)
+                    mid = elim_time_idx.get(dt_str) if dt_str else None
                     if mid is not None:
                         marcadores.append({
                             "match_id": mid,
@@ -328,6 +388,38 @@ def parsear_openfootball(
         "honor":        honor,
         "stats":        stats,
     }
+
+
+# ── Posiciones finales de grupo (1º-4º) ───────────────────────────────────────
+
+def _calcular_posiciones_grupo(calendario: dict, marcadores: list[dict]) -> list[dict]:
+    """
+    Calcula la clasificación 1º-4º real de cada grupo a partir de los partidos
+    de grupo finalizados, usando motor.tabla_grupo (mismo algoritmo que se usa
+    para derivar la tabla implícita de cada participante en puntuar_v2.py).
+    """
+    marc_por_id = {m["match_id"]: m for m in marcadores}
+    partidos_por_grupo: dict[str, list[tuple[str, str, int, int]]] = {}
+
+    for p in calendario.get("partidos", []):
+        if p.get("fase") != "grupos":
+            continue
+        m = marc_por_id.get(p["id"])
+        if not m or m.get("estado") != "finalizado":
+            continue
+        gl, gv = m.get("goles_local"), m.get("goles_visitante")
+        if gl is None or gv is None:
+            continue
+        partidos_por_grupo.setdefault(p["grupo"], []).append((p["local"], p["visitante"], gl, gv))
+
+    posiciones, avisos = calcular_tabla_grupos(partidos_por_grupo, min_partidos=6)
+
+    if avisos:
+        print("  [AVISO] posiciones_grupo con empates no resueltos:")
+        for a in avisos:
+            print(f"    - {a}")
+
+    return posiciones
 
 
 # ── Premios manuales ──────────────────────────────────────────────────────────
@@ -419,6 +511,7 @@ def main() -> None:
             m.update(finalizados_previos[m["match_id"]])
 
     premios = cargar_premios()
+    posiciones_grupo = _calcular_posiciones_grupo(calendario, resultado["marcadores"])
 
     ahora_iso = ahora.strftime("%Y-%m-%dT%H:%M:%SZ")
     salida_dict = {
@@ -427,10 +520,11 @@ def main() -> None:
             "Actualizado automaticamente por motor/descargar_resultados.py."
         ),
         "ultima_actualizacion": ahora_iso,
-        "marcadores":   resultado["marcadores"],
-        "clasificados": resultado["clasificados"],
-        "honor":        resultado["honor"],
-        "premios":      premios,
+        "marcadores":       resultado["marcadores"],
+        "posiciones_grupo": posiciones_grupo,
+        "clasificados":     resultado["clasificados"],
+        "honor":            resultado["honor"],
+        "premios":          premios,
     }
 
     guardar_resultados(salida_dict, salida)
@@ -445,6 +539,9 @@ def main() -> None:
           f"  (marcadores guardados: {stats.get('elim_marcadores', 0)})")
     print(f"  Clasificados por ronda        : "
           + ", ".join(f"{k}={len(v)}" for k, v in resultado["clasificados"].items()))
+    grupos_completos = sorted({p["grupo"] for p in posiciones_grupo})
+    print(f"  Posiciones de grupo calculadas: {len(grupos_completos)}/12 grupos "
+          f"({len(posiciones_grupo)} equipos posicionados)")
     print(f"  Honor  : {resultado['honor']}")
     print(f"  Premios: {premios}")
     if ano != "2026":
