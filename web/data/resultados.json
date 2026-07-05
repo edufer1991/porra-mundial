@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-07-05T17:52:30Z",
+  "ultima_actualizacion": "2026-07-05T18:02:32Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -433,10 +433,413 @@
       "estado": "finalizado",
       "goles_local": 2,
       "goles_visitante": 1
+    },
+    {
+      "match_id": 73,
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "local": "South Africa",
+      "visitante": "Canada"
+    },
+    {
+      "match_id": 74,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "local": "Germany",
+      "visitante": "Paraguay"
+    },
+    {
+      "match_id": 75,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "local": "Netherlands",
+      "visitante": "Morocco"
+    },
+    {
+      "match_id": 76,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "local": "Brazil",
+      "visitante": "Japan"
+    },
+    {
+      "match_id": 77,
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 0,
+      "local": "France",
+      "visitante": "Sweden"
+    },
+    {
+      "match_id": 78,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "local": "Ivory Coast",
+      "visitante": "Norway"
+    },
+    {
+      "match_id": 79,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "local": "Mexico",
+      "visitante": "Ecuador"
+    },
+    {
+      "match_id": 80,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "local": "England",
+      "visitante": "DR Congo"
+    },
+    {
+      "match_id": 81,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "local": "USA",
+      "visitante": "Bosnia-Herzegovina"
+    },
+    {
+      "match_id": 82,
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 2,
+      "local": "Belgium",
+      "visitante": "Senegal"
+    },
+    {
+      "match_id": 83,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "local": "Portugal",
+      "visitante": "Croatia"
+    },
+    {
+      "match_id": 84,
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 0,
+      "local": "Spain",
+      "visitante": "Austria"
+    },
+    {
+      "match_id": 85,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "local": "Switzerland",
+      "visitante": "Algeria"
+    },
+    {
+      "match_id": 86,
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 2,
+      "local": "Argentina",
+      "visitante": "Cape Verde"
+    },
+    {
+      "match_id": 87,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 0,
+      "local": "Colombia",
+      "visitante": "Ghana"
+    },
+    {
+      "match_id": 88,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 1,
+      "local": "Australia",
+      "visitante": "Egypt"
+    },
+    {
+      "match_id": 89,
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 1,
+      "local": "Paraguay",
+      "visitante": "France"
+    },
+    {
+      "match_id": 90,
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 3,
+      "local": "Canada",
+      "visitante": "Morocco"
+    }
+  ],
+  "posiciones_grupo": [
+    {
+      "grupo": "A",
+      "pos": 1,
+      "equipo": "Mexico"
+    },
+    {
+      "grupo": "A",
+      "pos": 2,
+      "equipo": "South Africa"
+    },
+    {
+      "grupo": "A",
+      "pos": 3,
+      "equipo": "South Korea"
+    },
+    {
+      "grupo": "A",
+      "pos": 4,
+      "equipo": "Czech Republic"
+    },
+    {
+      "grupo": "B",
+      "pos": 1,
+      "equipo": "Switzerland"
+    },
+    {
+      "grupo": "B",
+      "pos": 2,
+      "equipo": "Canada"
+    },
+    {
+      "grupo": "B",
+      "pos": 3,
+      "equipo": "Bosnia-Herzegovina"
+    },
+    {
+      "grupo": "B",
+      "pos": 4,
+      "equipo": "Qatar"
+    },
+    {
+      "grupo": "C",
+      "pos": 1,
+      "equipo": "Brazil"
+    },
+    {
+      "grupo": "C",
+      "pos": 2,
+      "equipo": "Morocco"
+    },
+    {
+      "grupo": "C",
+      "pos": 3,
+      "equipo": "Scotland"
+    },
+    {
+      "grupo": "C",
+      "pos": 4,
+      "equipo": "Haiti"
+    },
+    {
+      "grupo": "D",
+      "pos": 1,
+      "equipo": "USA"
+    },
+    {
+      "grupo": "D",
+      "pos": 2,
+      "equipo": "Australia"
+    },
+    {
+      "grupo": "D",
+      "pos": 3,
+      "equipo": "Paraguay"
+    },
+    {
+      "grupo": "D",
+      "pos": 4,
+      "equipo": "Turkey"
+    },
+    {
+      "grupo": "E",
+      "pos": 1,
+      "equipo": "Germany"
+    },
+    {
+      "grupo": "E",
+      "pos": 2,
+      "equipo": "Ivory Coast"
+    },
+    {
+      "grupo": "E",
+      "pos": 3,
+      "equipo": "Ecuador"
+    },
+    {
+      "grupo": "E",
+      "pos": 4,
+      "equipo": "Curacao"
+    },
+    {
+      "grupo": "F",
+      "pos": 1,
+      "equipo": "Netherlands"
+    },
+    {
+      "grupo": "F",
+      "pos": 2,
+      "equipo": "Japan"
+    },
+    {
+      "grupo": "F",
+      "pos": 3,
+      "equipo": "Sweden"
+    },
+    {
+      "grupo": "F",
+      "pos": 4,
+      "equipo": "Tunisia"
+    },
+    {
+      "grupo": "G",
+      "pos": 1,
+      "equipo": "Belgium"
+    },
+    {
+      "grupo": "G",
+      "pos": 2,
+      "equipo": "Egypt"
+    },
+    {
+      "grupo": "G",
+      "pos": 3,
+      "equipo": "Iran"
+    },
+    {
+      "grupo": "G",
+      "pos": 4,
+      "equipo": "New Zealand"
+    },
+    {
+      "grupo": "H",
+      "pos": 1,
+      "equipo": "Spain"
+    },
+    {
+      "grupo": "H",
+      "pos": 2,
+      "equipo": "Cape Verde"
+    },
+    {
+      "grupo": "H",
+      "pos": 3,
+      "equipo": "Uruguay"
+    },
+    {
+      "grupo": "H",
+      "pos": 4,
+      "equipo": "Saudi Arabia"
+    },
+    {
+      "grupo": "I",
+      "pos": 1,
+      "equipo": "France"
+    },
+    {
+      "grupo": "I",
+      "pos": 2,
+      "equipo": "Norway"
+    },
+    {
+      "grupo": "I",
+      "pos": 3,
+      "equipo": "Senegal"
+    },
+    {
+      "grupo": "I",
+      "pos": 4,
+      "equipo": "Iraq"
+    },
+    {
+      "grupo": "J",
+      "pos": 1,
+      "equipo": "Argentina"
+    },
+    {
+      "grupo": "J",
+      "pos": 2,
+      "equipo": "Austria"
+    },
+    {
+      "grupo": "J",
+      "pos": 3,
+      "equipo": "Algeria"
+    },
+    {
+      "grupo": "J",
+      "pos": 4,
+      "equipo": "Jordan"
+    },
+    {
+      "grupo": "K",
+      "pos": 1,
+      "equipo": "Colombia"
+    },
+    {
+      "grupo": "K",
+      "pos": 2,
+      "equipo": "Portugal"
+    },
+    {
+      "grupo": "K",
+      "pos": 3,
+      "equipo": "DR Congo"
+    },
+    {
+      "grupo": "K",
+      "pos": 4,
+      "equipo": "Uzbekistan"
+    },
+    {
+      "grupo": "L",
+      "pos": 1,
+      "equipo": "England"
+    },
+    {
+      "grupo": "L",
+      "pos": 2,
+      "equipo": "Croatia"
+    },
+    {
+      "grupo": "L",
+      "pos": 3,
+      "equipo": "Ghana"
+    },
+    {
+      "grupo": "L",
+      "pos": 4,
+      "equipo": "Panama"
     }
   ],
   "clasificados": {
-    "semis": [],
+    "1/8": [
+      "Argentina",
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Colombia",
+      "Egypt",
+      "England",
+      "France",
+      "Mexico",
+      "Morocco",
+      "Norway",
+      "Paraguay",
+      "Portugal",
+      "Spain",
+      "Switzerland",
+      "USA"
+    ],
     "1/16": [
       "Algeria",
       "Argentina",
@@ -473,24 +876,7 @@
     ],
     "final": [],
     "1/4": [],
-    "1/8": [
-      "Argentina",
-      "Belgium",
-      "Brazil",
-      "Canada",
-      "Colombia",
-      "Egypt",
-      "England",
-      "France",
-      "Mexico",
-      "Morocco",
-      "Norway",
-      "Paraguay",
-      "Portugal",
-      "Spain",
-      "Switzerland",
-      "USA"
-    ]
+    "semis": []
   },
   "honor": {
     "campeon": null,
