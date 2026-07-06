@@ -1,35 +1,5 @@
 [
   {
-    "match_id": 93,
-    "fecha_hora_utc": "2026-07-06T19:00:00Z",
-    "fase": "1/8",
-    "grupo": "",
-    "jornada": "",
-    "local": "Portugal",
-    "visitante": "Spain",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Goal Digger",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      }
-    ]
-  },
-  {
     "match_id": 94,
     "fecha_hora_utc": "2026-07-07T00:00:00Z",
     "fase": "1/8",

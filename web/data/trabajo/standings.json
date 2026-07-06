@@ -1,6 +1,6 @@
 {
   "porra": "trabajo",
-  "ultima_actualizacion": "2026-07-06T20:15:20Z",
+  "ultima_actualizacion": "2026-07-06T21:14:42Z",
   "clasificacion": [
     {
       "nickname": "Media Naranja",
@@ -10930,14 +10930,14 @@
       "nickname": "Goal Digger",
       "porra": "trabajo",
       "puntos_grupos": 408,
-      "puntos_eliminatorias": 392,
+      "puntos_eliminatorias": 397,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 408,
       "puntos_fase_eliminatoria": 372,
-      "puntos_total": 800,
+      "puntos_total": 805,
       "advertencias_premios": [],
-      "total": 800,
+      "total": 805,
       "puntos_eliminatoria": 372,
       "desglose": {
         "grupos": {
@@ -11540,7 +11540,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 20,
+          "total": 25,
           "detalle": [
             {
               "ronda": "1/16",
@@ -11565,6 +11565,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Portugal-Spain",
+              "pred": "2|1-3",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -16888,14 +16900,14 @@
       "nickname": "The French Knicks fan",
       "porra": "trabajo",
       "puntos_grupos": 340,
-      "puntos_eliminatorias": 358,
+      "puntos_eliminatorias": 363,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 340,
       "puntos_fase_eliminatoria": 336,
-      "puntos_total": 698,
+      "puntos_total": 703,
       "advertencias_premios": [],
-      "total": 698,
+      "total": 703,
       "puntos_eliminatoria": 336,
       "desglose": {
         "grupos": {
@@ -17462,7 +17474,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 22,
+          "total": 27,
           "detalle": [
             {
               "ronda": "1/16",
@@ -17487,6 +17499,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Portugal-Spain",
+              "pred": "2|0-2",
+              "real": "2|0-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },

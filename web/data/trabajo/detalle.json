@@ -2095,7 +2095,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Spain en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Colombia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -2128,7 +2128,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -2358,6 +2358,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -4867,7 +4876,7 @@
         "gv": 4,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Portugal juega contra Spain, no contra New Zealand en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra New Zealand en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -5097,6 +5106,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -7591,7 +7609,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra Croatia en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -7624,7 +7642,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -7836,6 +7854,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -10574,6 +10601,15 @@
           "gl": 2,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
         }
       ]
     },
@@ -13067,7 +13103,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra Croatia en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -13099,7 +13135,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -13312,6 +13348,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -15806,7 +15851,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra Croatia en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -16050,6 +16095,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -18506,8 +18560,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 3,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -21254,7 +21318,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Spain en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Colombia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -21287,7 +21351,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -21527,6 +21591,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -24003,7 +24076,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Portugal juega contra Spain, no contra Uruguay en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Uruguay en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -24265,6 +24338,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -26777,7 +26859,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra Croatia en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -26809,7 +26891,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -27003,6 +27085,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -29470,7 +29561,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Spain en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Colombia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -29503,7 +29594,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -29742,6 +29833,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -32481,6 +32581,15 @@
           "gl": 2,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
         }
       ]
     },
@@ -34983,7 +35092,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Spain en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Colombia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -35015,7 +35124,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -35219,6 +35328,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -37713,7 +37831,7 @@
         "gv": 4,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Spain en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Colombia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -37746,7 +37864,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -37958,6 +38076,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -40449,7 +40576,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -40697,6 +40824,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -43436,6 +43572,15 @@
           "gl": 2,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
         }
       ]
     },
@@ -46173,6 +46318,15 @@
           "gl": 2,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
         }
       ]
     },
@@ -48648,7 +48802,7 @@
         "gv": 4,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra DR Congo en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra DR Congo en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -48681,7 +48835,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -48911,6 +49065,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -51411,7 +51574,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -51650,6 +51813,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -54108,7 +54280,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra DR Congo en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra DR Congo en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -54140,7 +54312,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Portugal juega contra Spain, no contra Algeria en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Algeria en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -54389,6 +54561,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -56863,8 +57044,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -59865,6 +60056,15 @@
           "gl": 2,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
+          "signo": "2"
         }
       ]
     },
@@ -62391,7 +62591,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Portugal en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Switzerland en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -62602,6 +62802,15 @@
           "visitante": "England",
           "gl": 2,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
@@ -65060,7 +65269,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Portugal, no contra Croatia en esta ronda"
+        "motivo": "Spain jugó contra Portugal, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -65092,7 +65301,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Portugal juega contra Spain, no contra Iran en esta ronda"
+        "motivo": "Portugal jugó contra Spain, no contra Iran en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -65341,6 +65550,15 @@
           "visitante": "Norway",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 93,
+          "local": "Portugal",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 1,
           "signo": "2"
         }
       ]
