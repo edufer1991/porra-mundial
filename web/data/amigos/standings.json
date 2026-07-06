@@ -1,19 +1,19 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-06T02:14:43Z",
+  "ultima_actualizacion": "2026-07-06T03:14:39Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 537,
-      "puntos_eliminatorias": 466,
+      "puntos_eliminatorias": 473,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 537,
       "puntos_fase_eliminatoria": 436,
-      "puntos_total": 1003,
+      "puntos_total": 1010,
       "advertencias_premios": [],
-      "total": 1003,
+      "total": 1010,
       "puntos_eliminatoria": 436,
       "desglose": {
         "grupos": {
@@ -814,7 +814,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 30,
+          "total": 37,
           "detalle": [
             {
               "ronda": "1/16",
@@ -887,6 +887,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|1-2",
+              "real": "2|2-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -920,14 +932,14 @@
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
       "puntos_grupos": 528,
-      "puntos_eliminatorias": 451,
+      "puntos_eliminatorias": 458,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 528,
       "puntos_fase_eliminatoria": 426,
-      "puntos_total": 979,
+      "puntos_total": 986,
       "advertencias_premios": [],
-      "total": 979,
+      "total": 986,
       "puntos_eliminatoria": 426,
       "desglose": {
         "grupos": {
@@ -1680,7 +1692,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 25,
+          "total": 32,
           "detalle": [
             {
               "ronda": "1/16",
@@ -1717,6 +1729,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|0-1",
+              "real": "2|2-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -1750,14 +1774,14 @@
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 467,
-      "puntos_eliminatorias": 478,
+      "puntos_eliminatorias": 483,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 467,
       "puntos_fase_eliminatoria": 428,
-      "puntos_total": 945,
+      "puntos_total": 950,
       "advertencias_premios": [],
-      "total": 945,
+      "total": 950,
       "puntos_eliminatoria": 428,
       "desglose": {
         "grupos": {
@@ -2504,7 +2528,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 50,
+          "total": 55,
           "detalle": [
             {
               "ronda": "1/16",
@@ -2553,6 +2577,18 @@
                 "exacto": true
               },
               "pts": 15
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|0-2",
+              "real": "2|2-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -2586,14 +2622,14 @@
       "nickname": "Pol",
       "porra": "amigos",
       "puntos_grupos": 494,
-      "puntos_eliminatorias": 429,
+      "puntos_eliminatorias": 434,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 494,
       "puntos_fase_eliminatoria": 414,
-      "puntos_total": 923,
+      "puntos_total": 928,
       "advertencias_premios": [],
-      "total": 923,
+      "total": 928,
       "puntos_eliminatoria": 414,
       "desglose": {
         "grupos": {
@@ -3340,7 +3376,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 15,
+          "total": 20,
           "detalle": [
             {
               "ronda": "1/16",
@@ -3371,6 +3407,18 @@
               "partido": "Spain-Austria",
               "pred": "1|2-0",
               "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|0-2",
+              "real": "2|2-3",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -3410,14 +3458,14 @@
       "nickname": "Jordi",
       "porra": "amigos",
       "puntos_grupos": 470,
-      "puntos_eliminatorias": 441,
+      "puntos_eliminatorias": 446,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 470,
       "puntos_fase_eliminatoria": 406,
-      "puntos_total": 911,
+      "puntos_total": 916,
       "advertencias_premios": [],
-      "total": 911,
+      "total": 916,
       "puntos_eliminatoria": 406,
       "desglose": {
         "grupos": {
@@ -4158,7 +4206,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 35,
+          "total": 40,
           "detalle": [
             {
               "ronda": "1/16",
@@ -4189,6 +4237,18 @@
               "partido": "Spain-Austria",
               "pred": "1|3-1",
               "real": "1|3-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|0-2",
+              "real": "2|2-3",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -4998,14 +5058,14 @@
       "nickname": "Maximo10",
       "porra": "amigos",
       "puntos_grupos": 468,
-      "puntos_eliminatorias": 402,
+      "puntos_eliminatorias": 409,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 468,
       "puntos_fase_eliminatoria": 392,
-      "puntos_total": 870,
+      "puntos_total": 877,
       "advertencias_premios": [],
-      "total": 870,
+      "total": 877,
       "puntos_eliminatoria": 392,
       "desglose": {
         "grupos": {
@@ -5710,7 +5770,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 10,
+          "total": 17,
           "detalle": [
             {
               "ronda": "1/16",
@@ -5735,6 +5795,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Mexico-England",
+              "pred": "2|1-2",
+              "real": "2|2-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
