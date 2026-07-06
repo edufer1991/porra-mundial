@@ -1,1 +1,242 @@
-[]
+[
+  {
+    "match_id": 91,
+    "fecha_hora_utc": "2026-07-05T20:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "Brazil",
+    "visitante": "Norway",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 1,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pol",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pulpo Paul",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 92,
+    "fecha_hora_utc": "2026-07-06T00:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "Mexico",
+    "visitante": "England",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Maximo10",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Pol",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 93,
+    "fecha_hora_utc": "2026-07-06T19:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "Portugal",
+    "visitante": "Spain",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": []
+  },
+  {
+    "match_id": 94,
+    "fecha_hora_utc": "2026-07-07T00:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "USA",
+    "visitante": "Belgium",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Maximo10",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Mguitart",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 1,
+          "goles_visitante": 2
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 95,
+    "fecha_hora_utc": "2026-07-07T16:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "Argentina",
+    "visitante": "Egypt",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Ubi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 96,
+    "fecha_hora_utc": "2026-07-07T20:00:00Z",
+    "fase": "1/8",
+    "grupo": "",
+    "jornada": "",
+    "local": "Switzerland",
+    "visitante": "Colombia",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": []
+  },
+  {
+    "match_id": 97,
+    "fecha_hora_utc": "2026-07-09T20:00:00Z",
+    "fase": "1/4",
+    "grupo": "",
+    "jornada": "",
+    "local": "France",
+    "visitante": "Morocco",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Jordi",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mr_Jusi_17",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      }
+    ]
+  }
+]

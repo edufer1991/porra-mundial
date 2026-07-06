@@ -930,6 +930,7 @@ a      { color: inherit; text-decoration: none; }
 .pred-cell-val.hit-sign  { color: var(--green); }
 .pred-cell-val.hit-diff  { color: var(--green); font-size: calc(1rem + 2px); }
 .pred-cell-val.hit-exact { color: var(--green); font-size: calc(1rem + 4px); font-weight: 900; }
+.pred-cell-val.hit-none  { color: var(--text3); font-weight: 500; }
 
 /* Badges G / D / E */
 .pred-badges {
@@ -1168,6 +1169,75 @@ a      { color: inherit; text-decoration: none; }
 .mcp-badge.hit     { background: rgba(74,222,128,.12); color: var(--green); }
 .mcp-badge.miss    { background: rgba(248,113,113,.08); color: rgba(252,165,165,.65); }
 .mcp-badge.neutral { background: rgba(255,255,255,.04); color: var(--text3); }
+
+/* ── Mi Porra — variantes de tarjeta y micro-etiquetas de estado ─────────── */
+
+/* Etiqueta de estado en la esquina superior derecha (usa el slot .mcp-date). */
+.mcp-date.mcp-status-warn    { color: var(--accent); }
+.mcp-date.mcp-status-miss    { color: rgba(252,165,165,.75); }
+.mcp-date.mcp-status-pending { color: var(--text3); }
+
+/* Cruce que nunca se produjo — apagado, borde neutro. */
+.mcp-card.mcp-cruce-no {
+  border-color: var(--border);
+  opacity: .78;
+}
+.mcp-card.mcp-cruce-no .mcp-score-big.miss {
+  font-size: 1.05rem;
+  letter-spacing: .04em;
+  color: var(--text3);
+}
+
+/* Sin jugar aún, ambos equipos vivos — borde muy tenue en ámbar. */
+.mcp-card.mcp-pending-fixture {
+  border-color: var(--accent-border);
+  background: var(--accent-dim);
+}
+
+/* Partido REAL sin pronóstico — informativo, gris, sin acento. */
+.mcp-card.mcp-sin-pronostico {
+  border-color: var(--border);
+  background: rgba(255,255,255,.02);
+  opacity: .82;
+}
+.mcp-card.mcp-sin-pronostico .mcp-score-big.miss {
+  color: var(--text2);
+}
+.mcp-card.mcp-sin-pronostico .mcp-pred-row {
+  color: var(--text3);
+  font-style: italic;
+}
+
+/* Segunda línea aclaratoria (motivo del cruce que no ocurrió). */
+.mcp-pred-row--reason {
+  font-style: italic;
+  color: var(--text3);
+  margin-top: -2px;
+}
+
+/* Filas de posiciones_grupo dentro de una .mcp-card (sin borde externo extra). */
+.pg-rows { display: flex; flex-direction: column; }
+.pg-rows .match-row {
+  padding: 8px 4px;
+  border-bottom: 1px solid var(--border);
+  background: transparent;
+}
+.pg-rows .match-row:last-child { border-bottom: none; }
+.pg-rows .match-row.correct    { background: rgba(74,222,128,.04); }
+.pg-rows .match-row.wrong      { background: rgba(248,113,113,.03); }
+.pg-rows .match-row.pending    { opacity: .65; }
+
+/* Grid de chips para "Clasificados por ronda". */
+.clasif-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-top: 4px;
+}
+.clasif-grid .mcp-badge {
+  display: inline-block;
+  margin-top: 0;
+}
 
 
 /* ── Scrollbar ───────────────────────────────────────────────────────────── */

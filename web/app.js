@@ -322,17 +322,6 @@ function matchRowV2(idx, local, visitante, pred, resultado, honorCls='') {
   </div>`;
 }
 
-function findElimResult(local, visitante, marcadores) {
-  const nl = normStr(local), nv = normStr(visitante);
-  for (const m of (marcadores||[])) {
-    if (m.estado !== 'finalizado' || !m.local) continue;
-    const ml = normStr(m.local), mv = normStr(m.visitante);
-    if (ml===nl && mv===nv) return { goles_local:m.goles_local, goles_visitante:m.goles_visitante };
-    if (ml===nv && mv===nl) return { goles_local:m.goles_visitante, goles_visitante:m.goles_local };
-  }
-  return null;
-}
-
 // ── Mi Porra helpers ──────────────────────────────────────────────────────────
 function fmtCEST(iso) {
   if (!iso) return '';
@@ -342,27 +331,13 @@ function fmtCEST(iso) {
   });
 }
 
-const RONDAS_PTS  = { '1/16': 10, '1/8': 12, '1/4': 14, 'semis': 16, 'final': 20 };
-const NEXT_ROUND  = { '1/16': '1/8', '1/8': '1/4', '1/4': 'semis', 'semis': 'final' };
 const ROUND_LABEL = { '1/16': 'Dieciseisavos', '1/8': 'Octavos', '1/4': 'Cuartos',
                       'semis': 'Semifinales', '3-4': '3.er y 4.º puesto', 'final': 'Final' };
 const RONDA_ORDER = { '1/16': 0, '1/8': 1, '1/4': 2, 'semis': 3, '3-4': 4, 'final': 5 };
+const CLASIF_RONDAS = ['1/16','1/8','1/4','semis','final'];
 
-function elimClassifBadges(local, visitante, ronda, predClasifs, realClasifs) {
-  const nextRound = NEXT_ROUND[ronda];
-  if (!nextRound) return [];
-  const predSet = new Set((predClasifs?.[nextRound] || []).map(normStr));
-  const realSet = new Set((realClasifs?.[nextRound] || []).map(normStr));
-  const hasReal = realSet.size > 0;
-  const pts     = RONDAS_PTS[nextRound] || 0;
-  const label   = ROUND_LABEL[nextRound] || nextRound;
-  return [local, visitante].filter(t => t && predSet.has(normStr(t))).map(team => ({
-    team, pts, label,
-    hit: hasReal ? realSet.has(normStr(team)) : null,
-  }));
-}
-
-function mcpCard(fase, fechaStr, local, visitante, pred, resultado, classifBadges) {
+// Tarjeta de partido para la fase de GRUPOS (marcador puntuable).
+function mcpCard(fase, fechaStr, local, visitante, pred, resultado) {
   const pgl = pred?.gl ?? pred?.goles_local;
   const pgv = pred?.gv ?? pred?.goles_visitante;
   const predStr = pred ? `${pred.signo}|${pgl}-${pgv}` : '—';
@@ -398,13 +373,6 @@ function mcpCard(fase, fechaStr, local, visitante, pred, resultado, classifBadge
       <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>`;
   }
 
-  const badgesHtml = (classifBadges || []).map(b => {
-    if (b.hit === null) return `<div class="mcp-badge neutral">⏳ ${escHtml(b.team)} clasif. a ${escHtml(b.label)} +${b.pts}pts</div>`;
-    return b.hit
-      ? `<div class="mcp-badge hit">✓ ${escHtml(b.team)} clasif. a ${escHtml(b.label)} +${b.pts}pts</div>`
-      : `<div class="mcp-badge miss">✗ ${escHtml(b.team)} no clasif. a ${escHtml(b.label)}</div>`;
-  }).join('');
-
   return `<div class="mcp-card${cardMod}">
     <div class="mcp-head">
       <span class="mcp-fase">${escHtml(fase)}</span>
@@ -412,36 +380,195 @@ function mcpCard(fase, fechaStr, local, visitante, pred, resultado, classifBadge
     </div>
     ${scoreHtml}
     ${indHtml}
-    ${badgesHtml}
+  </div>`;
+}
+
+
+// Tarjeta de PARTIDO DE ELIMINATORIA. El backend precalcula el estado
+// (5 valores posibles) y trae `resultado`, `niveles`, `pts`, `motivo`.
+// Ver motor/generar_sitio.py::_estado_elim_marcador.
+function elimCard(rondaLabel, entry) {
+  const L = entry.local, V = entry.visitante;
+  const predStr = (entry.signo != null && entry.gl != null && entry.gv != null)
+    ? `${entry.signo}|${entry.gl}-${entry.gv}` : '—';
+
+  const head = (statusText, statusCls) => `
+    <div class="mcp-head">
+      <span class="mcp-fase">${escHtml(rondaLabel)}</span>
+      ${statusText ? `<span class="mcp-date ${statusCls||''}">${escHtml(statusText)}</span>` : ''}
+    </div>`;
+
+  // ── 1. Acierto de cruce (puntúa o no) ──────────────────────────────────
+  if (entry.estado === 'acierto_puntuo' || entry.estado === 'acierto_no_puntuo') {
+    const r = entry.resultado || {};
+    const niv = entry.niveles || {};
+    const gl = r.gl, gv = r.gv;
+    const scoreCls = niv.exacto ? 'exact' : niv.signo ? 'partial' : 'miss';
+    const cardMod = entry.estado === 'acierto_puntuo' ? ' mcp-ok' : ' mcp-ko';
+    const statusText = entry.estado === 'acierto_no_puntuo' ? 'Cruce OK · marcador no' : '';
+    return `<div class="mcp-card${cardMod}">
+      ${head(statusText, 'mcp-status-warn')}
+      <div class="mcp-score-row">
+        <span class="mcp-home-name">${escHtml(L)}</span>
+        <span class="mcp-score-big ${scoreCls}">${gl} – ${gv}</span>
+        <span class="mcp-away-name">${escHtml(V)}</span>
+      </div>
+      <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>
+      <div class="mcp-indicators">
+        <span class="mcp-ind ${niv.signo?'ok':'no'}">${niv.signo?'✓':'✗'} Ganador${niv.signo?' +5':''}</span>
+        <span class="mcp-ind ${niv.diferencia?'ok':'no'}">${niv.diferencia?'✓':'✗'} Diferencia${niv.diferencia?' +2':''}</span>
+        <span class="mcp-ind ${niv.exacto?'ok':'no'}">${niv.exacto?'✓':'✗'} Exacto${niv.exacto?' +8':''}</span>
+        <span class="mcp-total ${(entry.pts||0)>0?'pos':'zero'}">+${entry.pts||0} pts</span>
+      </div>
+    </div>`;
+  }
+
+  // ── 2. Cruce que nunca se produjo ──────────────────────────────────────
+  if (entry.estado === 'cruce_no_ocurrio') {
+    return `<div class="mcp-card mcp-cruce-no">
+      ${head('Cruce no jugado', 'mcp-status-miss')}
+      <div class="mcp-score-row">
+        <span class="mcp-home-name">${escHtml(L)}</span>
+        <span class="mcp-score-big miss">— vs —</span>
+        <span class="mcp-away-name">${escHtml(V)}</span>
+      </div>
+      <div class="mcp-pred-row">Pronosticaste: <strong>${escHtml(predStr)}</strong></div>
+      ${entry.motivo ? `<div class="mcp-pred-row mcp-pred-row--reason">${escHtml(entry.motivo)}</div>` : ''}
+    </div>`;
+  }
+
+  // ── 3. Sin jugar, ambos equipos vivos en la ronda ──────────────────────
+  if (entry.estado === 'pendiente_confirmado') {
+    return `<div class="mcp-card mcp-pending-fixture">
+      ${head('Sin jugar · ambos vivos', 'mcp-status-pending')}
+      <div class="mcp-score-row">
+        <span class="mcp-home-name">${escHtml(L)}</span>
+        <span class="mcp-score-big pending">Pendiente</span>
+        <span class="mcp-away-name">${escHtml(V)}</span>
+      </div>
+      <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>
+    </div>`;
+  }
+
+  // ── 4. Sin jugar, ronda anterior aún abierta ───────────────────────────
+  return `<div class="mcp-card">
+    ${head('Pendiente', 'mcp-status-pending')}
+    <div class="mcp-score-row">
+      <span class="mcp-home-name">${escHtml(L)}</span>
+      <span class="mcp-score-big pending">Pendiente</span>
+      <span class="mcp-away-name">${escHtml(V)}</span>
+    </div>
+    <div class="mcp-pred-row">Pronóstico: <strong>${escHtml(predStr)}</strong></div>
+  </div>`;
+}
+
+
+// Tarjeta de partido REAL de eliminatoria que el participante NO pronosticó.
+// Se muestra en gris, sin cálculo de puntos, para que la vista refleje todo el
+// bracket y no solo las predicciones del participante.
+function sinPronosticoCard(rondaLabel, entry) {
+  const L = entry.local, V = entry.visitante;
+  return `<div class="mcp-card mcp-sin-pronostico">
+    <div class="mcp-head">
+      <span class="mcp-fase">${escHtml(rondaLabel)}</span>
+      <span class="mcp-date mcp-status-pending">Sin pronóstico</span>
+    </div>
+    <div class="mcp-score-row">
+      <span class="mcp-home-name">${escHtml(L)}</span>
+      <span class="mcp-score-big miss">${entry.gl} – ${entry.gv}</span>
+      <span class="mcp-away-name">${escHtml(V)}</span>
+    </div>
+    <div class="mcp-pred-row">No pronosticaste este cruce.</div>
+  </div>`;
+}
+
+
+// Tarjeta con las 4 posiciones de un grupo (pronóstico vs real).
+function posGrupoCard(grupo, entries) {
+  const gPts = entries.reduce((s, e) => s + (e.pts || 0), 0);
+  const rows = entries.slice().sort((a,b) => a.pos - b.pos).map(e => {
+    const rowCls = e.estado === 'acierto' ? 'correct'
+                 : e.estado === 'fallo'   ? 'wrong'
+                 : 'pending';
+    const indHtml = e.estado === 'acierto' ? '<span class="ind ok">✓</span>'
+                  : e.estado === 'fallo'   ? '<span class="ind no">✗</span>'
+                  : '<span class="ind no">⏳</span>';
+    const subHtml = e.real
+      ? `<div class="match-subtext">Real: ${escHtml(e.real)} ${indHtml}</div>`
+      : `<div class="match-subtext">Pendiente ${indHtml}</div>`;
+    return `<div class="match-row match-row--honor ${rowCls}">
+      <div class="match-row-idx">${e.pos}.º puesto</div>
+      <div class="match-row-teams">
+        <div class="match-teams-main">${escHtml(e.pred || '—')}</div>
+        ${subHtml}
+      </div>
+      <div></div>
+      <div class="match-row-pts ${e.pts>0?'pos':'zero'}">${e.pts||0}</div>
+    </div>`;
+  }).join('');
+  return `<div class="mcp-card">
+    <div class="mcp-head">
+      <span class="mcp-fase">Grupo ${escHtml(grupo)}</span>
+      ${gPts > 0 ? `<span class="mcp-date sec-pts">+${gPts} pts</span>` : ''}
+    </div>
+    <div class="pg-rows">${rows}</div>
+  </div>`;
+}
+
+
+// Tarjeta con los equipos pronosticados a una ronda + su estado.
+function clasifRondaCard(ronda, info) {
+  const label = ROUND_LABEL[ronda] || ronda;
+  const chips = info.equipos.map(e => {
+    const cls  = e.estado === 'acierto' ? 'hit'
+               : e.estado === 'fallo'   ? 'miss'
+               : 'neutral';
+    const icon = e.estado === 'acierto' ? '✓'
+               : e.estado === 'fallo'   ? '✗'
+               : '⏳';
+    return `<span class="mcp-badge ${cls}">${icon} ${escHtml(e.equipo)}</span>`;
+  }).join('');
+  const summary = [
+    info.aciertos   ? `${info.aciertos} ✓`   : null,
+    info.fallos     ? `${info.fallos} ✗`     : null,
+    info.pendientes ? `${info.pendientes} ⏳` : null,
+    info.pts > 0    ? `+${info.pts} pts`     : null,
+  ].filter(Boolean).join(' · ');
+  return `<div class="mcp-card">
+    <div class="mcp-head">
+      <span class="mcp-fase">${escHtml(label)}</span>
+      <span class="mcp-date">${escHtml(summary || '—')}</span>
+    </div>
+    <div class="clasif-grid">${chips}</div>
   </div>`;
 }
 
 function sectionPts(sectionId, standP) {
   const d = standP?.desglose;
   if (!d) return 0;
-  if (sectionId === 'grupos') {
-    return (d.grupos?.total || 0)
-         + (d.posiciones_grupo?.total || 0)
-         + (d.clasificado_1_16_desde_grupos?.total || 0);
-  }
+  if (sectionId === 'grupos')            return d.grupos?.total            || 0;
+  if (sectionId === 'posiciones-grupo')  return d.posiciones_grupo?.total  || 0;
+  if (sectionId === 'clasificados')      return d.clasificados?.total      || 0;
+  if (sectionId === 'honor')             return d.honor?.total             || 0;
+  if (sectionId === 'premios')           return d.premios?.total           || 0;
+  // Cualquier otro id es una ronda de eliminatoria (1/16, 1/8, …).
   return (d.elim_marcadores?.detalle || [])
     .filter(e => e.ronda === sectionId)
     .reduce((s, e) => s + (e.pts || 0), 0);
 }
 
-function defaultOpenSection(detalleP, marcadores) {
-  // Latest elim round with a played match takes priority
-  let latestElim = null;
+function defaultOpenSection(detalleP) {
+  // Prioriza la última ronda de elim en la que el participante ya haya recibido
+  // un resultado (acierto de cruce, con o sin puntos). Si no hay ninguno,
+  // por defecto se abre la fase de grupos.
+  let latest = null;
   for (const p of (detalleP.elim_marcadores || [])) {
-    const r = findElimResult(p.local, p.visitante, marcadores);
-    if (r) {
+    if (p.estado === 'acierto_puntuo' || p.estado === 'acierto_no_puntuo') {
       const ord = RONDA_ORDER[p.ronda] ?? 0;
-      if (latestElim === null || ord > (RONDA_ORDER[latestElim] ?? 0)) latestElim = p.ronda;
+      if (latest === null || ord > (RONDA_ORDER[latest] ?? 0)) latest = p.ronda;
     }
   }
-  if (latestElim) return latestElim;
-  if ((detalleP.grupos || []).some(g => g.resultado)) return 'grupos';
-  return 'grupos';
+  return latest || 'grupos';
 }
 
 function sectionBlock(id, title, matchCount, pts, cardsHtml) {
@@ -507,17 +634,14 @@ function renderNickDetail(nick) {
     return;
   }
 
-  const marcadores  = state.resultados?.marcadores  || [];
-  const realClasifs = state.resultados?.clasificados || {};
-  const realHonor   = state.resultados?.honor        || {};
-  const realPremios = state.resultados?.premios      || {};
+  const realHonor   = state.resultados?.honor   || {};
+  const realPremios = state.resultados?.premios || {};
 
   // Inicializar estados de sección (primera vez que se abre Mi Porra para este nick)
   if (Object.keys(state.sectionOpen).length === 0) {
-    const defSec = defaultOpenSection(detalleP, marcadores);
-    ['grupos','1/16','1/8','1/4','semis','3-4','final','honor','premios'].forEach(id => {
-      state.sectionOpen[id] = (id === defSec);
-    });
+    const defSec = defaultOpenSection(detalleP);
+    ['grupos','posiciones-grupo','1/16','1/8','1/4','semis','3-4','final','clasificados','honor','premios']
+      .forEach(id => { state.sectionOpen[id] = (id === defSec); });
   }
 
   let html = '';
@@ -535,7 +659,6 @@ function renderNickDetail(nick) {
       </div>
       <div class="score-card"><div class="score-card-label">Marc. grupos</div><div class="score-card-pts">${fN(d.grupos?.total)}</div></div>
       <div class="score-card"><div class="score-card-label">Pos. grupo</div><div class="score-card-pts">${fN(d.posiciones_grupo?.total)}</div></div>
-      <div class="score-card"><div class="score-card-label">Clas. 1/16</div><div class="score-card-pts">${fN(d.clasificado_1_16_desde_grupos?.total)}</div></div>
       <div class="score-card"><div class="score-card-label">Marc. elim.</div><div class="score-card-pts">${fN(d.elim_marcadores?.total)}</div></div>
       <div class="score-card"><div class="score-card-label">Clasificados</div><div class="score-card-pts">${fN(d.clasificados?.total)}</div></div>
       <div class="score-card"><div class="score-card-label">Honor</div><div class="score-card-pts">${fN(d.honor?.total)}</div></div>
@@ -556,29 +679,52 @@ function renderNickDetail(nick) {
       const res  = g.resultado
         ? { goles_local: g.resultado.goles_local, goles_visitante: g.resultado.goles_visitante }
         : null;
-      return mcpCard(fase, fmtCEST(cal?.fecha_hora_utc), g.local, g.visitante, g.prediccion, res, null);
+      return mcpCard(fase, fmtCEST(cal?.fecha_hora_utc), g.local, g.visitante, g.prediccion, res);
     }).join('');
     html += sectionBlock('grupos', 'Fase de grupos', grupos.length, sectionPts('grupos', standP), cardsHtml);
   }
 
-  // ── Secciones: Eliminatorias ───────────────────────────────────────────────
-  const elimPreds = detalleP.elim_marcadores || [];
+  // ── Sección: Posiciones de grupo ───────────────────────────────────────────
+  {
+    const pos = detalleP.posiciones_grupo || [];
+    const byGrupo = {};
+    pos.forEach(e => { (byGrupo[e.grupo] = byGrupo[e.grupo] || []).push(e); });
+    const cardsHtml = Object.keys(byGrupo).sort().map(g => posGrupoCard(g, byGrupo[g])).join('');
+    const nGrupos = Object.keys(byGrupo).length;
+    html += sectionBlock('posiciones-grupo', 'Posiciones de grupo', nGrupos,
+                         sectionPts('posiciones-grupo', standP), cardsHtml);
+  }
+
+  // ── Secciones: Eliminatorias por ronda ─────────────────────────────────────
+  //   Cada ronda muestra primero las predicciones del participante (5 estados)
+  //   y a continuación los partidos REALES de esa ronda que no pronosticó,
+  //   como tarjetas "sin pronóstico" — así se ve el bracket completo.
+  const elimPreds = detalleP.elim_marcadores  || [];
+  const sinPron   = detalleP.elim_sin_pronostico || {};
   const byRonda = {};
   elimPreds.forEach(p => { (byRonda[p.ronda] = byRonda[p.ronda] || []).push(p); });
 
   ['1/16','1/8','1/4','semis','3-4','final'].forEach(r => {
-    const partidos = byRonda[r];
-    if (!partidos?.length) return;
-    const cardsHtml = partidos.map(p => {
-      const res    = findElimResult(p.local, p.visitante, marcadores);
-      const pred   = { signo: p.signo, goles_local: p.gl, goles_visitante: p.gv };
-      const badges = r !== '3-4' && r !== 'final'
-        ? elimClassifBadges(p.local, p.visitante, p.ronda, detalleP.clasificados, realClasifs)
-        : [];
-      return mcpCard(ROUND_LABEL[r], '', p.local, p.visitante, pred, res, badges);
-    }).join('');
-    html += sectionBlock(r, ROUND_LABEL[r], partidos.length, sectionPts(r, standP), cardsHtml);
+    const partidos = byRonda[r] || [];
+    const extras   = sinPron[r] || [];
+    if (!partidos.length && !extras.length) return;
+    const pts = partidos.reduce((s, p) => s + (p.pts || 0), 0);
+    const predHtml = partidos.map(p => elimCard(ROUND_LABEL[r], p)).join('');
+    const extraHtml = extras.map(e => sinPronosticoCard(ROUND_LABEL[r], e)).join('');
+    html += sectionBlock(r, ROUND_LABEL[r], partidos.length + extras.length,
+                         pts, predHtml + extraHtml);
   });
+
+  // ── Sección: Clasificados por ronda ────────────────────────────────────────
+  {
+    const cd = detalleP.clasificados_desglose || {};
+    const rondasConPred = CLASIF_RONDAS.filter(r => (cd[r]?.equipos || []).length);
+    if (rondasConPred.length) {
+      const cardsHtml = rondasConPred.map(r => clasifRondaCard(r, cd[r])).join('');
+      html += sectionBlock('clasificados', 'Clasificados por ronda', rondasConPred.length,
+                           sectionPts('clasificados', standP), cardsHtml);
+    }
+  }
 
   // ── Sección: Honor y premios ───────────────────────────────────────────────
   {
@@ -795,7 +941,9 @@ function renderProximos() {
       const liveEntry = state.resultados?.marcadores?.find(e => e.match_id === m.match_id);
       const isLive = liveEntry?.estado === 'en_juego';
       const isDone = liveEntry?.estado === 'finalizado';
-      const jLabel = m.jornada ? `${m.grupo ? 'Grupo '+m.grupo+' · ' : ''}${m.jornada}` : (m.fase || '');
+      const jLabel = m.jornada
+        ? `${m.grupo ? 'Grupo '+m.grupo+' · ' : ''}${m.jornada}`
+        : (ROUND_LABEL[m.fase] || m.fase || '');
 
       let scoreHtml = '';
       if (isLive || isDone) {
@@ -837,8 +985,17 @@ function renderProximos() {
 }
 
 // Returns CSS class for the score value in a played-match cell.
-// hit-exact · hit-diff · hit-sign · hit-wrong
+// hit-exact · hit-diff · hit-sign · hit-wrong · hit-none (sin predicción)
 function _predValClass(pr, resultado) {
+  if (!pr.prediccion) return 'hit-none';   // sin pronóstico para ese partido
+  // Rama elim: el backend ya trae `niveles` precomputado.
+  if (pr.niveles) {
+    if (!pr.niveles.signo)      return 'hit-wrong';
+    if (pr.niveles.exacto)      return 'hit-exact';
+    if (pr.niveles.diferencia)  return 'hit-diff';
+    return 'hit-sign';
+  }
+  // Rama grupos: flags acierto_*.
   if (!pr.acierto_signo) return 'hit-wrong';
   if (pr.acierto_local && pr.acierto_visitante) return 'hit-exact';
   if (resultado) {
@@ -858,36 +1015,94 @@ function _predBadgesHtml(cls) {
   return html;
 }
 
-// Builds the list of played matches from detalle.json, sorted most-recent first.
+// Busca en las predicciones de eliminatoria del participante el pronóstico
+// que corresponda al par (local_real, visitante_real) de una ronda concreta.
+// Reorienta gl/gv al orden del partido real y devuelve `{prediccion, niveles}`
+// o `null` si el participante no predijo ese cruce.
+function _findElimPredForMatch(nick, realLocal, realVisitante, ronda) {
+  const preds = state.detalle?.[nick]?.elim_marcadores || [];
+  const nrL = normStr(realLocal), nrV = normStr(realVisitante);
+  for (const e of preds) {
+    if (e.ronda !== ronda) continue;
+    const nL = normStr(e.local), nV = normStr(e.visitante);
+    const matches = (nL === nrL && nV === nrV) || (nL === nrV && nV === nrL);
+    if (!matches) continue;
+    const same = (nL === nrL);
+    return {
+      prediccion: {
+        signo:           e.signo,
+        goles_local:     same ? e.gl : e.gv,
+        goles_visitante: same ? e.gv : e.gl,
+      },
+      niveles: e.niveles || { signo: false, diferencia: false, exacto: false },
+    };
+  }
+  return null;
+}
+
+
+// Builds the list of played matches from detalle.json + resultados.marcadores,
+// sorted most-recent first. Incluye partidos de grupos (desde detalle.grupos)
+// y partidos de eliminatoria (desde resultados.marcadores).
 function _buildJugadosIndex() {
   if (!state.detalle) return [];
   const matchMap = new Map();
+  const nicknames = Object.keys(state.detalle);
+
+  // ── Grupos: iteramos las predicciones de cada participante ────────────
   for (const [nick, participant] of Object.entries(state.detalle)) {
     for (const g of (participant.grupos || [])) {
-      if (!g.resultado || g.acierto_signo === null || g.acierto_signo === undefined) continue;
+      if (!g.resultado || g.acierto_signo == null) continue;
       if (!matchMap.has(g.match_id)) {
         const cal = state.calIdx[g.match_id] || {};
         matchMap.set(g.match_id, {
-          match_id:      g.match_id,
-          local:         g.local,
-          visitante:     g.visitante,
-          grupo:         g.grupo,
-          jornada:       g.jornada,
-          fase:          cal.fase || 'grupos',
+          match_id:       g.match_id,
+          local:          g.local,
+          visitante:      g.visitante,
+          grupo:          g.grupo,
+          jornada:        g.jornada,
+          fase:           cal.fase || 'grupos',
           fecha_hora_utc: cal.fecha_hora_utc || '',
-          resultado:     g.resultado,
-          predicciones:  [],
+          resultado:      g.resultado,
+          predicciones:   [],
         });
       }
       matchMap.get(g.match_id).predicciones.push({
-        nickname:        nick,
-        prediccion:      g.prediccion,
-        acierto_signo:   g.acierto_signo,
-        acierto_local:   g.acierto_local,
+        nickname:          nick,
+        prediccion:        g.prediccion,
+        acierto_signo:     g.acierto_signo,
+        acierto_local:     g.acierto_local,
         acierto_visitante: g.acierto_visitante,
       });
     }
   }
+
+  // ── Eliminatorias: fuente única de verdad es resultados.marcadores ────
+  const marcs = state.resultados?.marcadores || [];
+  for (const m of marcs) {
+    if (m.estado !== 'finalizado' || !m.local || !m.visitante) continue;
+    const cal = state.calIdx[m.match_id];
+    if (!cal || !cal.fase || cal.fase === 'grupos') continue;
+    const ronda = cal.fase;
+    const predicciones = nicknames.map(nick => {
+      const found = _findElimPredForMatch(nick, m.local, m.visitante, ronda);
+      return found
+        ? { nickname: nick, prediccion: found.prediccion, niveles: found.niveles }
+        : { nickname: nick, prediccion: null };
+    });
+    matchMap.set(m.match_id, {
+      match_id:       m.match_id,
+      local:          m.local,
+      visitante:      m.visitante,
+      grupo:          '',
+      jornada:        '',
+      fase:           ronda,
+      fecha_hora_utc: cal.fecha_hora_utc || '',
+      resultado:      { goles_local: m.goles_local, goles_visitante: m.goles_visitante },
+      predicciones,
+    });
+  }
+
   return [...matchMap.values()].sort((a, b) =>
     (b.fecha_hora_utc || '').localeCompare(a.fecha_hora_utc || ''));
 }
@@ -916,7 +1131,9 @@ function renderJugados() {
   } else {
     jugados.forEach(m => {
       const card  = el('div', 'match-card');
-      const jLabel = m.grupo ? `Grupo ${m.grupo} · ${m.jornada}` : (m.jornada || m.fase || '');
+      const jLabel = m.grupo
+        ? `Grupo ${m.grupo} · ${m.jornada}`
+        : (m.jornada || ROUND_LABEL[m.fase] || m.fase || '');
       const r = m.resultado;
 
       card.innerHTML = `
