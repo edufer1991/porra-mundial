@@ -50,14 +50,6 @@
         }
       },
       {
-        "nickname": "ilovealiens",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 3
-        }
-      },
-      {
         "nickname": "La Roja Zero Waste",
         "prediccion": {
           "signo": "1",
@@ -79,6 +71,14 @@
           "signo": "2",
           "goles_local": 0,
           "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "ilovealiens",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 3
         }
       }
     ]
@@ -150,19 +150,19 @@
     "goles_visitante": null,
     "predicciones": [
       {
-        "nickname": "colometa",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      },
-      {
         "nickname": "Killo Emvabé",
         "prediccion": {
           "signo": "2",
           "goles_local": 0,
           "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "colometa",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 1
         }
       }
     ]
@@ -196,14 +196,6 @@
         }
       },
       {
-        "nickname": "depedro",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
         "nickname": "La Roja Zero Waste",
         "prediccion": {
           "signo": "1",
@@ -221,6 +213,14 @@
       },
       {
         "nickname": "Pickles' Retrievers",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "depedro",
         "prediccion": {
           "signo": "1",
           "goles_local": 2,
