@@ -2073,7 +2073,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Senegal en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -2084,7 +2084,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Norway juega contra Brazil, no contra England en esta ronda"
+        "motivo": "Norway jugó contra Brazil, no contra England en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -2157,8 +2157,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -2339,6 +2340,24 @@
           "visitante": "France",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
+          "gv": 3,
           "signo": "2"
         }
       ]
@@ -4782,7 +4801,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -4794,7 +4823,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -4805,7 +4834,7 @@
         "gv": 4,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -5058,6 +5087,15 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -7522,7 +7560,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Senegal en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -7531,8 +7569,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -7605,8 +7653,9 @@
         "signo": "1",
         "gl": 5,
         "gv": 4,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -7778,6 +7827,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -10192,7 +10250,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Japan en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Japan en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -10212,7 +10270,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 0,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -10235,7 +10303,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -10495,6 +10563,15 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -12941,7 +13018,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Ecuador en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -12963,7 +13040,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -13214,6 +13291,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -15676,7 +15771,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -15699,7 +15804,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -15934,6 +16039,15 @@
           "visitante": "France",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
+          "gv": 3,
           "signo": "2"
         }
       ]
@@ -18386,7 +18500,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -18396,8 +18520,18 @@
         "signo": "2",
         "gl": 2,
         "gv": 3,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": true
+        },
+        "pts": 15
       },
       {
         "ronda": "1/8",
@@ -18470,8 +18604,9 @@
         "signo": "1",
         "gl": 3,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -21115,7 +21250,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Senegal en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -21124,7 +21259,17 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -21371,6 +21516,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -23796,7 +23950,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Norway juega contra Brazil, no contra Ecuador en esta ronda"
+        "motivo": "Norway jugó contra Brazil, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -23807,7 +23961,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Germany en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Germany en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -23818,7 +23972,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -24089,6 +24243,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -26495,7 +26667,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Czech Republic en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Czech Republic en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -26526,8 +26698,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -26810,6 +26992,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -29246,7 +29437,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Senegal en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -29255,8 +29446,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 3,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -29278,7 +29479,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Norway juega contra Brazil, no contra South Africa en esta ronda"
+        "motivo": "Norway jugó contra Brazil, no contra South Africa en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -29330,8 +29531,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -29530,6 +29732,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -31984,7 +32195,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Senegal en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -31995,7 +32206,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Czech Republic en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Czech Republic en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -32067,8 +32278,9 @@
         "signo": "1",
         "gl": 1,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -32248,6 +32460,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -34694,8 +34924,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -34768,8 +35008,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -34968,6 +35209,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -37438,7 +37688,17 @@
         "signo": "X",
         "gl": 2,
         "gv": 2,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -37448,8 +37708,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -37521,8 +37791,9 @@
         "signo": "X",
         "gl": 2,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -40148,7 +40419,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Ecuador en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -40159,7 +40430,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -40170,7 +40441,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -40404,6 +40675,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -42866,7 +43155,17 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -42876,8 +43175,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -42950,8 +43259,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -45595,8 +45905,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 3,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -45670,7 +45990,7 @@
         "signo": "2",
         "gl": 3,
         "gv": 5,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -45843,6 +46163,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]
@@ -48279,7 +48608,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra Ecuador en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -48290,7 +48619,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -48301,7 +48630,7 @@
         "gv": 3,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -48563,6 +48892,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -50969,7 +51316,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil juega contra Norway, no contra South Korea en esta ronda"
+        "motivo": "Brazil jugó contra Norway, no contra South Korea en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -51002,7 +51349,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -51013,7 +51360,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -51283,6 +51630,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -53722,7 +54087,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Mexico juega contra England, no contra Croatia en esta ronda"
+        "motivo": "Mexico jugó contra England, no contra Croatia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -53733,7 +54098,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -54002,6 +54367,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -56725,6 +57108,24 @@
           "gl": 0,
           "gv": 3,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
         }
       ]
     },
@@ -59158,7 +59559,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -59181,7 +59592,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Spain en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Spain en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -59443,6 +59854,15 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -61891,7 +62311,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Mexico, no contra Ecuador en esta ronda"
+        "motivo": "England jugó contra Mexico, no contra Ecuador en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -62164,6 +62584,24 @@
           "local": "Canada",
           "visitante": "Morocco",
           "gl": 0,
+          "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 92,
+          "local": "Mexico",
+          "visitante": "England",
+          "gl": 2,
           "gv": 3,
           "signo": "2"
         }
@@ -64619,8 +65057,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 3,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -64884,6 +65332,15 @@
           "visitante": "Morocco",
           "gl": 0,
           "gv": 3,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 91,
+          "local": "Brazil",
+          "visitante": "Norway",
+          "gl": 1,
+          "gv": 2,
           "signo": "2"
         }
       ]

@@ -1,169 +1,5 @@
 [
   {
-    "match_id": 91,
-    "fecha_hora_utc": "2026-07-05T20:00:00Z",
-    "fase": "1/8",
-    "grupo": "",
-    "jornada": "",
-    "local": "Brazil",
-    "visitante": "Norway",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Barrilete Cósmico",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Chistu",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "depedro",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "La Roja Zero Waste",
-        "prediccion": {
-          "signo": "X",
-          "goles_local": 2,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Media Naranja",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pulpo Paul",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      }
-    ]
-  },
-  {
-    "match_id": 92,
-    "fecha_hora_utc": "2026-07-06T00:00:00Z",
-    "fase": "1/8",
-    "grupo": "",
-    "jornada": "",
-    "local": "Mexico",
-    "visitante": "England",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "BlackBoxOracle",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 2,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "Gargamel",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "ilovealiens",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Indio",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "La de la intuición",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "La Roja Zero Waste",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Media Naranja",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "Mundial? Qué Mundial?",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 3
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 1,
-          "goles_visitante": 2
-        }
-      }
-    ]
-  },
-  {
     "match_id": 93,
     "fecha_hora_utc": "2026-07-06T19:00:00Z",
     "fase": "1/8",
@@ -389,6 +225,28 @@
           "signo": "1",
           "goles_local": 2,
           "goles_visitante": 1
+        }
+      }
+    ]
+  },
+  {
+    "match_id": 99,
+    "fecha_hora_utc": "2026-07-11T21:00:00Z",
+    "fase": "1/4",
+    "grupo": "",
+    "jornada": "",
+    "local": "Norway",
+    "visitante": "England",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Mundial? Qué Mundial?",
+        "prediccion": {
+          "signo": "2",
+          "goles_local": 3,
+          "goles_visitante": 5
         }
       }
     ]
