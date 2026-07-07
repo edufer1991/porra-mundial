@@ -2106,7 +2106,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Egypt juega contra Argentina, no contra Turkey en esta ronda"
+        "motivo": "Egypt jugó contra Argentina, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -2378,6 +2378,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -5135,6 +5144,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -7893,6 +7911,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -10379,8 +10406,18 @@
         "signo": "1",
         "gl": 4,
         "gv": 0,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -13161,8 +13198,18 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -15929,7 +15976,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Australia en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Australia en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -16162,6 +16209,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -18919,6 +18975,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -21678,6 +21743,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -24435,6 +24509,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -26977,7 +27060,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Turkey en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -27193,6 +27276,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -29681,7 +29773,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Turkey en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -29950,6 +30042,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -32707,6 +32808,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -35240,7 +35350,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Turkey en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -35466,6 +35576,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -37981,7 +38100,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Iran en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Iran en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -38223,6 +38342,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -40691,7 +40819,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Egypt juega contra Argentina, no contra Turkey en esta ronda"
+        "motivo": "Egypt jugó contra Argentina, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -40981,6 +41109,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -43449,8 +43586,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/8",
@@ -46216,7 +46363,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Turkey en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -46493,6 +46640,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -48990,7 +49146,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra New Zealand en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra New Zealand en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -49251,6 +49407,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -51728,7 +51893,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Egypt juega contra Argentina, no contra Turkey en esta ronda"
+        "motivo": "Egypt jugó contra Argentina, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -52009,6 +52174,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -54486,8 +54660,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -57270,8 +57454,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -60012,7 +60206,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Turkey en esta ronda"
+        "motivo": "Argentina jugó contra Egypt, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -60279,6 +60473,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -62783,7 +62986,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Egypt juega contra Argentina, no contra Turkey en esta ronda"
+        "motivo": "Egypt jugó contra Argentina, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -63036,6 +63239,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },
@@ -65794,6 +66006,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 95,
+          "local": "Argentina",
+          "visitante": "Egypt",
+          "gl": 3,
+          "gv": 2,
+          "signo": "1"
         }
       ]
     },

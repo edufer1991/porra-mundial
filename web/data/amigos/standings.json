@@ -1,6 +1,6 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-07T17:14:42Z",
+  "ultima_actualizacion": "2026-07-07T18:14:43Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
@@ -1786,14 +1786,14 @@
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 467,
-      "puntos_eliminatorias": 488,
+      "puntos_eliminatorias": 493,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 467,
       "puntos_fase_eliminatoria": 428,
-      "puntos_total": 955,
+      "puntos_total": 960,
       "advertencias_premios": [],
-      "total": 955,
+      "total": 960,
       "puntos_eliminatoria": 428,
       "desglose": {
         "grupos": {
@@ -2540,7 +2540,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 60,
+          "total": 65,
           "detalle": [
             {
               "ronda": "1/16",
@@ -2607,6 +2607,18 @@
               "partido": "USA-Belgium",
               "pred": "2|1-2",
               "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "Argentina-Egypt",
+              "pred": "1|3-1",
+              "real": "1|3-2",
               "niveles": {
                 "signo": true,
                 "diferencia": false,

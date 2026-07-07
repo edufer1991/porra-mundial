@@ -1,59 +1,5 @@
 [
   {
-    "match_id": 95,
-    "fecha_hora_utc": "2026-07-07T16:00:00Z",
-    "fase": "1/8",
-    "grupo": "",
-    "jornada": "",
-    "local": "Argentina",
-    "visitante": "Egypt",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Chistu",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 4,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Des-cono-cida",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Paps",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "TexMex",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "The French Knicks fan",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      }
-    ]
-  },
-  {
     "match_id": 96,
     "fecha_hora_utc": "2026-07-07T20:00:00Z",
     "fase": "1/8",
