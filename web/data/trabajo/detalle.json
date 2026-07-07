@@ -2387,6 +2387,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -5153,6 +5162,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -7920,6 +7938,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -10685,6 +10712,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -13452,6 +13488,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -16218,6 +16263,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -18984,6 +19038,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -21752,6 +21815,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -24258,7 +24330,17 @@
         "signo": "2",
         "gl": 0,
         "gv": 2,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -27285,6 +27367,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -30051,6 +30142,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -32817,6 +32917,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -35585,6 +35694,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -38351,6 +38469,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -41118,6 +41245,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -43884,6 +44020,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -46649,6 +46794,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -49113,7 +49267,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Colombia juega contra Switzerland, no contra Haiti en esta ronda"
+        "motivo": "Colombia jugó contra Switzerland, no contra Haiti en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -49416,6 +49570,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -52183,6 +52346,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -54596,7 +54768,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Netherlands en esta ronda"
+        "motivo": "Switzerland jugó contra Colombia, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -54950,6 +55122,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -57718,6 +57899,15 @@
           "gl": 1,
           "gv": 4,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -60215,7 +60405,17 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -63248,6 +63448,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -66015,6 +66224,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },

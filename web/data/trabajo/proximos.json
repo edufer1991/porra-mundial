@@ -1,35 +1,5 @@
 [
   {
-    "match_id": 96,
-    "fecha_hora_utc": "2026-07-07T20:00:00Z",
-    "fase": "1/8",
-    "grupo": "",
-    "jornada": "",
-    "local": "Switzerland",
-    "visitante": "Colombia",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Killo Emvabé",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 2
-        }
-      },
-      {
-        "nickname": "colometa",
-        "prediccion": {
-          "signo": "2",
-          "goles_local": 0,
-          "goles_visitante": 1
-        }
-      }
-    ]
-  },
-  {
     "match_id": 97,
     "fecha_hora_utc": "2026-07-09T20:00:00Z",
     "fase": "1/4",

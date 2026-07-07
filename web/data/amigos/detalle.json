@@ -2387,6 +2387,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -4809,7 +4818,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Netherlands en esta ronda"
+        "motivo": "Switzerland jugó contra Colombia, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -5154,6 +5163,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -7921,6 +7939,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -10688,6 +10715,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -13455,6 +13491,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -16222,6 +16267,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -18642,6 +18696,15 @@
           "gl": 3,
           "gv": 2,
           "signo": "1"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
@@ -21091,7 +21154,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Switzerland juega contra Colombia, no contra Netherlands en esta ronda"
+        "motivo": "Switzerland jugó contra Colombia, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -21409,6 +21472,15 @@
           "gl": 0,
           "gv": 1,
           "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 96,
+          "local": "Switzerland",
+          "visitante": "Colombia",
+          "gl": 0,
+          "gv": 0,
+          "signo": "X"
         }
       ]
     },
