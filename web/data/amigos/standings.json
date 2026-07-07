@@ -1,19 +1,19 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-07T01:28:34Z",
+  "ultima_actualizacion": "2026-07-07T02:14:39Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 537,
-      "puntos_eliminatorias": 473,
+      "puntos_eliminatorias": 478,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 537,
       "puntos_fase_eliminatoria": 436,
-      "puntos_total": 1010,
+      "puntos_total": 1015,
       "advertencias_premios": [],
-      "total": 1010,
+      "total": 1015,
       "puntos_eliminatoria": 436,
       "desglose": {
         "grupos": {
@@ -814,7 +814,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 37,
+          "total": 42,
           "detalle": [
             {
               "ronda": "1/16",
@@ -899,6 +899,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "ronda": "1/8",
+              "partido": "USA-Belgium",
+              "pred": "2|0-1",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
@@ -1774,14 +1786,14 @@
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 467,
-      "puntos_eliminatorias": 483,
+      "puntos_eliminatorias": 488,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 467,
       "puntos_fase_eliminatoria": 428,
-      "puntos_total": 950,
+      "puntos_total": 955,
       "advertencias_premios": [],
-      "total": 950,
+      "total": 955,
       "puntos_eliminatoria": 428,
       "desglose": {
         "grupos": {
@@ -2528,7 +2540,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 55,
+          "total": 60,
           "detalle": [
             {
               "ronda": "1/16",
@@ -2583,6 +2595,18 @@
               "partido": "Mexico-England",
               "pred": "2|0-2",
               "real": "2|2-3",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "1/8",
+              "partido": "USA-Belgium",
+              "pred": "2|1-2",
+              "real": "2|1-4",
               "niveles": {
                 "signo": true,
                 "diferencia": false,
@@ -5058,14 +5082,14 @@
       "nickname": "Maximo10",
       "porra": "amigos",
       "puntos_grupos": 468,
-      "puntos_eliminatorias": 409,
+      "puntos_eliminatorias": 414,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 468,
       "puntos_fase_eliminatoria": 392,
-      "puntos_total": 877,
+      "puntos_total": 882,
       "advertencias_premios": [],
-      "total": 877,
+      "total": 882,
       "puntos_eliminatoria": 392,
       "desglose": {
         "grupos": {
@@ -5770,7 +5794,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 17,
+          "total": 22,
           "detalle": [
             {
               "ronda": "1/16",
@@ -5807,6 +5831,18 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "ronda": "1/8",
+              "partido": "USA-Belgium",
+              "pred": "2|1-2",
+              "real": "2|1-4",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },

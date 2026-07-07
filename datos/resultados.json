@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-07-07T01:28:34Z",
+  "ultima_actualizacion": "2026-07-07T02:14:39Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -601,6 +601,14 @@
       "goles_visitante": 1,
       "local": "Portugal",
       "visitante": "Spain"
+    },
+    {
+      "match_id": 94,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 4,
+      "local": "USA",
+      "visitante": "Belgium"
     }
   ],
   "posiciones_grupo": [
@@ -846,6 +854,7 @@
     }
   ],
   "clasificados": {
+    "1/4": [],
     "final": [],
     "semis": [],
     "1/16": [
@@ -899,8 +908,7 @@
       "Spain",
       "Switzerland",
       "USA"
-    ],
-    "1/4": []
+    ]
   },
   "honor": {
     "campeon": null,

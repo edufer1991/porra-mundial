@@ -2115,7 +2115,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Belgium juega contra USA, no contra Turkey en esta ronda"
+        "motivo": "Belgium jugó contra USA, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -2156,8 +2156,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Spain juega contra Belgium, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -2367,6 +2368,15 @@
           "visitante": "Spain",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 94,
+          "local": "USA",
+          "visitante": "Belgium",
+          "gl": 1,
+          "gv": 4,
           "signo": "2"
         }
       ]
@@ -4852,8 +4862,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 4,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -4895,7 +4915,7 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -7645,8 +7665,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 4,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -7688,7 +7718,7 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -10368,7 +10398,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Belgium juega contra USA, no contra Senegal en esta ronda"
+        "motivo": "Belgium jugó contra USA, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -10379,7 +10409,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra USA en esta ronda"
+        "motivo": "USA jugó contra Belgium, no contra Argentina en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -10409,8 +10439,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Spain juega contra Belgium, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -10611,6 +10642,15 @@
           "visitante": "Spain",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 94,
+          "local": "USA",
+          "visitante": "Belgium",
+          "gl": 1,
+          "gv": 4,
           "signo": "2"
         }
       ]
@@ -13107,7 +13147,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Belgium juega contra USA, no contra Turkey en esta ronda"
+        "motivo": "Belgium jugó contra USA, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -13118,7 +13158,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra USA en esta ronda"
+        "motivo": "USA jugó contra Belgium, no contra Argentina en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -13149,7 +13189,7 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -13360,6 +13400,15 @@
           "visitante": "Spain",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 94,
+          "local": "USA",
+          "visitante": "Belgium",
+          "gl": 1,
+          "gv": 4,
           "signo": "2"
         }
       ]
@@ -15849,7 +15898,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Egypt, no contra Belgium en esta ronda"
+        "motivo": "Belgium jugó contra USA, no contra Argentina en esta ronda"
       },
       {
         "ronda": "1/8",
@@ -15880,8 +15929,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Spain juega contra Belgium, no contra Egypt en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -16108,6 +16158,15 @@
           "visitante": "Spain",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 94,
+          "local": "USA",
+          "visitante": "Belgium",
+          "gl": 1,
+          "gv": 4,
           "signo": "2"
         }
       ]
@@ -18510,6 +18569,15 @@
           "visitante": "Spain",
           "gl": 0,
           "gv": 1,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/8",
+          "match_id": 94,
+          "local": "USA",
+          "visitante": "Belgium",
+          "gl": 1,
+          "gv": 4,
           "signo": "2"
         }
       ]
@@ -21031,8 +21099,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 4,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/8",
@@ -21073,7 +21151,7 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
