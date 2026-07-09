@@ -2686,23 +2686,23 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Morocco",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Turkey",
@@ -2710,31 +2710,31 @@
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "England",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -2742,8 +2742,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 3,
         "pts": 0
       },
       "final": {
@@ -5462,19 +5462,19 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Netherlands",
@@ -5482,27 +5482,27 @@
           },
           {
             "equipo": "Belgium",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -5510,16 +5510,16 @@
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 3,
         "pts": 0
       },
       "final": {
@@ -8238,19 +8238,19 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Netherlands",
@@ -8258,44 +8258,44 @@
           },
           {
             "equipo": "Belgium",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "England",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 0,
+        "pendientes": 4,
         "pts": 0
       },
       "final": {
@@ -11014,23 +11014,23 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Morocco",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Senegal",
@@ -11038,23 +11038,23 @@
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -11062,16 +11062,16 @@
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 3,
         "pts": 0
       },
       "final": {
@@ -13790,19 +13790,19 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Japan",
@@ -13810,27 +13810,27 @@
           },
           {
             "equipo": "Belgium",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -13838,7 +13838,7 @@
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -13846,8 +13846,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 2,
+        "pendientes": 2,
         "pts": 0
       },
       "final": {
@@ -16566,19 +16566,19 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Sweden",
@@ -16586,7 +16586,7 @@
           },
           {
             "equipo": "Egypt",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Croatia",
@@ -16594,19 +16594,19 @@
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 6,
-        "pts": 0
+        "aciertos": 3,
+        "fallos": 5,
+        "pendientes": 0,
+        "pts": 42
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -16614,7 +16614,7 @@
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -16622,8 +16622,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 2,
+        "pendientes": 2,
         "pts": 0
       },
       "final": {
@@ -18995,23 +18995,23 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Morocco",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Turkey",
@@ -19019,31 +19019,31 @@
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "England",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -19051,8 +19051,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 3,
         "pts": 0
       },
       "final": {
@@ -21771,19 +21771,19 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Netherlands",
@@ -21791,27 +21791,27 @@
           },
           {
             "equipo": "Belgium",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
-            "estado": "pendiente"
+            "estado": "fallo"
           }
         ],
-        "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 7,
-        "pts": 0
+        "aciertos": 5,
+        "fallos": 3,
+        "pendientes": 0,
+        "pts": 70
       },
       "semis": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -21819,16 +21819,16 @@
           },
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 4,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 3,
         "pts": 0
       },
       "final": {

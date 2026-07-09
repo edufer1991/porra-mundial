@@ -36,68 +36,81 @@ from motor.puntuar_v2 import (
     signo_real,
     _derivar_posiciones_grupo,
 )
+from motor.clasif_real import (
+    clasificados_reales,
+    clasificados_excluidos,
+    _ganador_partido,
+    _perdedor_partido,
+    _PREV_ROUND_ELIM,
+    _NEXT_ROUND_ELIM,
+    _fase_a_ronda,
+    _RE_WINNER,
+    _RE_LOSER,
+    EXPECTED_CLASIF_SIZE,
+)
 
 
 # ── Estado de clasificados / eliminatorias (para la vista Mi Porra) ───────────
 
-# Cuántos equipos se esperan por ronda cuando su qualifying está completo.
-_EXPECTED_CLASIF_SIZE = {"1/16": 32, "1/8": 16, "1/4": 8, "semis": 4, "final": 2}
-
-# Ronda inmediatamente anterior en el bracket (para la regla "Turquía").
-_PREV_ROUND = {"1/8": "1/16", "1/4": "1/8", "semis": "1/4", "final": "semis"}
-
 _ROUND_PTS = {"1/16": 10, "1/8": 12, "1/4": 14, "semis": 16, "final": 20}
 
 
-def _clasificado_ronda_completa(ronda: str, real_clasif: dict) -> bool:
-    """La lista `clasificados[R]` está cerrada cuando alcanza el tamaño esperado."""
-    if ronda not in _EXPECTED_CLASIF_SIZE:
-        return False
-    return len(real_clasif.get(ronda) or []) >= _EXPECTED_CLASIF_SIZE[ronda]
-
-
-def _estado_clasificado(equipo: str, ronda: str, real_clasif: dict) -> str:
+def _estado_clasificado(equipo: str, ronda: str,
+                        real_clasif: dict,
+                        resultados: dict | None = None,
+                        cal_idx: dict | None = None,
+                        advertencias: list | None = None) -> str:
     """
     Devuelve "acierto" | "fallo" | "pendiente" para un equipo pronosticado a una ronda.
 
-    Regla (con la corrección de "Turquía" — bug detectado 2026-07-05):
-      1. Si el equipo está en `clasificados[R]` real → acierto.
-      2. Si la ronda R es 1/16 (previa = grupos): fallo si la lista de 1/16 ya
-         está cerrada (32 equipos); pendiente si aún puede completarse.
-      3. Para 1/8, 1/4, semis, final: primero mirar si el equipo aparece en la
-         ronda INMEDIATAMENTE ANTERIOR. Si no, es fallo confirmado ya, sin
-         importar si R sigue abierta — no puede llegar a algo imposible.
-         Solo si sí aparece en prev(R) tiene sentido preguntar si R cerró
-         para decidir entre fallo (cerrada, no está) y pendiente (abierta).
+    Con `resultados` y `cal_idx` usa clasificados_reales() (openfootball +
+    resolutor de bracket) y clasificados_excluidos() (perdedores detectados).
+    Sin ellos, cae al comportamiento previo: solo `real_clasif` (compat. tests).
     """
     if not equipo:
         return "fallo"
     ne = norm(equipo)
-    real_r = {norm(t) for t in (real_clasif.get(ronda) or [])}
-    if ne in real_r:
+
+    def _real_r(r: str) -> set[str]:
+        if resultados is not None and cal_idx is not None:
+            return clasificados_reales(r, resultados, cal_idx, advertencias)
+        return {norm(t) for t in (real_clasif.get(r) or [])}
+
+    real_set = _real_r(ronda)
+    if ne in real_set:
         return "acierto"
 
-    if ronda == "1/16":
-        return "fallo" if _clasificado_ronda_completa("1/16", real_clasif) else "pendiente"
+    # ¿El equipo perdió ya su partido en prev(ronda)? → fallo inmediato.
+    if resultados is not None and cal_idx is not None:
+        excluidos = clasificados_excluidos(ronda, resultados, cal_idx)
+        if ne in excluidos:
+            return "fallo"
 
-    prev = _PREV_ROUND.get(ronda)
+    if ronda == "1/16":
+        return "fallo" if len(_real_r("1/16")) >= 32 else "pendiente"
+
+    prev = _PREV_ROUND_ELIM.get(ronda)
     if prev is None:
         return "pendiente"
-    real_prev = {norm(t) for t in (real_clasif.get(prev) or [])}
-    if ne not in real_prev:
-        return "fallo"
+    if ne not in _real_r(prev):
+        return "fallo"   # regla Turquía: no llegó a la ronda anterior
 
-    return "fallo" if _clasificado_ronda_completa(ronda, real_clasif) else "pendiente"
+    exp = EXPECTED_CLASIF_SIZE.get(ronda, 999)
+    return "fallo" if len(real_set) >= exp else "pendiente"
 
 
-def _clasificados_desglose(clasif_pred: dict, real_clasif: dict) -> dict:
+def _clasificados_desglose(clasif_pred: dict, real_clasif: dict,
+                            resultados: dict | None = None,
+                            cal_idx: dict | None = None,
+                            advertencias: list | None = None) -> dict:
     """Para cada ronda del bracket, marca cada equipo pronosticado con su estado."""
     out = {}
     for ronda in ("1/16", "1/8", "1/4", "semis", "final"):
         entries = []
         aciertos = fallos = pendientes = 0
         for equipo in (clasif_pred.get(ronda) or []):
-            estado = _estado_clasificado(equipo, ronda, real_clasif)
+            estado = _estado_clasificado(equipo, ronda, real_clasif,
+                                         resultados, cal_idx, advertencias)
             entries.append({"equipo": equipo, "estado": estado})
             if estado == "acierto":   aciertos += 1
             elif estado == "fallo":   fallos += 1
@@ -147,76 +160,7 @@ def _detalle_posiciones_grupo(grupos_pred: list,
     return entries
 
 
-def _fase_a_ronda(fase: str) -> str:
-    return {
-        "1/16": "1/16", "1/8": "1/8", "1/4": "1/4",
-        "semis": "semis", "tercer_puesto": "3-4", "final": "final",
-    }.get(fase, fase)
-
-
-# ── Resolutor de cuadro de eliminatoria ──────────────────────────────────────
-
-# Ronda que alimenta a cada ronda de la eliminatoria (para saber si el bracket
-# de la ronda está determinado sin ambigüedad).
-_PREV_ROUND_ELIM = {
-    "1/8":   "1/16",
-    "1/4":   "1/8",
-    "semis": "1/4",
-    "final": "semis",
-    "3-4":   "semis",
-}
-
-# Siguiente ronda a la que pasa el ganador (para desempatar penaltis mirando
-# quién aparece en la lista real de esa ronda).
-_NEXT_ROUND_ELIM = {
-    "1/16": "1/8", "1/8": "1/4", "1/4": "semis", "semis": "final",
-}
-
-_RE_WINNER = re.compile(r"^W(\d+)$", re.IGNORECASE)
-_RE_LOSER  = re.compile(r"^L(\d+)$", re.IGNORECASE)
-
-
-def _ganador_partido(match_id: int, marc_por_id: dict,
-                     cal_idx: dict, real_clasif: dict) -> str | None:
-    """
-    Ganador de un partido de eliminatoria finalizado. Si el resultado fue
-    empate (fue a penaltis y no lo tenemos en marcadores), cruza con la
-    lista de clasificados de la siguiente ronda para desambiguar.
-    """
-    m = marc_por_id.get(match_id)
-    if not m or m.get("estado") != "finalizado":
-        return None
-    L, V = m.get("local"), m.get("visitante")
-    if not L or not V:
-        return None
-    gl, gv = m.get("goles_local"), m.get("goles_visitante")
-    if gl is not None and gv is not None and gl != gv:
-        return L if gl > gv else V
-    cal = cal_idx.get(match_id)
-    if not cal:
-        return None
-    next_r = _NEXT_ROUND_ELIM.get(_fase_a_ronda(cal.get("fase") or ""))
-    if not next_r:
-        return None
-    real_next = {norm(t) for t in (real_clasif.get(next_r) or [])}
-    if norm(L) in real_next: return L
-    if norm(V) in real_next: return V
-    return None
-
-
-def _perdedor_partido(match_id: int, marc_por_id: dict,
-                      cal_idx: dict, real_clasif: dict) -> str | None:
-    """Análogo a _ganador_partido para el perdedor (útil en tercer_puesto)."""
-    m = marc_por_id.get(match_id)
-    if not m or m.get("estado") != "finalizado":
-        return None
-    L, V = m.get("local"), m.get("visitante")
-    if not L or not V:
-        return None
-    ganador = _ganador_partido(match_id, marc_por_id, cal_idx, real_clasif)
-    if not ganador:
-        return None
-    return V if norm(ganador) == norm(L) else L
+# ── Resolutor de slot ────────────────────────────────────────────────────────
 
 
 def _resolver_slot(placeholder: str, marc_por_id: dict, cal_idx: dict,
@@ -451,7 +395,8 @@ def _estado_elim_marcador(pred_entry: dict,
             "motivo": f"{ausente} no llegó a esta ronda",
         }
 
-    if _clasificado_ronda_completa(ronda, real_clasif):
+    _r_tmp = {"clasificados": real_clasif, "marcadores": marcadores or []}
+    if len(clasificados_reales(ronda, _r_tmp, cal_idx)) >= EXPECTED_CLASIF_SIZE.get(ronda, 999):
         return {
             "estado": "cruce_no_ocurrio", "pts": 0,
             "motivo": f"Ni {L} ni {V} llegaron a esta ronda",
@@ -570,7 +515,9 @@ def generar_detalle(porra: str,
             "clasificados":          pp.get("clasificados", {}),
             "clasificados_desglose": _clasificados_desglose(
                                         pp.get("clasificados") or {},
-                                        real_clasif),
+                                        real_clasif,
+                                        resultados=resultados,
+                                        cal_idx=cal_idx),
             "honor":                 pp.get("honor", {}),
             "premios":               pp.get("premios", {}),
         }

@@ -164,6 +164,108 @@
     ]
   },
   {
+    "match_id": 98,
+    "fecha_hora_utc": "2026-07-10T19:00:00Z",
+    "fase": "1/4",
+    "grupo": "",
+    "jornada": "",
+    "local": "Spain",
+    "visitante": "Belgium",
+    "estado": "pendiente",
+    "goles_local": null,
+    "goles_visitante": null,
+    "predicciones": [
+      {
+        "nickname": "Barrilete Cósmico",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 4,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Chistu",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "colometa",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Des-cono-cida",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Gargamel",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "ilovealiens",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "La de la intuición",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 1
+        }
+      },
+      {
+        "nickname": "Mundial? Qué Mundial?",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "Paps",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 2
+        }
+      },
+      {
+        "nickname": "Pickles' Retrievers",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 2,
+          "goles_visitante": 0
+        }
+      },
+      {
+        "nickname": "TexMex",
+        "prediccion": {
+          "signo": "1",
+          "goles_local": 3,
+          "goles_visitante": 1
+        }
+      }
+    ]
+  },
+  {
     "match_id": 99,
     "fecha_hora_utc": "2026-07-11T21:00:00Z",
     "fase": "1/4",

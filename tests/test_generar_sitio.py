@@ -23,15 +23,19 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from motor.generar_sitio import (
-    _clasificado_ronda_completa,
     _clasificados_desglose,
     _detalle_posiciones_grupo,
     _estado_clasificado,
     _estado_elim_marcador,
-    _ganador_partido,
     _resolver_pairs_ronda,
     _sin_pronostico_elim,
     generar_proximos,
+)
+from motor.clasif_real import (
+    _ganador_partido,
+    clasificados_reales,
+    clasificados_excluidos,
+    EXPECTED_CLASIF_SIZE,
 )
 
 
@@ -50,23 +54,32 @@ def _clasif(n1_16=None, n1_8=None, n1_4=None, n_semis=None, n_final=None):
     }
 
 
-# ── _clasificado_ronda_completa ──────────────────────────────────────────────
+# ── clasificados_reales — completitud vía tamaño ─────────────────────────────
+
+def _resultados_desde_clasif(clasif: dict) -> dict:
+    """Envuelve un dict clasificados en el formato resultados esperado."""
+    return {"clasificados": clasif, "marcadores": []}
 
 class TestRondaCompleta:
     def test_1_16_llena(self):
-        assert _clasificado_ronda_completa("1/16", _clasif(n1_16=32)) is True
+        r = clasificados_reales("1/16", _resultados_desde_clasif(_clasif(n1_16=32)), {})
+        assert len(r) >= EXPECTED_CLASIF_SIZE["1/16"]
 
     def test_1_16_incompleta(self):
-        assert _clasificado_ronda_completa("1/16", _clasif(n1_16=30)) is False
+        r = clasificados_reales("1/16", _resultados_desde_clasif(_clasif(n1_16=30)), {})
+        assert len(r) < EXPECTED_CLASIF_SIZE["1/16"]
 
     def test_1_8_llena(self):
-        assert _clasificado_ronda_completa("1/8", _clasif(n1_8=16)) is True
+        r = clasificados_reales("1/8", _resultados_desde_clasif(_clasif(n1_8=16)), {})
+        assert len(r) >= EXPECTED_CLASIF_SIZE["1/8"]
 
     def test_1_8_incompleta(self):
-        assert _clasificado_ronda_completa("1/8", _clasif(n1_8=13)) is False
+        r = clasificados_reales("1/8", _resultados_desde_clasif(_clasif(n1_8=13)), {})
+        assert len(r) < EXPECTED_CLASIF_SIZE["1/8"]
 
     def test_ronda_no_reconocida(self):
-        assert _clasificado_ronda_completa("cuartitos", _clasif()) is False
+        r = clasificados_reales("cuartitos", _resultados_desde_clasif(_clasif()), {})
+        assert r == set()  # ronda desconocida devuelve vacío
 
 
 # ── _estado_clasificado ──────────────────────────────────────────────────────
@@ -141,6 +154,101 @@ class TestEstadoClasificado:
     def test_equipo_vacio_devuelve_fallo(self):
         assert _estado_clasificado("", "1/16", _clasif(n1_16=32)) == "fallo"
         assert _estado_clasificado(None, "1/16", _clasif(n1_16=32)) == "fallo"
+
+
+class TestEstadoClasificadoConResolver:
+    """Tests que usan la nueva rama con resultados+cal_idx (resolutor activo)."""
+
+    def _resultados_1_8_parcial(self):
+        """
+        4 de 8 partidos de 1/8 finalizados: France, Morocco, Norway, England
+        avanzaron a 1/4. Brazil perdió su partido (contra Norway).
+        clasificados["1/4"] está vacío (openfootball no ha actualizado).
+        """
+        marc = [
+            {"match_id": 89, "estado": "finalizado",
+             "local": "Paraguay", "visitante": "France",
+             "goles_local": 0, "goles_visitante": 1},
+            {"match_id": 90, "estado": "finalizado",
+             "local": "Canada",   "visitante": "Morocco",
+             "goles_local": 0, "goles_visitante": 3},
+            {"match_id": 91, "estado": "finalizado",
+             "local": "Brazil",   "visitante": "Norway",
+             "goles_local": 1, "goles_visitante": 2},
+            {"match_id": 92, "estado": "finalizado",
+             "local": "Mexico",   "visitante": "England",
+             "goles_local": 2, "goles_visitante": 3},
+        ]
+        clasif = {
+            "1/16": [f"T{i}" for i in range(32)],
+            "1/8":  ["France","Morocco","Norway","England","Brazil",
+                     "Paraguay","Canada","Mexico",
+                     "Spain","Portugal","USA","Belgium",
+                     "Argentina","Egypt","Switzerland","Colombia"],
+            "1/4": [],   # openfootball no ha publicado
+        }
+        cal_idx = {
+            89: {"id": 89, "fase": "1/8"},
+            90: {"id": 90, "fase": "1/8"},
+            91: {"id": 91, "fase": "1/8"},
+            92: {"id": 92, "fase": "1/8"},
+        }
+        return {"clasificados": clasif, "marcadores": marc}, cal_idx
+
+    def test_regresion_brazil_fallo_en_1_4(self):
+        """
+        Bug detectado 2026-07-09: Brazil perdió su partido de 1/8 contra
+        Norway (match 91, 1-2). Debe aparecer como 'fallo' en 1/4, no como
+        'pendiente', incluso cuando clasificados['1/4'] está vacío en openfootball.
+        """
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("Brazil", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "fallo", (
+            "Brazil perdió en 1/8 → no puede llegar a 1/4. "
+            "El resolutor debe detectar que Brazil es un 'excluido'."
+        )
+
+    def test_france_acierto_en_1_4(self):
+        """France ganó su partido de 1/8 → 'acierto' en 1/4."""
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("France", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "acierto"
+
+    def test_morocco_acierto_en_1_4(self):
+        """Morocco ganó su partido de 1/8 → 'acierto' en 1/4."""
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("Morocco", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "acierto"
+
+    def test_england_acierto_en_1_4(self):
+        """England ganó su partido de 1/8 → 'acierto' en 1/4."""
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("England", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "acierto"
+
+    def test_spain_pendiente_en_1_4(self):
+        """Spain está viva en 1/8 pero su partido aún no se ha jugado → pendiente."""
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("Spain", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "pendiente"
+
+    def test_turkey_fallo_en_1_4_via_regla_previa(self):
+        """Turkey ni siquiera está en 1/8 real → fallo (regla Turquía, prev round)."""
+        resultados, cal_idx = self._resultados_1_8_parcial()
+        estado = _estado_clasificado("Turkey", "1/4",
+                                     resultados["clasificados"],
+                                     resultados=resultados, cal_idx=cal_idx)
+        assert estado == "fallo"
 
 
 # ── _clasificados_desglose ───────────────────────────────────────────────────
@@ -369,6 +477,50 @@ class TestSinPronosticoElim:
         cal_idx = {1: {"id": 1, "fase": "grupos"}}
         out = _sin_pronostico_elim([], marc, cal_idx)
         assert out == {}
+
+    def test_clasificados_reales_combina_openfootball_y_resolutor(self):
+        """
+        Con clasificados[1/4] vacío (openfootball no ha publicado) pero 4
+        partidos de 1/8 ya finalizados, clasificados_reales debe devolver los
+        4 ganadores conocidos.
+        """
+        marc = [
+            {"match_id": 89, "estado": "finalizado",
+             "local": "Paraguay", "visitante": "France",
+             "goles_local": 0, "goles_visitante": 1},   # France gana
+            {"match_id": 90, "estado": "finalizado",
+             "local": "Canada",   "visitante": "Morocco",
+             "goles_local": 0, "goles_visitante": 3},   # Morocco gana
+            {"match_id": 91, "estado": "finalizado",
+             "local": "Brazil",   "visitante": "Norway",
+             "goles_local": 1, "goles_visitante": 2},   # Norway gana
+            {"match_id": 92, "estado": "finalizado",
+             "local": "Mexico",   "visitante": "England",
+             "goles_local": 2, "goles_visitante": 3},   # England gana
+        ]
+        cal_idx = {
+            89: {"id": 89, "fase": "1/8"},
+            90: {"id": 90, "fase": "1/8"},
+            91: {"id": 91, "fase": "1/8"},
+            92: {"id": 92, "fase": "1/8"},
+        }
+        resultados = {
+            "clasificados": {"1/8": ["Paraguay","France","Canada","Morocco",
+                                     "Brazil","Norway","Mexico","England"],
+                             "1/4": []},   # openfootball aún vacío
+            "marcadores": marc,
+        }
+        r = clasificados_reales("1/4", resultados, cal_idx)
+        assert "france"  in r
+        assert "morocco" in r
+        assert "norway"  in r
+        assert "england" in r
+        # Los perdedores NO deben estar
+        assert "brazil"   not in r
+        assert "mexico"   not in r
+        assert "paraguay" not in r
+        assert "canada"   not in r
+
 
     def test_agrupa_por_ronda(self):
         marc = [

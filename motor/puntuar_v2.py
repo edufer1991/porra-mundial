@@ -41,6 +41,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from motor.tabla_grupo import calcular_tabla_grupos
+from motor.clasif_real import clasificados_reales
 
 BASE        = Path(__file__).resolve().parent.parent
 CALENDARIO  = BASE / "datos" / "calendario.json"
@@ -288,12 +289,21 @@ def _fase_a_ronda(fase: str) -> str:
 
 
 # ── Sección: clasificados por ronda (desde pronosticos.clasificados) ─────────
-def _puntuar_clasificados(clasif_pred: dict, clasif_real: dict) -> dict:
+def _puntuar_clasificados(clasif_pred: dict, clasif_real: dict,
+                          resultados: dict | None = None,
+                          cal_idx: dict | None = None) -> dict:
+    """
+    Con `resultados` y `cal_idx` usa clasificados_reales() (openfootball +
+    resolutor de bracket). Sin ellos, solo `clasif_real` (retrocompatibilidad).
+    """
     detalle: dict[str, dict] = {}
     total = 0
     for ronda, puntos in REGLAS_V2["clasificados"].items():
         pred_set = {norm(e) for e in (clasif_pred.get(ronda) or []) if e}
-        real_set = {norm(e) for e in (clasif_real.get(ronda) or []) if e}
+        if resultados is not None and cal_idx is not None:
+            real_set = clasificados_reales(ronda, resultados, cal_idx)
+        else:
+            real_set = {norm(e) for e in (clasif_real.get(ronda) or []) if e}
         aciertos = pred_set & real_set
         n = len(aciertos)
         if n > 0:
@@ -372,7 +382,9 @@ def puntuar_participante(pronostico: dict,
     secc_elim   = _puntuar_elim_marcadores(pp.get("elim_marcadores") or [],
                                            marc_por_id, cal_idx_por_id)
     secc_clas   = _puntuar_clasificados(pp.get("clasificados") or {},
-                                        resultados.get("clasificados") or {})
+                                        resultados.get("clasificados") or {},
+                                        resultados=resultados,
+                                        cal_idx=cal_idx_por_id)
     secc_honor  = _puntuar_honor(pp.get("honor") or {}, resultados.get("honor") or {})
     secc_prem, advert = _puntuar_premios(pp.get("premios") or {},
                                          resultados.get("premios") or {},
