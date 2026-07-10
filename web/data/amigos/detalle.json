@@ -2750,7 +2750,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -2758,8 +2758,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 1,
         "pts": 0
       }
     },
@@ -5526,16 +5526,16 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 0,
+        "pendientes": 2,
         "pts": 0
       }
     },
@@ -8302,16 +8302,16 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 0,
+        "pendientes": 2,
         "pts": 0
       }
     },
@@ -11078,7 +11078,7 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -11086,8 +11086,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 1,
         "pts": 0
       }
     },
@@ -13854,7 +13854,7 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -13862,8 +13862,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 1,
         "pts": 0
       }
     },
@@ -16630,7 +16630,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Brazil",
@@ -16638,8 +16638,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 1,
         "pts": 0
       }
     },
@@ -19059,7 +19059,7 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Portugal",
@@ -19067,8 +19067,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 1,
+        "pendientes": 1,
         "pts": 0
       }
     },
@@ -21835,16 +21835,16 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "fallo"
+            "estado": "pendiente"
           },
           {
             "equipo": "Argentina",
-            "estado": "fallo"
+            "estado": "pendiente"
           }
         ],
         "aciertos": 0,
-        "fallos": 2,
-        "pendientes": 0,
+        "fallos": 0,
+        "pendientes": 2,
         "pts": 0
       }
     },

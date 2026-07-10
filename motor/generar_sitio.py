@@ -92,8 +92,21 @@ def _estado_clasificado(equipo: str, ronda: str,
     prev = _PREV_ROUND_ELIM.get(ronda)
     if prev is None:
         return "pendiente"
-    if ne not in _real_r(prev):
-        return "fallo"   # regla Turquía: no llegó a la ronda anterior
+
+    # Propagación recursiva del estado.
+    # Si el equipo es "fallo" en prev(ronda), también lo es aquí — la cadena
+    # de rondas cerradas lo propaga hacia adelante sin importar si las rondas
+    # intermedias tienen su lista publicada o no.
+    #
+    # Esto evita el bug Spain-en-final (2026-07-10): "semis" vacío ≠
+    # "Spain eliminada antes de semis". La regla directa "ne not in prev"
+    # trataba ambos casos igual; la recursión los distingue: Spain es
+    # "pendiente" en semis (la recursión lo detecta), y por tanto "pendiente"
+    # en final — no "fallo".
+    prev_estado = _estado_clasificado(equipo, prev, real_clasif,
+                                      resultados, cal_idx, advertencias)
+    if prev_estado == "fallo":
+        return "fallo"
 
     exp = EXPECTED_CLASIF_SIZE.get(ronda, 999)
     return "fallo" if len(real_set) >= exp else "pendiente"

@@ -251,6 +251,186 @@ class TestEstadoClasificadoConResolver:
         assert estado == "fallo"
 
 
+# ── Propagación recursiva: Spain/final, Turkey/final, Brazil/final, 3-4 ──────
+
+class TestEstadoClasificadoRecursivo:
+    """
+    Cubre el bug detectado el 2026-07-10: la "regla Turquía" directa
+    (ne not in real_prev) confundía "ronda anterior vacía porque nadie la
+    ha jugado aún" con "equipo eliminado antes de esa ronda".
+
+    La corrección aplica propagación recursiva: el estado de una ronda R se
+    deriva del estado de prev(R), lo que distingue correctamente:
+      · equipo confirmado en 1/4 → pendiente en semis/final/3-4 (no fallo)
+      · equipo eliminado antes de 1/16 → fallo en todas las rondas posteriores
+    """
+
+    def _resultados_1_8_completo(self):
+        """
+        Los 8 partidos de 1/8 están finalizados; ningún 1/4 se ha jugado.
+        Los cuartofinalistas son: France, Morocco, Norway, England,
+        Spain, Portugal, Argentina, Egypt.
+        Brazil, Turkey, etc. fueron eliminados antes de 1/4.
+        """
+        marc = [
+            {"match_id": 89, "estado": "finalizado",
+             "local": "Paraguay",  "visitante": "France",
+             "goles_local": 0, "goles_visitante": 1},
+            {"match_id": 90, "estado": "finalizado",
+             "local": "Canada",    "visitante": "Morocco",
+             "goles_local": 0, "goles_visitante": 3},
+            {"match_id": 91, "estado": "finalizado",
+             "local": "Brazil",    "visitante": "Norway",
+             "goles_local": 1, "goles_visitante": 2},
+            {"match_id": 92, "estado": "finalizado",
+             "local": "Mexico",    "visitante": "England",
+             "goles_local": 2, "goles_visitante": 3},
+            {"match_id": 93, "estado": "finalizado",
+             "local": "Portugal",  "visitante": "Spain",
+             "goles_local": 1, "goles_visitante": 2},
+            {"match_id": 94, "estado": "finalizado",
+             "local": "USA",       "visitante": "Belgium",
+             "goles_local": 0, "goles_visitante": 1},
+            {"match_id": 95, "estado": "finalizado",
+             "local": "Argentina", "visitante": "Egypt",
+             "goles_local": 2, "goles_visitante": 1},
+            {"match_id": 96, "estado": "finalizado",
+             "local": "Switzerland","visitante": "Colombia",
+             "goles_local": 1, "goles_visitante": 0},
+        ]
+        clasif = {
+            "1/16": [f"T{i}" for i in range(32)],   # 32 teams en 1/16
+            "1/8":  ["France","Morocco","Norway","England",
+                     "Spain","Belgium","Argentina","Switzerland",
+                     "Brazil","Mexico","Portugal","USA",
+                     "Paraguay","Canada","Egypt","Colombia"],
+            "1/4":  [],    # openfootball aún no publicó
+            "semis": [],
+            "final": [],
+        }
+        cal_idx = {mid: {"id": mid, "fase": "1/8"}
+                   for mid in range(89, 97)}
+        return {"clasificados": clasif, "marcadores": marc}, cal_idx
+
+    # ── Los 5 casos de la tabla del diagnóstico ────────────────────────────────
+
+    def test_spain_semis_pendiente(self):
+        """Spain ganó en 1/8 → está confirmada en 1/4 → pendiente en semis."""
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Spain", "semis", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "pendiente"
+
+    def test_spain_final_pendiente(self):
+        """
+        Spain ganó en 1/8 → confirmada en 1/4 → pendiente en semis →
+        PENDIENTE en final. Bug anterior: semis vacío disparaba la regla
+        Turquía y devolvía 'fallo'.
+        """
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Spain", "final", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "pendiente", (
+            "Spain está confirmada en 1/4; semis y final no se han jugado. "
+            "Debe ser pendiente, no fallo."
+        )
+
+    def test_turkey_final_fallo(self):
+        """
+        Turkey nunca llegó a 1/16. Debe ser fallo en todas las rondas
+        incluida final, propagándose recursivamente desde 1/16.
+        """
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Turkey", "final", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "fallo"
+
+    def test_brazil_final_fallo(self):
+        """
+        Brazil perdió en 1/8 vs Norway → excluida de 1/4 → fallo propagado
+        hasta final.
+        """
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Brazil", "final", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "fallo"
+
+    # ── Caso 3-4: cubierto aunque hoy no sea visible en pantalla ──────────────
+
+    def test_spain_3_4_pendiente(self):
+        """
+        3-4 se decide con los perdedores de semis. Spain está viva en 1/4;
+        semis no se ha jugado → Spain en 3-4 debe ser pendiente (no fallo).
+        """
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Spain", "3-4", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "pendiente"
+
+    def test_turkey_3_4_fallo(self):
+        """Turkey eliminada en grupos → fallo en 3-4 también."""
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Turkey", "3-4", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "fallo"
+
+    def test_brazil_semis_fallo(self):
+        """Brazil perdió en 1/8 → fallo también en semis (no solo en final)."""
+        res, cal = self._resultados_1_8_completo()
+        estado = _estado_clasificado("Brazil", "semis", res["clasificados"],
+                                     resultados=res, cal_idx=cal)
+        assert estado == "fallo"
+
+
+# ── Verificación de invariantes de _PREV_ROUND_ELIM ──────────────────────────
+
+class TestPrevRoundElimInvariantes:
+    """
+    _PREV_ROUND_ELIM define la cadena de rondas que usa la recursión de
+    _estado_clasificado. Estos tests garantizan que no hay ciclos y que
+    toda cadena termina en 1/16 — requisito indispensable para que la
+    recursión siempre termine.
+    """
+
+    def test_sin_ciclos_y_termina_en_1_16(self):
+        """
+        Desde cualquier ronda del dict, la cadena de prev llega a 1/16
+        sin pasar dos veces por la misma ronda.
+        """
+        from motor.clasif_real import _PREV_ROUND_ELIM
+        for start in _PREV_ROUND_ELIM:
+            visited: set[str] = set()
+            current = start
+            depth = 0
+            while current in _PREV_ROUND_ELIM:
+                assert current not in visited, \
+                    f"Ciclo en _PREV_ROUND_ELIM detectado desde '{start}': '{current}' visitado dos veces"
+                visited.add(current)
+                current = _PREV_ROUND_ELIM[current]
+                depth += 1
+                assert depth <= 10, \
+                    f"Cadena demasiado larga (>10 saltos) desde '{start}'"
+            assert current == "1/16", \
+                f"Cadena desde '{start}' no termina en '1/16', termina en '{current}'"
+
+    def test_1_16_no_tiene_prev(self):
+        """1/16 es el caso base de la recursión: no debe tener ronda anterior."""
+        from motor.clasif_real import _PREV_ROUND_ELIM
+        assert "1/16" not in _PREV_ROUND_ELIM, \
+            "1/16 no puede tener un prev o la recursión no terminaría"
+
+    def test_todas_las_rondas_de_bracket_cubiertas(self):
+        """
+        Las rondas 1/8, 1/4, semis, final y 3-4 deben tener prev definido.
+        Si se añade una ronda nueva al bracket, este test lo detecta.
+        """
+        from motor.clasif_real import _PREV_ROUND_ELIM
+        esperadas = {"1/8", "1/4", "semis", "final", "3-4"}
+        for r in esperadas:
+            assert r in _PREV_ROUND_ELIM, \
+                f"Ronda '{r}' no tiene prev definido en _PREV_ROUND_ELIM"
+
+
 # ── _clasificados_desglose ───────────────────────────────────────────────────
 
 class TestClasificadosDesglose:
