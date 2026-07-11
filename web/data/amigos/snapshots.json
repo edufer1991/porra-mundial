@@ -1135,6 +1135,51 @@
           "puntos_total": 858
         }
       ]
+    },
+    {
+      "fecha": "2026-07-11T13:14:38Z",
+      "clasificacion": [
+        {
+          "nickname": "Mguitart",
+          "posicion": 1,
+          "puntos_total": 1085
+        },
+        {
+          "nickname": "Mr_Jusi_17",
+          "posicion": 2,
+          "puntos_total": 1056
+        },
+        {
+          "nickname": "Ubi",
+          "posicion": 3,
+          "puntos_total": 1030
+        },
+        {
+          "nickname": "Pol",
+          "posicion": 4,
+          "puntos_total": 998
+        },
+        {
+          "nickname": "Jordi",
+          "posicion": 5,
+          "puntos_total": 986
+        },
+        {
+          "nickname": "Maximo10",
+          "posicion": 6,
+          "puntos_total": 952
+        },
+        {
+          "nickname": "Pulpo Paul",
+          "posicion": 7,
+          "puntos_total": 937
+        },
+        {
+          "nickname": "Tucas",
+          "posicion": 8,
+          "puntos_total": 858
+        }
+      ]
     }
   ]
 }
