@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+# .githooks/pre-commit
+#
+# Rechaza commits que mezclen archivos de CÓDIGO (.py, .js, .css) con
+# archivos de DATOS (datos/resultados.json, web/data/*.json) en el mismo
+# commit.
+#
+# Por qué existe este hook:
+#   El 2026-07-09 y 2026-07-10 un rebase con -X theirs sobreescribió dos
+#   veces los datos frescos del cron con versiones locales stale, porque
+#   el commit de código arrastraba consigo datos/ y web/data/ de la sesión
+#   de trabajo. La disciplina manual falló dos veces consecutivas — por eso
+#   este hook lo impide automáticamente, aunque el autor haga "git commit -a".
+#
+# Para activarlo en un clon nuevo (solo la primera vez):
+#   git config core.hooksPath .githooks
+#
+# Uso correcto en su lugar:
+#   bash scripts/push-code.sh "mensaje"   ← código + datos como pasos separados
+
+set -euo pipefail
+
+STAGED=$(git diff --cached --name-only 2>/dev/null || true)
+
+if [ -z "$STAGED" ]; then
+    exit 0
+fi
+
+# Archivos de datos: resultados.json y cualquier JSON bajo web/data/
+DATA_FILES=$(printf '%s\n' "$STAGED" | grep -E '^(datos/resultados\.json|web/data/.+\.json)$' || true)
+
+# Archivos de código: .py, .js, .css — pero NO los que están bajo web/data/
+CODE_FILES=$(printf '%s\n' "$STAGED" | grep -E '\.(py|js|css)$' | grep -v '^web/data/' || true)
+
+if [ -n "$DATA_FILES" ] && [ -n "$CODE_FILES" ]; then
+    echo ""
+    echo "╔══════════════════════════════════════════════════════════════════════╗"
+    echo "║  ERROR: NO mezcles archivos de código y datos en el mismo commit.  ║"
+    echo "╚══════════════════════════════════════════════════════════════════════╝"
+    echo ""
+    echo "  Archivos de DATOS en el stage:"
+    printf '%s\n' "$DATA_FILES" | sed 's/^/    · /'
+    echo ""
+    echo "  Archivos de CÓDIGO en el stage:"
+    printf '%s\n' "$CODE_FILES" | sed 's/^/    · /'
+    echo ""
+    echo "  ¿Por qué? Un rebase posterior con -X theirs sobreescribirá los"
+    echo "  datos frescos del cron con las versiones stale de esta sesión."
+    echo "  (Ocurrió el 2026-07-09 y el 2026-07-10 — dos veces.)"
+    echo ""
+    echo "  Usa el flujo correcto:"
+    echo "    bash scripts/push-code.sh \"$(git log -1 --pretty=%B 2>/dev/null | head -1 || echo 'tu mensaje')\""
+    echo ""
+    echo "  O destagea los datos antes de commitear el código:"
+    echo "    git restore --staged datos/resultados.json web/data/"
+    echo "    git commit  # solo código"
+    echo ""
+    exit 1
+fi
+
+exit 0

@@ -22,6 +22,19 @@ set -euo pipefail
 
 MSG="${1:-chore: update}"
 
+# ── Salvaguarda temprana: aviso si hay datos ya en el stage ───────────────────
+STAGED_NOW=$(git diff --cached --name-only 2>/dev/null || true)
+if [ -n "$STAGED_NOW" ]; then
+    DATA_PRE=$(printf '%s\n' "$STAGED_NOW" | grep -E '^(datos/resultados\.json|web/data/.+\.json)$' || true)
+    if [ -n "$DATA_PRE" ]; then
+        echo "AVISO: hay archivos de datos ya en el stage. El script los desstageará"
+        echo "para asegurar que el commit de código quede limpio:"
+        printf '%s\n' "$DATA_PRE" | sed 's/^/  · /'
+        git restore --staged $DATA_PRE 2>/dev/null || true
+        echo ""
+    fi
+fi
+
 echo "=== [1/5] Stage solo codigo (sin datos/) ==="
 git add motor/ tests/ web/app.js web/style.css .github/ scripts/ 2>/dev/null || true
 # Añadir otros ficheros de configuracion si existen
