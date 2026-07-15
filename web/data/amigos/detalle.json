@@ -4994,8 +4994,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina no llegó a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -5526,17 +5527,17 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Argentina",
             "estado": "pendiente"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 0,
-        "pendientes": 2,
-        "pts": 0
+        "pendientes": 1,
+        "pts": 20
       }
     },
     "honor": {
@@ -7815,8 +7816,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina no llegó a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -8302,17 +8304,17 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Argentina",
             "estado": "pendiente"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 0,
-        "pendientes": 2,
-        "pts": 0
+        "pendientes": 1,
+        "pts": 20
       }
     },
     "honor": {
@@ -10555,8 +10557,9 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Brazil no llegó a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -11078,17 +11081,17 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 1,
-        "pendientes": 1,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 20
       }
     },
     "honor": {
@@ -13322,8 +13325,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Portugal no llegó a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -13854,17 +13858,17 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 1,
-        "pendientes": 1,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 20
       }
     },
     "honor": {
@@ -19059,17 +19063,17 @@
         "equipos": [
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 1,
-        "pendientes": 1,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 20
       }
     },
     "honor": {
