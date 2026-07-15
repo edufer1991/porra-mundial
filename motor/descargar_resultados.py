@@ -49,8 +49,10 @@ RONDAS_2026: dict[str, str] = {
     "Round of 16":              "1/8",
     "Quarter-finals":           "1/4",
     "Quarter finals":           "1/4",
+    "Quarter-final":            "1/4",   # singular — openfootball 2026
     "Semi-finals":              "semis",
     "Semi finals":              "semis",
+    "Semi-final":               "semis", # singular — openfootball 2026
     "Final":                    "final",
     "Third-place play-off":     "tercer_puesto",
     "Third place play-off":     "tercer_puesto",
@@ -63,8 +65,10 @@ RONDAS_2022: dict[str, str] = {
     "Round of 16":              "1/16",   # primer corte de la eliminatoria
     "Quarter-finals":           "1/4",
     "Quarter finals":           "1/4",
+    "Quarter-final":            "1/4",
     "Semi-finals":              "semis",
     "Semi finals":              "semis",
+    "Semi-final":               "semis",
     "Final":                    "final",
     "Third-place play-off":     "tercer_puesto",
     "Third place play-off":     "tercer_puesto",
@@ -238,13 +242,26 @@ def _determinar_estado(match: dict, ahora: datetime | None = None) -> str:
     return "pendiente"
 
 
-def _map_ronda(ronda_str: str, rondas: dict[str, str]) -> str | None:
+def _map_ronda(ronda_str: str, rondas: dict[str, str],
+               rondas_no_reconocidas: set | None = None) -> str | None:
+    """
+    Traduce un string de ronda de openfootball al código interno.
+    Si el string no está en el mapeo, lo registra en `rondas_no_reconocidas`
+    (si se pasa) para que el llamador pueda emitir un aviso visible.
+
+    Motivación: este es el tercer fallo silencioso por formato inesperado de
+    openfootball (UTC-7, slots ambiguos, y ahora singular vs plural en rondas).
+    El aviso lo hace visible en los logs del cron antes de que la web deje de
+    actualizarse durante días.
+    """
     if ronda_str in rondas:
         return rondas[ronda_str]
     rn = norm(ronda_str)
     for k, v in rondas.items():
         if norm(k) == rn:
             return v
+    if rondas_no_reconocidas is not None:
+        rondas_no_reconocidas.add(ronda_str)
     return None
 
 
@@ -306,6 +323,10 @@ def parsear_openfootball(
     clasificados: dict[str, set[str]] = {r: set() for r in RONDAS_CLAS}
     honor = {"campeon": None, "subcampeon": None, "tercero": None, "cuarto": None}
     stats = {"grupos_encontrados": 0, "grupos_sin_id": 0, "elim_procesadas": 0}
+    # Strings de ronda no reconocidos — se reportan al final para que el cron
+    # los haga visibles en el log (evita que un cambio de formato de openfootball
+    # falle silenciosamente durante días, como ocurrió con "Quarter-final" 2026).
+    rondas_no_reconocidas: set[str] = set()
 
     for match in data.get("matches", []):
         ronda_of = match.get("round", "")
@@ -333,7 +354,7 @@ def parsear_openfootball(
             continue
 
         # ── Eliminatorias ───────────────────────────────────────────────────
-        clave = _map_ronda(ronda_of, rondas)
+        clave = _map_ronda(ronda_of, rondas, rondas_no_reconocidas)
         if not clave:
             continue
 
@@ -381,6 +402,9 @@ def parsear_openfootball(
                             "visitante": t2_real,
                         })
                         stats["elim_marcadores"] = stats.get("elim_marcadores", 0) + 1
+
+    if rondas_no_reconocidas:
+        stats["rondas_no_reconocidas"] = sorted(rondas_no_reconocidas)
 
     return {
         "marcadores":   sorted(marcadores, key=lambda m: m["match_id"]),
@@ -544,6 +568,13 @@ def main() -> None:
           f"({len(posiciones_grupo)} equipos posicionados)")
     print(f"  Honor  : {resultado['honor']}")
     print(f"  Premios: {premios}")
+    if stats.get("rondas_no_reconocidas"):
+        # Aviso visible — mismo canal que empates no resueltos en posiciones_grupo.
+        # Patrón recurrente: openfootball cambia un string y nuestro código falla en
+        # silencio (UTC-7, slots ambiguos, singular vs plural). Detectarlo aquí.
+        print(f"  [AVISO] Rondas de openfootball no reconocidas (revisar RONDAS_202X):")
+        for r in stats["rondas_no_reconocidas"]:
+            print(f"    - {repr(r)}")
     if ano != "2026":
         print(f"  [NOTA] Modo validacion {ano}: match_ids de grupos no corresponden al calendario 2026.")
     print(f"  -> {salida}")

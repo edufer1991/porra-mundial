@@ -132,3 +132,69 @@ def test_elim_marcador_placeholder_no_guarda():
     of_json = _of_json_elim("1A", "2B", [3, 1], "2026-06-28", "19:00")
     result = parsear_openfootball(of_json, {}, RONDAS_2026, elim_time_idx=elim_idx)
     assert result["marcadores"] == []
+
+
+# ── Tests: detección de rondas no reconocidas ─────────────────────────────────
+
+def test_ronda_desconocida_se_registra_en_stats():
+    """
+    Una ronda con nombre inesperado (ej. cambio de formato en openfootball)
+    debe registrarse en stats["rondas_no_reconocidas"] en vez de fallar en
+    silencio. Protege contra el patrón recurrente de 'Quarter-final' (2026)
+    vs 'Quarter-finals' (2022).
+    """
+    of_json = {
+        "matches": [
+            {
+                "round": "BOGUS_ROUND",
+                "team1": "France",
+                "team2": "Argentina",
+                "score": {"ft": [2, 1]},
+                "date": "2026-07-01",
+                "time": "20:00",
+            }
+        ]
+    }
+    result = parsear_openfootball(of_json, {}, RONDAS_2026)
+    assert "rondas_no_reconocidas" in result["stats"], (
+        "stats debe incluir 'rondas_no_reconocidas' cuando hay rondas desconocidas"
+    )
+    assert "BOGUS_ROUND" in result["stats"]["rondas_no_reconocidas"]
+
+
+def test_rondas_conocidas_no_aparecen_en_aviso():
+    """Las rondas del mapeo estándar no deben generar ningún aviso."""
+    # Usamos 'Quarter-final' (singular) — el que fallaba en silencio antes del fix
+    of_json = {
+        "matches": [
+            {
+                "round": "Quarter-final",
+                "team1": "France",
+                "team2": "Argentina",
+                "score": {"ft": [2, 1]},
+                "date": "2026-07-01",
+                "time": "20:00",
+            }
+        ]
+    }
+    result = parsear_openfootball(of_json, {}, RONDAS_2026)
+    assert "rondas_no_reconocidas" not in result["stats"]
+
+
+def test_semifinal_singular_reconocido():
+    """'Semi-final' singular (2026) debe mapearse a 'semis' sin aviso."""
+    of_json = {
+        "matches": [
+            {
+                "round": "Semi-final",
+                "team1": "France",
+                "team2": "Spain",
+                "score": {"ft": [1, 2]},
+                "date": "2026-07-09",
+                "time": "20:00",
+            }
+        ]
+    }
+    result = parsear_openfootball(of_json, {}, RONDAS_2026)
+    assert "rondas_no_reconocidas" not in result["stats"]
+    assert "Spain" in result["clasificados"].get("semis", [])
