@@ -2146,8 +2146,18 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       },
       {
         "ronda": "1/4",
@@ -2158,7 +2168,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Belgium, no contra Turkey en esta ronda"
+        "motivo": "Spain jugó contra Belgium, no contra Turkey en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -2169,7 +2179,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -2178,8 +2188,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -2188,7 +2199,17 @@
         "signo": "X",
         "gl": 2,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -2198,8 +2219,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra Argentina, no contra Portugal en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -2396,6 +2418,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 98,
+          "local": "Spain",
+          "visitante": "Belgium",
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -2726,31 +2777,31 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 3,
         "fallos": 1,
-        "pendientes": 3,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 48
       },
       "final": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Portugal",
@@ -2758,8 +2809,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 1,
+        "fallos": 2,
+        "pendientes": 0,
         "pts": 0
       }
     },
@@ -4924,7 +4975,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra Morocco, no contra Netherlands en esta ronda"
+        "motivo": "France jugó contra Morocco, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -4933,8 +4984,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": true
+        },
+        "pts": 15
       },
       {
         "ronda": "1/4",
@@ -4945,7 +5006,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -4954,8 +5015,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -4964,8 +5026,18 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "semis",
@@ -4974,8 +5046,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -5173,6 +5246,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -5503,7 +5605,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
@@ -5511,17 +5613,17 @@
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 3,
         "fallos": 1,
-        "pendientes": 3,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 48
       },
       "final": {
         "equipos": [
@@ -7746,7 +7848,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra Morocco, no contra Netherlands en esta ronda"
+        "motivo": "France jugó contra Morocco, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -7755,8 +7857,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/4",
@@ -7767,7 +7879,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -7776,8 +7888,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -7786,8 +7899,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "semis",
@@ -7796,7 +7919,7 @@
         "signo": "2",
         "gl": 0,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -7950,6 +8073,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -8280,25 +8432,25 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 4,
         "fallos": 0,
-        "pendientes": 4,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 64
       },
       "final": {
         "equipos": [
@@ -10485,8 +10637,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/4",
@@ -10497,7 +10659,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Belgium, no contra Senegal en esta ronda"
+        "motivo": "Spain jugó contra Belgium, no contra Senegal en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -10508,7 +10670,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -10517,8 +10679,9 @@
         "signo": "X",
         "gl": 1,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -10527,8 +10690,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "semis",
@@ -10537,8 +10710,9 @@
         "signo": "1",
         "gl": 1,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -10727,6 +10901,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 98,
+          "local": "Spain",
+          "visitante": "Belgium",
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -11057,7 +11260,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
@@ -11065,17 +11268,17 @@
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 3,
         "fallos": 1,
-        "pendientes": 3,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 48
       },
       "final": {
         "equipos": [
@@ -13255,7 +13458,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra Morocco, no contra Japan en esta ronda"
+        "motivo": "France jugó contra Morocco, no contra Japan en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -13264,8 +13467,18 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/4",
@@ -13276,7 +13489,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -13285,8 +13498,9 @@
         "signo": "2",
         "gl": 0,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -13295,8 +13509,18 @@
         "signo": "2",
         "gl": 2,
         "gv": 3,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "semis",
@@ -13305,8 +13529,9 @@
         "signo": "X",
         "gl": 2,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Ni Brazil ni Portugal llegaron a esta ronda"
       },
       {
         "ronda": "3-4",
@@ -13504,6 +13729,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -13834,7 +14088,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
@@ -13842,17 +14096,17 @@
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 2,
         "fallos": 2,
-        "pendientes": 2,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 32
       },
       "final": {
         "equipos": [
@@ -16014,7 +16268,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra Morocco, no contra Sweden en esta ronda"
+        "motivo": "France jugó contra Morocco, no contra Sweden en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -16025,7 +16279,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Belgium, no contra Egypt en esta ronda"
+        "motivo": "Spain jugó contra Belgium, no contra Egypt en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -16034,8 +16288,9 @@
         "signo": "1",
         "gl": 3,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Ni Brazil ni Croatia llegaron a esta ronda"
       },
       {
         "ronda": "1/4",
@@ -16044,8 +16299,9 @@
         "signo": "X",
         "gl": 1,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -16054,7 +16310,17 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -16064,8 +16330,9 @@
         "signo": "X",
         "gl": 1,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Ni Brazil ni Portugal llegaron a esta ronda"
       },
       {
         "ronda": "3-4",
@@ -16280,6 +16547,44 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 98,
+          "local": "Spain",
+          "visitante": "Belgium",
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -16610,7 +16915,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
@@ -16618,23 +16923,23 @@
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 2,
         "fallos": 2,
-        "pendientes": 2,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 32
       },
       "final": {
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "fallo"
           },
           {
             "equipo": "Brazil",
@@ -16642,8 +16947,8 @@
           }
         ],
         "aciertos": 0,
-        "fallos": 1,
-        "pendientes": 1,
+        "fallos": 2,
+        "pendientes": 0,
         "pts": 0
       }
     },
@@ -18710,6 +19015,55 @@
           "gv": 0,
           "signo": "X"
         }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 98,
+          "local": "Spain",
+          "visitante": "Belgium",
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 101,
+          "local": "France",
+          "visitante": "Spain",
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        }
       ]
     },
     "clasificados": {
@@ -19039,25 +19393,25 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "England",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Portugal",
             "estado": "fallo"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 3,
         "fallos": 1,
-        "pendientes": 3,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 48
       },
       "final": {
         "equipos": [
@@ -21282,7 +21636,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra Morocco, no contra Netherlands en esta ronda"
+        "motivo": "France jugó contra Morocco, no contra Netherlands en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -21291,8 +21645,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 2,
+          "gv": 1,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "1/4",
@@ -21303,7 +21667,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Norway, no contra Brazil en esta ronda"
+        "motivo": "England jugó contra Norway, no contra Brazil en esta ronda"
       },
       {
         "ronda": "1/4",
@@ -21312,8 +21676,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina jugó contra Switzerland, no contra Portugal en esta ronda"
       },
       {
         "ronda": "semis",
@@ -21322,7 +21687,17 @@
         "signo": "1",
         "gl": 3,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -21332,8 +21707,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -21485,6 +21861,35 @@
           "gl": 0,
           "gv": 0,
           "signo": "X"
+        }
+      ],
+      "1/4": [
+        {
+          "ronda": "1/4",
+          "match_id": 97,
+          "local": "France",
+          "visitante": "Morocco",
+          "gl": 2,
+          "gv": 0,
+          "signo": "1"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 99,
+          "local": "Norway",
+          "visitante": "England",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "1/4",
+          "match_id": 100,
+          "local": "Argentina",
+          "visitante": "Switzerland",
+          "gl": 3,
+          "gv": 1,
+          "signo": "1"
         }
       ]
     },
@@ -21815,7 +22220,7 @@
         "equipos": [
           {
             "equipo": "France",
-            "estado": "pendiente"
+            "estado": "acierto"
           },
           {
             "equipo": "Brazil",
@@ -21823,7 +22228,23 @@
           },
           {
             "equipo": "Spain",
-            "estado": "pendiente"
+            "estado": "acierto"
+          },
+          {
+            "equipo": "Argentina",
+            "estado": "acierto"
+          }
+        ],
+        "aciertos": 3,
+        "fallos": 1,
+        "pendientes": 0,
+        "pts": 48
+      },
+      "final": {
+        "equipos": [
+          {
+            "equipo": "France",
+            "estado": "fallo"
           },
           {
             "equipo": "Argentina",
@@ -21832,23 +22253,7 @@
         ],
         "aciertos": 0,
         "fallos": 1,
-        "pendientes": 3,
-        "pts": 0
-      },
-      "final": {
-        "equipos": [
-          {
-            "equipo": "France",
-            "estado": "pendiente"
-          },
-          {
-            "equipo": "Argentina",
-            "estado": "pendiente"
-          }
-        ],
-        "aciertos": 0,
-        "fallos": 0,
-        "pendientes": 2,
+        "pendientes": 1,
         "pts": 0
       }
     },

@@ -1,20 +1,20 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-15T12:14:45Z",
+  "ultima_actualizacion": "2026-07-15T12:31:37Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 537,
-      "puntos_eliminatorias": 568,
+      "puntos_eliminatorias": 642,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 537,
-      "puntos_fase_eliminatoria": 526,
-      "puntos_total": 1105,
+      "puntos_fase_eliminatoria": 590,
+      "puntos_total": 1179,
       "advertencias_premios": [],
-      "total": 1105,
-      "puntos_eliminatoria": 526,
+      "total": 1179,
+      "puntos_eliminatoria": 590,
       "desglose": {
         "grupos": {
           "total": 362,
@@ -814,7 +814,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 42,
+          "total": 52,
           "detalle": [
             {
               "ronda": "1/16",
@@ -911,11 +911,35 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/4",
+              "partido": "Spain-Belgium",
+              "pred": "1|2-0",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "semis",
+              "partido": "France-Spain",
+              "pred": "2|0-1",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
         "clasificados": {
-          "total": 526,
+          "total": 590,
           "detalle": {
             "1/16": {
               "aciertos": 28,
@@ -928,6 +952,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 4,
+              "pts": 64
             },
             "final": {
               "aciertos": 1,
@@ -952,15 +980,15 @@
       "nickname": "Mr_Jusi_17",
       "porra": "amigos",
       "puntos_grupos": 528,
-      "puntos_eliminatorias": 548,
+      "puntos_eliminatorias": 606,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 528,
-      "puntos_fase_eliminatoria": 516,
-      "puntos_total": 1076,
+      "puntos_fase_eliminatoria": 564,
+      "puntos_total": 1134,
       "advertencias_premios": [],
-      "total": 1076,
-      "puntos_eliminatoria": 516,
+      "total": 1134,
+      "puntos_eliminatoria": 564,
       "desglose": {
         "grupos": {
           "total": 363,
@@ -1712,7 +1740,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 32,
+          "total": 42,
           "detalle": [
             {
               "ronda": "1/16",
@@ -1761,11 +1789,35 @@
                 "exacto": false
               },
               "pts": 7
+            },
+            {
+              "ronda": "1/4",
+              "partido": "France-Morocco",
+              "pred": "1|2-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "semis",
+              "partido": "France-Spain",
+              "pred": "2|0-1",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
         "clasificados": {
-          "total": 516,
+          "total": 564,
           "detalle": {
             "1/16": {
               "aciertos": 27,
@@ -1778,6 +1830,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 3,
+              "pts": 48
             },
             "final": {
               "aciertos": 1,
@@ -1802,15 +1858,15 @@
       "nickname": "Ubi",
       "porra": "amigos",
       "puntos_grupos": 467,
-      "puntos_eliminatorias": 563,
+      "puntos_eliminatorias": 616,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 467,
-      "puntos_fase_eliminatoria": 498,
-      "puntos_total": 1030,
+      "puntos_fase_eliminatoria": 546,
+      "puntos_total": 1083,
       "advertencias_premios": [],
-      "total": 1030,
-      "puntos_eliminatoria": 498,
+      "total": 1083,
+      "puntos_eliminatoria": 546,
       "desglose": {
         "grupos": {
           "total": 307,
@@ -2556,7 +2612,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 65,
+          "total": 70,
           "detalle": [
             {
               "ronda": "1/16",
@@ -2641,11 +2697,23 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/4",
+              "partido": "Spain-Belgium",
+              "pred": "1|2-0",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
         "clasificados": {
-          "total": 498,
+          "total": 546,
           "detalle": {
             "1/16": {
               "aciertos": 26,
@@ -2658,6 +2726,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 3,
+              "pts": 48
             }
           }
         },
@@ -2678,15 +2750,15 @@
       "nickname": "Pol",
       "porra": "amigos",
       "puntos_grupos": 494,
-      "puntos_eliminatorias": 524,
+      "puntos_eliminatorias": 566,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 494,
-      "puntos_fase_eliminatoria": 504,
-      "puntos_total": 1018,
+      "puntos_fase_eliminatoria": 536,
+      "puntos_total": 1060,
       "advertencias_premios": [],
-      "total": 1018,
-      "puntos_eliminatoria": 504,
+      "total": 1060,
+      "puntos_eliminatoria": 536,
       "desglose": {
         "grupos": {
           "total": 324,
@@ -3432,7 +3504,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 20,
+          "total": 30,
           "detalle": [
             {
               "ronda": "1/16",
@@ -3481,11 +3553,35 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/4",
+              "partido": "Spain-Belgium",
+              "pred": "1|3-1",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
+            },
+            {
+              "ronda": "semis",
+              "partido": "France-Spain",
+              "pred": "2|2-3",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
         "clasificados": {
-          "total": 504,
+          "total": 536,
           "detalle": {
             "1/16": {
               "aciertos": 27,
@@ -3498,6 +3594,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 2,
+              "pts": 32
             },
             "final": {
               "aciertos": 1,
@@ -3522,15 +3622,15 @@
       "nickname": "Jordi",
       "porra": "amigos",
       "puntos_grupos": 470,
-      "puntos_eliminatorias": 516,
+      "puntos_eliminatorias": 571,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 470,
-      "puntos_fase_eliminatoria": 476,
-      "puntos_total": 986,
+      "puntos_fase_eliminatoria": 524,
+      "puntos_total": 1041,
       "advertencias_premios": [],
-      "total": 986,
-      "puntos_eliminatoria": 476,
+      "total": 1041,
+      "puntos_eliminatoria": 524,
       "desglose": {
         "grupos": {
           "total": 315,
@@ -4270,7 +4370,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 40,
+          "total": 47,
           "detalle": [
             {
               "ronda": "1/16",
@@ -4319,11 +4419,23 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/4",
+              "partido": "France-Morocco",
+              "pred": "1|3-1",
+              "real": "1|2-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
         "clasificados": {
-          "total": 476,
+          "total": 524,
           "detalle": {
             "1/16": {
               "aciertos": 25,
@@ -4336,6 +4448,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 3,
+              "pts": 48
             }
           }
         },
@@ -4356,15 +4472,15 @@
       "nickname": "Maximo10",
       "porra": "amigos",
       "puntos_grupos": 468,
-      "puntos_eliminatorias": 504,
+      "puntos_eliminatorias": 572,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 468,
-      "puntos_fase_eliminatoria": 482,
-      "puntos_total": 972,
+      "puntos_fase_eliminatoria": 530,
+      "puntos_total": 1040,
       "advertencias_premios": [],
-      "total": 972,
-      "puntos_eliminatoria": 482,
+      "total": 1040,
+      "puntos_eliminatoria": 530,
       "desglose": {
         "grupos": {
           "total": 323,
@@ -5068,7 +5184,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 22,
+          "total": 42,
           "detalle": [
             {
               "ronda": "1/16",
@@ -5117,11 +5233,35 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "1/4",
+              "partido": "Spain-Belgium",
+              "pred": "1|2-1",
+              "real": "1|2-1",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": true
+              },
+              "pts": 15
+            },
+            {
+              "ronda": "semis",
+              "partido": "France-Spain",
+              "pred": "2|1-2",
+              "real": "2|0-2",
+              "niveles": {
+                "signo": true,
+                "diferencia": false,
+                "exacto": false
+              },
+              "pts": 5
             }
           ]
         },
         "clasificados": {
-          "total": 482,
+          "total": 530,
           "detalle": {
             "1/16": {
               "aciertos": 26,
@@ -5134,6 +5274,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 3,
+              "pts": 48
             },
             "final": {
               "aciertos": 1,
@@ -5158,15 +5302,15 @@
       "nickname": "Pulpo Paul",
       "porra": "amigos",
       "puntos_grupos": 483,
-      "puntos_eliminatorias": 454,
+      "puntos_eliminatorias": 486,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 483,
-      "puntos_fase_eliminatoria": 444,
-      "puntos_total": 937,
+      "puntos_fase_eliminatoria": 476,
+      "puntos_total": 969,
       "advertencias_premios": [],
-      "total": 937,
-      "puntos_eliminatoria": 444,
+      "total": 969,
+      "puntos_eliminatoria": 476,
       "desglose": {
         "grupos": {
           "total": 348,
@@ -5899,7 +6043,7 @@
           ]
         },
         "clasificados": {
-          "total": 444,
+          "total": 476,
           "detalle": {
             "1/16": {
               "aciertos": 27,
@@ -5912,6 +6056,10 @@
             "1/4": {
               "aciertos": 3,
               "pts": 42
+            },
+            "semis": {
+              "aciertos": 2,
+              "pts": 32
             }
           }
         },
@@ -5932,15 +6080,15 @@
       "nickname": "Tucas",
       "porra": "amigos",
       "puntos_grupos": 416,
-      "puntos_eliminatorias": 462,
+      "puntos_eliminatorias": 510,
       "puntos_honor": 0,
       "puntos_premios": 0,
       "puntos_fase_previa": 416,
-      "puntos_fase_eliminatoria": 462,
-      "puntos_total": 878,
+      "puntos_fase_eliminatoria": 510,
+      "puntos_total": 926,
       "advertencias_premios": [],
-      "total": 878,
-      "puntos_eliminatoria": 462,
+      "total": 926,
+      "puntos_eliminatoria": 510,
       "desglose": {
         "grupos": {
           "total": 291,
@@ -6576,7 +6724,7 @@
           "detalle": []
         },
         "clasificados": {
-          "total": 462,
+          "total": 510,
           "detalle": {
             "1/16": {
               "aciertos": 24,
@@ -6589,6 +6737,10 @@
             "1/4": {
               "aciertos": 5,
               "pts": 70
+            },
+            "semis": {
+              "aciertos": 3,
+              "pts": 48
             },
             "final": {
               "aciertos": 1,

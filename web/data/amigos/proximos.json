@@ -1,91 +1,24 @@
 [
   {
-    "match_id": 97,
-    "fecha_hora_utc": "2026-07-09T20:00:00Z",
-    "fase": "1/4",
+    "match_id": 102,
+    "fecha_hora_utc": "2026-07-15T19:00:00Z",
+    "fase": "semis",
     "grupo": "",
     "jornada": "",
-    "local": "France",
-    "visitante": "Morocco",
+    "local": "England",
+    "visitante": "Argentina",
     "estado": "pendiente",
     "goles_local": null,
     "goles_visitante": null,
     "predicciones": [
-      {
-        "nickname": "Jordi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Mr_Jusi_17",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      }
-    ]
-  },
-  {
-    "match_id": 98,
-    "fecha_hora_utc": "2026-07-10T19:00:00Z",
-    "fase": "1/4",
-    "grupo": "",
-    "jornada": "",
-    "local": "Spain",
-    "visitante": "Belgium",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": [
-      {
-        "nickname": "Maximo10",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 1
-        }
-      },
       {
         "nickname": "Mguitart",
         "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
-        }
-      },
-      {
-        "nickname": "Pol",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 3,
-          "goles_visitante": 1
-        }
-      },
-      {
-        "nickname": "Ubi",
-        "prediccion": {
-          "signo": "1",
-          "goles_local": 2,
-          "goles_visitante": 0
+          "signo": "2",
+          "goles_local": 0,
+          "goles_visitante": 2
         }
       }
     ]
-  },
-  {
-    "match_id": 99,
-    "fecha_hora_utc": "2026-07-11T21:00:00Z",
-    "fase": "1/4",
-    "grupo": "",
-    "jornada": "",
-    "local": "Norway",
-    "visitante": "England",
-    "estado": "pendiente",
-    "goles_local": null,
-    "goles_visitante": null,
-    "predicciones": []
   }
 ]

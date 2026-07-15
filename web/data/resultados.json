@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-07-15T12:14:45Z",
+  "ultima_actualizacion": "2026-07-15T12:31:37Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -625,6 +625,46 @@
       "goles_visitante": 0,
       "local": "Switzerland",
       "visitante": "Colombia"
+    },
+    {
+      "match_id": 97,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 0,
+      "local": "France",
+      "visitante": "Morocco"
+    },
+    {
+      "match_id": 98,
+      "estado": "finalizado",
+      "goles_local": 2,
+      "goles_visitante": 1,
+      "local": "Spain",
+      "visitante": "Belgium"
+    },
+    {
+      "match_id": 99,
+      "estado": "finalizado",
+      "goles_local": 1,
+      "goles_visitante": 2,
+      "local": "Norway",
+      "visitante": "England"
+    },
+    {
+      "match_id": 100,
+      "estado": "finalizado",
+      "goles_local": 3,
+      "goles_visitante": 1,
+      "local": "Argentina",
+      "visitante": "Switzerland"
+    },
+    {
+      "match_id": 101,
+      "estado": "finalizado",
+      "goles_local": 0,
+      "goles_visitante": 2,
+      "local": "France",
+      "visitante": "Spain"
     }
   ],
   "posiciones_grupo": [
@@ -870,7 +910,33 @@
     }
   ],
   "clasificados": {
-    "1/4": [],
+    "semis": [
+      "Argentina",
+      "England",
+      "France",
+      "Spain"
+    ],
+    "final": [
+      "Spain"
+    ],
+    "1/8": [
+      "Argentina",
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Colombia",
+      "Egypt",
+      "England",
+      "France",
+      "Mexico",
+      "Morocco",
+      "Norway",
+      "Paraguay",
+      "Portugal",
+      "Spain",
+      "Switzerland",
+      "USA"
+    ],
     "1/16": [
       "Algeria",
       "Argentina",
@@ -905,28 +971,16 @@
       "Switzerland",
       "USA"
     ],
-    "final": [
-      "Spain"
-    ],
-    "1/8": [
+    "1/4": [
       "Argentina",
       "Belgium",
-      "Brazil",
-      "Canada",
-      "Colombia",
-      "Egypt",
       "England",
       "France",
-      "Mexico",
       "Morocco",
       "Norway",
-      "Paraguay",
-      "Portugal",
       "Spain",
-      "Switzerland",
-      "USA"
-    ],
-    "semis": []
+      "Switzerland"
+    ]
   },
   "honor": {
     "campeon": null,
