@@ -2221,7 +2221,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra Argentina, no contra Portugal en esta ronda"
+        "motivo": "England jugó contra Argentina, no contra Portugal en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -2230,8 +2230,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "England juega contra France, no contra Spain en esta ronda"
       },
       {
         "ronda": "final",
@@ -2240,8 +2241,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Ni France ni Portugal llegaron a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -2447,6 +2449,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -5048,7 +5061,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
+        "motivo": "Argentina jugó contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -5057,8 +5070,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "France juega contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "final",
@@ -5067,9 +5081,8 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "cruce_no_ocurrio",
-        "pts": 0,
-        "motivo": "Argentina no llegó a esta ronda"
+        "estado": "pendiente_confirmado",
+        "pts": 0
       }
     ],
     "elim_sin_pronostico": {
@@ -5275,6 +5288,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -5633,13 +5657,13 @@
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 1,
+        "aciertos": 2,
         "fallos": 0,
-        "pendientes": 1,
-        "pts": 20
+        "pendientes": 0,
+        "pts": 40
       }
     },
     "honor": {
@@ -7919,8 +7943,18 @@
         "signo": "2",
         "gl": 0,
         "gv": 2,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": false,
+          "exacto": false
+        },
+        "pts": 5
       },
       {
         "ronda": "3-4",
@@ -7929,7 +7963,7 @@
         "signo": "1",
         "gl": 1,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
+        "estado": "pendiente_confirmado",
         "pts": 0
       },
       {
@@ -7939,9 +7973,8 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "cruce_no_ocurrio",
-        "pts": 0,
-        "motivo": "Argentina no llegó a esta ronda"
+        "estado": "pendiente_confirmado",
+        "pts": 0
       }
     ],
     "elim_sin_pronostico": {
@@ -8460,13 +8493,13 @@
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 1,
+        "aciertos": 2,
         "fallos": 0,
-        "pendientes": 1,
-        "pts": 20
+        "pendientes": 0,
+        "pts": 40
       }
     },
     "honor": {
@@ -10712,7 +10745,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
+        "motivo": "Argentina jugó contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -10721,8 +10754,9 @@
         "signo": "1",
         "gl": 1,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "France juega contra England, no contra Argentina en esta ronda"
       },
       {
         "ronda": "final",
@@ -10733,7 +10767,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Brazil no llegó a esta ronda"
+        "motivo": "Spain juega contra Argentina, no contra Brazil en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -10930,6 +10964,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -13540,8 +13585,9 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "France juega contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "final",
@@ -13552,7 +13598,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Portugal no llegó a esta ronda"
+        "motivo": "Spain juega contra Argentina, no contra Portugal en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -13758,6 +13804,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -16351,8 +16408,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Ni France ni Brazil llegaron a esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -16585,6 +16643,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -19061,6 +19130,15 @@
           "local": "France",
           "visitante": "Spain",
           "gl": 0,
+          "gv": 2,
+          "signo": "2"
+        },
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
           "gv": 2,
           "signo": "2"
         }
@@ -21709,7 +21787,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra England, no contra Brazil en esta ronda"
+        "motivo": "Argentina jugó contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "3-4",
@@ -21728,8 +21806,9 @@
         "signo": "1",
         "gl": 2,
         "gv": 0,
-        "estado": "pendiente_sin_confirmar",
-        "pts": 0
+        "estado": "cruce_no_ocurrio",
+        "pts": 0,
+        "motivo": "Argentina juega contra Spain, no contra France en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -21890,6 +21969,17 @@
           "gl": 3,
           "gv": 1,
           "signo": "1"
+        }
+      ],
+      "semis": [
+        {
+          "ronda": "semis",
+          "match_id": 102,
+          "local": "England",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 2,
+          "signo": "2"
         }
       ]
     },
@@ -22248,13 +22338,13 @@
           },
           {
             "equipo": "Argentina",
-            "estado": "pendiente"
+            "estado": "acierto"
           }
         ],
-        "aciertos": 0,
+        "aciertos": 1,
         "fallos": 1,
-        "pendientes": 1,
-        "pts": 0
+        "pendientes": 0,
+        "pts": 20
       }
     },
     "honor": {
