@@ -52,6 +52,12 @@ Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>"
 fi
 
 echo "=== [2/5] Rebase + push de codigo ==="
+# Descartar datos del working tree antes del rebase: pueden existir si alguien
+# ejecutó descargar_resultados.py o generar_sitio.py antes de llamar a este
+# script. No importa perderlos — los volvemos a descargar en el paso 3.
+# Sin esto, git pull --rebase aborta con "unstaged changes" y hay que resolver
+# conflictos de datos a mano (ocurrió 2026-07-15).
+git restore datos/resultados.json web/data/ 2>/dev/null || true
 git pull --rebase
 git push
 echo "  Codigo pusheado."
