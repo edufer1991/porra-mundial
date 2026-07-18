@@ -2232,7 +2232,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "England juega contra France, no contra Spain en esta ronda"
+        "motivo": "England jugó contra France, no contra Spain en esta ronda"
       },
       {
         "ronda": "final",
@@ -2459,6 +2459,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
@@ -5072,7 +5083,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra England, no contra Brazil en esta ronda"
+        "motivo": "France jugó contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "final",
@@ -5298,6 +5309,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
@@ -7963,7 +7985,17 @@
         "signo": "1",
         "gl": 1,
         "gv": 0,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 4,
+          "gv": 6,
+          "signo": "2"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       },
       {
@@ -10756,7 +10788,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra England, no contra Argentina en esta ronda"
+        "motivo": "France jugó contra England, no contra Argentina en esta ronda"
       },
       {
         "ronda": "final",
@@ -10974,6 +11006,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
@@ -13587,7 +13630,7 @@
         "gv": 2,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "France juega contra England, no contra Brazil en esta ronda"
+        "motivo": "France jugó contra England, no contra Brazil en esta ronda"
       },
       {
         "ronda": "final",
@@ -13814,6 +13857,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
@@ -16655,6 +16709,17 @@
           "gv": 2,
           "signo": "2"
         }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
+          "signo": "2"
+        }
       ]
     },
     "clasificados": {
@@ -19140,6 +19205,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
@@ -21979,6 +22055,17 @@
           "visitante": "Argentina",
           "gl": 1,
           "gv": 2,
+          "signo": "2"
+        }
+      ],
+      "3-4": [
+        {
+          "ronda": "3-4",
+          "match_id": 103,
+          "local": "France",
+          "visitante": "England",
+          "gl": 4,
+          "gv": 6,
           "signo": "2"
         }
       ]
