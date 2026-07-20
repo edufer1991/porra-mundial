@@ -2472,6 +2472,17 @@
           "gv": 6,
           "signo": "2"
         }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
+        }
       ]
     },
     "clasificados": {
@@ -5092,7 +5103,17 @@
         "signo": "2",
         "gl": 1,
         "gv": 2,
-        "estado": "pendiente_confirmado",
+        "estado": "acierto_no_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": false,
+          "diferencia": false,
+          "exacto": false
+        },
         "pts": 0
       }
     ],
@@ -8005,8 +8026,18 @@
         "signo": "1",
         "gl": 2,
         "gv": 1,
-        "estado": "pendiente_confirmado",
-        "pts": 0
+        "estado": "acierto_puntuo",
+        "resultado": {
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
+        },
+        "niveles": {
+          "signo": true,
+          "diferencia": true,
+          "exacto": false
+        },
+        "pts": 7
       }
     ],
     "elim_sin_pronostico": {
@@ -10799,7 +10830,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Argentina, no contra Brazil en esta ronda"
+        "motivo": "Spain jugó contra Argentina, no contra Brazil en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -11018,6 +11049,17 @@
           "gl": 4,
           "gv": 6,
           "signo": "2"
+        }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
         }
       ]
     },
@@ -13641,7 +13683,7 @@
         "gv": 1,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Spain juega contra Argentina, no contra Portugal en esta ronda"
+        "motivo": "Spain jugó contra Argentina, no contra Portugal en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -13869,6 +13911,17 @@
           "gl": 4,
           "gv": 6,
           "signo": "2"
+        }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
         }
       ]
     },
@@ -16720,6 +16773,17 @@
           "gv": 6,
           "signo": "2"
         }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
+        }
       ]
     },
     "clasificados": {
@@ -19217,6 +19281,17 @@
           "gl": 4,
           "gv": 6,
           "signo": "2"
+        }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
         }
       ]
     },
@@ -21884,7 +21959,7 @@
         "gv": 0,
         "estado": "cruce_no_ocurrio",
         "pts": 0,
-        "motivo": "Argentina juega contra Spain, no contra France en esta ronda"
+        "motivo": "Argentina jugó contra Spain, no contra France en esta ronda"
       }
     ],
     "elim_sin_pronostico": {
@@ -22067,6 +22142,17 @@
           "gl": 4,
           "gv": 6,
           "signo": "2"
+        }
+      ],
+      "final": [
+        {
+          "ronda": "final",
+          "match_id": 104,
+          "local": "Spain",
+          "visitante": "Argentina",
+          "gl": 1,
+          "gv": 0,
+          "signo": "1"
         }
       ]
     },

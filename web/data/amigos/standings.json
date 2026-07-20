@@ -1,20 +1,20 @@
 {
   "porra": "amigos",
-  "ultima_actualizacion": "2026-07-20T10:14:46Z",
+  "ultima_actualizacion": "2026-07-20T11:14:44Z",
   "clasificacion": [
     {
       "nickname": "Mguitart",
       "porra": "amigos",
       "puntos_grupos": 537,
-      "puntos_eliminatorias": 667,
-      "puntos_honor": 0,
+      "puntos_eliminatorias": 674,
+      "puntos_honor": 45,
       "puntos_premios": 0,
       "puntos_fase_previa": 537,
-      "puntos_fase_eliminatoria": 610,
-      "puntos_total": 1204,
+      "puntos_fase_eliminatoria": 655,
+      "puntos_total": 1256,
       "advertencias_premios": [],
-      "total": 1204,
-      "puntos_eliminatoria": 610,
+      "total": 1256,
+      "puntos_eliminatoria": 655,
       "desglose": {
         "grupos": {
           "total": 362,
@@ -814,7 +814,7 @@
           "origen": "derivada_de_marcadores_pronosticados"
         },
         "elim_marcadores": {
-          "total": 57,
+          "total": 64,
           "detalle": [
             {
               "ronda": "1/16",
@@ -947,6 +947,18 @@
                 "exacto": false
               },
               "pts": 5
+            },
+            {
+              "ronda": "final",
+              "partido": "Spain-Argentina",
+              "pred": "1|2-1",
+              "real": "1|1-0",
+              "niveles": {
+                "signo": true,
+                "diferencia": true,
+                "exacto": false
+              },
+              "pts": 7
             }
           ]
         },
@@ -976,8 +988,17 @@
           }
         },
         "honor": {
-          "total": 0,
-          "detalle": {}
+          "total": 45,
+          "detalle": {
+            "campeon": {
+              "equipo": "Spain",
+              "pts": 25
+            },
+            "subcampeon": {
+              "equipo": "Argentina",
+              "pts": 20
+            }
+          }
         },
         "premios": {
           "total": 0,
@@ -1871,14 +1892,14 @@
       "porra": "amigos",
       "puntos_grupos": 467,
       "puntos_eliminatorias": 636,
-      "puntos_honor": 0,
+      "puntos_honor": 20,
       "puntos_premios": 0,
       "puntos_fase_previa": 467,
-      "puntos_fase_eliminatoria": 566,
-      "puntos_total": 1103,
+      "puntos_fase_eliminatoria": 586,
+      "puntos_total": 1123,
       "advertencias_premios": [],
-      "total": 1103,
-      "puntos_eliminatoria": 566,
+      "total": 1123,
+      "puntos_eliminatoria": 586,
       "desglose": {
         "grupos": {
           "total": 307,
@@ -2750,8 +2771,13 @@
           }
         },
         "honor": {
-          "total": 0,
-          "detalle": {}
+          "total": 20,
+          "detalle": {
+            "subcampeon": {
+              "equipo": "Argentina",
+              "pts": 20
+            }
+          }
         },
         "premios": {
           "total": 0,
@@ -2767,14 +2793,14 @@
       "porra": "amigos",
       "puntos_grupos": 494,
       "puntos_eliminatorias": 566,
-      "puntos_honor": 10,
+      "puntos_honor": 35,
       "puntos_premios": 0,
       "puntos_fase_previa": 494,
-      "puntos_fase_eliminatoria": 546,
-      "puntos_total": 1070,
+      "puntos_fase_eliminatoria": 571,
+      "puntos_total": 1095,
       "advertencias_premios": [],
-      "total": 1070,
-      "puntos_eliminatoria": 546,
+      "total": 1095,
+      "puntos_eliminatoria": 571,
       "desglose": {
         "grupos": {
           "total": 324,
@@ -3622,8 +3648,12 @@
           }
         },
         "honor": {
-          "total": 10,
+          "total": 35,
           "detalle": {
+            "campeon": {
+              "equipo": "Spain",
+              "pts": 25
+            },
             "cuarto": {
               "equipo": "France",
               "pts": 10
