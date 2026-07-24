@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-07-24T18:14:45Z",
+  "ultima_actualizacion": "2026-07-24T18:45:43Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -934,9 +934,23 @@
     }
   ],
   "clasificados": {
-    "final": [
+    "1/8": [
       "Argentina",
-      "Spain"
+      "Belgium",
+      "Brazil",
+      "Canada",
+      "Colombia",
+      "Egypt",
+      "England",
+      "France",
+      "Mexico",
+      "Morocco",
+      "Norway",
+      "Paraguay",
+      "Portugal",
+      "Spain",
+      "Switzerland",
+      "USA"
     ],
     "1/16": [
       "Algeria",
@@ -972,24 +986,6 @@
       "Switzerland",
       "USA"
     ],
-    "1/8": [
-      "Argentina",
-      "Belgium",
-      "Brazil",
-      "Canada",
-      "Colombia",
-      "Egypt",
-      "England",
-      "France",
-      "Mexico",
-      "Morocco",
-      "Norway",
-      "Paraguay",
-      "Portugal",
-      "Spain",
-      "Switzerland",
-      "USA"
-    ],
     "1/4": [
       "Argentina",
       "Belgium",
@@ -999,6 +995,10 @@
       "Norway",
       "Spain",
       "Switzerland"
+    ],
+    "final": [
+      "Argentina",
+      "Spain"
     ],
     "semis": [
       "Argentina",
