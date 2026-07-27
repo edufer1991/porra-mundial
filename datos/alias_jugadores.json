@@ -1,0 +1,5 @@
+{
+  "_descripcion": "Tabla de alias para matching de premios individuales. Clave = norm(nombre_canonico), valor = lista de norm(variantes) que tambien deben puntuar.",
+  "mbappe": ["kylian mbappe"],
+  "unai simon": ["unai simon (tbd el de espana)", "unai"]
+}
