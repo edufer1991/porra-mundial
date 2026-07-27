@@ -2855,10 +2855,69 @@
       "tercero": "France",
       "cuarto": "Brazil"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Brazil",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 25
+    },
     "premios": {
       "goleador": "Kylian Mbappe",
       "mvp": "Lamine Yamal",
       "portero": "Joan Gracia"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Kylian Mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Joan Gracia",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   },
   "Barrilete Cósmico": {
@@ -5716,10 +5775,69 @@
       "tercero": "Spain",
       "cuarto": "Croatia"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Netherlands",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Spain",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Croatia",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Yamal",
       "mvp": "Ronaldo",
       "portero": "Dibu Martinez"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Yamal",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Ronaldo",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Dibu Martinez",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "BlackBoxOracle": {
@@ -8575,10 +8693,69 @@
       "tercero": "Brazil",
       "cuarto": "Morocco"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "Brazil",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Morocco",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Mbappé",
       "mvp": "Pedri",
       "portero": "Unai Simón"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappé",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Pedri",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simón",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 30
     }
   },
   "Chistu": {
@@ -11436,10 +11613,69 @@
       "tercero": "Germany",
       "cuarto": "Portugal"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Brazil",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Germany",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Portugal",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 25
+    },
     "premios": {
       "goleador": "Don Cristiano Ronaldo",
       "mvp": "Pedri",
       "portero": "Neuer"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Don Cristiano Ronaldo",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Pedri",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Neuer",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "colometa": {
@@ -14297,10 +14533,69 @@
       "tercero": "Argentina",
       "cuarto": "Germany"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Croatia",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Spain",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Argentina",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Germany",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Julián Álvarez",
       "mvp": "Lamine Yamal",
       "portero": "Unai Simón"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Julián Álvarez",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simón",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 15
     }
   },
   "depedro": {
@@ -17159,10 +17454,69 @@
       "tercero": "France",
       "cuarto": "Brazil"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Brazil",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 25
+    },
     "premios": {
       "goleador": "mbappe",
       "mvp": "Vitinha",
       "portero": "Unai Simon"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Vitinha",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simon",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 30
     }
   },
   "Des-cono-cida": {
@@ -20019,10 +20373,69 @@
       "tercero": "France",
       "cuarto": "Brazil"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Brazil",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Mbappé",
       "mvp": "Lamine Yamal",
       "portero": "Emiliano Martí \"Dibu\""
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappé",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Emiliano Martí \"Dibu\"",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   },
   "Gargamel": {
@@ -22880,10 +23293,69 @@
       "tercero": "Spain",
       "cuarto": "Mexico"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "France",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "Spain",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Mexico",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 20
+    },
     "premios": {
       "goleador": "Mbappe",
       "mvp": "Messi",
       "portero": "Ochoa"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Messi",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Ochoa",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   },
   "Goal Digger": {
@@ -25739,10 +26211,69 @@
       "tercero": "Germany",
       "cuarto": "Japan"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "Germany",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Japan",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Lamine Yamal",
       "mvp": "Lamine Yamal",
       "portero": "Dibu Martínez"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Lamine Yamal",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Dibu Martínez",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "ilovealiens": {
@@ -28600,10 +29131,69 @@
       "tercero": "Spain",
       "cuarto": "Morocco"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Argentina",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "France",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Spain",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Morocco",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Lamine Yamal",
       "mvp": "Mbappe",
       "portero": "Dibu Martinez"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Lamine Yamal",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Mbappe",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Dibu Martinez",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "Indio": {
@@ -31460,10 +32050,69 @@
       "tercero": "Brazil",
       "cuarto": "France"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Argentina",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Spain",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Brazil",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "France",
+          "real": "France",
+          "acierto": true,
+          "pts": 10
+        }
+      ],
+      "total": 10
+    },
     "premios": {
       "goleador": "Julian Alvarez",
       "mvp": "Messi",
       "portero": "Dibu Martinez"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Julian Alvarez",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Messi",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Dibu Martinez",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "Killo Emvabé": {
@@ -34321,10 +34970,69 @@
       "tercero": "Argentina",
       "cuarto": "Uruguay"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Brazil",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Germany",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Argentina",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Uruguay",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Harry Kane",
       "mvp": "Raphinha",
       "portero": "Unai Simon"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Harry Kane",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Raphinha",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simon",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 15
     }
   },
   "La de la intuición": {
@@ -37181,10 +37889,69 @@
       "tercero": "Netherlands",
       "cuarto": "England"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Argentina",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Spain",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Netherlands",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "England",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Ferrán Torres",
       "mvp": "Lionel Messi",
       "portero": "Unai Simon (TBD el de España)"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Ferrán Torres",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lionel Messi",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simon (TBD el de España)",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 15
     }
   },
   "La Roja Zero Waste": {
@@ -40041,10 +40808,69 @@
       "tercero": "France",
       "cuarto": "England"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "England",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 25
+    },
     "premios": {
       "goleador": "Mbappe",
       "mvp": "Pedri",
       "portero": "Unai"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Pedri",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 30
     }
   },
   "Ladycash": {
@@ -42901,10 +43727,69 @@
       "tercero": "France",
       "cuarto": "Brazil"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Brazil",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Harry Kane",
       "mvp": "Lamine Yamal",
       "portero": "Unai Simon"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Harry Kane",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simon",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 15
     }
   },
   "Media Naranja": {
@@ -45763,10 +46648,69 @@
       "tercero": "England",
       "cuarto": "Spain"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Argentina",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Netherlands",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "England",
+          "real": "England",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "cuarto",
+          "pred": "Spain",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
+    },
     "premios": {
       "goleador": "Harry Kane",
       "mvp": "Lionel Messi",
       "portero": "Bart Verbrugge"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Harry Kane",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lionel Messi",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Bart Verbrugge",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "Mundial? Qué Mundial?": {
@@ -48619,10 +49563,69 @@
       "tercero": "France",
       "cuarto": "England"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Argentina",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Spain",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "England",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Harry Kane",
       "mvp": "Lionel Messi",
       "portero": "Allison Becker"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Harry Kane",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lionel Messi",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Allison Becker",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "Negreira": {
@@ -51479,10 +52482,69 @@
       "tercero": "France",
       "cuarto": "Brazil"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Brazil",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Oyarzabal",
       "mvp": "Lamine",
       "portero": "Unai Simon"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Oyarzabal",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Unai Simon",
+          "real": "Unai Simon",
+          "acierto": true,
+          "pts": 15
+        }
+      ],
+      "total": 15
     }
   },
   "Paps": {
@@ -54340,10 +55402,69 @@
       "tercero": "Morocco",
       "cuarto": "Spain"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Ivory Coast",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Morocco",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Spain",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "MBAPPE",
       "mvp": "DEMBELE",
       "portero": "MIKE MAIGNAN"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "MBAPPE",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "DEMBELE",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "MIKE MAIGNAN",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   },
   "Pickles' Retrievers": {
@@ -57201,10 +58322,69 @@
       "tercero": "Netherlands",
       "cuarto": "Spain"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "France",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Netherlands",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Spain",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Julian Alvarez",
       "mvp": "Michael Olise",
       "portero": "Diogo Costa"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Julian Alvarez",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Michael Olise",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Diogo Costa",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "PitchPerfect": {
@@ -60061,10 +61241,69 @@
       "tercero": "France",
       "cuarto": "Senegal"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Argentina",
+          "real": "Argentina",
+          "acierto": true,
+          "pts": 20
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Senegal",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 45
+    },
     "premios": {
       "goleador": "Julián Álvarez",
       "mvp": "Lamine Yamal",
       "portero": "Diogo Costa"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Julián Álvarez",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Diogo Costa",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "Pulpo Paul": {
@@ -62922,10 +64161,69 @@
       "tercero": "Spain",
       "cuarto": "Portugal"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "France",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Brazil",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Spain",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Portugal",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Mbappe",
       "mvp": "Mbappe",
       "portero": "Diogo Costa"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Mbappe",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Diogo Costa",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   },
   "TexMex": {
@@ -65784,10 +67082,69 @@
       "tercero": "France",
       "cuarto": "Morocco"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "Spain",
+          "real": "Spain",
+          "acierto": true,
+          "pts": 25
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Portugal",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "France",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Morocco",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 25
+    },
     "premios": {
       "goleador": "Olisse",
       "mvp": "Lamine Yamal",
       "portero": "Max Maignan"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Olisse",
+          "real": "Mbappe",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "mvp",
+          "pred": "Lamine Yamal",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Max Maignan",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
     }
   },
   "The French Knicks fan": {
@@ -68645,10 +70002,69 @@
       "tercero": "Spain",
       "cuarto": "Argentina"
     },
+    "honor_desglose": {
+      "items": [
+        {
+          "key": "campeon",
+          "pred": "France",
+          "real": "Spain",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "subcampeon",
+          "pred": "Morocco",
+          "real": "Argentina",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "tercero",
+          "pred": "Spain",
+          "real": "England",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "cuarto",
+          "pred": "Argentina",
+          "real": "France",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 0
+    },
     "premios": {
       "goleador": "Mbappe",
       "mvp": "Olise",
       "portero": "Maignan"
+    },
+    "premios_desglose": {
+      "items": [
+        {
+          "key": "goleador",
+          "pred": "Mbappe",
+          "real": "Mbappe",
+          "acierto": true,
+          "pts": 15
+        },
+        {
+          "key": "mvp",
+          "pred": "Olise",
+          "real": "Rodri",
+          "acierto": false,
+          "pts": 0
+        },
+        {
+          "key": "portero",
+          "pred": "Maignan",
+          "real": "Unai Simon",
+          "acierto": false,
+          "pts": 0
+        }
+      ],
+      "total": 15
     }
   }
 }
