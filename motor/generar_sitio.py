@@ -52,7 +52,43 @@ from motor.clasif_real import (
 
 # ── Estado de clasificados / eliminatorias (para la vista Mi Porra) ───────────
 
-_ROUND_PTS = {"1/16": 10, "1/8": 12, "1/4": 14, "semis": 16, "final": 20}
+_ROUND_PTS   = {"1/16": 10, "1/8": 12, "1/4": 14, "semis": 16, "final": 20}
+_HONOR_PTS   = {"campeon": 25, "subcampeon": 20, "tercero": 15, "cuarto": 10}
+_PREMIOS_PTS = {"goleador": 15, "mvp": 15, "portero": 15}
+
+
+def _honor_desglose(honor_pred: dict, real_honor: dict) -> dict:
+    """Devuelve pred/real/acierto/pts por cada puesto de honor."""
+    items = []
+    total = 0
+    for key in ("campeon", "subcampeon", "tercero", "cuarto"):
+        pred = honor_pred.get(key)
+        real = real_honor.get(key)
+        acierto = bool(pred and real and norm(pred) == norm(real))
+        pts = _HONOR_PTS[key] if acierto else 0
+        total += pts
+        items.append({"key": key, "pred": pred, "real": real, "acierto": acierto, "pts": pts})
+    return {"items": items, "total": total}
+
+
+def _premios_desglose(premios_pred: dict, real_premios: dict,
+                      alias: dict | None = None) -> dict:
+    """Devuelve pred/real/acierto/pts por cada premio individual."""
+    alias = alias or {}
+    items = []
+    total = 0
+    for key in ("goleador", "mvp", "portero"):
+        pred = premios_pred.get(key)
+        real = real_premios.get(key)
+        if pred and real:
+            np, nr = norm(pred), norm(real)
+            acierto = np == nr or np in alias.get(nr, [])
+        else:
+            acierto = False
+        pts = _PREMIOS_PTS[key] if acierto else 0
+        total += pts
+        items.append({"key": key, "pred": pred, "real": real, "acierto": acierto, "pts": pts})
+    return {"items": items, "total": total}
 
 
 def _estado_clasificado(equipo: str, ronda: str,
@@ -481,7 +517,8 @@ def _detalle_grupos(pronosticos_grupos: list[dict],
 def generar_detalle(porra: str,
                     resultados: dict,
                     reglas: dict,
-                    calendario: dict | None = None) -> dict:
+                    calendario: dict | None = None,
+                    alias_jugadores: dict | None = None) -> dict:
     """Genera detalle.json por nickname para la vista Mi Porra."""
     dir_porra = BASE / "datos" / "pronosticos" / porra
     if not dir_porra.exists():
@@ -495,6 +532,8 @@ def generar_detalle(porra: str,
     marcadores_list = list(marcadores_map.values())
     real_clasif     = resultados.get("clasificados")     or {}
     pos_real        = resultados.get("posiciones_grupo") or []
+    real_honor      = resultados.get("honor")            or {}
+    real_premios    = resultados.get("premios")          or {}
 
     detalle = {}
     for ruta in sorted(dir_porra.glob("*.json")):
@@ -532,7 +571,10 @@ def generar_detalle(porra: str,
                                         resultados=resultados,
                                         cal_idx=cal_idx),
             "honor":                 pp.get("honor", {}),
+            "honor_desglose":        _honor_desglose(pp.get("honor") or {}, real_honor),
             "premios":               pp.get("premios", {}),
+            "premios_desglose":      _premios_desglose(pp.get("premios") or {}, real_premios,
+                                                       alias=alias_jugadores),
         }
 
     return detalle
@@ -774,7 +816,7 @@ def generar_sitio(porras: tuple[str, ...] = ("amigos", "trabajo"),
         print(f"    standings.json  ({len(clasificacion)} participantes)")
 
         # Detalle para Mi Porra
-        detalle = generar_detalle(porra, resultados, reglas, calendario)
+        detalle = generar_detalle(porra, resultados, reglas, calendario, alias_jugadores)
         _escribir(out_dir / "detalle.json", detalle)
         print(f"    detalle.json    ({len(detalle)} nicknames)")
 

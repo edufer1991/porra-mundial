@@ -27,6 +27,8 @@ from motor.generar_sitio import (
     _detalle_posiciones_grupo,
     _estado_clasificado,
     _estado_elim_marcador,
+    _honor_desglose,
+    _premios_desglose,
     _resolver_pairs_ronda,
     _sin_pronostico_elim,
     generar_proximos,
@@ -1030,3 +1032,116 @@ class TestGenerarProximosElim:
         # tester pronosticó Spain 3 - 1 Portugal → orientado: Portugal 1 - 3 Spain
         assert pr["prediccion"]["goles_local"]     == 1  # Portugal
         assert pr["prediccion"]["goles_visitante"] == 3  # Spain
+
+
+# ── _honor_desglose / _premios_desglose ──────────────────────────────────────
+
+class TestHonorDesglose:
+    def test_acierto_campeon_da_25_pts(self):
+        pred = {"campeon": "Spain"}
+        real = {"campeon": "Spain"}
+        d = _honor_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "campeon")
+        assert item["acierto"] is True
+        assert item["pts"] == 25
+        assert d["total"] == 25
+
+    def test_fallo_campeon_da_0_pts(self):
+        pred = {"campeon": "Brazil"}
+        real = {"campeon": "Spain"}
+        d = _honor_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "campeon")
+        assert item["acierto"] is False
+        assert item["pts"] == 0
+
+    def test_todos_acertados_suma_70(self):
+        honor = {"campeon": "Spain", "subcampeon": "Argentina", "tercero": "England", "cuarto": "France"}
+        d = _honor_desglose(honor, honor)
+        assert d["total"] == 70  # 25+20+15+10
+
+    def test_normalizacion_acierto(self):
+        """Acento en pred vs sin acento en real → acierto gracias a norm()."""
+        pred = {"campeon": "Espana"}
+        real = {"campeon": "España"}
+        d = _honor_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "campeon")
+        assert item["acierto"] is True
+
+    def test_real_vacio_no_es_acierto(self):
+        pred = {"campeon": "Spain"}
+        real = {}
+        d = _honor_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "campeon")
+        assert item["acierto"] is False
+        assert item["real"] is None
+
+    def test_items_contiene_los_cuatro_puestos(self):
+        d = _honor_desglose({}, {})
+        keys = [i["key"] for i in d["items"]]
+        assert keys == ["campeon", "subcampeon", "tercero", "cuarto"]
+
+
+class TestPremiosDesglose:
+    def test_acierto_goleador_da_15_pts(self):
+        pred = {"goleador": "Mbappe"}
+        real = {"goleador": "Mbappe"}
+        d = _premios_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "goleador")
+        assert item["acierto"] is True
+        assert item["pts"] == 15
+        assert d["total"] == 15
+
+    def test_acierto_portero_da_15_pts(self):
+        pred = {"portero": "Courtois"}
+        real = {"portero": "Courtois"}
+        d = _premios_desglose(pred, real)
+        item = next(i for i in d["items"] if i["key"] == "portero")
+        assert item["acierto"] is True
+        assert item["pts"] == 15
+
+    def test_todos_acertados_suma_45(self):
+        premios = {"goleador": "Mbappe", "mvp": "Messi", "portero": "Courtois"}
+        d = _premios_desglose(premios, premios)
+        assert d["total"] == 45  # 15+15+15
+
+    def test_alias_permite_variante(self):
+        """Alias table allows 'Kylian Mbappe' to match canonical 'Mbappe'."""
+        pred = {"goleador": "Kylian Mbappe"}
+        real = {"goleador": "Mbappe"}
+        alias = {"mbappe": ["kylian mbappe"]}
+        d = _premios_desglose(pred, real, alias=alias)
+        item = next(i for i in d["items"] if i["key"] == "goleador")
+        assert item["acierto"] is True
+        assert item["pts"] == 15
+
+    def test_sin_alias_variante_no_coincide(self):
+        pred = {"goleador": "Kylian Mbappe"}
+        real = {"goleador": "Mbappe"}
+        d = _premios_desglose(pred, real, alias=None)
+        item = next(i for i in d["items"] if i["key"] == "goleador")
+        assert item["acierto"] is False
+
+    def test_pts_coincide_con_puntuar_v2(self):
+        """Los pts de premios_desglose deben coincidir con lo que calcula puntuar_v2."""
+        from motor.puntuar_v2 import puntuar_participante
+        pred_pron = {"goleador": "Mbappe", "mvp": "Messi", "portero": "Courtois"}
+        real_prem = {"goleador": "Mbappe", "mvp": "Messi", "portero": "Courtois"}
+        pronostico = {
+            "nickname": "tester", "porra": "amigos",
+            "pronosticos": {
+                "grupos": [], "posiciones_grupo": [], "elim_marcadores": [],
+                "clasificados": {"1/16":[],"1/8":[],"1/4":[],"semis":[],"final":[]},
+                "honor": {}, "premios": pred_pron,
+            },
+        }
+        resultados = {
+            "marcadores": [], "posiciones_grupo": [],
+            "clasificados": {"1/16":[],"1/8":[],"1/4":[],"semis":[],"final":[]},
+            "honor": {}, "premios": real_prem,
+        }
+        cal = [{"id":1,"fase":"grupos","jornada":"J1","grupo":"A","local":"X","visitante":"Y"}]
+        result = puntuar_participante(pronostico, resultados, calendario=cal)
+        v2_premios_total = result["desglose"]["premios"]["total"]
+
+        d = _premios_desglose(pred_pron, real_prem)
+        assert d["total"] == v2_premios_total  # both should be 45

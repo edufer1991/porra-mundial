@@ -399,3 +399,65 @@ def test_desempate_marcadores_elim_no_cuentan():
     result = calcular(p, r)
     assert elim_detalle(result)["total"] == 15   # sí suma al total
     assert result["puntos_eliminatoria"] == 0    # pero NO al desempate
+
+
+# ── Regresión: generar_clasificacion incluye premios en puntos_total ──────────
+# Este test existe para detectar si alguien elimina premios de la fórmula de
+# total en puntuar_participante o en generar_clasificacion. El bug análogo para
+# posiciones_grupo pasó desapercibido; el de premios también pasó (commit
+# 9689184c→03322782 mostró 1256→1286 cuando resultados.premios dejó de ser null).
+
+def test_generar_clasificacion_incluye_premios_en_total(tmp_path, monkeypatch):
+    """
+    generar_clasificacion (no solo puntuar_participante aislado) debe incluir
+    puntos_premios en puntos_total. Se crea un participante con un único
+    acierto de premios y se verifica la aritmética del ranking final.
+    """
+    import json as _json
+    import motor.puntuar_v2 as pv2
+
+    # Inyectar directorio de pronósticos en temp
+    porra_dir = tmp_path / "amigos"
+    porra_dir.mkdir(parents=True)
+    pron = {
+        "nickname": "tester",
+        "porra": "amigos",
+        "pronosticos": {
+            "grupos": [], "posiciones_grupo": [], "elim_marcadores": [],
+            "clasificados": {"1/16": [], "1/8": [], "1/4": [], "semis": [], "final": []},
+            "honor": {"campeon": "Spain"},
+            "premios": {"goleador": "Mbappe", "mvp": "", "portero": ""},
+        },
+    }
+    (porra_dir / "tester.json").write_text(_json.dumps(pron), encoding="utf-8")
+
+    monkeypatch.setattr(pv2, "PRONOSTICOS", tmp_path)
+
+    resultados = {
+        "marcadores": [], "posiciones_grupo": [],
+        "clasificados": {"1/16": [], "1/8": [], "1/4": [], "semis": [], "final": []},
+        "honor": {"campeon": "Spain"},
+        "premios": {"goleador": "Mbappe", "mvp": "Rodri", "portero": "Courtois"},
+    }
+
+    ranking = pv2.generar_clasificacion("amigos", resultados)
+    assert len(ranking) == 1
+    p = ranking[0]
+
+    pts_honor   = p["puntos_honor"]
+    pts_premios = p["puntos_premios"]
+    pts_total   = p["puntos_total"]
+
+    # ambas categorías deben ser > 0 para que el test tenga sentido
+    assert pts_honor   > 0, "El participante debería tener puntos de honor"
+    assert pts_premios > 0, "El participante debería tener puntos de premios"
+
+    # La invariante crítica: total = grupos + elim + honor + premios
+    expected = (p["puntos_grupos"]
+                + p["puntos_eliminatorias"]
+                + pts_honor
+                + pts_premios)
+    assert pts_total == expected, (
+        f"puntos_total={pts_total} no coincide con la suma de categorías={expected}; "
+        f"premios={pts_premios} podría estar excluido del total"
+    )

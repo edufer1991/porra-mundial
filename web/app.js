@@ -728,47 +728,44 @@ function renderNickDetail(nick) {
 
   // ── Sección: Honor y premios ───────────────────────────────────────────────
   {
-    const honorRows = [{k:'campeon',label:'Campeón',pts:25},{k:'subcampeon',label:'Subcampeón',pts:20},
-                       {k:'tercero',label:'3.º',pts:15},{k:'cuarto',label:'4.º',pts:10}];
-    const honorHtml = honorRows.map(({k,label,pts}) => {
-      const predVal = detalleP.honor?.[k];
-      const realVal = realHonor[k];
-      const played  = !!realVal;
-      const hit     = played && normStr(predVal) === normStr(realVal);
-      const rowCls  = !played ? 'pending' : (hit ? 'correct' : 'wrong');
+    const HONOR_LABELS = {campeon:'Campeón', subcampeon:'Subcampeón', tercero:'3.º', cuarto:'4.º'};
+    const hDes = detalleP.honor_desglose;
+    const honorHtml = (hDes?.items || []).map(({key, pred, real, acierto, pts}) => {
+      const label   = HONOR_LABELS[key] || key;
+      const played  = !!real;
+      const rowCls  = !played ? 'pending' : (acierto ? 'correct' : 'wrong');
       const subHtml = played
-        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>` : '';
+        ? `<div class="match-subtext">Real: ${escHtml(real)} <span class="ind ${acierto?'ok':'no'}">${acierto?'✓':'✗'}</span></div>` : '';
       const ptsHtml = played
-        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?pts:0}</div>` : '';
+        ? `<div></div><div class="match-row-pts ${acierto?'pos':'zero'}">${pts}</div>` : '';
       return `<div class="match-row match-row--honor ${rowCls}">
         <div class="match-row-idx">${label}</div>
-        <div class="match-row-teams"><div class="match-teams-main">${escHtml(predVal||'—')}</div>${subHtml}</div>
+        <div class="match-row-teams"><div class="match-teams-main">${escHtml(pred||'—')}</div>${subHtml}</div>
         ${ptsHtml}
       </div>`;
     }).join('');
-    const honorPts = standP?.desglose?.honor?.total || 0;
+    const honorPts = hDes?.total ?? standP?.desglose?.honor?.total ?? 0;
     html += sectionBlock('honor', 'Cuadro de honor', 4, honorPts,
       `<div class="match-table" style="margin-top:4px">${honorHtml}</div>`);
   }
   {
-    const premiosRows = [{k:'goleador',label:'Goleador',pts:15},{k:'mvp',label:'MVP',pts:15},{k:'portero',label:'Portero',pts:15}];
-    const premiosHtml = premiosRows.map(({k,label,pts}) => {
-      const predVal = detalleP.premios?.[k];
-      const realVal = realPremios[k];
-      const played  = !!realVal;
-      const hit     = played && normStr(predVal) === normStr(realVal);
-      const rowCls  = !played ? 'pending' : (hit ? 'correct' : 'wrong');
+    const PREMIOS_LABELS = {goleador:'Goleador', mvp:'MVP', portero:'Portero'};
+    const pDes = detalleP.premios_desglose;
+    const premiosHtml = (pDes?.items || []).map(({key, pred, real, acierto, pts}) => {
+      const label   = PREMIOS_LABELS[key] || key;
+      const played  = !!real;
+      const rowCls  = !played ? 'pending' : (acierto ? 'correct' : 'wrong');
       const subHtml = played
-        ? `<div class="match-subtext">Real: ${escHtml(realVal)} <span class="ind ${hit?'ok':'no'}">${hit?'✓':'✗'}</span></div>` : '';
+        ? `<div class="match-subtext">Real: ${escHtml(real)} <span class="ind ${acierto?'ok':'no'}">${acierto?'✓':'✗'}</span></div>` : '';
       const ptsHtml = played
-        ? `<div></div><div class="match-row-pts ${hit?'pos':'zero'}">${hit?pts:0}</div>` : '';
+        ? `<div></div><div class="match-row-pts ${acierto?'pos':'zero'}">${pts}</div>` : '';
       return `<div class="match-row match-row--honor ${rowCls}">
         <div class="match-row-idx">${label}</div>
-        <div class="match-row-teams"><div class="match-teams-main">${escHtml(predVal||'—')}</div>${subHtml}</div>
+        <div class="match-row-teams"><div class="match-teams-main">${escHtml(pred||'—')}</div>${subHtml}</div>
         ${ptsHtml}
       </div>`;
     }).join('');
-    const premiosPts = standP?.desglose?.premios?.total || 0;
+    const premiosPts = pDes?.total ?? standP?.desglose?.premios?.total ?? 0;
     html += sectionBlock('premios', 'Premios individuales', 3, premiosPts,
       `<div class="match-table" style="margin-top:4px">${premiosHtml}</div>`);
   }

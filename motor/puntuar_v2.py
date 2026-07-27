@@ -7,8 +7,8 @@ Sistema:
   · Posición exacta 1-4 en su grupo: 5 c/u
   · Eliminatoria por partido: signo=5  diferencia=2  exacto=8
   · Clasificados:  1/16→10  1/8→12  1/4→14  semis→16  final→20
-  · Honor:  campeon=25  sub=20  3º=15  4º=10
-  · Premios:  goleador=15  MVP=15  portero=15
+  · Honor:  campeon=50  sub=40  3º=30  4º=20  (per reglas.json / CLAUDE.md)
+  · Premios:  goleador=25  MVP=25  portero=20  (per reglas.json / CLAUDE.md)
   · Desempate: puntos_eliminatoria = clasificados + honor (SIN marcadores
     de eliminatoria, SIN grupos, SIN premios). Sólo cuentan equipos
     clasificados por ronda y posiciones de honor.
