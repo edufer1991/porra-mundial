@@ -1,6 +1,6 @@
 {
   "_descripcion": "Resultados Mundial 2026. Actualizado automaticamente por motor/descargar_resultados.py.",
-  "ultima_actualizacion": "2026-11-08T07:53:44Z",
+  "ultima_actualizacion": "2026-11-08T14:35:11Z",
   "marcadores": [
     {
       "match_id": 1,
@@ -940,6 +940,10 @@
       "France",
       "Spain"
     ],
+    "final": [
+      "Argentina",
+      "Spain"
+    ],
     "1/4": [
       "Argentina",
       "Belgium",
@@ -949,10 +953,6 @@
       "Norway",
       "Spain",
       "Switzerland"
-    ],
-    "final": [
-      "Argentina",
-      "Spain"
     ],
     "1/8": [
       "Argentina",
